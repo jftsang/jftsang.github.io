@@ -4,7 +4,6 @@ import {colorMixer, getColor} from "./colorutils.js";
 const maxSize = 24;
 
 
-
 function calculateProbabilities(initialW, initialB) {
     const probabilities = new Array(maxSize + 1);
     for (let i = 0; i <= maxSize; i++) {
@@ -49,9 +48,7 @@ class Cell {
         if (this.q === null || this.p === 0) {
             color = [245, 245, 255];
             el.innerHTML = `${this.w}W, ${this.b}B`;
-        }
-        else
-        {
+        } else {
             color = colorMixer([255, 0, 0], [225, 225, 255], prob)
 
             const [num, den] = reduce(this.p, this.q);
@@ -77,6 +74,11 @@ class Cell {
 }
 
 class Urn {
+    /**
+     * Initializes the constructor and sets up the class properties.
+     *
+     * @param {HTMLElement} div - The HTML element that contains the cells.
+     */
     constructor(div) {
         this.div = div;
 
@@ -89,7 +91,7 @@ class Urn {
 
             this.cells[i] = new Array(i + 1);
             for (let j = 0; j <= i; j++) {
-                this.cells[i][j] = new Cell(this, j, i-j);
+                this.cells[i][j] = new Cell(this, j, i - j);
             }
         }
 
@@ -97,7 +99,13 @@ class Urn {
         this.reRender();
     }
 
-
+    /**
+     * Re-renders the elements in the div container.
+     *
+     * This function iterates over each child element of the div container and re-renders them based on the values in the `this.cells` array.
+     *
+     * @return {undefined} This function does not return a value.
+     */
     reRender() {
         Array.from(this.div.children).forEach(
             (row, i) => {
@@ -115,6 +123,12 @@ class Urn {
         )
     }
 
+    /**
+     * Updates the probabilities of the cells in the grid.
+     *
+     * @param {array} probabilities - The 2D array of probabilities for each cell.
+     * @return {undefined} This function does not return a value.
+     */
     updateProbabilities(probabilities) {
         for (let i = 0; i <= maxSize; i++) {
             for (let j = 0; j <= i; j++) {

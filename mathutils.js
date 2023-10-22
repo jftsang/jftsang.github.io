@@ -29,7 +29,7 @@ export const risingFactorial = memoize((x, n) => {
 })
 
 export function reduce(num, den) {
-    function gcd(a, b){
+    function gcd(a, b) {
         return b ? gcd(b, a % b) : a;
     }
 

@@ -1,54 +1,13 @@
-const maxSize = 12;
+import {binom, reduce, risingFactorial} from "./mathutils.js";
+import {colorMixer, getColor} from "./colorutils.js";
+
+const maxSize = 24;
 
 
-function memoize(fn) {
-    const cache = {};
-    const cachedFunction = (...args) => {
-        if (cache[args] === undefined) {
-            console.log(`calculating result for ${args}`)
-            cache[args] = fn(...args);
-        }
-        else {
-            console.log(`reusing result for ${args}`)
-        }
-        return cache[args];
-    };
-    return cachedFunction;
-}
-
-const factorial = memoize(n => {
-    console.log(`calculate factorial ${n}`)
-    if (n < 0)
-        return null;
-    if (n === 0)
-        return 1;
-    return factorial(n - 1) * n;
-});
-
-const binom = memoize((n, k) => {
-    if (k < 0 || k > n) return 0;
-    return factorial(n) / (factorial(k) * factorial(n - k))
-})
-
-const risingFactorial = memoize((x, n) => {
-    if (n < 0)
-        return null;
-    if (n === 0)
-        return 1;
-    return (x + n - 1) * risingFactorial(x, n - 1);
-})
-
-function reduce(number,denomin){
-    function gcd(a, b){
-        return b ? gcd(b, a%b) : a;
-    };
-    g = gcd(number, denomin);
-    return [number / g, denomin / g];
-}
 
 function calculateProbabilities(initialW, initialB) {
-    const probabilities = new Array(maxSize);
-    for (let i = 0; i < maxSize; i++) {
+    const probabilities = new Array(maxSize + 1);
+    for (let i = 0; i <= maxSize; i++) {
         probabilities[i] = new Array(i + 1);
         for (let j = 0; j <= i; j++) {
             const w = j;
@@ -69,6 +28,7 @@ function calculateProbabilities(initialW, initialB) {
     return probabilities
 }
 
+
 class Cell {
     constructor(urn, w, b, p, q) {
         this.urn = urn;
@@ -82,15 +42,34 @@ class Cell {
         const el = document.createElement("div")
         el.classList.add("cell");
 
-        if (this.q === null)
-            el.classList.add("disabled")
-        else {
-            if (this.p === 0)
-                el.classList.add("zero")
+        let color;
+
+        const prob = this.p / this.q;
+
+        if (this.q === null) {
+            color = [211, 211, 211];
+        }
+        else
+        {
+            if (this.p === 0) {
+                color = [211, 211, 211];
+            }
+            else
+            {
+                color = colorMixer([255, 0, 0], [255, 255, 255], prob)
+            }
 
             const [num, den] = reduce(this.p, this.q);
-            el.textContent = `${num} / ${den}`;
+            // const [num, den] = [this.p, this.q];
+
+            if (den <= 20)
+                el.innerHTML = `${this.w}W, ${this.b}B <br/> ${num} &frasl; ${den}<br/>${prob.toFixed(3)}`;
+            else
+                el.innerHTML = `${this.w}W, ${this.b}B <br/> ${prob.toFixed(3)}`;
+
         }
+
+        el.style.backgroundColor = getColor(color);
 
         el.addEventListener("click", e => {
             urn.updateProbabilities(
@@ -106,11 +85,12 @@ class Urn {
     constructor(div) {
         this.div = div;
 
-        this.cells = new Array(maxSize);
-        for (let i = 0; i < maxSize; i++) {
+        this.cells = new Array(maxSize + 1);
+        for (let i = 0; i <= maxSize; i++) {
             const row = document.createElement("div");
             row.classList.add("urnRow");
             div.appendChild(row);
+
 
             this.cells[i] = new Array(i + 1);
             for (let j = 0; j <= i; j++) {
@@ -126,6 +106,9 @@ class Urn {
     reRender() {
         Array.from(this.div.children).forEach(
             (row, i) => {
+                if (i === 0)
+                    return;
+
                 while (row.lastElementChild) {
                     row.removeChild(row.lastElementChild)
                 }
@@ -138,7 +121,7 @@ class Urn {
     }
 
     updateProbabilities(probabilities) {
-        for (let i = 0; i < maxSize; i++) {
+        for (let i = 0; i <= maxSize; i++) {
             for (let j = 0; j <= i; j++) {
                 [this.cells[i][j].p, this.cells[i][j].q] = probabilities[i][j]
             }

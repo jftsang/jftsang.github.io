@@ -1,0 +1,32 @@
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.cell:hover {
+    border: black 5px solid;
+    margin: 0;
+}
+
+.disabled {
+    background: lightgray;
+}
+
+.zero {
+    background: lightpink;
+}
+
+
+.urnRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

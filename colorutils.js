@@ -12,6 +12,7 @@ function colorChannelMixer(colorChannelA, colorChannelB, amountToMix){
 //rgbA and rgbB are arrays, amountToMix ranges from 0.0 to 1.0
 //example (red): rgbA = [255,0,0]
 export function colorMixer(rgbA, rgbB, amountToMix){
+    amountToMix = amountToMix ** 0.65;
     const r = colorChannelMixer(rgbA[0], rgbB[0], amountToMix);
     const g = colorChannelMixer(rgbA[1], rgbB[1], amountToMix);
     const b = colorChannelMixer(rgbA[2], rgbB[2], amountToMix);

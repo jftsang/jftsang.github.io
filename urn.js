@@ -46,18 +46,13 @@ class Cell {
 
         const prob = this.p / this.q;
 
-        if (this.q === null) {
-            color = [211, 211, 211];
+        if (this.q === null || this.p === 0) {
+            color = [245, 245, 255];
+            el.innerHTML = `${this.w}W, ${this.b}B`;
         }
         else
         {
-            if (this.p === 0) {
-                color = [211, 211, 211];
-            }
-            else
-            {
-                color = colorMixer([255, 0, 0], [255, 255, 255], prob)
-            }
+            color = colorMixer([255, 0, 0], [225, 225, 255], prob)
 
             const [num, den] = reduce(this.p, this.q);
             // const [num, den] = [this.p, this.q];

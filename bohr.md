@@ -25,7 +25,7 @@ a few recent observations in atomic physics:
     of these wavelengths are described experimentally by the Rydberg
     formula (1888). For hydrogen, this formula states:
 
-$$ 1/\lambda = R_H ( 1/n_1^2 - 1 / n_2^2 ) $$
+    $$ 1/\lambda = R_H ( 1/n_1^2 - 1 / n_2^2 ) $$
 
     where $n_1$ and $n_2$ are integers and $R_H$ is a constant.
 
@@ -37,7 +37,7 @@ $$ 1/\lambda = R_H ( 1/n_1^2 - 1 / n_2^2 ) $$
     quanta of energy, called photons; the energy of a photon was related
     to its frequency and wavelength by
 
-$$ E = h f = h c / \lambda $$
+    $$ E = h f = h c / \lambda $$
 
     where Planck's constant $h = 2\pi\hbar$ is an experimental
     constant.

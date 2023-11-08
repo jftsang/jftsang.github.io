@@ -5,7 +5,7 @@ Michaelmas 2023
 
 ---
 
-This document is intended to give a little contexj behind the "Bohr
+This document is intended to give a little context behind the "Bohr
 model" that is introduced in the first Quantum Mechanics sheet.
 
 ---

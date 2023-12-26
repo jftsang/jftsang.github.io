@@ -1,0 +1,12 @@
+div#shoppingListDiv {
+    max-height: 100vh;
+}
+ul.shopping-list {
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+div#qrcode {
+    display: flex;
+    justify-content: center;
+}

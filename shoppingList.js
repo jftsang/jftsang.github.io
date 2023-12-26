@@ -27,7 +27,7 @@ class ListItem {
 }
 
 class AddItemForm {
-  constructor (shoppingList) {
+  constructor(shoppingList) {
     this.shoppingList = shoppingList;
   }
 
@@ -39,6 +39,8 @@ class AddItemForm {
     input.type = "text";
     input.id = "newItemInput";
     input.classList.add("form-control", "mr-2", "w-75");
+    input.autocomplete = "off";
+
     const button = document.createElement("button");
     button.type = "submit";
     button.innerText = "Add Item";
@@ -57,6 +59,16 @@ class AddItemForm {
 class ShoppingList {
   constructor(shoppingListDiv) {
     this.shoppingListDiv = shoppingListDiv;
+    this.ul = this.shoppingListDiv.querySelector("ul");
+    const qrcodeContainer = shoppingListDiv.querySelector("#qrcode");
+
+    // Create a QR code instance
+    this.qrcode = new QRCode(qrcodeContainer, {
+      text: '', // The content you want to encode in the QR code
+      width: 80, // Width of the QR code
+      height: 80 // Height of the QR code
+    });
+
     this.load();
     this.render();
   }
@@ -84,20 +96,22 @@ class ShoppingList {
   }
 
   render() {
-    this.shoppingListDiv.innerHTML = "";
-
-    const ul = document.createElement("ul");
-    ul.classList.add("list-group");
-    this.shoppingListDiv.appendChild(ul);
+    this.ul.innerHTML = "";
 
     this.items.forEach(item => {
-      ul.appendChild(item.render());
+      this.ul.appendChild(item.render());
     });
 
     const form = (new AddItemForm(this)).render();
     const formLi = document.createElement("li");
     formLi.classList.add("list-group-item");
     formLi.appendChild(form);
-    ul.appendChild(formLi);
+    this.ul.appendChild(formLi);
+
+    const newItemInput = document.getElementById("newItemInput");
+    newItemInput.focus();
+
+    this.qrcode.clear();
+    this.qrcode.makeCode(JSON.stringify(this.items.map(item => item.itemName)));
   };
 }

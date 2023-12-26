@@ -65,21 +65,52 @@ class ShoppingList {
     // Create a QR code instance
     this.qrcode = new QRCode(qrcodeContainer, {
       text: '', // The content you want to encode in the QR code
-      width: 80, // Width of the QR code
-      height: 80 // Height of the QR code
+      width: 120, // Width of the QR code
+      height: 120 // Height of the QR code
     });
+    qrcodeContainer.addEventListener("click", () => {
+        navigator.clipboard.writeText(this.getUrl());
+    })
 
-    this.load();
+    this.items = null;
+
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("items")) {
+      try {
+        const itemNames = JSON.parse(url.searchParams.get("items"));
+        this.items = itemNames ? itemNames.map(itemName => new ListItem(itemName, this)) : [];
+        url.searchParams.delete("items");
+        history.replaceState({}, document.title, url);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    // If no parameters were given, or if loading didn't work, try to
+    // load from localStorage
+    if (this.items === null) {
+      try {
+        const itemNames = JSON.parse(localStorage.getItem("items"));
+        this.items = itemNames ? itemNames.map(itemName => new ListItem(itemName, this)) : [];
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    // fallback if nothing else works
+    if (this.items === null) {
+      this.items = [];
+    }
     this.render();
   }
 
-  load() {
-    this.items = (JSON.parse(localStorage.getItem("items")) || [])
-      .map((itemName, index) => new ListItem(itemName, this));
+  // noinspection JSUnusedGlobalSymbols
+  toJSON() {
+    return this.items.map(item => item.itemName);
   }
 
   save() {
-    localStorage.setItem("items", JSON.stringify(this.items.map(item => item.itemName)));
+    localStorage.setItem("items", JSON.stringify(this));
   }
 
   addItem(name) {
@@ -93,6 +124,12 @@ class ShoppingList {
     this.items.splice(this.items.indexOf(item), 1);
     this.save();
     this.render();
+  }
+
+  getUrl() {
+    const url = new URL(window.location.href);
+    url.searchParams.set("items", JSON.stringify(this));
+    return url.toString();
   }
 
   render() {
@@ -111,7 +148,11 @@ class ShoppingList {
     const newItemInput = document.getElementById("newItemInput");
     newItemInput.focus();
 
-    this.qrcode.clear();
-    this.qrcode.makeCode(JSON.stringify(this.items.map(item => item.itemName)));
+    try {
+      this.qrcode.clear();
+      this.qrcode.makeCode(this.getUrl());
+    } catch (error) {
+      console.error(error);
+    }
   };
 }

@@ -2,7 +2,7 @@ div#shoppingListDiv {
     max-height: 100vh;
 }
 ul.shopping-list {
-    max-height: 80%;
+    max-height: 75vh;
     overflow-y: scroll;
 }
 

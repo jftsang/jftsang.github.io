@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Branching process simulator</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
 
+<form id="form" action="" method="get">
+    <input type="radio" id="uniform" name="distribution" value="uniform">
+    <label for="uniform">Uniform</label>
+
+    <input type="radio" id="poisson" name="distribution" value="poisson">
+    <label for="poisson">Poisson</label>
+
+    <input type="radio" id="geometric" name="distribution" value="geometric">
+    <label for="geometric">Geometric</label>
+
+    <br/>
+    <label for="parameter">Parameter</label><input id="parameter" type="number">
+    <label for="generations">Generations</label><input id="generations" type="number">
+    <button id="run">Run</button>
+</form>
+
+<div id="histogram" style="width:600px;height:250px;"></div>
 
 <script>var exports = {};</script>
 <script src="branchingProcess.js" type="module"></script>

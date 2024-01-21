@@ -30,7 +30,6 @@ export class PoissonDistribution implements Distribution {
 }
 
 export class GeometricDistribution implements Distribution {
-  private readonly l: number;
   constructor(private p: number) {
     if (this.p <= 0 || this.p > 1) {
       throw new Error("need 0 < p <= 1");

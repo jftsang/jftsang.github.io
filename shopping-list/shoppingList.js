@@ -56,7 +56,7 @@ class AddItemForm {
   }
 }
 
-class ShoppingList {
+export class ShoppingList {
   constructor(shoppingListDiv) {
     this.shoppingListDiv = shoppingListDiv;
     this.ul = this.shoppingListDiv.querySelector("ul");
@@ -156,3 +156,5 @@ class ShoppingList {
     }
   };
 }
+
+const sl = new ShoppingList(document.getElementById("shoppingListDiv"));

@@ -9,7 +9,6 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="shoppingList.css">
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
-    <script src="shoppingList.js"></script>
 </head>
 <body>
 
@@ -18,9 +17,7 @@
     <div class="row m-3 fixed-bottom" id="qrcode"></div>
 </div>
 
-<script>
-  const sl = new ShoppingList(document.getElementById("shoppingListDiv"));
-</script>
+<script src="shoppingList.js" type="module"></script>
 
 </body>
 </html>

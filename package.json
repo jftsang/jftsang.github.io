@@ -4,14 +4,15 @@
   },
   "devDependencies": {
     "@types/plotly.js-dist-min": "^2.3.4",
+    "parcel-bundler": "^1.12.5",
     "typescript": "^5.3.3"
   },
   "name": "jftsang.github.io",
   "version": "1.0.0",
   "main": "",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html --log-level verbose",
+    "build": "parcel build index.html --log-level verbose"
   },
   "repository": {
     "type": "git",

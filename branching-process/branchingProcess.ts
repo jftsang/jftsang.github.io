@@ -1,4 +1,4 @@
-import {PoissonDistribution, GeometricDistribution, UniformDistribution, Distribution} from "./distributions.js";
+import {PoissonDistribution, GeometricDistribution, UniformDistribution, Distribution} from "./distributions";
 // import Plotly from "plotly.js-dist-min";
 
 const form = document.querySelector("form") as HTMLFormElement;

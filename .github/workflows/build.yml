@@ -1,38 +1,22 @@
+# Stolen from https://github.com/marketplace/actions/deploy-to-github-pages
 name: Build and Deploy
-
-on:
-  push:
-    branches:
-      - main  # Adjust this branch name to match your default branch
-
+on: [push]
+permissions:
+  contents: write
 jobs:
-  build:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-      - name: Set Up Node.js
-        uses: actions/setup-node@v4
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          node-version: 14
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Project
-        run: npm run build
-
-  deploy:
-    runs-on: ubuntu-latest
-
-    needs: build
-
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-#          branch: gh-pages  # Adjust this branch name to match your GitHub Pages branch
-          branch: main
-          folder: . # or dist
+          folder: .

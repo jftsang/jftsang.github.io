@@ -1,10 +1,15 @@
+from pathlib import Path
+
 AUTHOR = 'J. M. F. Tsang'
 SITENAME = 'JMFT'
-SITEURL = ""
+SITEURL = "https://jmft.dev"
 
 PATH = "content"
 STATIC_PATHS = ['images', 'static']
 
+THEME = Path(__file__).parent / "pelican-themes" / "graymill"
+THEME = Path(__file__).parent / "pelican-themes" / "Flex"
+# THEME = Path(__file__).parent / "theme"
 
 TIMEZONE = 'Europe/London'
 
@@ -22,7 +27,7 @@ LINKS = (
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+    ("Hamster", "https://elderberri.es/"),
 )
 
 # Social widget

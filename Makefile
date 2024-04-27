@@ -65,8 +65,11 @@ devserver:
 devserver-global:
 	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b 0.0.0.0
 
-publish:
+publish: clean
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
+push: publish
+	chmod -R a+rX "$(OUTPUTDIR)"
+	rsync -avz -e "ssh -p 2222" output/ jmft2@jacobthehamster.servehttp.com:jmft.dev/public_html
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish 

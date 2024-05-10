@@ -1,6 +1,6 @@
 Title: for loops in Python are a bit weird
 Date: 2024-02-11
-Category: Programming
+Category: Software
 Tags: python, javascript
 Slug: for-loops-in-python-are-a-bit-weird
 
@@ -21,5 +21,5 @@ What does the following Python code print and why?
 for i in range(3):
     print(i)
     i -= 3
-    
+
 ```

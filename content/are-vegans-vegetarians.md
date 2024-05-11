@@ -15,13 +15,12 @@ To my (somewhat) surprise, this drew quite a lot of interest from
 colleagues, friends, and even people on Facebook I hadn't talked to for
 years, with lots of different ways on how to interpret the questions.
 
-## Restaurants
+## Restaurants
 
 The next two questions were:
 
 3. Is a vegan restaurant a vegetarian restaurant?
 4. Is a vegetarian restaurant a vegan restaurant?
-
 
 
 ## Apples and labels

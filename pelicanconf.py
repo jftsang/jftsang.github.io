@@ -7,9 +7,10 @@ SITEURL = "https://jmft.dev"
 PATH = "content"
 STATIC_PATHS = ['images', 'static']
 
-THEME = Path(__file__).parent / "pelican-themes" / "graymill"
+# THEME = Path(__file__).parent / "pelican-themes" / "graymill"
 THEME = Path(__file__).parent / "pelican-themes" / "Flex"
 # THEME = Path(__file__).parent / "theme"
+THEME_COLOR = "dark"
 
 TIMEZONE = 'Europe/London'
 
@@ -41,3 +42,7 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+PLUGINS = [
+    "pelican_commonmark",
+]

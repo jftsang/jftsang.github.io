@@ -75,7 +75,7 @@ At this point, going to `http://jmft.dev` (no https) should show you the
 `index.html` page for the site.
 
 
-## Setting up HTTPS
+## Setting up HTTPS
 
 LetsEncrypt recommend using [Certbot](https://certbot.eff.org/), which
 made the HTTPS installation process very straightforward.

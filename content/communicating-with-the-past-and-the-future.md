@@ -94,8 +94,9 @@ Wikipedia contributor, and spent too much time reading the Wikipedia
 policies and [manual of style](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style).
 Some of the following is a condensation of the Wikipedia MoS.
 
+## General principles
 
-## The Golden Rule
+### The Golden Rule
 
 Ignore all rules.
 
@@ -107,8 +108,6 @@ This is an [official policy of Wikipedia](https://en.wikipedia.org/wiki/Wikipedi
 These are _proposals_, not rules. They reflect _my_ opinions, shaped by
 my background and experience. Your mileage may vary.
 
-
-## General practices
 
 ### Prefer open channels
 
@@ -174,7 +173,7 @@ to a specific article (example:
 [https://en.wikipedia.org/wiki/Special:WhatLinksHere/Coffee](https://en.wikipedia.org/wiki/Special:WhatLinksHere/Coffee)),
 but backlinking needs to be done manually in Confluence.
 
-### Permalinking
+### Permalinking
 
 Web resources are fickle. External websites may change their layouts
 without properly redirecting; or change the contents of pages without
@@ -220,7 +219,7 @@ This can be sidestepped by referring to version numbers:
 > As of v1.5, TheBestIDE is incapable of detecting unmatched brackets.
 
 
-### Page notices
+### Page notices
 
 Page notices go at the top of the page and should indicate the
 maintenance state of the page. They should usually include a date.

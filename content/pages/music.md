@@ -1,7 +1,11 @@
 Title: Music
 Slug: music
 
-I used to direct the [Queens’ Graduate Choir](https://www.facebook.com/QueensGradChoir) in Cambridge, with which I still sing; and also the now-defunct Queens’ Chamber Choir, a small group dedicated to early music. With these two groups I directed a number of major works, some of which have been recorded. You can watch the performances below.
+I used to direct the [Queens’ Graduate Choir](https://www.facebook.com/QueensGradChoir) in Cambridge, with
+which I still sing; and also the now-defunct Queens’ Chamber Choir, a
+small group dedicated to early music. With these two groups I directed a
+number of major works, some of which have been recorded. You can watch
+the performances below.
 
 I also regularly perform with (usually singing) several other groups, and have depped for many others as well.
 
@@ -9,7 +13,7 @@ I also regularly perform with (usually singing) several other groups, and have d
 
 Although a general early music enthusiast, I am particularly interested in English music of the late Baroque and Regency eras. This period has traditionally been overlooked as a lacuna in musical history, overshadowed by Handel (1685**–**1759) who came before, the great Victorian composers who came after, and the contemporaneous flourishing of music on the Continent in the Classical and Romantic era. Nonetheless, composers like Thomas Arne (composer of _Rule, Britannia!_) and William Hayes were instrumental in creating a national musical culture that reached the common people, and it is during this period that many of the hymns of the Anglican canon were written.
 
-I produced the first edition of William Hayes’ _Orpheus and Euridice_ in modern notation, which saw the first modern live performance of the work in Queens’ Chapel in 2022.
+I produced the first edition of William Hayes’ *Orpheus and Euridice* in modern notation, which saw the first modern live performance of the work in Queens’ Chapel in 2022.
 
 ## Productions
 

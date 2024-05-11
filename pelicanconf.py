@@ -25,17 +25,15 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
     ("Hamster", "https://elderberri.es/"),
 )
 
 # Social widget
 SOCIAL = (
-    ("Twitter", "https://twitter.com/jftsang"),
-    ("LinkedIn", "https://www.linkedin.com/in/joanna-tsang-bb2059171/"),
-    ("GitHub", "https://github.com/jftsang"),
+    ("at", "mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"),
+    ("twitter", "https://twitter.com/jftsang"),
+    ("linkedin", "https://www.linkedin.com/in/joanna-tsang-bb2059171/"),
+    ("github", "https://github.com/jftsang"),
 )
 
 DEFAULT_PAGINATION = 10
@@ -46,3 +44,5 @@ DEFAULT_PAGINATION = 10
 PLUGINS = [
     "pelican_commonmark",
 ]
+
+USE_GOOGLE_FONTS = True

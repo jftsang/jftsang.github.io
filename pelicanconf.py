@@ -6,6 +6,8 @@ SITEURL = "https://jmft.dev"
 
 PATH = "content"
 STATIC_PATHS = ['images', 'static']
+EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': 'favicon.ico'}}
+
 
 # THEME = Path(__file__).parent / "pelican-themes" / "graymill"
 THEME = Path(__file__).parent / "pelican-themes" / "Flex"
@@ -23,8 +25,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
 LINKS = (
+    ("Categories", "/categories.html"),
+    ("Tags", "/tags.html"),
     ("Hamster", "https://elderberri.es/"),
 )
 

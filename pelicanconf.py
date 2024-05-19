@@ -48,4 +48,5 @@ PLUGINS = [
 MARKDOWN = ['codehilite(noclasses=True, pygments_style=native, linenums=True)', 'extra']  # enable MD options
 
 
+USE_LESS = True
 USE_GOOGLE_FONTS = True

@@ -1,6 +1,6 @@
 Title: The uncertainty principle is obvious to musicians
 Date: 2024-01-09
-Category: Teaching
+Category: Physics
 Tags: physics, music, teaching
 Slug: uncertainty-principle-obvious-to-musicians
 

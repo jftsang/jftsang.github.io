@@ -1,6 +1,6 @@
 Title: The Bohr model: Some history and context
 Date: 2023-12-19
-Category: Teaching
+Category: Physics 
 Tags: physics, teaching
 Slug: bohr-model-background
 

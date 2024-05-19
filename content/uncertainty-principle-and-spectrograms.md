@@ -1,6 +1,6 @@
 Title: The uncertainty principle and spectrograms
 Date: 2024-01-09
-Category: Teaching
+Category: Physics
 Tags: physics, music, teaching
 Slug: uncertainty-principle-and-spectrograms
 
@@ -66,5 +66,3 @@ The tradeoff between precision in frequency and precision in time is now very vi
 Away from the transition at t = 1, the larger the window for the STFT the more precise the estimate for frequency will be: thus the first spectrogram contains wide bands, since the narrowest window spans only about 6 periods, while the last spectrogram has thinnest bands since the widest window spans over 100 periods.
 
 However, near t = 1, the window for the STFT contains samples from both t < 1 (at 400 Hz) and from t > 1 (at 800 Hz), so the computed STFT contains components from both. The region that is affected by this is largest for the widest window. Thus, a STFT with a wider window does a poorer job of detecting the time at which a frequency transition occurs.
-
-

@@ -1,6 +1,6 @@
 Title: for loops in Python are a bit weird
 Date: 2024-02-11
-Category: Software
+Category: Python
 Tags: python, javascript
 Slug: for-loops-in-python-are-a-bit-weird
 

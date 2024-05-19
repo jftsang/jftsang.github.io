@@ -42,10 +42,13 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 PLUGINS = [
     "pelican_commonmark",
 ]
+
+MARKDOWN = ['codehilite(noclasses=True, pygments_style=native, linenums=True)', 'extra']  # enable MD options
+
 
 USE_GOOGLE_FONTS = True

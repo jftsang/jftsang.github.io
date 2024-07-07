@@ -1,7 +1,7 @@
 Title: Object creation patterns in Python: Static factory methods
 Date: 2024-05-21
 Category: Python
-Tags: python, design-patterns
+Tags: python, object-oriented-programming, design-patterns
 Slug: static-factory-methods-in-python
 
 The basic way to create and initialize an object in Python is using the

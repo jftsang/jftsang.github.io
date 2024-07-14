@@ -3,6 +3,7 @@ from pathlib import Path
 AUTHOR = 'J. M. F. Tsang'
 SITENAME = 'JMFT'
 SITEURL = "https://jmft.dev"
+SITEDESCRIPTION = "Thoughts on software engineering, physics, teaching and music."
 
 PATH = "content"
 STATIC_PATHS = ['images', 'static']
@@ -43,10 +44,11 @@ RELATIVE_URLS = True
 
 PLUGINS = [
     "pelican_commonmark",
+    "pelican-render-math",
 ]
 
-MARKDOWN = ['codehilite(noclasses=True, pygments_style=native, linenums=True)', 'extra']  # enable MD options
-
+MARKDOWN = ['codehilite(noclasses=True, pygments_style=native, linenums=True)', 'extra',
+            'header_id']  # enable MD options
 
 USE_LESS = True
 USE_GOOGLE_FONTS = True

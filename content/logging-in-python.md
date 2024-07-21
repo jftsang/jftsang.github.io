@@ -213,6 +213,10 @@ messages that are lower than that level. The default logging level is
   However, this may not be fully informative if the log message is
   inside a function that is called from many sites.
 
+* Logging the arguments passed to the function can also be helpful.
+  But this must be done with care, if the arguments passed are complex
+  objects with many fields, or if they contain sensitive information.
+
 * I like to invent "sentinel" words (my term, I can't remember if there
   is an official term for this) that are specific to the particular
   feature being logged about. By using a word that won't be used

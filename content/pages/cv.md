@@ -6,18 +6,16 @@ Joanna Tsang (she/her)
 Preferred email: `j dot m dot f dot tsang at cantab dot net`.
 
 Full-stack platforms engineer, with domain knowledge in mathematics and
-audio.
+audio, and a penchant for teaching.
 
 ## Experience
 
 * **2022–current: Software Engineer at Meta Reality Labs Research Audio.**
-  Built and maintaining a large platform and data pipelines for 
-  collection or simulation of audio data, for Augmented/Virtual-Reality 
-  and audiological applications.
+  Lead developer for data collection and engineering, designing, building and maintaining a large FastAPI platform for a lab space, and supporting data pipelines. 
 * **2015–current: Supervisor (Teaching Assistant) for various Cambridge
   colleges** supporting several courses in applied mathematics or
   theoretical physics.
-* **2019–22: Data Engineer, then Senior Data Engineer, at Audio Analytic.**
+* **2019–22: Data Engineer, then Senior Data Engineer, at Audio Analytic.** Built web, desktop and shell apps for data analysis and annotation.
 * **2015–19: Research student at DAMTP, University of Cambridge.**
 
 ## Skills

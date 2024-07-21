@@ -9,7 +9,8 @@ PATH = "content"
 STATIC_PATHS = ['images', 'static']
 EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': 'favicon.ico'}}
 
-THEME = Path(__file__).parent / "pelican-themes" / "Flex"
+# THEME = Path(__file__).parent / "pelican-themes" / "Flex"
+THEME = Path(__file__).parent / "theme"
 THEME_COLOR = "dark"
 
 TIMEZONE = 'Europe/London'

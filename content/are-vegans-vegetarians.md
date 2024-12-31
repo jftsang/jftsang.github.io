@@ -1,7 +1,7 @@
 Title: Are vegans vegetarians? and related questions
 Date: 2024-04-28
 Category: Software
-Tags: logic, type theory
+Tags: logic, type-theory
 Slug: are-vegans-vegetarians
 
 I recently asked the following questions:

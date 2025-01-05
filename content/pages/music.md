@@ -36,43 +36,121 @@ in Queens’ Chapel in 2022 (see below).
 
 ## Productions
 
-### *Acis and Galatea*
+<div id="productionsDiv" class="tabs-container"></div>
 
-by G. F. Handel
+<script>
+const productions = [
+    {title: "Acis and Galatea", subtitle: "by G. F. Handel", videoTitle: "Queens&#039; Chamber Choir: Acis and Galatea", src: "https://www.youtube.com/embed/RCE619zsfw8?feature=oembed"},
+    {title: "The Fairy Queen", subtitle: "by Henry Purcell", videoTitle: "Queens&#039; Graduate Choir: The Fairy Queen", src: "https://www.youtube.com/embed/AewuFJHo8xQ?feature=oembed"},
+    {title: "Orpheus and Euridice", subtitle: "by William Hayes", videoTitle: "Queens&#039; Graduate Choir: Orpheus and Euridice by William Hayes", src: "https://www.youtube.com/embed/m0zhR2cyEoU?feature=oembed"},
+]
+const productionsDiv = document.getElementById("productionsDiv");
 
-<figure class="wp-block-embed is-type-video is-provider-youtube
-wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div
-class="wp-block-embed__wrapper">
+productions.forEach((p, i) => {
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.id = `tab${i}`;
+    input.name = "tabs";
+    input.classList.add("tab-input");
 
-<iframe title="Queens&#039; Chamber Choir: Acis and Galatea" width="500"
-height="281"
-src="https://www.youtube.com/embed/RCE619zsfw8?feature=oembed"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin"
-allowfullscreen></iframe>
+    const label = document.createElement("label");
+    label.for = `tab${i}`;
+    label.classList.add("tab-label");
+    label.innerText = p.title;
 
-</div></figure>
+    label.addEventListener("click", () => {
 
-### *The Fairy Queen*
+        document.querySelectorAll('.tab-label').forEach(lbl => lbl.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        label.classList.add('active');
+        document.querySelector(`.tab-content[data-index="${i}"]`).classList.add('active');
+    });
 
-by Henry Purcell
+    productionsDiv.appendChild(input);
+    productionsDiv.appendChild(label);
+});
 
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+const wrapperDivs = productions.map((p, i) => {
+    const wrapperDiv = document.createElement("div");
+    wrapperDiv.dataset.index = i;
+    wrapperDiv.classList.add("tab-content");
 
-<iframe title="Queens&#039; Graduate Choir: The Fairy Queen" width="500" height="281" src="https://www.youtube.com/embed/AewuFJHo8xQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    const heading = document.createElement("h3");
+    heading.innerHTML = `<em>${p.title}</em>`;
+    wrapperDiv.appendChild(heading);
+    const subtitle = document.createElement("p");
+    subtitle.innerText = p.subtitle;
+    wrapperDiv.appendChild(subtitle);
 
-</div></figure>
+    const playerIframe = document.createElement("iframe");
+    playerIframe.title = p.title
+    playerIframe.src = p.src;
+    playerIframe.width = 500;
+    playerIframe.height = 281;
+    playerIframe.frameBorder = "0";
+    playerIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    playerIframe.referrerpolicy = "strict-origin-when-cross-origin"
+    playerIframe.allowfullscreen = true;
 
-### *Orpheus and Euridice*
+    const figure = document.createElement("figure");
+    figure.appendChild(playerIframe);
 
-by William Hayes
+    wrapperDiv.appendChild(figure);
 
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+    return wrapperDiv;
+});
 
-<iframe title="Queens&#039; Graduate Choir: Orpheus and Euridice by William Hayes" width="500" height="281" src="https://www.youtube.com/embed/m0zhR2cyEoU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+wrapperDivs.forEach(div => {productionsDiv.appendChild(div);});
 
-</div></figure>
+document.querySelectorAll('.tab-label')[0].classList.add('active');
+document.querySelectorAll('.tab-content')[0].classList.add('active');
+</script>
+
+<style>
+.tabs-container {
+  width: 300px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Hide radio buttons */
+.tab-input {
+  display: none;
+}
+
+/* Style tab labels (buttons) */
+.tab-label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-bottom: none;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.tab-label:hover {
+  background-color: #e1e1e1;
+}
+
+/* Active tab label */
+.tab-label.active {
+  background-color: #666;
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+/* Tab content */
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+</style>
 
 ## Compositions and arrangements
 

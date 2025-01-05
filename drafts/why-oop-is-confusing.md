@@ -5,7 +5,7 @@ Tags: python, object-oriented-programming, teaching
 Slug: why-oop-is-confusing
 
 One reason why Python is such a popular and powerful language is that it
-is straightforward to learn.  However, most learners become stuck when
+is straightforward to learn.  However, many learners become stuck when
 they come across classes and objects: this is usually met as an
 intermediate subject several chapters into a book, by which time the
 reader will be comfortable with many other aspects of the language and
@@ -19,29 +19,20 @@ coaching experience, this is because the use of toy examples leave the
 reader with very little context or motivation, and many of the examples
 can be achieved with a procedural style.
 
-One problem is that the powerful benefits of *object-oriented
-programming* come only when working on large projects, and especially as
-a contributor within a large team. This essay is an attempt to explore
-some of the design principles and techniques that motivate the use of
-classes and objects.
-
-<!--
-The true power of OOP comes from principles such as **abstraction**,
-**encapsulation**, **inheritance** and **polymorphism**.
-There are plenty of excellent articles on the Internet that do a much
-better job than this post will of explaining these rather scary-sounding
-concepts: see for example Baeldung's [Object-Oriented-Programming
-Concepts in Java][baeldung-oop].
--->
+This essay is aimed at readers who have met the notation for classes and
+objects, and is an attempt to explore some of the design principles that
+motivate their use.
 
 
 ## Classes play several roles
 
-One confusing aspect about classes and objects is that they play several
-distinct, although related, roles.
+One aspect about classes and objects that may cause confusion is that
+they play several distinct, if related, roles.
+
 ### Grouping data
 
-Classes can group related variables into a single object:
+Classes and objects can be used to group related variables into a
+"compound" object:
 ```python
 @dataclass
 class Person:
@@ -68,7 +59,6 @@ def describe(name: str, age: int):
 
 describe("Joanna", 31)
 ```
-
 
 
 <!--
@@ -110,36 +100,6 @@ class Person:
 ```
 -->
 
-<!--
-### In Java and similar languages
-
-In languages like Java and C++ that distinguish between public and
-private members, the student is also introduced to getters and setters,
-and is asked to write code like this:
-```java
-public class Person {
-  private String name;
-  private int age;
-
-  public Person(String name, int age) {
-    this.name = name;
-    this.age = age;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String newName) {
-    name = newName;
-  }
-
-  // ...other methods
-}
-```
-...including boilerplate code as a matter of 'good practice' or
-'convention' without further justification.
--->
 
 ### So what is a class?
 
@@ -155,7 +115,7 @@ fields or attributes <small>*(which are roughly synonymous, although
 there is a slight difference in Python)*</small>, as well as associated
 methods and functions.
 
-## Mathematics
+## An object *is* what it *does*
 
 In [*Mathematics: A Very Short Introduction*][wtg-book],
 mathematician [Timothy Gowers][wtg] writes:
@@ -188,13 +148,17 @@ introduced?
 
 ## Recommended reading
 
-Baeldung's tutorial on [Object-Oriented-Programming Concepts in Java][baeldung-oop]
-is a good piece that introduces the ideas of abstraction, encapsulation,
-inheritance and polymorphism. It supplements their article on [Java
-Classes and Objects][baeldung-classes],
-which goes into the mechanics of actually creating a class.
+Baeldung's tutorial on [Object-Oriented-Programming Concepts in
+Java][baeldung-oop] is a good piece that introduces the ideas of
+*abstraction*, *encapsulation*, *inheritance* and *polymorphism*. These
+design principles apply just as much to Python programming. The syntax
+in Java is a little different, but the examples there should be
+reasonably comprehensible; see their article on [Java Classes and
+Objects][baeldung-classes] for details.
 
+<!--
 Allen Holub's article [Why getters and setters are evil][evil].
+-->
 
 [baeldung-classes]: https://www.baeldung.com/java-classes-objects
 [baeldung-oop]: https://www.baeldung.com/java-oop

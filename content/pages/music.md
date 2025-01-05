@@ -56,7 +56,7 @@ Some of my compositions will eventually become available here.
 
 ### Vocal works
 
-_**Domine, quis habitabit?**_ An arrangement of Psalm 15 in the Renaissance polyphonic style for SAB trio. ([MuseScore](https://musescore.com/user/26871315/scores/6559549)) ([PDF](https://jmft.dev/wp-content/uploads/2024/01/Domine_quis_habitabit_-_J._M._F._Tsang.pdf))
+_**Domine, quis habitabit?**_ An arrangement of Psalm 15 in the Renaissance polyphonic style for SAB trio. ([MuseScore](https://musescore.com/user/26871315/scores/6559549))
 
 ### Instrumental works
 

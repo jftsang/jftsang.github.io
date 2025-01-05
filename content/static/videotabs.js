@@ -18,7 +18,6 @@ productions.forEach((p, i) => {
     label.innerHTML = p.title;
 
     label.addEventListener("click", () => {
-
         document.querySelectorAll('.tab-label').forEach(lbl => lbl.classList.remove('active'));
         document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
         label.classList.add('active');
@@ -38,6 +37,7 @@ const wrapperDivs = productions.map((p, i) => {
     heading.innerHTML = `<em>${p.title}</em>`;
     wrapperDiv.appendChild(heading);
     const subtitle = document.createElement("p");
+    subtitle.classList.add("subtitle");
     subtitle.innerText = p.subtitle;
     wrapperDiv.appendChild(subtitle);
 

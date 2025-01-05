@@ -21,11 +21,13 @@ audio, and a penchant for teaching.
   leading a team of 3&ndash;5 developers.
 
   *Keywords: Python, FastAPI, JavaScript, React, Node.js, graph
-  databases, NoSQL, mentorship, management*
+  databases, NoSQL, mentorship, project management*
 
 * **2015–2024: Supervisor (Teaching Assistant) @ various Cambridge
   colleges** supporting several courses in applied mathematics or
   theoretical physics.
+
+  *Keywords: mathematics, physics, mentorship, teaching.*
 
 * **2019–22: Data Engineer, then Senior Data Engineer @ Audio Analytic.**
   Built web, desktop and shell apps for data analysis and annotation.
@@ -60,11 +62,12 @@ audio, and a penchant for teaching.
 
 [GitHub.](https://github.com/jftsang)
 
-[ORCID (under my deadname)](https://orcid.org/0000-0002-4796-2210).
+[ORCID (under my deadname).](https://orcid.org/0000-0002-4796-2210)
 
 ## Interests
 
-[Music.](music.html) Languages and linguistics.
+[codebar](https://codebar.io) and related causes. [Music.](music.html)
+Languages and linguistics.
 
 ## Miscellany
 

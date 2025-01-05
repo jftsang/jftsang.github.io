@@ -1,0 +1,45 @@
+
+.tabs-container {
+}
+
+/* Hide radio buttons */
+.tab-input {
+  display: none;
+}
+
+/* Style tab labels (buttons) */
+.tab-label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-bottom: none;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: Arial, sans-serif;
+
+  font-style: italic;
+}
+
+.tab-label:hover {
+  background-color: #e1e1e1;
+}
+
+/* Active tab label */
+.tab-label.active {
+  background-color: #666;
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+  font-style: italic;
+}
+/* Tab content */
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+

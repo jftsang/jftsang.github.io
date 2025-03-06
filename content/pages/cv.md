@@ -5,10 +5,9 @@ Joanna Tsang (she/her or they/them)
 
 Preferred email: `j dot m dot f dot tsang at cantab dot net`.
 
-Full-stack software engineer, working in research environments to
-support reliable and efficient data collection and management.
-Background in applied mathematics and fluid dynamics. Enjoys learning
-and teaching.
+Software engineer, working in research environments to support reliable
+and efficient data collection and management.  Background in applied
+mathematics and fluid dynamics. Enjoys learning and teaching.
 
 ## Experience
 
@@ -30,8 +29,8 @@ and teaching.
 
 * **2019–22: Data Engineer, then Senior Data Engineer @ Audio Analytic.**
   Built web, desktop and shell apps for data analysis and annotation.
-  Also responsible for data curation and management as well as designing
-  and implementing data protection and retention policies.
+  Also responsible for data curation as well as designing and
+  implementing data protection and retention policies.
 
   *Keywords: Python, Django, Java, Spring Boot, Postgres, data
   management, GDPR, data modelling, user experience.*
@@ -40,15 +39,16 @@ and teaching.
 
   *Keywords mathematics, physics, research, teaching, C++, MatLab.*
 
-## Skills and highlights
+## Skills
 
-* **General-purpose programming languages:** Python, JavaScript, Java, Bash.
+* **Maths:** dynamical systems, numerical methods, modelling and statistics
+* **Physics:** audio and acoustics, continuum mechanics.
+* **Programming:** Python, JavaScript, Java, Bash.
+
+Full-stack stuff:
 * **Backend frameworks:** FastAPI, Flask, Django, Spring Boot.
-* **Frontend frameworks:** React, although I prefer vanilla JS.
+* **Frontend frameworks:** React, Hyperapp.
 * **Databases:** Postgres, MySQL, graph databases.
-* **Domain knowledge:** Audio and acoustics, applied mathematics,
-  physics (continuum mechanics).
-* **Management:** Scrum and Agile, Jira.
 
 ## Education
 
@@ -60,7 +60,7 @@ and teaching.
 * **Secondary education** (2004–11), including A levels in
   Mathematics, Chemistry, Economics and Physics.
 
-## Selected Publications
+## Publications
 
 [GitHub.](https://github.com/jftsang)
 

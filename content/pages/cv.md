@@ -5,23 +5,22 @@ Joanna Tsang (she/her or they/them)
 
 Preferred email: `j dot m dot f dot tsang at cantab dot net`.
 
-Full-stack platforms engineer, with domain knowledge in mathematics and
-audio, and a penchant for teaching.
+Full-stack software engineer, working in research environments to
+support reliable and efficient data collection and management.
+Background in applied mathematics and fluid dynamics. Enjoys learning
+and teaching.
 
 ## Experience
 
 * **2022–current: Senior Software Engineer @ Meta Reality Labs Research Audio.**
   Leading a team of 3&ndash;5 developers to build software and hardware
-  infrastructure for data collection and engineering, and collaborating
-  closely with an interdisciplinary group including audio researchers
-  and recording engineers.
+  infrastructure for data collection and engineering.
 
-  Designing, building and maintaining a data collection platform for
-  audio research labs (FastAPI), and the supporting data pipelines, and
-  leading a team of 3&ndash;5 developers.
+  Collaborating closely with an interdisciplinary group including audio
+  researchers and audiologists, hardware engineers and data scientists.
 
   *Keywords: Python, FastAPI, JavaScript, React, Node.js, graph
-  databases, NoSQL, mentorship, project management*
+  databases, NoSQL, mentorship, project management.*
 
 * **2015–2024: Supervisor (Teaching Assistant) @ various Cambridge
   colleges** supporting several courses in applied mathematics or
@@ -31,9 +30,11 @@ audio, and a penchant for teaching.
 
 * **2019–22: Data Engineer, then Senior Data Engineer @ Audio Analytic.**
   Built web, desktop and shell apps for data analysis and annotation.
+  Also responsible for data curation and management as well as designing
+  and implementing data protection and retention policies.
 
   *Keywords: Python, Django, Java, Spring Boot, Postgres, data
-  management, GDPR, data modelling.*
+  management, GDPR, data modelling, user experience.*
 
 * **2015–19: Research student @ DAMTP, University of Cambridge.**
 
@@ -56,11 +57,14 @@ audio, and a penchant for teaching.
   currents.
 * **MMath and BA (Hons.), Faculty of Mathematics/Queens' College,
   University of Cambridge** (2011–15). Applied mathematics and fluid dynamics.
-* **Secondary education** (2004–11).
+* **Secondary education** (2004–11), including A levels in
+  Mathematics, Chemistry, Economics and Physics.
 
-## Publications
+## Selected Publications
 
 [GitHub.](https://github.com/jftsang)
+
+[PhD thesis.](https://core.ac.uk/download/pdf/222832504.pdf)
 
 [ORCID (under my deadname).](https://orcid.org/0000-0002-4796-2210)
 

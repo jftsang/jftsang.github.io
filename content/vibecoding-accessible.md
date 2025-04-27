@@ -36,7 +36,7 @@ wider problem with an economic system that rewards such creations. Maybe
 more on that in a future post.
 
 From an educational point of view, however, I don't think vibecoding can
-be a substitute for a well-rounded engineer.
+be a substitute for becoming a well-rounded engineer.
 
 My experience using LLMs is that they are excellent for generating
 prototypes and introducing one to a new technology or framework (or many
@@ -48,7 +48,27 @@ plenty of unnecessary code, or "cargo-cult programming".  When I point
 out these flaws in their solutions, they are usually able to adapt the
 solutions to address those issues but often create new problems.
 
+I know about these considerations, through several years of experience
+and experimentataion, sometimes painful (_e.g._ accidentally dropping
+entire databases or buckets). And there are many more considerations
+that I do not know about, which is when I am very happy to have the
+advice of more senior engineers.
+
+A novice programmer who relies on vibecoding may do a decent job
+creating a prototype and may even become quite comfortable with a
+programming language, but may find it difficult to grow beyond a small
+project or generalise this knowledge. This isn't a new problem, though:
+there are many courses, tutorials or bootcamps that equip students to
+develop apps using frameworks, but do not teach the principles behind
+the frameworks, leading to aforementioned cargo-cult programming.  This
+is an all-too-common antipattern in science education: Timothy Gowers
+describes [shortcomings of high school mathematics
+education](https://gowers.wordpress.com/2012/11/20/what-maths-a-level-doesnt-necessarily-give-you/),
+which bombards students with techniques and facts but does not introduce
+any rigor or foundations, producing students who pass exams but do not
+understand why.
+
 So perhaps there is still a place for us software engineers. But we must
-do better than being code monkeys: in particular, we must develop a
-broader view of engineering that focuses on systems and business
-requirements.
+do better than being code monkeys: in particular, we must adopt an
+attitude towards engineering that focuses on systems and thinks at a
+higher level, about business requirements.

@@ -8,16 +8,24 @@ I was a volunteer and organiser for [codebar](https://codebar.io/) for
 several years and was heavily involved in outreach activities during my
 time at Cambridge. In the face of cuts to DEI initiatives, I believe
 that the lack of diversity at all levels of the tech sector seriously
-harms innovation: besides demographic diversity, there is an
-over-valuing of people from computing and engineering backgrounds, at
-the expense of people from other disciplines, especially the social
-sciences and humanities, who have deep domain knowledge in their own
-fields.
+harms the sector.
 
-Software engineers lack this domain knowledge; instead, by holding a
-monopoly over our skills, we act as middlemen between innovators and
-implementations. This slows down the development process and often
-introduces misunderstandings along the way.
+Besides the obvious lack of demographic diversity (I am the only woman
+full-time employee software engineer in my department, out of 30 or so),
+there is an over-valuation of people from computing and engineering
+backgrounds, at the expense of people from other disciplines, especially
+the social sciences and humanities, who have deep domain knowledge in
+their own fields.  I am fortunate to work in a very interdisciplinary
+team, where I've had the opportunity to learn about a variety of topics
+in acoustics, audiology, music, image processing and data science;
+besides topics in computing.
+
+At the risk of overgeneralising, software engineers lack this domain
+knowledge. Instead, we maintain our value by holding a monopoly over our
+skills, acting as middlemen between innovators and implementations.
+As with all middlemen, while this situation is very lucrative for us, it
+slows down the development process and often introduces
+misunderstandings along the way.
 
 If "vibecoding" ([Wikipedia](https://en.wikipedia.org/wiki/Vibe_coding))
 can indeed reduce the barrier for people from other disciplines to start

@@ -4,6 +4,14 @@ Category: Physics
 Tags: data, math, physics
 Slug: date-time-and-timezones
 
+This is a collection of notes about time and related concepts. A future
+post will talk about the problems of representing time in computer
+systems, especially distributed systems. These notes will be
+occasionally updated.
+
+
+## Introduction
+
 *Time* is taken to be a primitive concept that cannot be defined in
 terms of other phenomena, but can be characterised as a parameter of a
 system that allows the system to change.
@@ -49,12 +57,13 @@ additionally specifying a *date* as well as a *timezone* - often
 implicitly.
 
 
-## Units of timedeltas
+## Units of timedeltas
 
 The basic unit of a timedelta is the second, also the millisecond,
 microsecond, *etc.*, defined in terms of the (constant) frequency of a
-certain atomic oscillator. The *minute*, the *hour* and the *day) are
-defined as 60 seconds, 60 minutes and 24 hours respectively.
+certain atomic oscillator. The *minute*, the *hour* and the *day*) are
+defined as 60 seconds, 60 minutes (3,600 seconds) and 24 hours (86,400
+seconds) respectively.
 
 The *month* and the *year* are not precise units of timedeltas, since
 they vary in length. They are however used informally.
@@ -72,6 +81,10 @@ position of the Sun, the 24-hour day is distinguished from:
 The solar day is longer than 24 hours by a few seconds. The sidereal day
 is about 4 minutes shorter than 24 hours; this difference is due to the
 orbit of the Earth around the Sun.
+
+The rotation of the earth is gradually slowing down. Over the course of
+millennia, the 24-hour day will diverge from these astronomical
+definitions.
 
 
 ## *The* time of day: solar time, civil time and timezones

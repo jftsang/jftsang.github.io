@@ -11,7 +11,8 @@ that the lack of diversity at all levels of the tech sector seriously
 harms the sector.
 
 Besides the obvious lack of demographic diversity (I am the only woman
-full-time employee software engineer in my department, out of 30 or so),
+full-time employee software engineer in my department, out of 30 or so;
+although there are a handful others of research and hardware engineers),
 there is an over-valuation of people from computing and engineering
 backgrounds, at the expense of people from other disciplines, especially
 the social sciences and humanities, who have deep domain knowledge in

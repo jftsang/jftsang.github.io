@@ -1,5 +1,5 @@
 Title: Does vibecoding make coding more accessible?
-Date: 2025-04-28
+Date: 2025-04-27
 Category: Software
 Tags: software-engineering, politics, teaching
 Slug: vibecoding-accessible

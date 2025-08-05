@@ -1,47 +1,53 @@
-Title: Why classes and objects are confusing
-Date: 2024-12-21
+Title: Why learners find classes and objects confusing
+Date: 2025-08-05
 Category: Software
 Tags: python, object-oriented-programming, teaching
 Slug: why-oop-is-confusing
 
 One reason why Python is such a popular and powerful language is that it
-is straightforward to learn.  However, many learners become stuck when
-they come across classes and objects: this is usually met as an
-intermediate subject several chapters into a book, by which time the
-reader will be comfortable with many other aspects of the language and
-may even have developed some sophisticated programs using imperative or
-procedural styles. They may even be comfortable using 'dot notation', as
-is common with libraries such as numpy and pandas.
+is straightforward to learn and make good progress. Learners can quickly
+become comfortable with many aspects of the language, such as control
+flow and functions.
 
-Although the syntax for creating classes, methods and objects is fairly
-straightforward, many learners find the subject confusing. In my
-coaching experience, this is because the use of toy examples leave the
-reader with very little context or motivation, and many of the examples
-can be achieved with a procedural style.
+The first obstacle that many learners come across is when they come
+across classes and objects. This is usually met as an intermediate
+subject several chapters into a book, by which time they may already
+have *used* objects, if they have been using libraries such as pandas.
 
-This essay is aimed at readers who have met the notation for classes and
-objects, and is an attempt to explore some of the design principles that
-motivate their use.
+Learners often find classes and objects difficult because introductory
+courses usually introduce them using toy examples that do not motivate
+their use: often the same effect can be achieved using dictionaries (for
+fields) and functions (for methods). The true utility of classes comes
+when working on a complex project where modularity and abstraction are
+useful for simplifying problems.
 
 
 ## Classes play several roles
-
-One aspect about classes and objects that may cause confusion is that
-they play several distinct, if related, roles.
 
 ### Grouping data
 
 Classes and objects can be used to group related variables into a
 "compound" object:
 ```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+joanna = Person(name="Joanna", age=32)
+```
+The `dataclass` feature (introduced in Python 3.7 and now standard)
+provides a shortcut for constructing many such classes (*inter alia*,
+creating the `__init__` method automatically):
+```python
 @dataclass
 class Person:
     name: str
     age: int
-
-joanna = Person(name="Joanna", age=31)
 ```
-The advantage is that a single object can be passed around between
+
+**Grouping data:**
+One advantage is that a single argument can be passed around between
 functions:
 ```python
 # this
@@ -50,58 +56,30 @@ def describe(p: Person):
 
 describe(joanna)
 ```
-
-rather than:
+This is neater than:
 ```python
 # not this
 def describe(name: str, age: int):
     print(f"{name} is {age} years old")
 
-describe("Joanna", 31)
+describe("Joanna", 32)
 ```
+If we desire to start modelling new attributes of people and including
+them when printing descriptions, we simply need to update the `Person`
+class and the *body* of the `describe` function, rather than the
+*signature* of the `describe` function.
 
-
-<!--
-The usual example is something like this:
+**Alternative: a dictionary:**
+A similar effect might be achieved by using a dictionary:
 ```python
-class Person:
-    def __init__(self, name: str, age: int):
-        self.name: str = name
-        self.age: int = age
+joanna = {"name": "Joanna", "age": 32}
 
-    def say_hello(self):
-        print(f"{self.name} says hello!")
-
-person = Person(name="Joanna", age=30)
-person.say_hello()
+def describe(p: dict):
+    print(f"{p["name"]} is {p["age"]} years old")
 ```
 
-Since this defines a type, it can be used as the argument or return type
-of a function, or even as a parameter to a generic type (although this
-might not be covered in a tutorial):
-```python
-def describe(p: Person) -> str:
-    return f"{p.name} is {p.age} years old"
 
-def find_friends(p: Person) -> Iterable[Person]:
-    ...  # some database operation
-```
-
-When the concept of methods is introduced, these might instead be
-refactored:
-```python
-@dataclass
-class Person:
-    name: str
-    age: int
-
-    def describe(self) -> str: ...
-    def find_friends(self) -> Iterable[Person]: ...
-```
--->
-
-
-### So what is a class?
+## So what is a class?
 
 > Classes provide a means of bundling data and functionality together.
 > Creating a new class creates a new type of object, allowing new
@@ -135,15 +113,6 @@ that most interesting questions about mathematical operations &mdash;
 such as how to do arithmetic, solve equations and perform analytical
 operations like taking limits &mdash; are about their 'extensive'
 properties
-
-
-<!--
-## So, what can we do?
-
-What can we do as educators to improve the way classes and objects are
-introduced?
--->
-
 
 
 ## Recommended reading

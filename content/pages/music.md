@@ -1,11 +1,11 @@
 Title: Music
 Slug: music
 
-My main instruments are singing (bass-baritone) and the alto recorder,
-and I dabble in keyboards and percussion.
+I am an amateur musician. I sing (bass-baritone), and play orchestral percussion (mostly timpani), the alto recorder, and keyboard instruments.
 
-I run the [Cambridge University Recorder
-Ensemble](https://cure.soc.srcf.net/).
+I play with the [University of Cambridge Concert Band](https://uccb.soc.srcf.net/), and MagSoc Chorus and Orchestra.
+
+I used to run the [Cambridge University Recorder Ensemble](https://cure.soc.srcf.net/).
 
 I used to direct the [Queens’ Graduate
 Choir](https://www.facebook.com/QueensGradChoir) in Cambridge, with
@@ -14,8 +14,6 @@ small group dedicated to early music. With these two groups I directed a
 number of major works, some of which have been recorded. You can watch
 the performances below.
 
-I regularly perform with several other groups around Cambridge, and
-elsewhere.
 
 ## Interests and research
 
@@ -43,6 +41,8 @@ in Queens’ Chapel in 2022 (see below).
 
 <link href="/static/videotabs.css" rel="stylesheet">
 
+[MagSoc: Mozart's *Requiem*](https://soundcloud.com/nomadicmathmo/magsoc-2025-mozart-requiem)
+
 ## Compositions and arrangements
 
 Some of my compositions will eventually become available here.
@@ -56,7 +56,15 @@ Some of my compositions will eventually become available here.
 
 ### Vocal works
 
-_**Domine, quis habitabit?**_ An arrangement of Psalm 15 in the Renaissance polyphonic style for SAB trio. ([MuseScore](https://musescore.com/user/26871315/scores/6559549))
+Because of a perennial lack of tenors, most of my compositions for QGC
+have been for SAB.
+
+_**Domine, quis habitabit?**_ An arrangement of Psalm 15 in the
+Renaissance polyphonic style for SAB trio.
+([MuseScore](https://musescore.com/user/26871315/scores/6559549))
+
+**Drop, drop, slow tears** Arrangement of the Orlando Gibbons hymn for
+SAB. ([pdf](/static/dropdrop.pdf))
 
 ### Instrumental works
 

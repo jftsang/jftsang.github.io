@@ -24,10 +24,6 @@ depending on the context and their relationships with the users of each
 name. [Sun Yat-sen was a particularly notable
 example.](https://en.wikipedia.org/wiki/Names_of_Sun_Yat-sen)
 
-I recently had the pleasure of commissioning a number of new computers
-for a new lab network, and as part of that, was tasked with coming up
-with names for these machines.
-
 I like naming things. Names make it possible to refer to something. Good
 names make it possible to refer to something unambiguously. Even better
 names allow you to not only refer to something, but also to place it
@@ -39,10 +35,8 @@ name is a fundamental step in the process of bringing something into
 being.  It is often the first thing that new parents do for their
 children, perhaps even before they are born.
 
-
-The Book of Genesis describes the power to name things, and therefore to
-have mastery (and responsibility) over them, as being given exclusively
-to human beings:
+The Book of Genesis describes the power to name things as being
+exclusively given to human beings:
 
 > So out of the ground the Lord God formed every animal of the field and
 > every bird of the air and brought them to the man to see what he would
@@ -50,7 +44,14 @@ to human beings:
 > its name. The man gave names to all cattle and to the birds of the air
 > and to every animal of the field [...]
 
+...alongside humanity's mastery over, and responsibility for, the world.
 
-Anyway, [RFC 1178](https://www.rfc-editor.org/rfc/rfc1178.html) has some
+Anyway, I recently had the pleasure of commissioning a number of new
+computers for a new lab network, and as part of that, was tasked with
+coming up with names for these machines. I don't know where I'm going
+with this anecdote, I just enjoyed the episode and it was a fun exercise
+that felt good.
+
+[RFC 1178](https://www.rfc-editor.org/rfc/rfc1178.html) has some
 specific guidelines about how to choose a name your computer. Choosing
 the right level of abstraction when naming something is important.

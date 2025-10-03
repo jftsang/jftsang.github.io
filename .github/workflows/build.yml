@@ -21,11 +21,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
           npm install -g less
 
       - name: Build Pelican site
-        run: make publish
+        run: make publish PY="$(which python)"
 
       - name: Copy built site to temporary location
         run: |

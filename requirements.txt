@@ -1,4 +1,4 @@
-# commonmark
+commonmark
 pelican==4.9.1
 # pelican-commonmark
 # pelican-render-math==1.0.3

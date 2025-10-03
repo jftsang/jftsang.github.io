@@ -27,7 +27,14 @@ jobs:
       - name: Build Pelican site
         run: make publish
 
+      - name: Copy built site to temporary location
+        run: |
+          mkdir -p /tmp/site
+          cp -a output/. /tmp/site
+
       - name: Deploy to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -35,8 +42,7 @@ jobs:
           git checkout -B gh-pages
           git reset --hard
           rm -rf ./*
-          cp -r output/* .
-          rm -rf output
+          cp -a /tmp/site/. .
           touch .nojekyll
           git add -A
           git commit -m "Deploy updated site" || echo "No changes to commit"

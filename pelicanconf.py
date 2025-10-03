@@ -46,7 +46,7 @@ RELATIVE_URLS = True
 PLUGIN_PATHS = ['pelican-plugins', 'pelican-commonmark']
 PLUGINS = [
 #    "pelican_commonmark",
-    "render_math",
+    # "render_math",
 ]
 
 MARKDOWN = ['codehilite(noclasses=True, pygments_style=native, linenums=True)', 'extra',

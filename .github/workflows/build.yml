@@ -27,17 +27,18 @@ jobs:
 
       - name: Build Pelican site
         run: |
-          ls
-          ls -R content
           cd theme/static/stylesheet 
           lessc style.less style.min.css && lessc dark-theme.less dark-theme.min.css
           cd ../../..
-          python -m pelican content -o output -s publishconf.py
+          # python -m pelican content -o output -s publishconf.py
+
+      - name: List output directory
+        run: |
+          find output/
 
       - name: Copy built site to temporary location
         run: |
           mkdir -p /tmp/site
-          find output/
           cp -a output/. /tmp/site
 
       - name: Deploy to gh-pages

@@ -30,7 +30,7 @@ jobs:
           cd theme/static/stylesheet 
           lessc style.less style.min.css && lessc dark-theme.less dark-theme.min.css
           cd ../../..
-          # python -m pelican content -o output -s publishconf.py
+          python -m pelican content -o output -s publishconf.py
 
       - name: List output directory
         run: |

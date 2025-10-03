@@ -6,4 +6,4 @@
 	url = https://github.com/getpelican/pelican-plugins
 [submodule "pelican-commonmark"]
 	path = pelican-commonmark
-	url = https://github.com/theskumar/pelican-commonmark
+	url = git@github.com:jftsang/pelican-commonmark.git

@@ -45,7 +45,7 @@ RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['pelican-plugins', 'pelican-commonmark']
 PLUGINS = [
-#    "pelican_commonmark",
+    "pelican_commonmark",
     # "render_math",
 ]
 

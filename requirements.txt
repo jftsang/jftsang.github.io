@@ -1,5 +1,5 @@
 commonmark
 pelican==4.9.1
-pelican-commonmark
-pelican-render-math==1.0.3
-pelican-simple-footnotes==1.0.2
+# pelican-commonmark
+# pelican-render-math==1.0.3
+# pelican-simple-footnotes==1.0.2

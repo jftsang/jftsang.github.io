@@ -43,9 +43,10 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
+PLUGIN_PATHS = ['pelican-plugins', 'pelican-commonmark']
 PLUGINS = [
-    "pelican_commonmark",
-    "pelican-render-math",
+#    "pelican_commonmark",
+    "render_math",
 ]
 
 MARKDOWN = ['codehilite(noclasses=True, pygments_style=native, linenums=True)', 'extra',

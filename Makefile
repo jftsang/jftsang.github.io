@@ -48,7 +48,7 @@ html:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
 styles:
-	cd theme/static/stylesheet && lessc style.less style.min.css && lessc dark-theme.less dark-theme.min.css
+	cd theme/static/stylesheet && lessc style.less style.min.css && lessc dark-theme.less dark-theme.min.css && cd ../../..
 
 clean:
 	[ ! -d "$(OUTPUTDIR)" ] || rm -rf "$(OUTPUTDIR)"

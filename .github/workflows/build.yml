@@ -30,6 +30,7 @@ jobs:
       - name: Copy built site to temporary location
         run: |
           mkdir -p /tmp/site
+          find output/
           cp -a output/. /tmp/site
 
       - name: Deploy to gh-pages
@@ -44,6 +45,7 @@ jobs:
           rm -rf ./*
           cp -a /tmp/site/. .
           touch .nojekyll
+          echo jmft.dev >> CNAME
           git add -A
           git commit -m "Deploy updated site" || echo "No changes to commit"
           git push -f origin gh-pages

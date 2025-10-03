@@ -26,7 +26,10 @@ jobs:
           npm install -g less
 
       - name: Build Pelican site
-        run: python -m pelican content -o output -s publishconf.py
+        run: |
+          ls
+          ls -R content
+          python -m pelican content -o output -s publishconf.py
 
       - name: Copy built site to temporary location
         run: |

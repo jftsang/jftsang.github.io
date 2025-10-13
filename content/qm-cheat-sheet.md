@@ -1,5 +1,9 @@
 Title: Quantum mechanics revision guide
+Date: 2025-10-13
+Category: Physics
+Tags: physics, quantum-mechanics, teaching
 Slug: qm-cheat-sheet
+
 
 This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB *Quantum Mechanics* course. 
 

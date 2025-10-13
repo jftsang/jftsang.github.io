@@ -1,7 +1,7 @@
 Title: The uncertainty principle is obvious to musicians
 Date: 2024-01-09
 Category: Physics
-Tags: physics, music, teaching
+Tags: physics, quantum-mechanics, music, teaching
 Slug: uncertainty-principle-obvious-to-musicians
 
 Most people are introduced to the term 'uncertainty principle' in the context of quantum mechanics. It is usually described as the idea that a particle's position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the other. As such, the idea can be confusing because it is such a stark departure from our classical notion of a particle having definite, if not directly measurable, properties. Philosophical objections aside, the proof of the uncertainty relation is mathematically fairly straightforward, but it relies on the operator definitions of position and momentum, which are not themselves obvious.

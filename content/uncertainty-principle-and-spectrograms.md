@@ -1,7 +1,7 @@
 Title: The uncertainty principle and spectrograms
 Date: 2024-01-09
 Category: Physics
-Tags: physics, music, teaching
+Tags: physics, quantum-mechanics, music, teaching
 Slug: uncertainty-principle-and-spectrograms
 
 In the [previous post](uncertainty-principle-obvious-to-musicians) I discussed how, when measuring the frequency (tempo) of a signal that itself changes in time, there is necessarily a tradeoff between the precision in the measured frequency and precision in the time at which the measurement is taken: A more precise measurement of frequency requires that the sample be taken over a longer period of time. This is particularly well demonstrated in signal processing and spectrograms.

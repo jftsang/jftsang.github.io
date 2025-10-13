@@ -11,26 +11,28 @@ mathematics and fluid dynamics. Enjoys learning and teaching.
 
 ## Experience
 
-* **2022–current: Senior Software Engineer @ Meta Reality Labs Research Audio.**
-  Leading a team of 3&ndash;5 developers to build software and hardware
-  infrastructure for data collection and engineering.
-
-  Collaborating closely with an interdisciplinary group including audio
-  researchers and audiologists, hardware engineers and data scientists.
-
-  *Keywords: Python, FastAPI, JavaScript, React, Node.js, graph
-  databases, NoSQL, mentorship, project management.*
-
-* **2015–2024: Supervisor (Teaching Assistant) @ various Cambridge
+* **2015–current: Supervisor (Teaching Assistant) @ various Cambridge
   colleges** supporting several courses in applied mathematics or
-  theoretical physics.
+  theoretical physics. Please see the Teaching page for further
+  information.
 
   *Keywords: mathematics, physics, mentorship, teaching.*
+
+* **2022–25: Senior Software Engineer @ Meta Reality Labs Research Audio.**
+  Following the acquisition of Audio Analytic by Meta RL Research, I
+  continued to develop platforms for data management and recording. I
+  eventually led a team of 3&ndash;5 developers to build up our lab
+  spaces, working closely with audio engineers, embedded engineers,
+  audiologists and data scientists.
+  
+  *Keywords: Python, FastAPI, JavaScript, React, Node.js, graph
+  databases, NoSQL, mentorship, project management.*
 
 * **2019–22: Data Engineer, then Senior Data Engineer @ Audio Analytic.**
   Built web, desktop and shell apps for data analysis and annotation.
   Also responsible for data curation as well as designing and
-  implementing data protection and retention policies.
+  implementing data protection and retention policies. The company,
+  including the dataset, was eventually acquired by Meta.
 
   *Keywords: Python, Django, Java, Spring Boot, Postgres, data
   management, GDPR, data modelling, user experience.*

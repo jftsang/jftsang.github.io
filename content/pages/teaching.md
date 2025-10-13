@@ -1,6 +1,29 @@
 Title: Teaching
 Slug: teaching
 
-I teach, or have taught, a number of courses in the [Mathematical Tripos](https://www.maths.cam.ac.uk/undergrad/undergrad) at Cambridge. In recent years I have taught courses in Classical Mechanics, Quantum Mechanics, Fluid Dynamics, Mathematical Biology, Mathematical Methods, Calculus of Variations, and Probability.
+I am open to taking new students at the moment, please contact me (preferably by email) to discuss more.
 
-I also offer 1-1 or group teaching for A level mathematics and further mathematics, or for university preparation (the [STEP maths exam](https://www.admissionstesting.org/for-test-takers/step/about-step/)); as well as coaching in Python (and occasionally other languages too).
+## Cambridge teaching
+
+I teach, or have taught, a number of courses in the [Mathematical Tripos](https://www.maths.cam.ac.uk/undergrad/undergrad) at Cambridge. 
+
+I currently offer supervisions in the following courses:
+
+* Fluid Dynamics I
+* Fluid Dynamics II
+* Quantum Mechanics
+* Variational Principles (calculus of variations)
+
+and in recent years have also taught courses including
+
+* Dynamics and Relativity
+* Mathematical Biology
+* Methods (calculus, Fourier transforms, PDEs)
+* Probability
+
+
+## Tutoring
+
+I offer 1-1 or group teaching for A level mathematics and further mathematics, and for university preparation including the [STEP exam](https://www.admissionstesting.org/for-test-takers/step/about-step/))
+
+I teach Python and occasionally other languages.

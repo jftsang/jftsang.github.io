@@ -51,6 +51,8 @@ Research engineer working in full stack and taking a holistic and interdisciplin
 
 ## Selected publications
 
+Website (essays on software, teaching, maths and physics, *etc.*): <https://jmft.dev>
+
 GitHub: <https://github.com/jftsang>
 
 PhD thesis: <https://core.ac.uk/download/pdf/222832504.pdf>

@@ -15,21 +15,21 @@ Let $V$ be an inner product space over $\mathbb{C}$.
 
 We use *ket* notation for vectors: $|\psi\rangle \in V$
 
-The **inner product** between two states is notated as $\langle\phi|\psi\rangle$. This satisfies conjugate symmetry:
+The **inner product** between two vectors is notated as $\langle\phi|\psi\rangle$. This satisfies conjugate symmetry:
 $$
 \overline{\langle\phi|\psi\rangle} = \langle\psi|\phi\rangle
 $$
 
-Elements of the **dual space** $V^*$ use *bra* notation $\langle\phi|$ and act on $|\psi\rangle \in V$ by 
+Elements of the **dual space** $V^*$ use *bra* notation $\langle\phi|$ and this acts on $|\psi\rangle \in V$ by 
 $$\langle\phi|: V \rightarrow \mathbb{C} : |\psi\rangle \mapsto \langle\phi|\psi\rangle$$
 
  Note $\langle \mathrm{bra}|\mathrm{ket}\rangle$  form a bra(c)ket.
 
-Conjugate symmetry means that the *bra* corresponding to $\alpha|\psi\rangle$ is $\overline\alpha\langle\psi|$. 
+It can be shown that $V$ and $V^*$ are isomorphic and that the isomorphism is "natural", *i.e.* does not depend on a choice of basis. Conjugate symmetry means that the *bra* corresponding to $\alpha|\psi\rangle$ is $\overline\alpha\langle\psi|$.  
 
 ## Linear operators and adjoints
 
-**Linear operators** $L: V \rightarrow V$  apply to *kets* as $|\psi\rangle \mapsto L |\psi\rangle$. 
+**Linear operators** $L: V \rightarrow V$  acts on *kets* as $|\psi\rangle \mapsto L |\psi\rangle$. 
 
 The **adjoint operator** $L^\dagger: V^* \rightarrow V^*$ acts on *bras* by $\langle\phi| \mapsto \langle\phi| L^\dagger$. 
 
@@ -40,7 +40,7 @@ An operator is **self-adjoint** if
 $$
 \langle\psi|L^\dagger|\phi\rangle = \langle\psi|L|\phi\rangle
 $$
-It is technically illegal to write $L = L^\dagger$ since $L$ is an endomorphism on $V$ but $L^\dagger$ is on $V^*$, but the inner product notation allows us to gloss over this.
+It is technically illegal to write $L = L^\dagger$ since $L$ is an endomorphism on $V$ but $L^\dagger$ is on $V^*$, but the inner product notation allows us to gloss over this (the two spaces are isomorphic).
 
 
 **Properties of self-adjoint operators:**
@@ -53,7 +53,35 @@ This means:
 * we can use the eigenvectors as a basis
 * we can pick the basis to be orthonormal, even if there is a repeated eigenvalue (Gram–Schmidt)
 
-Orthonormality: $\langle m | n \rangle = \delta_{mn}$
+**Properties of orthonormal bases:**
+
+Given an orthonormal basis $|n\rangle$ the dual basis on $V^*$ is $\langle n|$.
+
+$$\langle m | n \rangle = \delta_{mn}$$
+
+Projection (generalisation of Fourier coefficient formula):
+$$
+|\psi\rangle = \sum_n c_n|n\rangle \implies c_n = \langle n|\psi\rangle 
+$$
+Sometimes easier to work with non-normalised basis, in which case:
+$$
+c_n = \frac{\langle n |\psi\rangle}{\langle n | n \rangle}
+$$
+
+Conjugate symmetry:
+$$
+\langle\psi|= \sum_n \overline{c_n} \langle n|
+$$
+
+Inner products:
+$$
+\begin{align}
+|\phi\rangle &= \sum_n b_n|n\rangle \\
+|\psi\rangle &= \sum_n c_n|n\rangle \\
+\implies \langle\phi|\psi\rangle &= \sum_n \overline{b_n} c_n
+\end{align}
+$$
+
 
 
 ## Principles of quantum mechanics
@@ -63,7 +91,7 @@ Orthonormality: $\langle m | n \rangle = \delta_{mn}$
 * finite dimensional: spin states
 * infinite dimensional: wavefunctions, function spaces
 
-Magnitudes and overall phase $e^{i\varphi}$ always cancel out when calculating physical quantities, so wlog can assume that states are normalised $\langle\psi|\psi\rangle=1$ .
+A **normalised state** has $\langle\psi|\psi\rangle=1$ . Magnitudes and any overall phase $e^{i\varphi}$ always cancel out when calculating physical quantities. So states $|\psi\rangle$ and $c|\psi\rangle$ are equivalent for $c\in\mathbb{C}$.
 
 **Observable quantities** correspond to self-adjoint linear operators:
 * position $\mathbf{x}$ $\rightarrow$ position operator $\hat{\mathbf{x}}$
@@ -75,21 +103,16 @@ Magnitudes and overall phase $e^{i\varphi}$ always cancel out when calculating p
 
 These can be vector quantities but for 1D systems we can conflate $\mathbf{x}$ and $x$. Often drop the hats to simplify notation. 
 
-**Eigenbasis:** For $L$ self-adjoint we have a complete set of eigenvectors $|n\rangle$ with corresponding eigenvalues $\lambda_n \in\mathbb{R}$ not necessarily distinct. Completeness means we can pick an orthonormal basis and write
+**Eigenbasis:** For $L$ self-adjoint we have a complete set of eigenvectors $|n\rangle$ with corresponding eigenvalues $\lambda_n \in\mathbb{R}$ not necessarily distinct. Write
 $$
 |\psi\rangle = \sum_n c_n |n\rangle, \qquad c_n = \langle n|\psi\rangle.
 $$
-The corresponding dual is
-$$
-\langle\psi| = \sum_n \overline{c_n} \langle n|.
-$$
-
 Normalisation implies
 $$
 \langle\psi|\psi\rangle = \sum_n |c_n|^2 = 1.
 $$
 
-Using the eigenbasis is nice because we can apply $L$ simply by multiplying:
+Using the eigenbasis is nice because we can apply $L$ simply by multiplying each eigenstate by the corresponding eigenvalue:
 $$
 L|\psi\rangle = \sum_n c_n \lambda_n |n\rangle
 $$
@@ -97,8 +120,13 @@ $$
 **Observations are probabilistic.**
 
 * The possible results of an observation of $L$ are drawn from the eigenvalues $\lambda_n$ of $L$. 
-* The probability of measuring $\lambda_n$ is given by Born's rule: $p(n) = |c_n|^2$. 
+* The probability of measuring $\lambda_n$ is given by **Born's rule**: $p(n) = |c_n|^2$. 
 * If $\lambda_n$ is a repeated eigenvalue then each of these contributes a chance to measure that value.
+
+Often easier to calculate with the non-normalised version of Born's rule:
+$$
+p(n) = \frac{|\langle n|\psi\rangle|^2}{\langle n|n\rangle \langle\psi|\psi\rangle}
+$$
 
 **Observations collapse the state.** 
 
@@ -111,11 +139,11 @@ In particular, if $\lambda_n$ is non-degenerate (i.e. eigenspace has dimension 1
 
 Assume that time evolution is governed by a linear operator:
 $$
-|\psi(t)\rangle = U(t) |\psi(0)\rangle
+|\psi(t)\rangle = U(t)|\psi(0)\rangle
 $$
 $U(0) = I$ must be the identity operator.
 
-**Conservation of information** implies that orthogonal states need to remain orthogonal, and more generally, inner products need to be conserved. This implies that $U(t)$ must be unitary, $U U^\dagger = U^\dagger U = I$.
+**Conservation of information** implies that orthogonal states need to remain orthogonal. This implies that $U(t)$ must be unitary, $U U^\dagger = U^\dagger U = I$.
 
 Taking the limit $t \rightarrow 0$ we can write
 $$
@@ -123,20 +151,19 @@ U(t) = I - \frac{i}{\hbar}t \hat{H} + O(t^2)
 $$
 for some self-adjoint operator $\hat{H}$ called the *Hamiltonian*.
 
-The quantity $\hbar$ is the reduced Planck constant; it has units of angular momentum and provides a conversion factor.  
+$\hbar$ is the **reduced Planck constant**; it has units of angular momentum $\mathrm{kg\, m^2\, s^{-1}} = \mathrm{J \cdot s}$ and provides a conversion factor.  
 
-Some algebra/calculus then gives the **time-dependent Schrodinger equation**:
+Some algebra gives the **time-dependent Schrodinger equation**:
 $$
 i \hbar \frac{\mathrm{d}|\psi\rangle }{\mathrm{d}t}= \hat{H} |\psi\rangle
 $$
 
-The form of the Hamiltonian $\hat{H}$ does not come from first principles but is chosen to match experimental results and to have analogy (inspiration?) with classical mechanics. 
+The Hamiltonian $\hat{H}$ does not come from first principles but is chosen to match experimental results, and often by analogy to classical mechanics. 
 
-For non-relativistic particles in a potential, the Hamiltonian may be constructed by direct analogy with classical mechanics.
 
 ## Energy states
 
-Look for **eigenstates** of $\hat H$ by solving the **time-independent Schrodinger equation**:
+Look for **energy eigenstates** by solving the **time-independent Schrodinger equation**:
 $$
 \hat H |\chi_n\rangle = E_n |\chi_n\rangle
 $$
@@ -151,19 +178,76 @@ $$
 $$
 
 
-## Uncertainty principle and commutators
+## Commutators
 
-More background: [[uncertainty-principle-and-spectrograms]], [[uncertainty-principle-obvious-to-musicians]].
 
-The **commutator** of two operators is:
+**Commutator** of two operators:
 $$
 [A, B] = AB - BA
 $$
-**Commuting operators have a shared eigenbasis.** If $[A,B] = 0$ then it is possible to find an orthonormal basis $|n\rangle$ such that each $|n\rangle$ is an eigenvector of both $A$ and $B$.
+**Commuting operators have a shared eigenbasis.** If $[A,B] = 0$ then it is possible to find an orthonormal basis $|n\rangle$ such that each $|n\rangle$ is an eigenvector of both $A$ and $B$. In other words the eigenspaces "line up" with each other.
+
+Important commutator identities:
+
+Linearity
+$$
+[A+B, C] = [A,C] + [B,C]
+$$
+
+Anticommutativity
+$$
+[B, A] = -[A, B]
+$$
+
+Products (Leibniz rule)
+$$
+\begin{align}
+[A, BC] &= ABC - BCA \\
+        &= ABC - BAC + BAC - BCA \\
+        &= [A, B] C - B [A, C]
+\end{align}
+$$
+Powers
+$$
+[A, B^n] = [A, B] B^{n-1} + B[A, B] B^{n-2} + \dots + B^{n-1}[A, B]
+$$
+If $[A, B]$ commutes with $B$ (e.g. is a constant):
+$$
+[A, B^n] = n B^{n-1}  [A, B]
+$$
+e.g. $[\hat{x}, \hat{p}^2] = 2i\hbar \hat{p}$
+
+Jacobi identity:
+$$
+[A, [B, C]] + [B, [C, A]] + [C, [A, B]] = 0
+$$
+
+Canonical relations:
+$$
+[\hat{x}, \hat{p}] = i\hbar
+$$
+Angular momentum components (also spin)
+$$
+[L_i, L_j] = i\hbar\, \epsilon_{ijk} \,L_k
+$$
+
+
+More background: [[uncertainty-principle-and-spectrograms]], [[uncertainty-principle-obvious-to-musicians]].
+
+measurement of $A$ $\implies$ state collapse to an eigenstate of $A$
+
+If $[A, B] \neq 0$ then the resulting eigenstate is not an eigenstate of $B$
 
 
 
-## Particle in a 1D potential
+**Uncertainty** $\sigma_A^2 = (\Delta A)^2 = \langle A^2\rangle - \langle A\rangle^2$
+
+**Uncertainty principle (general)** $\sigma_A \sigma_B \geq \frac{1}{2} \left|\langle [A, B]\rangle\right|$
+
+**Position-momentum** $\sigma_x \sigma_p \geq \frac{1}{2}\hbar$
+
+
+## Particle in a 1D potential, QHO
 
 For a *classical* particle of mass $m$ in a 1D potential, the energy is
 $$
@@ -172,12 +256,58 @@ $$
 where $p$ is the momentum and $V$ is the potential. (In general $V$ may be a function of $t$, but usually is not in problems that we solve.)
 
 
-
+**Quantum harmonic oscillator:**
 $$
 \hat H = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2 \hat{x}^2
 $$
 
-Schrodinger equation:
+TISE:
 $$
 E\psi= \frac{-\hbar^2}{2m} \frac{d^2\psi}{dx^2} + \frac{1}{2}m\omega^2 {x}^2 \psi
 $$
+Scales: 
+$$
+\begin{align}
+& E \sim \frac{\hbar^2}{m r^2} \sim m\omega^2 r^2 \\
+\implies &
+E \sim \hbar\omega, \quad r \sim \left(\frac{\hbar}{m\omega}\right)^{1/2}
+\end{align}
+$$
+
+Nondimensional form:
+$$
+E\psi = \frac{-1}{2}\frac{d^2\psi}{dx^2} + \frac{1}{2}x^2\psi
+$$
+Look for solutions of the form 
+$$
+\begin{align}
+\psi(x) &= f(x) \, e^{-x^2/2} \\
+\psi'(x) &= \left(f'(x) - x f(x)\right) \,  e^{-x^2/2} \\
+\psi''(x) &= \left(f''(x) - 2xf(x) + (x^2 - 1) f(x)\right) \,  e^{-x^2/2}
+\end{align}
+$$ 
+Frobenius solution + convergence $\implies$ 
+$$
+E = n + \frac{1}{2} \qquad n = 1, 2, 3, \dots
+$$
+with $f$ a polynomial of degree $n$. 
+
+**Ladder operators**
+
+## Hydrogen atom
+
+**Spherical harmonics**
+$$
+Y_l^m(\theta, \varphi) = N e^{im\varphi} \, P_l^m(\cos\theta)
+$$
+$$
+l = 0, 1, 2,\dots, \quad m =-l, -l+1, \dots, l
+$$
+where $N$ is a normalisation and $P_l^m$ is an associated Legendre polynomial (not actually a polynomial!)
+
+**Spherical harmonics are simultaneous eigenfunctions** of $\hat{\mathbf L}^2$ and $\hat{L}_z$ obeying
+$$
+\hat{\mathbf L}^2 Y_l^m = \hbar^2 \, l (l+1) \, Y_l^m \qquad \hat{L}_x Y_l^m = \hbar\, m \,Y_l^m
+$$
+
+These operators also commute with $\hat{H}$ when the potential is spherically symmetric.

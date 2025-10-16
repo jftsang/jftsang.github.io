@@ -1,7 +1,7 @@
 Title: Naming is power
 Date: 2025-09-21
 Category: Software
-tags: religion
+tags: philosophy-and-religion
 Slug: naming-power
 
 Many cultural and religious traditions place a lot of importance in

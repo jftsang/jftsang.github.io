@@ -7,7 +7,7 @@ Slug: cv
 
 Preferred email: `j.m.f.tsang@cantab.net`
 
-Research engineer working in full stack and taking a holistic and interdisciplinary approach to software design, especially databases. Background in applied mathematics and fluid dynamics with a strong grounding in computer science; and a working knowledge of audio and acoustics and machine learning. Enjoys learning and teaching and mentorship.
+Research engineer working in full stack and taking a holistic and interdisciplinary approach to problems, especially data management and user experience. Background in applied mathematics and physics; and a working knowledge of audio and acoustics, computer science and machine learning. Enjoys learning and teaching and mentorship. Looking for projects that apply these skills to interesting social and economic issues.
 
 ## Experience
 
@@ -17,7 +17,7 @@ Research engineer working in full stack and taking a holistic and interdisciplin
   *Keywords: mathematics, physics, mentorship, teaching, time management.*
 
 * **2022–25: Senior Software Engineer @ Meta Reality Labs Research Audio.**
-  Following the acquisition of Audio Analytic by Meta RL Research, I   continued to develop platforms for data management and recording. I   eventually led a team of 3&ndash;5 developers to build up our lab   spaces, working closely with audio engineers, embedded engineers, audiologists and data scientists, to build a system that supported not only audio but also cameras and other sensors. As a part of the "Better Engineering" initiative I also promoted good software practices at internal conferences. I left for personal reasons and to grow my teaching, volunteering and open-source portfolios.
+  Following the acquisition of Audio Analytic by Meta RL Research, I   continued to develop platforms for data management and recording. I   eventually led a team of 3&ndash;5 developers to build up our lab   spaces, working closely with audio engineers, embedded engineers, audiologists and data scientists, to build a system that supported not only audio but also cameras and other sensors. As a part of the "Better Engineering" initiative I also promoted modern, maintainable and scalable software practices beyond my own team, including at internal symposia. I left for personal reasons and to grow my teaching, volunteering and open-source portfolios.
   
   *Keywords: Python, FastAPI, JavaScript, React, Node.js, data engineering, graph databases, NoSQL, mentorship, project management.*
 
@@ -28,7 +28,22 @@ Research engineer working in full stack and taking a holistic and interdisciplin
 
 * **2015–19: Research student @ DAMTP, University of Cambridge.**
 
-  *Keywords mathematics, physics, research, teaching, C++, MatLab.*
+  *Keywords: mathematics, physics, research, teaching, C++, MatLab.*
+
+
+## Volunteering, societies, *etc.*
+
+* **2022–current: Codebar Cambridge organizer and coach.**
+  As one of the organizers, I am responsible for organising workshops in Cambridge, including publicity and fundraising and seeking sponsorships.
+
+  *Keywords: fundraising, leadership, mentorship.*
+
+* **2018–2024: Director of Queens' Graduate and Chamber Choirs**
+  Organised several large projects, usually fundraising for local homelessness charities.
+  
+  *Keywords: leadership, project management.*
+
+
 
 ## Skills
 
@@ -43,10 +58,10 @@ Research engineer working in full stack and taking a holistic and interdisciplin
 
 ## Education
 
-* **PhD, Department of Applied Mathematics and Theoretical Physics,
-  University of Cambridge** (2015–19). Numerical simulations of granular currents.
-* **MMath and BA (Hons.), Faculty of Mathematics/Queens' College,
-  University of Cambridge** (2011–15). Applied mathematics and fluid dynamics.
+* **PhD, Department of Applied Mathematics and Theoretical Physics, University of Cambridge** (2015–19). Numerical simulations of granular currents.
+  
+* **MMath and BA (Hons.), Faculty of Mathematics/Queens' College, University of Cambridge** (2011–15). Applied mathematics and fluid dynamics.
+  
 * **Secondary education** (2004–11), including A levels in Mathematics and Further Mathematics, Chemistry, Economics and Physics.
 
 ## Selected publications

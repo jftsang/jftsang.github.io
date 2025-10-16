@@ -128,11 +128,17 @@ $$
 p(n) = \frac{|\langle n|\psi\rangle|^2}{\langle n|n\rangle \langle\psi|\psi\rangle}
 $$
 
+Note that the probabilistic interpretation leads to serious philosophical problems! So this can't be the full story, although its predictions agree with experiment. [Looking Glass Universe has an excellent video on this.](https://youtu.be/hIvuxx14zCk?si=tWbl6DESqfj-T8aQ) 
+
 **Observations collapse the state.** 
 
-The state changes instantaneously after an observation. If the result of the measurement is $\lambda_n$, then the state collapses onto its projection onto the corresponding eigenspace (up to normalization).
+The state changes instantaneously during an observation. If the result of the measurement is $\lambda_n$, then the state collapses onto its projection onto the corresponding eigenspace (up to normalization).
 
 In particular, if $\lambda_n$ is non-degenerate (i.e. eigenspace has dimension 1) then the state after the measurement is $|n\rangle$.
+
+This means that the state $|\psi\rangle$ isn't fully observable – because observations destroy information. (Again, there are serious problems with this interpretation.) 
+
+Neither is any overall phase in $e^{i\varphi}|\psi\rangle$, since those phases cancel when you take quantities such as $\langle\psi|\psi\rangle$.  
 
 
 ## Time-evolution

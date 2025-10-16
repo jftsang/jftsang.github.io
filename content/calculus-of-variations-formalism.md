@@ -78,11 +78,11 @@ The point of the norm is that it now makes sense to talk about the "size" of $r$
 
 ## The variation $\delta F$
 
-Now, we want to see what the "derivative" of $F[y]$ is at the "point" $y$, where a "point" $y \in U$ is a function. We call such a By analogy with the finite-dimensional case, we first consider the variation of $F$ along a certain "direction" $\eta$ – this direction is also a member of $U$. So we consider the behaviour of
+Now, we want to see what the "derivative" of $F[y]$ is at the "point" $y$, where a "point" $y \in U$ is a function. By analogy with the finite-dimensional case, we first consider the variation of $F$ along a certain "direction" $\eta$ – this direction is also a member of $U$. So we consider the behaviour of
 $$
 \Delta_y [\eta] = F[y + \eta] - F[y]
 $$
-in the limit $||\eta|| \rightarrow 0$ and we hope that this is, to leading order, linear in $\eta$.  
+in the limit $||\eta|| \rightarrow 0$ and we hope that this is, to leading order, linear in $\eta$.  We consider this to be a functional in $\eta$, although it also depends on the $y$ where we are evaluating it.
 
 By standard derivations (expand and IBP) we get
 $$

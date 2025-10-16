@@ -1,7 +1,7 @@
 Title: Historical and philosophical contexts of the calculus of variations
 Date: 2023-12-19
 Category: Physics
-Tags: math, physics, teaching
+Tags: math, physics, teaching, calculus-of-variations
 Slug: calculus-of-variations-history
 
 

@@ -1,12 +1,13 @@
 Title: Software
 slug: software
 
-[<img src="/images/software-mdpm.png" class="icon">**MercuryDPM**](https://www.mercurydpm.org/) numeric simulations of granular materials
+**[idu](https://github.com/jftsang/idu)**  
+interactive disk usage analysis
 
 [<img src="/images/software-pypew.png" class="icon">**pypew**](https://pypew.herokuapp.com/) interactive ecclesiastical calendar
 
-**[idu](https://github.com/jftsang/idu)**  
-interactive disk usage analysis
+[<img src="/images/software-mdpm.png" class="icon">**MercuryDPM**](https://www.mercurydpm.org/) numeric simulations of granular materials
+
 
 [<img src="/images/software-hymnsmash.png" class="icon"> 
 **HymnSmash**](https://hymnsmash.herokuapp.com/) rank your favourite hymns
@@ -16,11 +17,12 @@ interactive disk usage analysis
 <html>
 <style>
 img.icon {
-max-width: 75px;
+object-fit: contain;
+vertical-align: middle;
+width: 75px;
 max-height: 75px;
 border-radius: 100%;
 margin: 20px;
-
 }
 </style>
 </html>

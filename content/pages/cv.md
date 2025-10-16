@@ -7,7 +7,7 @@ Slug: cv
 
 Preferred email: `j.m.f.tsang@cantab.net`
 
-Research engineer working in full stack and taking a holistic and interdisciplinary approach to problems, especially data management and user experience. Background in applied mathematics and physics; and a working knowledge of audio and acoustics, computer science and machine learning. Enjoys learning and teaching and mentorship. Looking for projects that apply these skills to interesting social and economic issues.
+Research engineer working in full stack and taking a holistic and interdisciplinary approach to problems, especially data management and user experience. Background in applied mathematics and physics; and a working knowledge of audio and acoustics, computer science and machine learning. Enjoys learning and teaching and mentorship. Looking for projects that apply these skills to interesting and meaningful social and economic causes.
 
 ## Experience
 
@@ -19,7 +19,7 @@ Research engineer working in full stack and taking a holistic and interdisciplin
 * **2022–25: Senior Software Engineer @ Meta Reality Labs Research Audio.**
   Following the acquisition of Audio Analytic by Meta RL Research, I   continued to develop platforms for data management and recording. I   eventually led a team of 3&ndash;5 developers to build up our lab   spaces, working closely with audio engineers, embedded engineers, audiologists and data scientists, to build a system that supported not only audio but also cameras and other sensors. As a part of the "Better Engineering" initiative I also promoted modern, maintainable and scalable software practices beyond my own team, including at internal symposia. I left for personal reasons and to grow my teaching, volunteering and open-source portfolios.
   
-  *Keywords: Python, FastAPI, JavaScript, React, Node.js, data engineering, graph databases, NoSQL, mentorship, project management.*
+  *Keywords: Python, numpy, pandas, FastAPI, JavaScript, React, Node.js, data engineering, graph databases, NoSQL, mentorship, project management.*
 
 * **2019–22: Data Engineer, then Senior Data Engineer @ Audio Analytic.**
   Built web, desktop and shell apps for data analysis and annotation. Also responsible for curating our dataset of 14 million audio samples, and designing and implementing data protection and retention policies. The company, including the dataset, was eventually acquired by Meta.
@@ -39,7 +39,7 @@ Research engineer working in full stack and taking a holistic and interdisciplin
   *Keywords: fundraising, leadership, mentorship.*
 
 * **2018–2024: Director of Queens' Graduate and Chamber Choirs**
-  Organised several large projects, usually fundraising for local homelessness charities.
+  Organised and coordinated several large projects, usually fundraising for local homelessness charities.
   
   *Keywords: leadership, project management.*
 
@@ -47,12 +47,11 @@ Research engineer working in full stack and taking a holistic and interdisciplin
 
 ## Skills
 
-* **Maths:** dynamical systems, numerical methods, modelling and statistics
-* **Physics:** audio and acoustics, continuum mechanics.
-* **Programming:** Python, JavaScript, Java, Bash.
-* **Backend:** FastAPI, Flask, Django, Spring Boot.
-* **Frontend:** React, Hyperapp.
-* **Databases:** Postgres, MySQL, graph databases.
+* **General:** Teaching. Scientific writing.
+* **Maths and Physics:** Audio and acoustics. Continuum mechanics. Dynamical systems. Numerical methods and scientific computing. Statistics and data science.
+* **Programming:** Python, JavaScript, Bash. Working knowledge of Java, C and C++.
+* **Backend:** FastAPI, Flask, Django, Spring Boot. Postgres, MySQL, graph databases.
+* **Frontend:** HTML, CSS, Less, Node, React, Hyperapp.
 * **Devops:** AWS. Docker. Linux systems. CI systems.
 * **Project Management:** Jira. Scrum. Kanban.
 

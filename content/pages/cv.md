@@ -49,7 +49,7 @@ Research engineer working in full stack and taking a holistic and interdisciplin
 
 * **General:** Teaching. Scientific writing.
 * **Maths and Physics:** Audio and acoustics. Continuum mechanics. Dynamical systems. Numerical methods and scientific computing. Statistics and data science.
-* **Programming:** Python, JavaScript, Bash. Working knowledge of Java, C and C++.
+* **Programming:** Python, JavaScript and TypeScript, Bash. Working knowledge of Java, C and C++.
 * **Backend:** FastAPI, Flask, Django, Spring Boot. Postgres, MySQL, graph databases.
 * **Frontend:** HTML, CSS, Less, Node, React, Hyperapp.
 * **Devops:** AWS. Docker. Linux systems. CI systems.

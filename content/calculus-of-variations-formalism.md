@@ -16,9 +16,10 @@ F[y] = \int_a^b f(x, y, y')\, \mathrm{d}x
 $$
 We are concerned with scalar-valued functionals where $f$ and $F$ take real values. 
 
-The idea is that $y$ lives in some function space $U$, e.g. differentiable functions on $(a, b)$. This $U$ is a vector space over $\mathbb{R}$ meaning that it is legal to write down expressions like $y = \lambda y_1 + \mu y_2$ where $\lambda, \mu \in \mathbb{R}$ are scalars. The expression $f(x, y, y')$ is arbitrary, and in general nonlinear. 
+The idea is that the function space $y$ lives in some function space $U$, e.g. differentiable functions on $(a, b)$. This $U$ is a vector space over $\mathbb{R}$ meaning that it is legal to write down expressions like $y = \lambda y_1 + \mu y_2$ where $\lambda, \mu \in \mathbb{R}$ are scalars. The expression $f(x, y, y')$ is arbitrary, and in general nonlinear. 
 
-Then the functional $F: U \rightarrow \mathbb{R}$ is a function from a function space $U$ to $\mathbb{R}$. Our goal is to understand what it means to differentiate such functions in $U$.
+The functional $F: U \rightarrow \mathbb{R}$ is a function from a function space $U$ to $\mathbb{R}$. Our goal is to understand what it means to differentiate such functions in $U$, "with respect to $y$".
+
 
 ## Differentiation in finite-dimensional vector spaces
 
@@ -64,7 +65,7 @@ It can be shown that this satisfies the requirements to be an inner product over
 
 The converse is trickier. In the finite-dimensional case, we used the fact that any linear function of a vector $n$ must take the form $g \cdot n$ for some vector $g$. This is *not* the case in the space $U$: a scalar-valued linear functional $L[s]$ does not necessarily need to be $r \cdot s$ for some $r \in U$. Simple counterexample, function evaluation $L[s] = s(c)$ at some $c \in (a, b)$. 
 
-In the finite dimensional case a vector space $V$ is isomorphic to $V^*$ and so we can identify $g$ as a member of $V$ corresponding to the map $n \mapsto g\cdot n$. The problem is that this is not the case in the function space $U$. See [Wikipedia](https://en.wikipedia.org/wiki/Dual_space#Continuous_dual_space) for further details.
+In the finite dimensional case a vector space $V$ is isomorphic to $V^*$ and so we can identify $g$ as a member of $V$ corresponding to the map $n \mapsto g\cdot n$. The problem is that this is not the case in the function space $U$, where the concept of a "dual space" requires a bit more care to define. See [Wikipedia](https://en.wikipedia.org/wiki/Dual_space#Continuous_dual_space) for further details.
 
 It turns out that such difficulties can be overcome by introducing the concept of a [distribution](https://en.wikipedia.org/wiki/Distribution_(mathematical_analysis)) – including the ever-popular Dirac delta function, which is not actually a function but a distribution. In the example above, we could take $r(x) = \delta(x-c$) to get our functional for evaluating at $c$. 
 
@@ -78,7 +79,7 @@ The point of the norm is that it now makes sense to talk about the "size" of $r$
 
 ## The variation $\delta F$
 
-Now, we want to see what the "derivative" of $F[y]$ is at the "point" $y$, where a "point" $y \in U$ is a function. By analogy with the finite-dimensional case, we first consider the variation of $F$ along a certain "direction" $\eta$ – this direction is also a member of $U$. So we consider the behaviour of
+Now we want to see what the "derivative" of $F[y]$ is at the "point" $y$, where a "point" $y \in U$ is a function. By analogy with the finite-dimensional case, we first consider the variation of $F$ along a certain "direction" $\eta$ – this direction is also a member of $U$. So we consider the behaviour of
 $$
 \Delta_y [\eta] = F[y + \eta] - F[y]
 $$
@@ -139,7 +140,7 @@ As for the second variation $\delta^2 F$, this means expanding to a second order
 $$
 F[y + \eta] = F[y] + \delta F [\eta] + \delta^2 F[\eta] + o\left(||\eta||^2 \right)
 $$
-for some functional $\delta^2 F[\eta]$ (again this implicitly depends on the $y$ where we are evaluating); and we insist that $\delta^2 F[\eta]$ is proportional to $||\eta||^2$. This is simply a generalisation of Taylor's theorem.
+for some functional $\delta^2 F[\eta]$ (again this implicitly depends on the $y$ where we are evaluating); and we insist that the size of $\delta^2 F[\eta]$ be quadratic in $\eta2$. This is a generalisation of Taylor's theorem.
 
 Expanding $F[y+\eta]$ to second order in $\eta$, we find that the second order correction gives us
 $$

@@ -10,11 +10,10 @@ I teach, or have taught, a number of courses in the [Mathematical Tripos](https
 I currently offer supervisions in the following courses:
 
 * Fluid Dynamics I
-* Fluid Dynamics II
 * Quantum Mechanics
 * Variational Principles (calculus of variations)
 
-and in recent years have also taught courses including
+In recent years I have also taught many courses including
 
 * Dynamics and Relativity
 * Mathematical Biology

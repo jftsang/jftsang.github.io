@@ -18,7 +18,7 @@ This page lists things possibly of interest to my Part IB _Quantum Mechanics_ st
 
 * David Tong's [lecture notes](https://www.damtp.cam.ac.uk/user/tong/quantum.html) and [book](https://www.damtp.cam.ac.uk/user/tong/books/quantum.html).
 
-* Eugene Lim's [notes](https://nms.kcl.ac.uk/eugene.lim/teach/QM2012/QMroot.html) on an older version of this course. Has lolcats.
+* Eugene Lim's [notes](https://nms.kcl.ac.uk/eugene.lim/teach/QM2012/QMroot.html) on an older version of this course. *Dead link – I shall try to find an archived version.*
 
 ## Web resources
 

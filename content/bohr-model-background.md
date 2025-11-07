@@ -1,7 +1,7 @@
 Title: The Bohr model: Some history and context
 Date: 2023-12-19
 Category: Physics 
-Tags: physics, teaching
+Tags: physics, quantum-mechanics, teaching
 Slug: bohr-model-background
 
 This page is intended to give a little context behind the "Bohr model" that is introduced in the first Quantum Mechanics sheet.

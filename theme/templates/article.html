@@ -26,9 +26,18 @@
     {% endif %}
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
+
+     {% if article.locale_modified %}
+      {{ _('Posted on %(when)s in %(category)s, last modified $(modified)s',
+           when=article.locale_date,
+           modified=article.locale_modified,
+           category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
+
+    {% else %}
       {{ _('Posted on %(when)s in %(category)s',
            when=article.locale_date,
            category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
+     {% endif %}
 
       {% if PLUGINS and 'post_stats' in PLUGINS %}
         &#8226; {{ _('%(minutes)s min read', minutes=article.stats['read_mins']) }}

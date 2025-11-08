@@ -33,7 +33,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ("at", "mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"),
-    ("bluesky", "https://bsky.app/profile/jmft.dev"),
+    ("twitter", "https://bsky.app/profile/jmft.dev"),
     ("linkedin", "https://www.linkedin.com/in/joanna-tsang-bb2059171/"),
     ("github", "https://github.com/jftsang"),
 )

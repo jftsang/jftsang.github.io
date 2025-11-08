@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections. Let n be a unit vector and consider the reflection R in the plane perpendicular to n. Quantities such as the position r and velocity v are regular vectors and transform …" />
+<meta name="keywords" content="math, teaching">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Pseudovectors and transformations"/>
+  <meta property="og:description" content="Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections. Let n be a unit vector and consider the reflection R in the plane perpendicular to n. Quantities such as the position r and velocity v are regular vectors and transform …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./pseudovectors-reflection.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-09-25 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Physics"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="teaching"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Pseudovectors and transformations</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="pseudovectors-reflection">Pseudovectors and transformations</h1>
+    <p>
+
+      Posted on Thu 25 September 2025 in <a href="./category/physics.html">Physics</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections.</p>
+<p>Let <code>n</code> be a unit vector and consider the reflection <code>R</code> in the plane perpendicular to <code>n</code>.</p>
+<p>Quantities such as the position <code>r</code> and velocity <code>v</code> are regular vectors and transform in the obvious way under the reflection. Specifically, we write</p>
+<pre><code>r = rn + rp
+v = vn + vp
+</code></pre>
+<p>where <code>rn</code> is the component of <code>r</code> parallel to <code>n</code>, <code>rp</code> is the perpendicular component; and similar for <code>vn</code> and <code>vp</code>. Then under the transformation <code>R</code> we have</p>
+<pre><code>r' = R r = -rn + rp
+v' = R v = -vn + vp
+</code></pre>
+<p>However, now consider the angular momentum per unit mass <code>am = r * v</code>, using <code>*</code> to denote the cross product. Or indeed the angular velocity, which is the above divided by <code>|r|^2</code>.</p>
+<p>We can expand out <code>am</code> explicitly in terms of <code>rn</code>, etc.:</p>
+<pre><code>am = (rn + rp) * (vn + vp)
+   = rn * vn + rp * vp + rn * vp + rp * vn
+   = 0       + rp * vp + (rn * vp + rp * vn)
+   =           amn     + amp
+</code></pre>
+<p>Here, the term <code>amn = rp * vp</code> is parallel to <code>n</code> since it is the cross product of two vectors that are perpendicular to <code>n</code>. And the term <code>amp = rn * vp + rp * vn</code> is perpendicular to <code>n</code> since each product involves a vector that is parallel to <code>n</code>.</p>
+<p>When <code>r</code> and <code>v</code> are transformed, then <code>am</code> transforms as:</p>
+<pre><code>am' = r' * v'
+    = (R r) * (R v)
+    = (-rn + rp) * (-vn * vp)
+    = ...
+    = rp * vp - (rn * vp + rp * vn) 
+    = amn     - amp
+    = amn'    + amp'
+</code></pre>
+<p>Thus the component of <code>am</code> that is parallel to <code>n</code> stays the same, while the component of <code>am</code> that is perpendicular to <code>n</code> is flipped. Thus the components of <code>am</code> transform in the opposite direction to how those of <code>r</code> and <code>v</code> transform – for it is a <em>pseudovector</em>.</p>
+<p>In summary, under a reflection in a plane perpendicular to <code>n</code>...</p>
+<pre><code class="language-text">    of a vector...
+        the component parallel      to n is flipped
+                      perpendicular      stays the same
+    of a pseudovector...
+        the component parallel      to n stays the same
+                      perpendicular      is flipped
+</code></pre>
+<p>(If you don't believe me, take a screw and a screwdriver and hold it up against a mirror.)</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/math.html">math</a>
+      <a href="./tag/teaching.html">teaching</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

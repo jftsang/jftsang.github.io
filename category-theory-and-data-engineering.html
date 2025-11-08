@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="I have been reading – at a very shallow level – about category theory (wiki), and thinking about its applicability to software and system design for data engineering. This post is a loose collection of thoughts on the subject, and a manifesto for employing a more rigorous language when building such systems …" />
+<meta name="keywords" content="data, math, software-engineering">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Category theoretic ideas in data engineering systems design"/>
+  <meta property="og:description" content="I have been reading – at a very shallow level – about category theory (wiki), and thinking about its applicability to software and system design for data engineering. This post is a loose collection of thoughts on the subject, and a manifesto for employing a more rigorous language when building such systems …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./category-theory-and-data-engineering.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-09-22 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Software"/>
+  <meta property="article:tag" content="data"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="software-engineering"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Category theoretic ideas in data engineering systems design</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="category-theory-and-data-engineering">Category theoretic ideas in data engineering systems design</h1>
+    <p>
+
+      Posted on Sun 22 September 2024 in <a href="./category/software.html">Software</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>I have been reading – at a very shallow level – about category theory
+(<a href="https://en.wikipedia.org/wiki/Category_theory">wiki</a>), and thinking
+about its applicability to software and system design for data
+engineering. This post is a loose collection of thoughts on the subject,
+and a manifesto for employing a more rigorous language when building
+such systems.</p>
+<p>Although category theory is regarded as a very abstract area of maths –
+it generalises concrete concepts from other fields, such as algebra and
+topology, into a common language – it has some practical applications.
+In maths, it has been used to discover &quot;structure-preserving&quot;
+correspondences between these different areas, and, for example, can be
+used to produce a proof of a result in analysis or topology by showing
+that that theorem is equivalent to a simpler statement in algebra.</p>
+<p>More recently, ideas from category theory have made their way into
+programming and software engineering: higher-order functions (hofs) like
+<code>map</code> and monadic patterns like <code>Maybe</code> (a.k.a. <code>Optional</code>, <code>Option</code>)
+were once the marks of purely functional languages like Haskell, but
+have found their way into mainstream languages and are now routinely
+used by developers... even if they don't know that that's what they're
+doing.</p>
+<p>For a systematic introduction to category theory, consult <a href="https://www.julia-goedecke.de/pdf/CategoryTheoryNotes.pdf">Julia
+Goedecke's lecture
+notes</a> or
+Emily Rhiel's <em>Category Theory in Context</em>
+(<a href="https://math.jhu.edu/~eriehl/">web</a>)
+(<a href="https://emilyriehl.github.io/files/context.pdf">pdf</a>).</p>
+<p>I am neither a category theorist nor a computer scientist, so please
+excuse the inaccuracies in that which follows – or better yet, <a href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net">send me
+corrections</a>.</p>
+<p><a id="motivation"></a></p>
+<h2>Information flow</h2>
+<p>The fundamental problem of data engineering is that:</p>
+<div style="width:100%; display: flex; justify-content: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+<div>
+The way that data is ingested<br>
+is not the way that data is stored.<br>
+The way that data is stored<br>
+is not the way that data is exported.
+</div></div>
+<p>More prosaically, the purpose of data engineering – and perhaps of all
+software engineering – is the transmission and transformation of
+information, from &quot;sources&quot; (e.g. lab collections) to &quot;sinks&quot; (e.g.
+reports, dashboards). The particulars of the transformations depend
+strongly on the nature of the data and the desired output, but they can
+be broken into individual operations that can be placed into one of
+three classes:</p>
+<ol>
+<li>Transforming the data into another, informationally equivalent, format.</li>
+<li>Enriching the data with additional information.</li>
+<li>Discarding irrelevant information from the data.</li>
+</ol>
+<p>Examples:</p>
+<ol>
+<li>JSON serialization or deserialization of an object:
+<code>Employee.serialize: Employee -&gt; Dict[str, Any]</code></li>
+<li>Querying a database for information about a given ID:
+<code>Employee.find_by_id: int -&gt; Employee</code></li>
+<li>Calculating the mean, or other aggregate statistic, of a collection
+of data: <code>Collection[float] -&gt; float</code></li>
+</ol>
+<p>Data pipelines – compositions of transformations – are usually
+represented as directed acyclic graphs
+(<a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">wiki</a>), with
+nodes representing transformations and arrows representing data flow;
+beginning with &quot;source nodes&quot; that represent the input data.  This DAG
+representation focuses on the operations and the order in which they are
+performed.</p>
+<p>An alternative representation is to focus on the <em>format</em>, or <em>type</em> of
+data as it progresses through a pipeline. Let these types form the nodes
+of a graph; the transformations between types are now arrows. (The
+resulting graph is still directed but not necessarily acyclic.)</p>
+<p>Under this formats-first picture, it is much easier to consider <em>all
+possible transformations</em> that can be applied to obtain one data type
+from another, rather than only those that are actually used within a
+particular pipeline. Draw the arrows and choose the appropriate paths.</p>
+<p>Moreover, it encourages a style in which arrows are by default &quot;pure
+functions&quot;, making the system's behaviour easier to understand.
+Operations such as insertions, updates, deletions, or writing to an
+external resource may be managed using monads<small>... which I would
+explain if only I understood them... but instead I refer you to <a href="https://github.com/dbrattli/OSlash/wiki/Functors,-Applicatives,-And-Monads-In-Pictures#monads">Dag
+Brattli's tutorial about functional programming in
+Python</a></small>.</p>
+<p>But there are more practical benefits in a system design methodology
+that focuses on data formats and transformations. At a tactical level, a
+well-hinted, strongly-typed codebase is easier to analyze and refactor
+as a static type checker such as mypy or pyre can look for
+inconsistencies across the codebase. At a systems level, we can be more
+confident that data, no matter how it is transformed, possibly by many
+components or over a distributed system, is always in one of a small
+number of formats, ensuring interoperability and substitutability
+between components.</p>
+<p>Defocusing from the implementation details of any particular arrow,
+prescribing only its inputs and outputs, also brings several advantages.
+The most practical is that it enforces a &quot;behaviour-driven design&quot;.  The
+developers responsible for the implementation details need only worry
+that their behaviour conforms to this specification, allowing them to
+work independently.</p>
+<h2>An example</h2>
+<p>Audio data can be in any of several formats, but essentially they all
+consist of a stream of numbers that prescribe the waveform of the audio
+(essentially, <code>List[float]</code>, but the data may be stored in a compressed
+form). Individual formats (such as MP3) may additionally contain
+additional metadata, such as key-value tags (<code>Mapping[str, str]</code>), but
+these are ignored by operations on the audio.</p>
+<p>In this example we have &quot;concrete types&quot; <code>WAV</code> and <code>MP3</code> that contain
+the information of an abstract type <code>Waveform</code> (which is isomorphic to
+<code>List[float]</code>).  An &quot;audio format&quot; might be defined to be a type that
+has a <code>toWaveform</code> methodm, or in other words a &quot;projection map&quot;. The
+projection map <code>WAV -&gt; Waveform</code> is particularly simple: &quot;read the bytes
+of the WAV file&quot;; whereas the projection <code>MP3 -&gt; Waveform</code> is something
+like &quot;decompress the file&quot;.</p>
+<p>The type <code>MP3</code> may be regarded as a pair <code>(Waveform, Mapping[str, str])</code>.</p>
+<h2>Closing thoughts</h2>
+<p>My (short) experience of the data engineering world has been that much
+focus is given to the details of particular frameworks and technologies.
+These are important for building scalable systems, but this
+specialisation risks losing the big picture. This &quot;discipline&quot; should
+develop a more abstract language in order to produce reusable,
+generalisable solutions to common problems.</p>
+<p>Not having such a language leads to becoming tightly coupled to a
+particular framework or cloud provider, reducing interoperability. This
+has real economic implications: vendor lock-in is a serious issue for
+cloud services customers, and a reason for the growth of oligopolies,
+reducing quality for all.</p>
+<p>Maths, and particularly category theory, might help to provide such a
+language. Thinking about data engineering as the manipulation and
+transformation of information through a pipeline, there are very natural
+meanings to terms like <em>homomorphism</em> (&quot;information-preserving&quot;) and
+<em>quotient</em> (&quot;information-discarding&quot;).</p>
+<p>I don't have the theoretical background to make these definitions
+rigorous and to develop a &quot;general algebra of data engineering&quot;, but
+it's a good start to look out for these patterns.</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/data.html">data</a>
+      <a href="./tag/math.html">math</a>
+      <a href="./tag/software-engineering.html">software-engineering</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

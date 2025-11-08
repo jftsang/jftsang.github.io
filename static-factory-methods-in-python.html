@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="The basic way to create and initialize an object in Python is using the default constructor, defined as the __init__() method: class MyClass: def __init__(self, x: float) -&gt; None: self.x: float = x print(f&#34;created an object with x = {x}&#34;) obj = MyClass(5) Usually, initial values of instance variables …" />
+<meta name="keywords" content="python, object-oriented-programming, design-patterns">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Object creation patterns in Python: Static factory methods"/>
+  <meta property="og:description" content="The basic way to create and initialize an object in Python is using the default constructor, defined as the __init__() method: class MyClass: def __init__(self, x: float) -&gt; None: self.x: float = x print(f&#34;created an object with x = {x}&#34;) obj = MyClass(5) Usually, initial values of instance variables …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./static-factory-methods-in-python.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-05-21 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Python"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="object-oriented-programming"/>
+  <meta property="article:tag" content="design-patterns"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Object creation patterns in Python: Static factory methods</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="static-factory-methods-in-python">Object creation patterns in Python: Static factory methods</h1>
+    <p>
+
+      Posted on Tue 21 May 2024 in <a href="./category/python.html">Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>The basic way to create and initialize an object in Python is using the
+default constructor, defined as the <code>__init__()</code> method:</p>
+<pre><code class="language-python">class MyClass:
+    def __init__(self, x: float) -&gt; None:
+        self.x: float = x
+        print(f&quot;created an object with x = {x}&quot;)
+
+
+obj = MyClass(5)
+</code></pre>
+<p>Usually, initial values of instance variables are specified using
+arguments to <code>__init__()</code>, and assigned to the variables. The body of
+<code>__init__()</code> may also contain other steps, such as precomputing other
+other variables based on these instance attributes, or, as in this
+example, logging the creation of an object. <small><em>(Resource allocation
+such as opening files should generally <em>not</em> be done in an initializer,
+but in a <a href="https://docs.python.org/3/reference/datamodel.html#context-managers">context
+manager</a>,
+so that client code doesn't have to take care of deallocation.)</em></small></p>
+<h2>Dataclasses and kwargs</h2>
+<p>When a class has many instance variables, it is common to <strong>use keyword
+arguments when initializing them</strong>, which makes the meaning of each
+argument more explicit and allows arguments to be reordered later.
+Furthermore, such classes are often good candidates for making into
+<a href="https://docs.python.org/3/library/dataclasses.html"><strong>dataclasses</strong></a>,
+since the <code>@dataclass</code> decorator automatically creates an <code>__init__()</code>
+method with the necessary arguments and that assigns them to the
+instance variables:</p>
+<pre><code class="language-python">@dataclass
+class Person:
+    # types are not enforced at runtime, but are checked by type
+    # checkers
+    name: str
+    age: int
+
+    # More complex types, including recursive types, are allowed. Use
+    # `field`
+    occupation: Optional[str] = field(default=None)
+    best_friend: &quot;Person&quot; = field(default=None)
+
+    # an __init___ method is automatically generated, but you can still
+    # create a __post_init__ method for additional behaviour like
+    # logging
+
+    def __post_init__(self):
+        print(f&quot;Created new Person: {self}&quot;)
+
+
+# Use kwargs when creating instances
+p = Person(name=&quot;Sir Robin&quot;, age=32, occupation=&quot;knight&quot;)
+</code></pre>
+<p>As well as automatically providing the <code>__init__()</code> method, dataclasses
+also automatically provide methods such as <code>__repr__()</code> and <code>__eq__()</code>,
+further reducing the amount of boilerplate code and allowing you to use
+a more declarative style of programming that focuses on the structure of
+the class (and makes it easier to add or remove fields witout needing to
+worry about updating all these methods).</p>
+<p>While using dataclasses makes it easy to create an initializer even for
+objects with many fields, there are nonetheless some limitations of
+creating objects using the basic syntax <code>Person(...)</code>. To provide more
+expressive ways to create objects, various <em>object creation patterns</em>
+have been developed over the years, and are now standard fare in large
+projects, including the standard library itself.</p>
+<p>The rest of this post will discuss the <strong>static factory methods
+pattern</strong>, which allows you to provide multiple, distinct ways to
+instantiate a class without having a complicated <code>__init__()</code> method. In
+a future post I shall discuss the <strong>builder pattern</strong>, which lets you
+gradually build up a complex object by passing around the information
+needed to create it rather than requiring all the information in one go.</p>
+<h2>The static factory method</h2>
+<p><strong>Goal:</strong> Provide multiple, distinct ways of instantiating a class.</p>
+<p><em>Explicit is better than implicit.</em> <small><a href="https://en.wikipedia.org/wiki/Zen_of_Python"><em>The Zen of Python</em></a></small></p>
+<p>In many cases you want to provide multiple ways to obtain instances of a
+class. To do that, you can provide <em>static factory methods</em> in your
+class: these are class methods that create and return instances.
+<small><em>(The name comes from Java, which does not distinguish between
+class methods and static methods.)</em></small></p>
+<p>A classic example is a <code>Point2D</code> class that represents a point in the
+plane. It is desired to be able to create instances of <code>Point2D</code> by
+specifying either the point's Cartesian coordinates or its polar
+coordinates. To achieve this, we define static factory methods
+<code>from_cartesians()</code> and <code>from_polars()</code> that return instances of
+<code>Point2D</code>:</p>
+<pre><code class="language-python">import math
+
+
+@dataclass
+class Point2D:
+    x: float
+    y: float
+
+    # __init__(self, x, y) is automatically generated
+
+    @classmethod
+    def from_cartesians(cls, x: float, y: float) -&gt; &quot;Point2D&quot;:
+        return cls(x=x, y=y)
+
+    @classmethod
+    def from_polars(cls, r: float, theta: float) -&gt; &quot;Point2D&quot;:
+        if r &lt; 0:
+            raise ValueError(&quot;Radial coordinate must be nonnegative&quot;)
+        return cls(x=r * math.cos(theta), y=r * math.sin(theta))
+
+    
+p: Point2D = Point2D.from_polars(r=4, theta=0.5 * math.pi)
+</code></pre>
+<p>Although the <code>__init__()</code> method (automatically created by <code>@dataclass</code>)
+already gives us a way of instantiating a <code>Point2D</code> through its
+Cartesian coordinates, we nonetheless provide a <code>from_cartesians()</code>
+method. There are two major benefits to using this method oer the basic
+initializer:</p>
+<ul>
+<li>It is more explicit about what the input numbers mean.</li>
+<li>If it is desired to store the polar coordinates, rather than the
+Cartesian coordinates, as fields, the class methods can be updated
+without affecting client code; whereas instantiations with <code>Point2D(...)</code>
+would need to be updated. (This is referred to as &quot;invariance under
+refactoring&quot; and allows developers to work on different parts of a
+codebase without hugely affecting each other.)</li>
+</ul>
+<p>For contrast, this is what the class might look like if we wanted to
+allow the user to specify either Cartesian or polar coordinates when
+creating a <code>Point2D</code>, all in the <code>__init__()</code> method:</p>
+<pre><code class="language-python">@dataclass(init=False)  # we provide our own __init__() method
+class Point2D:
+    x: float
+    y: float
+
+    def __init__(
+        self, 
+        x: Optional[float] = None, 
+        y: Optional[float] = None, 
+        r: Optional[float] = None, 
+        theta: Optional[float] = None
+    ):
+        using_cartesians = x is not None and y is not None
+        using_polars = r is not None and theta is not None
+        if using_cartesians and not using_polars:
+            self.x, self.y = x, y
+            return
+        if using_polars and not using_cartesians:
+            if r &lt; 0:
+              raise ValueError(&quot;Radial coordinate must be nonnegative&quot;)
+            self.x = r * math.cos(theta)
+            self.y = r * math.sin(theta)
+            return
+        
+        raise ValueError(&quot;Either specify x and y or specify r and theta, but not both.&quot;)
+
+
+p: Point2D = Point2D(r=4, theta=0.5 * math.pi)
+</code></pre>
+<p>This is clearly more complex and less expressive.</p>
+<p>Static factory methods are a common pattern in object oriented
+languages. Python doesn't have method overloading (unlike C/++ and
+Java) and so it is not possible to define multiple <code>__init__()</code> methods
+with different signatures. But even in languages like Java it is often
+recommended to use static factory methods instead of overloaded
+constructors, for the expressiveness. <small><em>(Indeed, this is the
+very first item in Joshua Bloch's <a href="https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/"><em>Effective Java</em></a>.)</em></small></p>
+<h2>Abstract base classes</h2>
+<p>The real power of static factory methods comes when working with
+abstract classes. While (by definition) you cannot directly instantiate
+an abstract class, you can emulate such an instantiation providing a
+static factory method on the abstract base class that chooses an
+appropriate subclass and produces an instance of that class.</p>
+<p>A typical use case is to provide the user with a simplified interface
+while internally having several underlying implementations. Consider the
+following interface, which declares a single method for calculating the
+integral of a function between two points:</p>
+<pre><code class="language-python">import abc
+
+
+class Integrator(abc.ABC):
+    @abc.abstractmethod
+    def integrate(self, f: Callable[[float], float], a: float, b: float) -&gt; float:
+        &quot;&quot;&quot;Calculate the integral of the function f between a and b.&quot;&quot;&quot; 
+        raise NotImplementedError
+</code></pre>
+<p>The subclasses implement different methods of integration:</p>
+<pre><code class="language-python">class EulerIntegrator(Integrator):
+    def __init__(self, n: int = 10):
+        self.n = n
+        
+    def integrate(self, f, a, b):
+        # Even for such an inaccurate scheme, this is a terrible 
+        # implementation! It is horrendously inefficient and doesn't
+        # properly handle floating point errors. This is just for
+        # illustration purposes.
+        dx = (b - a) / self.n
+        x = a
+        s = 0
+        while x &lt; b:
+            s += f(x) * dx
+            x += dx
+        return s
+    
+class AdamsBashforthIntegrator(Integrator): ...  # similarly
+class TrapeziumIntegrator(Integrator): ...  # similarly
+class RK4Integrator(Integrator): ...  # similarly
+</code></pre>
+<p>The appropriate choice of integration method depends on the function.
+For example, the Adams–Bashorth integrator has a lower order of
+accuracy than RK4, but performs better against stiff equations.</p>
+<p>While the client may wish to choose an integrator for themself, as the
+developer of the <code>Integrator</code> class one may wish to provide the user a
+shortcut for common cases without requiring them to know the details of
+the particular implementation. To achieve this, the <code>Integrator</code> class
+could provide a static factory method that returns an appropriate
+instance:</p>
+<pre><code class="language-python">class Integrator(abc.ABC):
+    @classmethod
+    def create(cls, stiff: bool = False) -&gt; &quot;Integrator&quot;:
+        if stiff:
+            return AdamsBashforthIntegrator(...)  # with suitable params
+        else:
+              return RK4Integrator(...)  # ditto
+</code></pre>
+<p>with example usage:</p>
+<pre><code class="language-python">integrator = Integrator.create(stiff=True)
+print(integrator.integrate(lambda x: x ** 2, 1, 2))
+</code></pre>
+<p>Other numerical operations that can be calculated using different
+algorithms are similarly candidates for such a structure.</p>
+<h2>Caveat and conclusion</h2>
+<p>The examples above are smallish classes that nonetheless benefit from
+having multiple ways to create them. With that said, a class that has
+very different behaviours depending on how it is initialized may be too
+complicated, and be a candidate for refactoring into smaller classes
+each with fewer responsibilities.</p>
+<p>As mentioned above, the static factory method pattern is commonly used
+not only in Python but also in other languages. The benefits are the
+same: using static factory methods (a) allows the user to more
+explicitly state how an object should be produced from input data
+(<code>Point2D.from_cartesians(3, 4)</code> versus <code>Point2D(3, 4)</code>), and (b) allows
+the class to rework what data it stores internally or which
+implementation of an abstract class to provide.</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/python.html">python</a>
+      <a href="./tag/object-oriented-programming.html">object-oriented-programming</a>
+      <a href="./tag/design-patterns.html">design-patterns</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

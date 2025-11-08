@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="This is the second article about how working with temporal information in computer systems. The first article was about contained some definitions about astronomical time and timezones. This article describes options for storing temporal values in your programs, and their limitations. In particular, it describes two pitfalls that can happen …" />
+<meta name="keywords" content="data, math, physics">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Storing times, and precision of float64"/>
+  <meta property="og:description" content="This is the second article about how working with temporal information in computer systems. The first article was about contained some definitions about astronomical time and timezones. This article describes options for storing temporal values in your programs, and their limitations. In particular, it describes two pitfalls that can happen …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./time-precision-float64.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-09-26 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Software"/>
+  <meta property="article:tag" content="data"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="physics"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Storing times, and precision of float64</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="time-precision-float64">Storing times, and precision of float64</h1>
+    <p>
+
+      Posted on Fri 26 September 2025 in <a href="./category/software.html">Software</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>This is the second article about how working with temporal information in computer systems. <a href="date-time-and-timezones">The first article</a> was about contained some definitions about astronomical time and timezones.</p>
+<p>This article describes options for storing temporal values in your programs, and their limitations. In particular, it describes two pitfalls that can happen when working with floating-point representations for times.</p>
+<h2>Numeric data types</h2>
+<p>Computers have a number of ways to represent numerical values, each with their uses. Two most important formats for us are <code>int64</code> and <code>float64</code>. Both use 64 bits (8 bytes) to store values. They are the most commonly used in modern systems for general-purpose computations in which memory is not at a premium, and are widely supported across major programming languages.</p>
+<p>Further notes on <a href="https://en.wikipedia.org/wiki/Data_type#Numeric_types">Wikipedia</a>.</p>
+<h3>Integers</h3>
+<p><code>int64</code> uses a binary (base 2) representation to encode an integer value between <code>-2^32</code> and <code>2^32 - 1</code> inclusive – that is, between <code>-18446744073709551616</code> and <code>18446744073709551615</code>. Positive numbers (and zero) are stored in the obvious way, and negative numbers are usually encoded using <a href="https://en.wikipedia.org/wiki/Two%27s_complement">two's complement</a>.</p>
+<h3>Floating-point values</h3>
+<p>Fractional values are most commonly stored using a <em>floating-point representation</em>. Numbers are represented in the &quot;scientific&quot; form</p>
+<pre><code>x = s * (1 + m) * 2**e
+</code></pre>
+<p>where:</p>
+<ul>
+<li>the <em>sign bit</em> <code>s in {-1, 1}</code> specifies the sign of the number;</li>
+<li>the <em>mantissa</em> <code>0 &lt;= m &lt; 1</code> specifies the fractional part of the significand in base 2; and</li>
+<li>the <em>exponent</em> <code>e in range(-1022, 1024)</code> is an integer that determines the scale of the number.</li>
+</ul>
+<p>The mantissa is stored using 52 bits, the exponent with 11, so alongside the sign bit, that makes 64 bits in total. Details on <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format#IEEE_754_double-precision_binary_floating-point_format:_binary64">Wikipedia</a>.</p>
+<p>The term <code>1 + m</code> is called the <em>significand</em>, containing the significant figures of the number: this is a number in the interval <code>1 &lt;= 1 + m &lt; 2</code>. &quot;Floating point&quot; refers to the fact that the decimal (binary?) point may be moved to different locations by modifying the exponent.</p>
+<p>This representation confers certain performance advantages: for example, to multiply two floats one simply multiples the two mantissae and adds the two exponents. Details about floating-point arithmetic on <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic#Floating-point_operations">Wikipedia</a>.</p>
+<p><em>(The numbers that are represented in the form above are the so-called &quot;normal numbers&quot;. There are also a number of special values such as subnormal numbers, zeros, <code>inf</code> and <code>nan</code>, which I won't talk here; although <code>nan</code> plays an important role in representing missing or unknown values.)</em></p>
+<h2>Precision limitations on floats</h2>
+<p>Details can be found on Wikipedia, but for us, the most important observations are the following:</p>
+<ul>
+<li>The exponent term <code>2**e</code> allows both very large and very small numbers to be represented.</li>
+<li>The mantissa is stored using 52 bits, which means that the maximum precision of a floating-point number is 53 significant figures (in base 2) – the extra significant figure coming from the <code>1 + </code> term.</li>
+<li>53 bits of significance corresponds to about 16 digits; so the maximum precision in decimals is about 16 digits. (Actually between 15 and 17 digits depending on the exact values of <code>m</code> and <code>e</code>.)</li>
+<li>This relative precision is independent of <code>e</code>. However, the absolute precision does depend on <code>e</code> – the larger the number, the worse the absolute precision.</li>
+</ul>
+<h2>Traps with Unix time</h2>
+<p>%%The danger of using <code>float64</code> for Unix time%%</p>
+<p>The fact that the number of significant figures is limited to about 16 digits</p>
+<p>%%Most systems offer two clocks. One is persistent, continuing to count
+when the system is powered down: this allows the computer to give an
+absolute time since some epoch. This is usually the Unix Epoch, or just
+<em>Epoch</em> (capitalized), defined as 00:00:00 midnight at 1 January 1970
+UTC.%%</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/data.html">data</a>
+      <a href="./tag/math.html">math</a>
+      <a href="./tag/physics.html">physics</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

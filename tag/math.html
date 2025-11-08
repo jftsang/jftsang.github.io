@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="../theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="../theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="../theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+    <meta name="author" content="J. M. F. Tsang" />
+    <meta name="description" content="Thoughts on software engineering, physics, teaching and music." />
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="JMFT"/>
+  <meta property="og:description" content="Thoughts on software engineering, physics, teaching and music."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content=".."/>
+
+  <title>JMFT &ndash; Tag math</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="../">
+      <img src="../theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="../"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="../pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+
+
+<article>
+  <header>
+    <h2><a href="../calculus-of-variations-formalism.html#calculus-of-variations-formalism">But what does $\delta F = 0$ mean?</a></h2>
+    <p>
+      Posted on Thu 16 October 2025 in <a href="../category/physics.html">Physics</a>
+
+          &#8226; Tagged with
+              <a href="../tag/math.html">math</a>,              <a href="../tag/physics.html">physics</a>,              <a href="../tag/teaching.html">teaching</a>,              <a href="../tag/calculus-of-variations.html">calculus-of-variations</a>
+    </p>
+  </header>
+  <div>
+      <!--
+      <div><p>The following discussion is meant to give some more formalism to students of the <em>Variational Principles</em> course and perhaps tie it to material that they might have come across in analysis or linear algebra courses.</p>
+<p><em>This page is a work in progress and may not be accurate; formulae may have …</em></p></div>
+        <br>
+        <a class="btn"
+           href="../calculus-of-variations-formalism.html#calculus-of-variations-formalism">
+          Continue reading
+        </a>
+      -->
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../time-precision-float64.html#time-precision-float64">Storing times, and precision of float64</a></h2>
+    <p>
+      Posted on Fri 26 September 2025 in <a href="../category/software.html">Software</a>
+
+          &#8226; Tagged with
+              <a href="../tag/data.html">data</a>,              <a href="../tag/math.html">math</a>,              <a href="../tag/physics.html">physics</a>
+    </p>
+  </header>
+  <div>
+      <!--
+      <div><p>This is the second article about how working with temporal information in computer systems. <a href="date-time-and-timezones">The first article</a> was about contained some definitions about astronomical time and timezones.</p>
+<p>This article describes options for storing temporal values in your programs, and their limitations. In particular, it describes two pitfalls that can happen …</p></div>
+        <br>
+        <a class="btn"
+           href="../time-precision-float64.html#time-precision-float64">
+          Continue reading
+        </a>
+      -->
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../pseudovectors-reflection.html#pseudovectors-reflection">Pseudovectors and transformations</a></h2>
+    <p>
+      Posted on Thu 25 September 2025 in <a href="../category/physics.html">Physics</a>
+
+          &#8226; Tagged with
+              <a href="../tag/math.html">math</a>,              <a href="../tag/teaching.html">teaching</a>
+    </p>
+  </header>
+  <div>
+      <!--
+      <div><p>Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections.</p>
+<p>Let <code>n</code> be a unit vector and consider the reflection <code>R</code> in the plane perpendicular to <code>n</code>.</p>
+<p>Quantities such as the position <code>r</code> and velocity <code>v</code> are regular vectors and transform …</p></div>
+        <br>
+        <a class="btn"
+           href="../pseudovectors-reflection.html#pseudovectors-reflection">
+          Continue reading
+        </a>
+      -->
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../date-time-and-timezones.html#date-time-and-timezones">Date, time and timezones</a></h2>
+    <p>
+      Posted on Sun 27 April 2025 in <a href="../category/physics.html">Physics</a>
+
+          &#8226; Tagged with
+              <a href="../tag/data.html">data</a>,              <a href="../tag/math.html">math</a>,              <a href="../tag/physics.html">physics</a>
+    </p>
+  </header>
+  <div>
+      <!--
+      <div><p>This is a collection of notes about time and related concepts. A future
+post will talk about the problems of representing time in computer
+systems, especially distributed systems. These notes will be
+occasionally updated.</p>
+<h2>Introduction</h2>
+<p><em>Time</em> is taken to be a primitive concept that cannot be defined in
+terms of …</p></div>
+        <br>
+        <a class="btn"
+           href="../date-time-and-timezones.html#date-time-and-timezones">
+          Continue reading
+        </a>
+      -->
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../category-theory-and-data-engineering.html#category-theory-and-data-engineering">Category theoretic ideas in data engineering systems design</a></h2>
+    <p>
+      Posted on Sun 22 September 2024 in <a href="../category/software.html">Software</a>
+
+          &#8226; Tagged with
+              <a href="../tag/data.html">data</a>,              <a href="../tag/math.html">math</a>,              <a href="../tag/software-engineering.html">software-engineering</a>
+    </p>
+  </header>
+  <div>
+      <!--
+      <div><p>I have been reading – at a very shallow level – about category theory
+(<a href="https://en.wikipedia.org/wiki/Category_theory">wiki</a>), and thinking
+about its applicability to software and system design for data
+engineering. This post is a loose collection of thoughts on the subject,
+and a manifesto for employing a more rigorous language when building
+such systems …</p></div>
+        <br>
+        <a class="btn"
+           href="../category-theory-and-data-engineering.html#category-theory-and-data-engineering">
+          Continue reading
+        </a>
+      -->
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../calculus-of-variations-history.html#calculus-of-variations-history">Historical and philosophical contexts of the calculus of variations</a></h2>
+    <p>
+      Posted on Tue 19 December 2023 in <a href="../category/physics.html">Physics</a>
+
+          &#8226; Tagged with
+              <a href="../tag/math.html">math</a>,              <a href="../tag/physics.html">physics</a>,              <a href="../tag/teaching.html">teaching</a>,              <a href="../tag/calculus-of-variations.html">calculus-of-variations</a>
+    </p>
+  </header>
+  <div>
+      <!--
+      <div><h2>What is a variational principle?</h2>
+<p>A variational principle is a mathematical or physical law expressed in terms of maximising or minimising a certain quantity. The simplest example was known to ancient Egyptian builders and surveyers: a taut rope stretched between two points takes the shape that minimises its length. This …</p></div>
+        <br>
+        <a class="btn"
+           href="../calculus-of-variations-history.html#calculus-of-variations-history">
+          Continue reading
+        </a>
+      -->
+  </div>
+</article>
+
+  <div class="pagination">
+  </div>
+
+
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : "..",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

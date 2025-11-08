@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="This is a collection of notes about time and related concepts. A future post will talk about the problems of representing time in computer systems, especially distributed systems. These notes will be occasionally updated. Introduction Time is taken to be a primitive concept that cannot be defined in terms of …" />
+<meta name="keywords" content="data, math, physics">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Date, time and timezones"/>
+  <meta property="og:description" content="This is a collection of notes about time and related concepts. A future post will talk about the problems of representing time in computer systems, especially distributed systems. These notes will be occasionally updated. Introduction Time is taken to be a primitive concept that cannot be defined in terms of …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./date-time-and-timezones.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-04-27 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Physics"/>
+  <meta property="article:tag" content="data"/>
+  <meta property="article:tag" content="math"/>
+  <meta property="article:tag" content="physics"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Date, time and timezones</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="date-time-and-timezones">Date, time and timezones</h1>
+    <p>
+
+      Posted on Sun 27 April 2025 in <a href="./category/physics.html">Physics</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>This is a collection of notes about time and related concepts. A future
+post will talk about the problems of representing time in computer
+systems, especially distributed systems. These notes will be
+occasionally updated.</p>
+<h2>Introduction</h2>
+<p><em>Time</em> is taken to be a primitive concept that cannot be defined in
+terms of other phenomena, but can be characterised as a parameter of a
+system that allows the system to change.</p>
+<p>In closed systems, time is measured relative to some event within that
+system, such as the time elapsed since the start of an experiment.  In
+such systems, time can be unambiguously specified as a single real
+number (or sometimes an integer, in discrete-time models).</p>
+<p>Things are more complicated when it is necessary to describe times &quot;in
+the real world&quot;, where there are a number of closely related but
+confusing concepts.</p>
+<p>Under a non-relativistic model of physics, all observers have a common
+notion of time: in particular, instantaneous events may be totally
+ordered along a timeline, and all observers can agree whether event A
+happened before, after or simultaneously with event B. However,
+observers might report different <em>numerical</em> values of a time, depending
+on how they measure it: in particular, depending on their timezone and
+the accuracy of their clocks. The synchronisation of different clocks is
+a difficult but important problem in distributed systems.</p>
+<h2>Absolute time, relative time, and time of day</h2>
+<p>The English word <em>time</em> may refer to:</p>
+<ul>
+<li>an <em>absolute position</em> on the timeline (&quot;when did something happen?&quot;),</li>
+<li>the <em>interval</em> (or <em>timedelta</em>) between two positions on the timeline
+(&quot;how much time passed?&quot;), or</li>
+<li>the <em>time of day</em>, or the interval relative to the local midnight
+(&quot;what is <em>the</em> time?&quot;).</li>
+</ul>
+<p>Intervals of time are measured in units such as seconds (see below).</p>
+<p>One may convert between absolute times and timedeltas by specifying a
+position on the timeline as an <em>epoch</em>, relative to which all other
+times are measured. The epoch may be chosen to be the time of a
+significant event, or an arbitrary point.</p>
+<p>Since local midnight depends on the locale of the observer, a &quot;time&quot; in
+the third sense can be converted into an absolute time only by
+additionally specifying a <em>date</em> as well as a <em>timezone</em> - often
+implicitly.</p>
+<h2>Units of timedeltas</h2>
+<p>The basic unit of a timedelta is the second, also the millisecond,
+microsecond, <em>etc.</em>, defined in terms of the (constant) frequency of a
+certain atomic oscillator. The <em>minute</em>, the <em>hour</em> and the <em>day</em>) are
+defined as 60 seconds, 60 minutes (3,600 seconds) and 24 hours (86,400
+seconds) respectively.</p>
+<p>The <em>month</em> and the <em>year</em> are not precise units of timedeltas, since
+they vary in length. They are however used informally.</p>
+<h3>Astronomical days</h3>
+<p>Although the day is based on the rotation of the Earth and the relative
+position of the Sun, the 24-hour day is distinguished from:</p>
+<ul>
+<li>the <em>solar day</em>, the time between two successive maxima of the
+Sun's position in the sky, and</li>
+<li>the <em>sidereal day</em>, the time taken for the earth to complete a
+rotation on its axis.</li>
+</ul>
+<p>The solar day is longer than 24 hours by a few seconds. The sidereal day
+is about 4 minutes shorter than 24 hours; this difference is due to the
+orbit of the Earth around the Sun.</p>
+<p>The rotation of the earth is gradually slowing down. Over the course of
+millennia, the 24-hour day will diverge from these astronomical
+definitions.</p>
+<h2><em>The</em> time of day: solar time, civil time and timezones</h2>
+<p>Traditional measurements of time are based on the position of the Sun
+and the other stars in the sky. These are the <em>solar time</em> and <em>sidereal
+time</em> respectively. For example, noon is defined to be the time at which
+the Sun is at its highest position, and midnight is defined to be twelve
+hours after that.</p>
+<p>Since the position of the Sun in the sky depends on geographical
+location as well as the time of year, solar time is an impractical
+measurement of time. Thus the development of <em>civil time</em> and of
+<em>timezones</em>: that in a given region (such as a country or province), all
+clocks should report the same value of time. The development of
+timezones is based on political considerations rather than reflecting
+astronomical phenomena: for example, the People's Republic of China uses
+a single timezone despite its geographical span; and most Western
+European countries use the same timezone.</p>
+<p>All timezones are specified relative to <em>Coordinated Universal Time</em> (or
+<em>UTC</em>), which is based on the time at Greenwich, London.</p>
+<h2>Computers and distributed systems</h2>
+<p>Future post...</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/data.html">data</a>
+      <a href="./tag/math.html">math</a>
+      <a href="./tag/physics.html">physics</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

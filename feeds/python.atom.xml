@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>JMFT - Python</title><link href="https://jmft.dev/" rel="alternate"/><link href="https://jmft.dev/feeds/python.atom.xml" rel="self"/><id>https://jmft.dev/</id><updated>2024-07-07T00:00:00+01:00</updated><entry><title>Logging in Python</title><link href="https://jmft.dev/logging-in-python.html" rel="alternate"/><published>2024-07-07T00:00:00+01:00</published><updated>2024-07-07T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-07-07:/logging-in-python.html</id><summary type="html">&lt;p&gt;Having reliable, detailed but searchable logs is an essential part of
+any application, especially of long-running services that need to be
+debugged and monitored for uptime and stability. As one of the oldest
+modules in the Python standard library, the &lt;code&gt;logging&lt;/code&gt; module provides a
+very powerful set of tools for …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Having reliable, detailed but searchable logs is an essential part of
+any application, especially of long-running services that need to be
+debugged and monitored for uptime and stability. As one of the oldest
+modules in the Python standard library, the &lt;code&gt;logging&lt;/code&gt; module provides a
+very powerful set of tools for logging, but its design and behaviour
+also shows its age.&lt;/p&gt;
+&lt;p&gt;While the basics are covered in the &lt;a href="https://docs.python.org/3/howto/logging.html"&gt;official
+tutorial&lt;/a&gt; and full details
+are given in the &lt;a href="https://docs.python.org/3/library/logging.html"&gt;reference
+docs&lt;/a&gt;, this article
+collects together the most commonly seen concepts from different parts
+of the docs.&lt;/p&gt;
+&lt;h2&gt;Why use &lt;code&gt;logging&lt;/code&gt;?&lt;/h2&gt;
+&lt;p&gt;Although it takes some setup (which will be covered below), It is
+strongly preferable to use the features of &lt;code&gt;logging&lt;/code&gt;, rather than
+&lt;code&gt;print()&lt;/code&gt;, for diagnostics and debugging.&lt;/p&gt;
+&lt;h3&gt;Diagnostic messages vs. machine-readable output&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;logging&lt;/code&gt; module allows one to define different handlers for
+different types of messages. Besides (or instead of) printing the
+message to &lt;code&gt;stdout,&lt;/code&gt; it may be helpful to print messages to &lt;code&gt;stderr&lt;/code&gt;, or
+to do something else with them like submitting them to a database.
+Urgent, critical messages may need to be emailed or sent as push
+notifications.  Diagnostic, human-readable messages (which aren't
+necessarily &lt;em&gt;error&lt;/em&gt; messages) should generally be separated from
+machine-readable output.&lt;/p&gt;
+&lt;h3&gt;Thread-safety&lt;/h3&gt;
+&lt;p&gt;Loggers are thread-safe. Concurrent threads logging to the same file do
+not interfere with each other; whenever a thread attempts to write to a
+log file, that thread has exclusive ownership of that file while it is
+writing.&lt;/p&gt;
+&lt;p&gt;By contrast, the &lt;code&gt;print()&lt;/code&gt; function or writing to a stream with
+&lt;code&gt;f.write()&lt;/code&gt; are not thread safe, so that messages from two threads may
+interfere with each other. For example, it is not guaranteed that each
+message is printed on its own line.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;message frommessage from thread 2
+ thread 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Loggers, handlers, filters and formatters&lt;/h2&gt;
+&lt;p&gt;Logging functionality is provided by four main classes. From &lt;a href="https://docs.python.org/3/library/logging.html#logger-objects"&gt;the
+docs&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#logger-objects"&gt;Loggers&lt;/a&gt;
+expose the interface that application code directly uses.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#handler-objects"&gt;Handlers&lt;/a&gt;
+send the &lt;a href="https://docs.python.org/3/library/logging.html#logrecord-objects"&gt;log records&lt;/a&gt;
+(created by loggers) to the appropriate destination.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#filter-objects"&gt;Filters&lt;/a&gt;
+provide a finer grained facility for determining which log records to
+output.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#formatter-objects"&gt;Formatters&lt;/a&gt; specify the layout of log records in the final output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The logic and the relationship between these classes is summarised in
+the flowchart from the
+&lt;a href="https://docs.python.org/3/howto/logging.html#logging-flow"&gt;tutorial&lt;/a&gt;:
+![[content/images/python-logging-flowchart.png]]&lt;/p&gt;
+&lt;p&gt;For a basic setup it is only necessary to configure a logger; but
+configuring handlers and formatters can make your logs more informative.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;Logger&lt;/code&gt; objects&lt;/h3&gt;
+&lt;p&gt;Do not instantiate &lt;code&gt;Logger&lt;/code&gt; directly.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# Not like this!
+logger = logging.Logger(...)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Instead, create them using the factory function &lt;code&gt;logging.getLogger()&lt;/code&gt;, providing a name for the logger:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# Like this
+logger = logging.getLogger(&amp;quot;example_app&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Doing so allows the &lt;code&gt;logging&lt;/code&gt; module to keep track of all the loggers
+that are in use, as well as to return the same instance if the same name
+is used across different modules.&lt;/p&gt;
+&lt;h3&gt;Configuring the logger&lt;/h3&gt;
+&lt;p&gt;One the logger instance has been created, you can add handlers to it:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import logging
+
+logger = logging.getLogger(&amp;quot;example_app&amp;quot;)
+logger.setLevel(logging.INFO)
+handler = logging.FileHandler(&amp;quot;example_app.log&amp;quot;)
+logger.addHandler(handler)
+
+# usage
+logger.info(&amp;quot;hello&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;The root logger and why not to use it&lt;/h3&gt;
+&lt;p&gt;If no logger is configured, or if you use one of the module-level
+functions such as  &lt;code&gt;logging.info()&lt;/code&gt; as opposed to &lt;code&gt;logger.info()&lt;/code&gt;, then
+the default behaviour is to use the &amp;quot;root logger&amp;quot;. This is a &lt;code&gt;Logger&lt;/code&gt;
+that is available globally. You can also obtain it with
+&lt;code&gt;logging.getLogger()&lt;/code&gt;, providing no argument.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Although the root logger can be used without any setup, it is usually
+a good idea to configure your own loggers.&lt;/strong&gt; By using different loggers,
+the logging output of different components of a program can be
+configured independently of each other.&lt;/p&gt;
+&lt;p&gt;For example, if you are developing a library, let's say &lt;code&gt;libfoo&lt;/code&gt;, that
+is intended for use in other applications, you can create your own
+logger:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# libfoo.py
+import logging
+logger = logging.getLogger(&amp;quot;libfoo&amp;quot;)
+# then configure your logger
+# and then
+logger.info(&amp;quot;logfoo is doing stuff&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then a client of your code can both set up their own logging and
+modify your code's behaviour:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# client.py
+import logging
+import libfoo
+
+logger = logging.getLogger(&amp;quot;client&amp;quot;)
+libfoo.logger.setLevel(logging.WARNING)  # suppress INFO messages
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;code&gt;Handler&lt;/code&gt; objects&lt;/h3&gt;
+&lt;p&gt;There are many subclasses of &lt;code&gt;Handler&lt;/code&gt;, providing different options for what to do with log messages. The two most common are &lt;code&gt;StreamHandler(stream)&lt;/code&gt;, which writes to a stream such as &lt;code&gt;sys.stderr&lt;/code&gt;, and &lt;code&gt;FileHandler(filename)&lt;/code&gt;, which appends messages to a file.&lt;/p&gt;
+&lt;p&gt;Other &lt;code&gt;Handler&lt;/code&gt; classes are provided in the &lt;code&gt;logging.handlers&lt;/code&gt; module (&lt;a href="https://docs.python.org/3/library/logging.handlers.html"&gt;doc&lt;/a&gt;), and some useful ones include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RotatingFileHandler&lt;/code&gt; , which writes to successive files (&lt;code&gt;app.log.1&lt;/code&gt;, &lt;code&gt;app.log.2&lt;/code&gt;, &lt;em&gt;etc.&lt;/em&gt;) keeping each file below a maximum size;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SocketHandler&lt;/code&gt;, which emits messages as TCP packets;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTTPHandler&lt;/code&gt;, which emits messages as &lt;code&gt;GET&lt;/code&gt; or &lt;code&gt;POST&lt;/code&gt; requests to a webserver; and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SMTPHandler&lt;/code&gt;, which sends email.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Choose the handlers that are suitable for your architecture. Since each handler can be configured separately, one might for example configure a &lt;code&gt;SMTPHandler&lt;/code&gt; to only report important messages such as &lt;code&gt;ERROR&lt;/code&gt; and &lt;code&gt;EXCEPTION&lt;/code&gt;, while &lt;code&gt;StreamHandler&lt;/code&gt; and &lt;code&gt;FileHandler&lt;/code&gt; to contain &lt;code&gt;DEBUG&lt;/code&gt; messages.&lt;/p&gt;
+&lt;h3&gt;Formatters and Filters&lt;/h3&gt;
+&lt;p&gt;Formatters and filters give further control over how messages are processed. Filters are associated with both loggers and handlers and can be configured differently for different handlers, so that different handlers may choose to emit different messages.&lt;/p&gt;
+&lt;p&gt;A handler may have a formatter; if no formatter is defined then the default behaviour is print just the message by itself. However, formatters can be configured to show various pieces of metadata about each log message (&lt;a href="https://docs.python.org/3/library/logging.html#logrecord-attributes"&gt;doc&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;It is a good idea to include timestamps as well as information about what emitted the message. This is done by passing arguments to &lt;code&gt;Formatter&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import logging
+
+logger = logging.getLogger(&amp;quot;example&amp;quot;)
+logger.setLevel(logging.INFO)
+handler = logging.StreamHandler()
+logger.addHandler(handler)
+formatter = logging.Formatter(
+  &amp;quot;%(asctime)s %(levelname)s %(filename)s:%(lineno)s %(message)s&amp;quot;,
+  datefmt=&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;
+)
+handler.setFormatter(formatter)
+
+logger.info(&amp;quot;Hello, world&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;prints:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2024-07-14 17:21:20,988 INFO foo.py:12 Hello, world
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Logging levels&lt;/h2&gt;
+&lt;p&gt;There are five predefined logging levels: &lt;code&gt;DEBUG&lt;/code&gt;, &lt;code&gt;INFO&lt;/code&gt;, &lt;code&gt;WARNING&lt;/code&gt;,
+&lt;code&gt;ERROR&lt;/code&gt; and &lt;code&gt;CRITICAL&lt;/code&gt; . These are to be used for messages of increasing
+seriousness. Each logger or filter must be set to a level, and ignores
+messages that are lower than that level. The default logging level is
+&lt;code&gt;WARNING&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Some good practices&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;As mentioned above: Use &lt;code&gt;logging&lt;/code&gt; where possible instead of &lt;code&gt;print&lt;/code&gt;,
+so that diagnostic messages are separated from output that needs to be
+machine-readable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don't use the root logger, always configure a custom logger. This
+makes it possible to configure separate logging behaviour between
+different modules or libraries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At a minimum, log messages should contain a timestamp. Otherwise, in a
+log file it will not be possible to discern whether a log message was
+triggered by a recent event.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is also a good idea to include a reference to whatever caused the
+log message to be emitted. Including the filename, line number and
+name of the function in the formatter is a good first start.
+However, this may not be fully informative if the log message is
+inside a function that is called from many sites.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logging the arguments passed to the function can also be helpful.
+But this must be done with care, if the arguments passed are complex
+objects with many fields, or if they contain sensitive information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I like to invent &amp;quot;sentinel&amp;quot; words (my term, I can't remember if there
+is an official term for this) that are specific to the particular
+feature being logged about. By using a word that won't be used
+anywhere else, it makes it easier to search for that word in the logs
+using &lt;code&gt;grep&lt;/code&gt;. For example, I used the French word &amp;quot;telecharger&amp;quot;
+instead of &amp;quot;download&amp;quot;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;funcy&lt;/code&gt; library provides a number of function decorators or
+context managers that help with logging calls to and returns from
+functions, which are particularly valuable when profiling code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;stderr or stdout?&lt;/h3&gt;
+&lt;p&gt;The default behaviour of &lt;code&gt;StreamHandler&lt;/code&gt; is to write log messages to
+&lt;code&gt;stderr&lt;/code&gt; rather than &lt;code&gt;stdout&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When writing shell utilities, writing diagnostic messages to &lt;code&gt;stderr&lt;/code&gt;
+instead of &lt;code&gt;stdout&lt;/code&gt; is useful if the program needs to produce
+machine-readable output, for example, to pipe into another process.
+Separating diagnostic messages into a separate stream will allow those
+messages to be more meaningful, detailed and human-readable, while
+keeping the output in a standard format. This also avoids accidentally
+piping such messages into the other program, which can have unexpected
+(or even dangerous) results.&lt;/p&gt;
+&lt;p&gt;On the other hand, for long-running services such as web apps, &lt;a href="https://12factor.net/logs"&gt;The
+Twelve-Factor App&lt;/a&gt; recommends writing all
+messages to &lt;code&gt;stdout&lt;/code&gt;, using a single stream. This stream can then be
+directed either to a regular file or to an external service which can
+then provide further services, such as searching, trend analysis or
+forwarding high-level messages.&lt;/p&gt;
+&lt;p&gt;The appropriate choice therefore depends on what the program output is
+used for. In either case, using the &lt;code&gt;logging&lt;/code&gt; module and the
+&lt;code&gt;StreamHandler&lt;/code&gt; class provides an abstraction that sidesteps this
+question for the code that actually emits the log message.&lt;/p&gt;
+&lt;h2&gt;Copy-and-paste example&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# logger.py
+import logging
+
+def configure_logger() -&amp;gt; logging.Logger:
+    &amp;quot;&amp;quot;&amp;quot;This stuff goes into its own function in order not to pollute the
+    module-level namespace; but since this is in its own module that
+    doesn't matter too much.
+    &amp;quot;&amp;quot;&amp;quot;
+    logger = logging.getLogger(&amp;quot;my_app&amp;quot;)
+    handler = logging.StreamHandler()
+    logger.addHandler(handler)
+    formatter = logging.Formatter(
+      &amp;quot;%(asctime)s %(levelname)s %(filename)s:%(lineno)s %(message)s&amp;quot;,
+      datefmt=&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;
+    )
+    handler.setFormatter(formatter)
+
+    return logger
+
+# This gets initialized only once, even if this module is imported
+# multiple times.
+logger: logging.Logger = configure_logger()
+
+# Allow logger to be imported from other modules
+__all__ = [&amp;quot;logger&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then, in another module in the same package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# code.py
+from .logger import logger
+
+logger.info(&amp;quot;Hello&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+</content><category term="Python"/><category term="python"/><category term="backend"/></entry><entry><title>Object creation patterns in Python: Static factory methods</title><link href="https://jmft.dev/static-factory-methods-in-python.html" rel="alternate"/><published>2024-05-21T00:00:00+01:00</published><updated>2024-05-21T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-05-21:/static-factory-methods-in-python.html</id><summary type="html">&lt;p&gt;The basic way to create and initialize an object in Python is using the
+default constructor, defined as the &lt;code&gt;__init__()&lt;/code&gt; method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class MyClass:
+    def __init__(self, x: float) -&amp;gt; None:
+        self.x: float = x
+        print(f&amp;quot;created an object with x = {x}&amp;quot;)
+
+
+obj = MyClass(5)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Usually, initial values of instance variables …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The basic way to create and initialize an object in Python is using the
+default constructor, defined as the &lt;code&gt;__init__()&lt;/code&gt; method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class MyClass:
+    def __init__(self, x: float) -&amp;gt; None:
+        self.x: float = x
+        print(f&amp;quot;created an object with x = {x}&amp;quot;)
+
+
+obj = MyClass(5)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Usually, initial values of instance variables are specified using
+arguments to &lt;code&gt;__init__()&lt;/code&gt;, and assigned to the variables. The body of
+&lt;code&gt;__init__()&lt;/code&gt; may also contain other steps, such as precomputing other
+other variables based on these instance attributes, or, as in this
+example, logging the creation of an object. &lt;small&gt;&lt;em&gt;(Resource allocation
+such as opening files should generally &lt;em&gt;not&lt;/em&gt; be done in an initializer,
+but in a &lt;a href="https://docs.python.org/3/reference/datamodel.html#context-managers"&gt;context
+manager&lt;/a&gt;,
+so that client code doesn't have to take care of deallocation.)&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;h2&gt;Dataclasses and kwargs&lt;/h2&gt;
+&lt;p&gt;When a class has many instance variables, it is common to &lt;strong&gt;use keyword
+arguments when initializing them&lt;/strong&gt;, which makes the meaning of each
+argument more explicit and allows arguments to be reordered later.
+Furthermore, such classes are often good candidates for making into
+&lt;a href="https://docs.python.org/3/library/dataclasses.html"&gt;&lt;strong&gt;dataclasses&lt;/strong&gt;&lt;/a&gt;,
+since the &lt;code&gt;@dataclass&lt;/code&gt; decorator automatically creates an &lt;code&gt;__init__()&lt;/code&gt;
+method with the necessary arguments and that assigns them to the
+instance variables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;@dataclass
+class Person:
+    # types are not enforced at runtime, but are checked by type
+    # checkers
+    name: str
+    age: int
+
+    # More complex types, including recursive types, are allowed. Use
+    # `field`
+    occupation: Optional[str] = field(default=None)
+    best_friend: &amp;quot;Person&amp;quot; = field(default=None)
+
+    # an __init___ method is automatically generated, but you can still
+    # create a __post_init__ method for additional behaviour like
+    # logging
+
+    def __post_init__(self):
+        print(f&amp;quot;Created new Person: {self}&amp;quot;)
+
+
+# Use kwargs when creating instances
+p = Person(name=&amp;quot;Sir Robin&amp;quot;, age=32, occupation=&amp;quot;knight&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As well as automatically providing the &lt;code&gt;__init__()&lt;/code&gt; method, dataclasses
+also automatically provide methods such as &lt;code&gt;__repr__()&lt;/code&gt; and &lt;code&gt;__eq__()&lt;/code&gt;,
+further reducing the amount of boilerplate code and allowing you to use
+a more declarative style of programming that focuses on the structure of
+the class (and makes it easier to add or remove fields witout needing to
+worry about updating all these methods).&lt;/p&gt;
+&lt;p&gt;While using dataclasses makes it easy to create an initializer even for
+objects with many fields, there are nonetheless some limitations of
+creating objects using the basic syntax &lt;code&gt;Person(...)&lt;/code&gt;. To provide more
+expressive ways to create objects, various &lt;em&gt;object creation patterns&lt;/em&gt;
+have been developed over the years, and are now standard fare in large
+projects, including the standard library itself.&lt;/p&gt;
+&lt;p&gt;The rest of this post will discuss the &lt;strong&gt;static factory methods
+pattern&lt;/strong&gt;, which allows you to provide multiple, distinct ways to
+instantiate a class without having a complicated &lt;code&gt;__init__()&lt;/code&gt; method. In
+a future post I shall discuss the &lt;strong&gt;builder pattern&lt;/strong&gt;, which lets you
+gradually build up a complex object by passing around the information
+needed to create it rather than requiring all the information in one go.&lt;/p&gt;
+&lt;h2&gt;The static factory method&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Provide multiple, distinct ways of instantiating a class.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Explicit is better than implicit.&lt;/em&gt; &lt;small&gt;&lt;a href="https://en.wikipedia.org/wiki/Zen_of_Python"&gt;&lt;em&gt;The Zen of Python&lt;/em&gt;&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;In many cases you want to provide multiple ways to obtain instances of a
+class. To do that, you can provide &lt;em&gt;static factory methods&lt;/em&gt; in your
+class: these are class methods that create and return instances.
+&lt;small&gt;&lt;em&gt;(The name comes from Java, which does not distinguish between
+class methods and static methods.)&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;A classic example is a &lt;code&gt;Point2D&lt;/code&gt; class that represents a point in the
+plane. It is desired to be able to create instances of &lt;code&gt;Point2D&lt;/code&gt; by
+specifying either the point's Cartesian coordinates or its polar
+coordinates. To achieve this, we define static factory methods
+&lt;code&gt;from_cartesians()&lt;/code&gt; and &lt;code&gt;from_polars()&lt;/code&gt; that return instances of
+&lt;code&gt;Point2D&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import math
+
+
+@dataclass
+class Point2D:
+    x: float
+    y: float
+
+    # __init__(self, x, y) is automatically generated
+
+    @classmethod
+    def from_cartesians(cls, x: float, y: float) -&amp;gt; &amp;quot;Point2D&amp;quot;:
+        return cls(x=x, y=y)
+
+    @classmethod
+    def from_polars(cls, r: float, theta: float) -&amp;gt; &amp;quot;Point2D&amp;quot;:
+        if r &amp;lt; 0:
+            raise ValueError(&amp;quot;Radial coordinate must be nonnegative&amp;quot;)
+        return cls(x=r * math.cos(theta), y=r * math.sin(theta))
+
+    
+p: Point2D = Point2D.from_polars(r=4, theta=0.5 * math.pi)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Although the &lt;code&gt;__init__()&lt;/code&gt; method (automatically created by &lt;code&gt;@dataclass&lt;/code&gt;)
+already gives us a way of instantiating a &lt;code&gt;Point2D&lt;/code&gt; through its
+Cartesian coordinates, we nonetheless provide a &lt;code&gt;from_cartesians()&lt;/code&gt;
+method. There are two major benefits to using this method oer the basic
+initializer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is more explicit about what the input numbers mean.&lt;/li&gt;
+&lt;li&gt;If it is desired to store the polar coordinates, rather than the
+Cartesian coordinates, as fields, the class methods can be updated
+without affecting client code; whereas instantiations with &lt;code&gt;Point2D(...)&lt;/code&gt;
+would need to be updated. (This is referred to as &amp;quot;invariance under
+refactoring&amp;quot; and allows developers to work on different parts of a
+codebase without hugely affecting each other.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For contrast, this is what the class might look like if we wanted to
+allow the user to specify either Cartesian or polar coordinates when
+creating a &lt;code&gt;Point2D&lt;/code&gt;, all in the &lt;code&gt;__init__()&lt;/code&gt; method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;@dataclass(init=False)  # we provide our own __init__() method
+class Point2D:
+    x: float
+    y: float
+
+    def __init__(
+        self, 
+        x: Optional[float] = None, 
+        y: Optional[float] = None, 
+        r: Optional[float] = None, 
+        theta: Optional[float] = None
+    ):
+        using_cartesians = x is not None and y is not None
+        using_polars = r is not None and theta is not None
+        if using_cartesians and not using_polars:
+            self.x, self.y = x, y
+            return
+        if using_polars and not using_cartesians:
+            if r &amp;lt; 0:
+              raise ValueError(&amp;quot;Radial coordinate must be nonnegative&amp;quot;)
+            self.x = r * math.cos(theta)
+            self.y = r * math.sin(theta)
+            return
+        
+        raise ValueError(&amp;quot;Either specify x and y or specify r and theta, but not both.&amp;quot;)
+
+
+p: Point2D = Point2D(r=4, theta=0.5 * math.pi)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is clearly more complex and less expressive.&lt;/p&gt;
+&lt;p&gt;Static factory methods are a common pattern in object oriented
+languages. Python doesn't have method overloading (unlike C/++ and
+Java) and so it is not possible to define multiple &lt;code&gt;__init__()&lt;/code&gt; methods
+with different signatures. But even in languages like Java it is often
+recommended to use static factory methods instead of overloaded
+constructors, for the expressiveness. &lt;small&gt;&lt;em&gt;(Indeed, this is the
+very first item in Joshua Bloch's &lt;a href="https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/"&gt;&lt;em&gt;Effective Java&lt;/em&gt;&lt;/a&gt;.)&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;h2&gt;Abstract base classes&lt;/h2&gt;
+&lt;p&gt;The real power of static factory methods comes when working with
+abstract classes. While (by definition) you cannot directly instantiate
+an abstract class, you can emulate such an instantiation providing a
+static factory method on the abstract base class that chooses an
+appropriate subclass and produces an instance of that class.&lt;/p&gt;
+&lt;p&gt;A typical use case is to provide the user with a simplified interface
+while internally having several underlying implementations. Consider the
+following interface, which declares a single method for calculating the
+integral of a function between two points:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import abc
+
+
+class Integrator(abc.ABC):
+    @abc.abstractmethod
+    def integrate(self, f: Callable[[float], float], a: float, b: float) -&amp;gt; float:
+        &amp;quot;&amp;quot;&amp;quot;Calculate the integral of the function f between a and b.&amp;quot;&amp;quot;&amp;quot; 
+        raise NotImplementedError
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The subclasses implement different methods of integration:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class EulerIntegrator(Integrator):
+    def __init__(self, n: int = 10):
+        self.n = n
+        
+    def integrate(self, f, a, b):
+        # Even for such an inaccurate scheme, this is a terrible 
+        # implementation! It is horrendously inefficient and doesn't
+        # properly handle floating point errors. This is just for
+        # illustration purposes.
+        dx = (b - a) / self.n
+        x = a
+        s = 0
+        while x &amp;lt; b:
+            s += f(x) * dx
+            x += dx
+        return s
+    
+class AdamsBashforthIntegrator(Integrator): ...  # similarly
+class TrapeziumIntegrator(Integrator): ...  # similarly
+class RK4Integrator(Integrator): ...  # similarly
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The appropriate choice of integration method depends on the function.
+For example, the Adams–Bashorth integrator has a lower order of
+accuracy than RK4, but performs better against stiff equations.&lt;/p&gt;
+&lt;p&gt;While the client may wish to choose an integrator for themself, as the
+developer of the &lt;code&gt;Integrator&lt;/code&gt; class one may wish to provide the user a
+shortcut for common cases without requiring them to know the details of
+the particular implementation. To achieve this, the &lt;code&gt;Integrator&lt;/code&gt; class
+could provide a static factory method that returns an appropriate
+instance:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class Integrator(abc.ABC):
+    @classmethod
+    def create(cls, stiff: bool = False) -&amp;gt; &amp;quot;Integrator&amp;quot;:
+        if stiff:
+            return AdamsBashforthIntegrator(...)  # with suitable params
+        else:
+              return RK4Integrator(...)  # ditto
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;with example usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;integrator = Integrator.create(stiff=True)
+print(integrator.integrate(lambda x: x ** 2, 1, 2))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Other numerical operations that can be calculated using different
+algorithms are similarly candidates for such a structure.&lt;/p&gt;
+&lt;h2&gt;Caveat and conclusion&lt;/h2&gt;
+&lt;p&gt;The examples above are smallish classes that nonetheless benefit from
+having multiple ways to create them. With that said, a class that has
+very different behaviours depending on how it is initialized may be too
+complicated, and be a candidate for refactoring into smaller classes
+each with fewer responsibilities.&lt;/p&gt;
+&lt;p&gt;As mentioned above, the static factory method pattern is commonly used
+not only in Python but also in other languages. The benefits are the
+same: using static factory methods (a) allows the user to more
+explicitly state how an object should be produced from input data
+(&lt;code&gt;Point2D.from_cartesians(3, 4)&lt;/code&gt; versus &lt;code&gt;Point2D(3, 4)&lt;/code&gt;), and (b) allows
+the class to rework what data it stores internally or which
+implementation of an abstract class to provide.&lt;/p&gt;
+</content><category term="Python"/><category term="python"/><category term="object-oriented-programming"/><category term="design-patterns"/></entry><entry><title>for loops in Python are a bit weird</title><link href="https://jmft.dev/for-loops-in-python-are-a-bit-weird.html" rel="alternate"/><published>2024-02-11T00:00:00+00:00</published><updated>2024-02-11T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-02-11:/for-loops-in-python-are-a-bit-weird.html</id><content type="html">&lt;p&gt;A quiz:&lt;/p&gt;
+&lt;p&gt;What does the following JavaScript code print and why?&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;for (let i = 0; i &amp;lt; 3; i++) {
+  console.log(i);
+  i -= 3
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What does the following Python code print and why?&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;for i in range(3):
+    print(i)
+    i -= 3
+
+&lt;/code&gt;&lt;/pre&gt;
+</content><category term="Python"/><category term="python"/><category term="javascript"/></entry></feed>

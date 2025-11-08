@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="I was a volunteer and organiser for codebar for several years and was heavily involved in outreach activities during my time at Cambridge. In the face of cuts to DEI initiatives, I believe that the lack of diversity at all levels of the tech sector seriously harms the sector. Besides …" />
+<meta name="keywords" content="software-engineering, politics, teaching">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Does vibecoding make coding more accessible?"/>
+  <meta property="og:description" content="I was a volunteer and organiser for codebar for several years and was heavily involved in outreach activities during my time at Cambridge. In the face of cuts to DEI initiatives, I believe that the lack of diversity at all levels of the tech sector seriously harms the sector. Besides …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./vibecoding-accessible.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-04-27 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Software"/>
+  <meta property="article:tag" content="software-engineering"/>
+  <meta property="article:tag" content="politics"/>
+  <meta property="article:tag" content="teaching"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Does vibecoding make coding more accessible?</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="vibecoding-accessible">Does vibecoding make coding more accessible?</h1>
+    <p>
+
+      Posted on Sun 27 April 2025 in <a href="./category/software.html">Software</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>I was a volunteer and organiser for <a href="https://codebar.io/">codebar</a> for
+several years and was heavily involved in outreach activities during my
+time at Cambridge. In the face of cuts to DEI initiatives, I believe
+that the lack of diversity at all levels of the tech sector seriously
+harms the sector.</p>
+<p>Besides the obvious lack of demographic diversity (I am the only woman
+full-time employee software engineer in my department, out of 30 or so;
+although there are a handful others of research and hardware engineers),
+there is an over-valuation of people from computing and engineering
+backgrounds, at the expense of people from other disciplines, especially
+the social sciences and humanities, who have deep domain knowledge in
+their own fields.  I am fortunate to work in a very interdisciplinary
+team, where I've had the opportunity to learn about a variety of topics
+in acoustics, audiology, music, image processing and data science;
+besides topics in computing.</p>
+<p>At the risk of overgeneralising, software engineers lack this domain
+knowledge. Instead, we maintain our value by holding a monopoly over our
+skills, acting as middlemen between innovators and implementations.
+As with all middlemen, while this situation is very lucrative for us, it
+slows down the development process and often introduces
+misunderstandings along the way.</p>
+<p>If &quot;vibecoding&quot; (<a href="https://en.wikipedia.org/wiki/Vibe_coding">Wikipedia</a>)
+can indeed reduce the barrier for people from other disciplines to start
+coding, that is not necessarily a bad thing.  Of course, many people are
+using these new abilities to create &quot;innovations&quot; that are either
+useless or actively harmful to society or the environment. But that is a
+wider problem with an economic system that rewards such creations. Maybe
+more on that in a future post.</p>
+<p>From an educational point of view, however, I don't think vibecoding can
+be a substitute for becoming a well-rounded engineer.</p>
+<p>My experience using LLMs is that they are excellent for generating
+prototypes and introducing one to a new technology or framework (or many
+other topics); but they remain very poor at any higher-level tasks.
+Vibecode does poorly with complex systems, and produces solutions that
+do not scale well, do not handle edge cases, and have important flaws
+such as security loopholes. And even code generation often produces
+plenty of unnecessary code, or &quot;cargo-cult programming&quot;.  When I point
+out these flaws in their solutions, they are usually able to adapt the
+solutions to address those issues but often create new problems.</p>
+<p>I know about these considerations, through several years of experience
+and experimentataion, sometimes painful (<em>e.g.</em> accidentally dropping
+entire databases or buckets). And there are many more considerations
+that I do not know about, which is when I am very happy to have the
+advice of more senior engineers.</p>
+<p>A novice programmer who relies on vibecoding may do a decent job
+creating a prototype and may even become quite comfortable with a
+programming language, but may find it difficult to grow beyond a small
+project or generalise this knowledge. This isn't a new problem, though:
+there are many courses, tutorials or bootcamps that equip students to
+develop apps using frameworks, but do not teach the principles behind
+the frameworks, leading to aforementioned cargo-cult programming.  This
+is an all-too-common antipattern in science education: Timothy Gowers
+describes <a href="https://gowers.wordpress.com/2012/11/20/what-maths-a-level-doesnt-necessarily-give-you/">shortcomings of high school mathematics
+education</a>,
+which bombards students with techniques and facts but does not introduce
+any rigor or foundations, producing students who pass exams but do not
+understand why.</p>
+<p>So perhaps there is still a place for us software engineers. But we must
+do better than being code monkeys: in particular, we must adopt an
+attitude towards engineering that focuses on systems and thinks at a
+higher level, about business requirements.</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/software-engineering.html">software-engineering</a>
+      <a href="./tag/politics.html">politics</a>
+      <a href="./tag/teaching.html">teaching</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>JMFT - Physics</title><link href="https://jmft.dev/" rel="alternate"/><link href="https://jmft.dev/feeds/physics.atom.xml" rel="self"/><id>https://jmft.dev/</id><updated>2025-11-08T00:00:00+00:00</updated><entry><title>Part IB Quantum Mechanics resources</title><link href="https://jmft.dev/qm-resources.html" rel="alternate"/><published>2025-11-07T00:00:00+00:00</published><updated>2025-11-07T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-11-07:/qm-resources.html</id><summary type="html">&lt;p&gt;This page lists things possibly of interest to my Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; students. It will be updated from time to time.&lt;/p&gt;
+&lt;h2&gt;Books&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Alexandre Zagoskin, &lt;em&gt;Quantum Mechanics: A Complete Introduction: Teach Yourself&lt;/em&gt;. ISBN 9781473602410.&lt;/p&gt;
+&lt;p&gt;Covers a lot of physicsy material but a bit light on the maths. Starts from classical …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;This page lists things possibly of interest to my Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; students. It will be updated from time to time.&lt;/p&gt;
+&lt;h2&gt;Books&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Alexandre Zagoskin, &lt;em&gt;Quantum Mechanics: A Complete Introduction: Teach Yourself&lt;/em&gt;. ISBN 9781473602410.&lt;/p&gt;
+&lt;p&gt;Covers a lot of physicsy material but a bit light on the maths. Starts from classical physics and has important notes about the history and philosophy of quantum mechanics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Leonard Susskind, &lt;em&gt;Quantum Mechanics: The Theoretical Minimum&lt;/em&gt;. ISBN 978-0465036677.&lt;/p&gt;
+&lt;p&gt;Takes an axiomatic, mathematical approach and very useful for going from this course to Part II &lt;em&gt;Principles of Quantum Mechanics&lt;/em&gt;, although the approach is a bit different from the one taken in this courses. Also available as &lt;a href="https://theoreticalminimum.com/courses/quantum-mechanics/2012/winter"&gt;video lectures&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;David Tong's &lt;a href="https://www.damtp.cam.ac.uk/user/tong/quantum.html"&gt;lecture notes&lt;/a&gt; and &lt;a href="https://www.damtp.cam.ac.uk/user/tong/books/quantum.html"&gt;book&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eugene Lim's &lt;a href="https://nms.kcl.ac.uk/eugene.lim/teach/QM2012/QMroot.html"&gt;notes&lt;/a&gt; on an older version of this course. &lt;em&gt;Dead link – I shall try to find an archived version.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Web resources&lt;/h2&gt;
+&lt;h3&gt;Videos&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://www.youtube.com/@LookingGlassUniverse"&gt;Looking Glass Universe&lt;/a&gt; channel by Mithuna Yonagathan has excellent explanations for quantum mechanical phenomena.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=v_uBaBuarEM&amp;amp;t=6s"&gt;I did the double slit experiment at home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://youtu.be/fbzHNBT0nl0?si=Oh44kP2wUOhUJv1d"&gt;The biggest lie about the double slit experiment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://youtu.be/hIvuxx14zCk?si=SNHCSgPpcb1A6eiD"&gt;&amp;quot;Standard&amp;quot; quantum mechanics is obviously wrong&lt;/a&gt; – on problems with the Copenhagen interpretation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/@mahesh_shenoy"&gt;FloatHeadPhysics&lt;/a&gt; has some excellent videos that try to make physics concepts intuitive and logical. He has a &lt;a href="https://www.youtube.com/playlist?list=PLawLaqps30oCiv24vBDZeNM5nmJ157shS"&gt;playlist of videos about quantum mechanics&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Demos&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.falstad.com/mathphysics.html"&gt;Paul Falstad's Math, Physics and Engineering applets&lt;/a&gt; has several demos related to quantum mechanics (and many other physics-y things).&lt;/p&gt;
+&lt;p&gt;For Pythonistas, I made a bunch of interactive demos for various courses that you can find on &lt;a href="https://github.com/jftsang/ibmethods-demos"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Pages on this blog&lt;/h3&gt;
+&lt;p&gt;Everything relevant is tagged with the &lt;a href="/tag/quantum-mechanics.html"&gt;&lt;code&gt;quantum-mechanics&lt;/code&gt;&lt;/a&gt; tag.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="qm-cheat-sheet.html"&gt;Quantum mechanics revision guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="bohr-model-background.html"&gt;The Bohr model: Some history and context&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="uncertainty-principle-and-spectrograms.html"&gt;The uncertainty principle and spectrograms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="uncertainty-principle-obvious-to-musicians.html"&gt;The uncertainty principle is obvious to musicians&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="teaching"/></entry><entry><title>But what does $\delta F = 0$ mean?</title><link href="https://jmft.dev/calculus-of-variations-formalism.html" rel="alternate"/><published>2025-10-16T00:00:00+01:00</published><updated>2025-10-16T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-10-16:/calculus-of-variations-formalism.html</id><summary type="html">&lt;p&gt;The following discussion is meant to give some more formalism to students of the &lt;em&gt;Variational Principles&lt;/em&gt; course and perhaps tie it to material that they might have come across in analysis or linear algebra courses.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page is a work in progress and may not be accurate; formulae may have …&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;The following discussion is meant to give some more formalism to students of the &lt;em&gt;Variational Principles&lt;/em&gt; course and perhaps tie it to material that they might have come across in analysis or linear algebra courses.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page is a work in progress and may not be accurate; formulae may have mistakes or be improperly formatted. Use with care.&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A functional is a function of a function:
+$$
+F[y] = \int_a^b f(x, y, y'), \mathrm{d}x
+$$
+We are concerned with scalar-valued functionals where $f$ and $F$ take real values.&lt;/p&gt;
+&lt;p&gt;The idea is that the function space $y$ lives in some function space $U$, e.g. differentiable functions on $(a, b)$. This $U$ is a vector space over $\mathbb{R}$ meaning that it is legal to write down expressions like $y = \lambda y_1 + \mu y_2$ where $\lambda, \mu \in \mathbb{R}$ are scalars. The expression $f(x, y, y')$ is arbitrary, and in general nonlinear.&lt;/p&gt;
+&lt;p&gt;The functional $F: U \rightarrow \mathbb{R}$ is a function from a function space $U$ to $\mathbb{R}$. Our goal is to understand what it means to differentiate such functions in $U$, &amp;quot;with respect to $y$&amp;quot;.&lt;/p&gt;
+&lt;h2&gt;Differentiation in finite-dimensional vector spaces&lt;/h2&gt;
+&lt;p&gt;We shall begin by considering a finite-dimensional vector space $V = \mathbb{R}^n$ and a scalar-valued function $\phi: \mathbb{R}^n \rightarrow \mathbb{R}$, and trying to understand what it means to differentiate $\phi$.&lt;/p&gt;
+&lt;p&gt;When we consider the derivative of $\phi$ at a point $x$ we are really looking at what happens when the argument is changed by a small amount: the difference betwen $\phi(x + \epsilon n)$ and $\phi(x)$ in the limit $\epsilon\rightarrow0$. Here, $n$ is some vector that specifies the direction in which we are differentating.&lt;/p&gt;
+&lt;p&gt;If $\phi$ is differentiable at $x$ in the direction of $n$, then we would expect that as $\epsilon\rightarrow0$,
+$$
+\phi(x + \epsilon n) = \phi(x) + g_n \epsilon + o(\epsilon)
+$$
+or equivalently (expanding the definition of the $o(\epsilon)$ notation)
+$$
+\lim_{\epsilon \rightarrow 0} \frac{\phi(x + \epsilon n) - \phi(x)}{\epsilon} =  g_n
+$$
+for some quantity $g_n$ that depends on $n$. That is, the variation in $\phi$ should be &lt;em&gt;linearly&lt;/em&gt; proportional to $\epsilon$ at leading order. This is reminiscent of the definition of differentiability in one dimension: we are in fact looking at the function $\varphi(\epsilon) = \phi(x + \epsilon n)$ which is a function over the scalar variable $\epsilon$.&lt;/p&gt;
+&lt;p&gt;For $\phi: \mathbb{R}^n \rightarrow \mathbb{R}$ it turns out we need a stronger condition: we actually need $g_n$ to be a linear function of the direction vector $n$ as well. Thus (by some linear algebra) there needs to be a vector $g$ such that $g_n = g \cdot n$ , and $g$ doesn't depend on $n$ (but may depend on $x$).&lt;/p&gt;
+&lt;p&gt;(Note that it is not enough for the partial derivatives along the coordinate axes to merely exist for $\phi$ to be differentiable.)&lt;/p&gt;
+&lt;p&gt;Absorbing $\epsilon$ into the magnitude of $n$, the definition of $\phi: \mathbb{R}^n \rightarrow \mathbb{R}$ being differentiable is that there needs to exist a vector $g$ such that for &lt;em&gt;any&lt;/em&gt; direction $n$ we have
+$$
+\phi(x + n) = \phi(x) + g \cdot n + o\left(||n||\right)
+$$
+If such a $g$ exists, then we give it the notation $\nabla\phi$ and call it the &lt;em&gt;gradient&lt;/em&gt; of $\phi$ at $x$. Its components are given by the partial derivatives $\nabla \phi_i = \partial \phi / \partial x_i$ along the coordinate axes.&lt;/p&gt;
+&lt;p&gt;To look at stationary points of $\phi$, we look for places where the vector $\nabla\phi = 0$: that is, the change in $\phi$ along &lt;em&gt;any&lt;/em&gt; direction $n$ needs to be sublinear, $o\left(||n||\right)$.&lt;/p&gt;
+&lt;h2&gt;Function spaces&lt;/h2&gt;
+&lt;p&gt;Back to our functional $F[y] = \int_a^b f(x, y, y'), \mathrm{d}x$. Now the finite dimensional $V$ is replaced by an infinite dimensional function space $U$. But this is still a vector space, so notions such as &amp;quot;linear map&amp;quot; and &amp;quot;dot product&amp;quot; still apply, in disguised form.&lt;/p&gt;
+&lt;h3&gt;Inner products&lt;/h3&gt;
+&lt;p&gt;The key idea is that we can define an inner product on $U$, between two functions $r, s \in U$:
+$$
+r \cdot s = \int_a^b r(x) , s(x) , \mathrm{d}x
+$$
+It can be shown that this satisfies the requirements to be an inner product over a vector space. Importantly, it is linear in each of $r$ and $s$.&lt;/p&gt;
+&lt;h3&gt;Aside: Linear functionals&lt;/h3&gt;
+&lt;p&gt;The converse is trickier. In the finite-dimensional case, we used the fact that any linear function of a vector $n$ must take the form $g \cdot n$ for some vector $g$. This is &lt;em&gt;not&lt;/em&gt; the case in the space $U$: a scalar-valued linear functional $L[s]$ does not necessarily need to be $r \cdot s$ for some $r \in U$. Simple counterexample, function evaluation $L[s] = s(c)$ at some $c \in (a, b)$.&lt;/p&gt;
+&lt;p&gt;In the finite dimensional case a vector space $V$ is isomorphic to $V^*$ and so we can identify $g$ as a member of $V$ corresponding to the map $n \mapsto g\cdot n$. The problem is that this is not the case in the function space $U$, where the concept of a &amp;quot;dual space&amp;quot; requires a bit more care to define. See &lt;a href="https://en.wikipedia.org/wiki/Dual_space#Continuous_dual_space"&gt;Wikipedia&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;p&gt;It turns out that such difficulties can be overcome by introducing the concept of a &lt;a href="https://en.wikipedia.org/wiki/Distribution_(mathematical_analysis)"&gt;distribution&lt;/a&gt; – including the ever-popular Dirac delta function, which is not actually a function but a distribution. In the example above, we could take $r(x) = \delta(x-c$) to get our functional for evaluating at $c$.&lt;/p&gt;
+&lt;h3&gt;Norms and limits&lt;/h3&gt;
+&lt;p&gt;The inner product also defines a norm on $U$, by
+$$
+||r|| = \left( \int_a^b r(x)^2 ,\mathrm{d}x \right)^{1/2}
+$$
+The point of the norm is that it now makes sense to talk about the &amp;quot;size&amp;quot; of $r$, and in particular, what it means to take a limit $r \rightarrow 0$ in the function space $U$. This also lets us write down a term like $o\left( ||r|| \right)$ to denote a quantity that is sublinear in $||r||$.&lt;/p&gt;
+&lt;h2&gt;The variation $\delta F$&lt;/h2&gt;
+&lt;p&gt;Now we want to see what the &amp;quot;derivative&amp;quot; of $F[y]$ is at the &amp;quot;point&amp;quot; $y$, where a &amp;quot;point&amp;quot; $y \in U$ is a function. By analogy with the finite-dimensional case, we first consider the variation of $F$ along a certain &amp;quot;direction&amp;quot; $\eta$ – this direction is also a member of $U$. So we consider the behaviour of
+$$
+\Delta_y [\eta] = F[y + \eta] - F[y]
+$$
+in the limit $||\eta|| \rightarrow 0$ and we hope that this is, to leading order, linear in $\eta$.  We consider this to be a functional in $\eta$, although it also depends on the $y$ where we are evaluating it.&lt;/p&gt;
+&lt;p&gt;By standard derivations (expand and IBP) we get
+$$
+\begin{align}
+\Delta_y [\eta] &amp;amp;= \int_a^b \left(
+\frac{\partial f}{\partial y} - \frac{\mathrm{d}}{\mathrm{d}x} \left(
+\frac{\partial f}{\partial y'}
+\right)
+\right) , \eta , \mathrm{d}x &amp;amp;+ o\left(||\eta||\right)  \
+&amp;amp;= \int_a^b EL(x, y, y') , \eta(x) ,\mathrm{d}x
+&amp;amp;+ o\left(||\eta||\right) \
+&amp;amp;= EL \cdot \eta &amp;amp;+ o\left(||\eta||\right)
+\end{align}
+$$
+We observe that this is an inner product: the expression $EL(x, y, y')$ does not depend on $\eta$; and when we evaluate it at the &amp;quot;point&amp;quot; $y = y(x)$, this itself becomes a function of just $x$, written $EL(x)$. Thus $\Delta_y [\eta]$ is an inner product of $EL$ with $\eta$.&lt;/p&gt;
+&lt;p&gt;We write
+$$
+F[y + \eta] = F[y] + \delta F [\eta] + o\left(||\eta||\right)
+$$
+where $\delta F$ is that first-order approximation, and call it the &lt;em&gt;variation&lt;/em&gt;. Note that it does depend on the &amp;quot;direction&amp;quot; of $\eta$. It also depends on $y$ but we usually don't write this explicitly.&lt;/p&gt;
+&lt;h3&gt;Stationary points&lt;/h3&gt;
+&lt;p&gt;Again a stationary point of $F$ is defined to be a &amp;quot;point&amp;quot; $y$ where the change in $F$ is sublinear to the change in the argument.&lt;/p&gt;
+&lt;p&gt;If we require that $\Delta \eta = o\left(||\eta||\right)$ for all &amp;quot;directions&amp;quot; $\eta$ in the limit $||\eta||\rightarrow0$, this is equivalent (subject to caveats!) to requiring that $EL = 0$, which recovers us the Euler–Lagrange equation:
+$$
+\frac{\partial f}{\partial y} - \frac{\mathrm{d}}{\mathrm{d}x} \left(
+\frac{\partial f}{\partial y'} \right) = 0
+$$&lt;/p&gt;
+&lt;h2&gt;The second variation&lt;/h2&gt;
+&lt;h3&gt;In finite dimensions&lt;/h3&gt;
+&lt;p&gt;Going back to the finite-dimensional case, for our function $\phi$ over a finite dimensional domain to be twice differentiable, we need the correction to $\phi$ to be second-order in $\epsilon$, &lt;em&gt;i.e.&lt;/em&gt;
+$$
+\phi(x + \epsilon n) = \phi(x) + (g \cdot n),\epsilon + S_n \epsilon^2 + o(\epsilon^2)
+$$
+for some quantity $S_n$ that, again, in general, depends on the direction $n$. It can be shown that $S_n$ actually needs to be a quadratic form, &lt;em&gt;i.e.&lt;/em&gt;
+$$
+\phi(x + \epsilon n) = \phi(x) + (g \cdot n),\epsilon + ( n \cdot H \cdot n ) , \epsilon^2 + o(\epsilon^2)
+$$
+for some symmetric matrix $H$ which we call the &lt;em&gt;Hessian&lt;/em&gt;. Its values are given by the second partial derivatives along the coordinate axes, $H_{ij} = \partial^2f / (\partial x_i \partial x_j)$.&lt;/p&gt;
+&lt;p&gt;One sometimes writes $H = \nabla\nabla \phi$, especially in continuum mechanics. However it is incorrect to write $H = \nabla^2 \phi$ as this notation denotes the Laplacian, which is a scalar value; in fact $\nabla^2 \phi = \mathrm{trace}, H$.&lt;/p&gt;
+&lt;h3&gt;For functionals&lt;/h3&gt;
+&lt;p&gt;As for the second variation $\delta^2 F$, this means expanding to a second order approximation. That is, we suppose that
+$$
+F[y + \eta] = F[y] + \delta F [\eta] + \delta^2 F[\eta] + o\left(||\eta||^2 \right)
+$$
+for some functional $\delta^2 F[\eta]$ (again this implicitly depends on the $y$ where we are evaluating); and we insist that the size of $\delta^2 F[\eta]$ be quadratic in $\eta2$. This is a generalisation of Taylor's theorem.&lt;/p&gt;
+&lt;p&gt;Expanding $F[y+\eta]$ to second order in $\eta$, we find that the second order correction gives us
+$$
+\delta^2 F[\eta] = \int_a^b (P \eta^2 + Q \eta'^2) , \mathrm{d}x
+$$
+for some functions $P$ and $Q$. We estimate the size of this functional by:
+$$
+||\delta^2 F[\eta]|| \leq (a-b)\left[||P|| \times||\eta||^2 + ||Q|| \times ||\eta'||^2 \right]
+$$
+This almost gives us what we want, but there is the problem that differentiation is an &amp;quot;unbounded&amp;quot; operation: the size of $||\eta'||$ can be large even in the limit $||\eta|| \rightarrow 0$. (Consider a very wriggly function.) So it is not necessarily the case that $||\eta'||^2$ is proportional to $||\eta||^2$.&lt;/p&gt;
+&lt;p&gt;We ignore such pathologies, but the way to avoid this issue is to backtrack and work not in the limit of $||\eta||\rightarrow0$, but instead to let $\eta$ be a fixed &amp;quot;direction&amp;quot; and consider $F[y + \epsilon \eta]$ and take the limit $\epsilon\rightarrow0$; in that way one finds that
+$$
+F[y + \epsilon\eta] = F[y] + \delta F [\eta] \epsilon + \delta^2 F[\eta] \epsilon^2 + o\left(\epsilon^2 \right)
+$$&lt;/p&gt;
+&lt;h2&gt;Local minimum&lt;/h2&gt;
+&lt;p&gt;The second variation can now be used to show that $F$ takes a local minimum at a point $y$, if $\delta F = 0$.&lt;/p&gt;
+&lt;p&gt;It is not easy and depends on the magnitude and sign of $P$ and $Q$ over the interval $(a, b)$, but if it can be shown that $\delta ^2 F[\eta] \geq 0$ for all $\eta$ then it follows that
+$$
+F[y + \epsilon\eta] = F[y] + \delta^2 F[\eta] \epsilon^2 + o(\epsilon^2) \geq F[y]
+$$
+for sufficiently small values of $\epsilon$. So $F[y]$ is a local minimum. Note that this does not tell us anything about the global behaviour.&lt;/p&gt;
+</content><category term="Physics"/><category term="math"/><category term="physics"/><category term="teaching"/><category term="calculus-of-variations"/></entry><entry><title>Quantum mechanics revision guide</title><link href="https://jmft.dev/qm-cheat-sheet.html" rel="alternate"/><published>2025-10-13T00:00:00+01:00</published><updated>2025-10-13T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-10-13:/qm-cheat-sheet.html</id><summary type="html">&lt;p&gt;This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Vector spaces, inner products and duality&lt;/h2&gt;
+&lt;p&gt;Let $V$ be an inner product space over $\mathbb{C}$.&lt;/p&gt;
+&lt;p&gt;We use &lt;em&gt;ket&lt;/em&gt; notation for vectors: $|\psi\rangle \in V$&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;inner product&lt;/strong&gt; between …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Vector spaces, inner products and duality&lt;/h2&gt;
+&lt;p&gt;Let $V$ be an inner product space over $\mathbb{C}$.&lt;/p&gt;
+&lt;p&gt;We use &lt;em&gt;ket&lt;/em&gt; notation for vectors: $|\psi\rangle \in V$&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;inner product&lt;/strong&gt; between two vectors is notated as $\langle\phi|\psi\rangle$. This satisfies conjugate symmetry:
+$$
+\overline{\langle\phi|\psi\rangle} = \langle\psi|\phi\rangle
+$$&lt;/p&gt;
+&lt;p&gt;Elements of the &lt;strong&gt;dual space&lt;/strong&gt; $V^*$ use &lt;em&gt;bra&lt;/em&gt; notation $\langle\phi|$ and this acts on $|\psi\rangle \in V$ by
+$$\langle\phi|: V \rightarrow \mathbb{C} : |\psi\rangle \mapsto \langle\phi|\psi\rangle$$&lt;/p&gt;
+&lt;p&gt;Note $\langle \mathrm{bra}|\mathrm{ket}\rangle$  form a bra(c)ket.&lt;/p&gt;
+&lt;p&gt;It can be shown that $V$ and $V^*$ are isomorphic and that the isomorphism is &amp;quot;natural&amp;quot;, &lt;em&gt;i.e.&lt;/em&gt; does not depend on a choice of basis. Conjugate symmetry means that the &lt;em&gt;bra&lt;/em&gt; corresponding to $\alpha|\psi\rangle$ is $\overline\alpha\langle\psi|$.&lt;/p&gt;
+&lt;h2&gt;Linear operators and adjoints&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Linear operators&lt;/strong&gt; $L: V \rightarrow V$  acts on &lt;em&gt;kets&lt;/em&gt; as $|\psi\rangle \mapsto L |\psi\rangle$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;adjoint operator&lt;/strong&gt; $L^\dagger: V^* \rightarrow V^*$ acts on &lt;em&gt;bras&lt;/em&gt; by $\langle\phi| \mapsto \langle\phi| L^\dagger$.&lt;/p&gt;
+&lt;p&gt;By conjugate symmetry, $\overline{\langle\phi|L|\psi\rangle} = \langle\psi|L^\dagger|\phi\rangle$ .&lt;/p&gt;
+&lt;p&gt;An operator is &lt;strong&gt;self-adjoint&lt;/strong&gt; if
+$$
+\langle\psi|L^\dagger|\phi\rangle = \langle\psi|L|\phi\rangle
+$$
+It is technically illegal to write $L = L^\dagger$ since $L$ is an endomorphism on $V$ but $L^\dagger$ is on $V^*$, but the inner product notation allows us to gloss over this (the two spaces are isomorphic).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Properties of self-adjoint operators:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;eigenvalues are real&lt;/li&gt;
+&lt;li&gt;orthogonality of eigenvectors with different eigenvalues: if $L|m\rangle = \lambda_m|m\rangle$ and $L|n\rangle = \lambda_n|n\rangle$, and $\lambda_m \neq \lambda_n$, then $\langle m|n\rangle = 0$&lt;/li&gt;
+&lt;li&gt;eigenvectors are complete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;we can use the eigenvectors as a basis&lt;/li&gt;
+&lt;li&gt;we can pick the basis to be orthonormal, even if there is a repeated eigenvalue (Gram–Schmidt)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Properties of orthonormal bases:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Given an orthonormal basis $|n\rangle$ the dual basis on $V^*$ is $\langle n|$.&lt;/p&gt;
+&lt;p&gt;$$\langle m | n \rangle = \delta_{mn}$$&lt;/p&gt;
+&lt;p&gt;Projection (generalisation of Fourier coefficient formula):
+$$
+|\psi\rangle = \sum_n c_n|n\rangle \implies c_n = \langle n|\psi\rangle
+$$
+Sometimes easier to work with non-normalised basis, in which case:
+$$
+c_n = \frac{\langle n |\psi\rangle}{\langle n | n \rangle}
+$$&lt;/p&gt;
+&lt;p&gt;Conjugate symmetry:
+$$
+\langle\psi|= \sum_n \overline{c_n} \langle n|
+$$&lt;/p&gt;
+&lt;p&gt;Inner products:
+$$
+\begin{align}
+|\phi\rangle &amp;amp;= \sum_n b_n|n\rangle \
+|\psi\rangle &amp;amp;= \sum_n c_n|n\rangle \
+\implies \langle\phi|\psi\rangle &amp;amp;= \sum_n \overline{b_n} c_n
+\end{align}
+$$&lt;/p&gt;
+&lt;h2&gt;Principles of quantum mechanics&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;States&lt;/strong&gt; are elements of an inner product space $V$ over $\mathbb{C}$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;finite dimensional: spin states&lt;/li&gt;
+&lt;li&gt;infinite dimensional: wavefunctions, function spaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A &lt;strong&gt;normalised state&lt;/strong&gt; has $\langle\psi|\psi\rangle=1$ . Magnitudes and any overall phase $e^{i\varphi}$ always cancel out when calculating physical quantities. So states $|\psi\rangle$ and $c|\psi\rangle$ are equivalent for $c\in\mathbb{C}$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observable quantities&lt;/strong&gt; correspond to self-adjoint linear operators:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;position $\mathbf{x}$ $\rightarrow$ position operator $\hat{\mathbf{x}}$&lt;/li&gt;
+&lt;li&gt;momentum $\mathbf{p}$ $\rightarrow$ momentum operator $\hat{\mathbf{p}}$&lt;/li&gt;
+&lt;li&gt;energy $E$ $\rightarrow$ Hamiltonian $\hat{H}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;%% * angular momentum $L_z$, $\mathbf{L}^2$ $\rightarrow$ $\hat{L_z}$, $\hat{\mathbf{L}}^2$ respectively
+%%&lt;/p&gt;
+&lt;p&gt;These can be vector quantities but for 1D systems we can conflate $\mathbf{x}$ and $x$. Often drop the hats to simplify notation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Eigenbasis:&lt;/strong&gt; For $L$ self-adjoint we have a complete set of eigenvectors $|n\rangle$ with corresponding eigenvalues $\lambda_n \in\mathbb{R}$ not necessarily distinct. Write
+$$
+|\psi\rangle = \sum_n c_n |n\rangle, \qquad c_n = \langle n|\psi\rangle.
+$$
+Normalisation implies
+$$
+\langle\psi|\psi\rangle = \sum_n |c_n|^2 = 1.
+$$&lt;/p&gt;
+&lt;p&gt;Using the eigenbasis is nice because we can apply $L$ simply by multiplying each eigenstate by the corresponding eigenvalue:
+$$
+L|\psi\rangle = \sum_n c_n \lambda_n |n\rangle
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observations are probabilistic.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The possible results of an observation of $L$ are drawn from the eigenvalues $\lambda_n$ of $L$.&lt;/li&gt;
+&lt;li&gt;The probability of measuring $\lambda_n$ is given by &lt;strong&gt;Born's rule&lt;/strong&gt;: $p(n) = |c_n|^2$.&lt;/li&gt;
+&lt;li&gt;If $\lambda_n$ is a repeated eigenvalue then each of these contributes a chance to measure that value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Often easier to calculate with the non-normalised version of Born's rule:
+$$
+p(n) = \frac{|\langle n|\psi\rangle|^2}{\langle n|n\rangle \langle\psi|\psi\rangle}
+$$&lt;/p&gt;
+&lt;p&gt;Note that the probabilistic interpretation leads to serious philosophical problems! So this can't be the full story, although its predictions agree with experiment. &lt;a href="https://youtu.be/hIvuxx14zCk?si=tWbl6DESqfj-T8aQ"&gt;Looking Glass Universe has an excellent video on this.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observations collapse the state.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The state changes instantaneously during an observation. If the result of the measurement is $\lambda_n$, then the state collapses onto its projection onto the corresponding eigenspace (up to normalization).&lt;/p&gt;
+&lt;p&gt;In particular, if $\lambda_n$ is non-degenerate (i.e. eigenspace has dimension 1) then the state after the measurement is $|n\rangle$.&lt;/p&gt;
+&lt;p&gt;This means that the state $|\psi\rangle$ isn't fully observable – because observations destroy information. (Again, there are serious problems with this interpretation.)&lt;/p&gt;
+&lt;p&gt;Neither is any overall phase in $e^{i\varphi}|\psi\rangle$, since those phases cancel when you take quantities such as $\langle\psi|\psi\rangle$.&lt;/p&gt;
+&lt;h2&gt;Time-evolution&lt;/h2&gt;
+&lt;p&gt;Assume that time evolution is governed by a linear operator:
+$$
+|\psi(t)\rangle = U(t)|\psi(0)\rangle
+$$
+$U(0) = I$ must be the identity operator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conservation of information&lt;/strong&gt; implies that orthogonal states need to remain orthogonal. This implies that $U(t)$ must be unitary, $U U^\dagger = U^\dagger U = I$.&lt;/p&gt;
+&lt;p&gt;Taking the limit $t \rightarrow 0$ we can write
+$$
+U(t) = I - \frac{i}{\hbar}t \hat{H} + O(t^2)
+$$
+for some self-adjoint operator $\hat{H}$ called the &lt;em&gt;Hamiltonian&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;$\hbar$ is the &lt;strong&gt;reduced Planck constant&lt;/strong&gt;; it has units of angular momentum $\mathrm{kg, m^2, s^{-1}} = \mathrm{J \cdot s}$ and provides a conversion factor.&lt;/p&gt;
+&lt;p&gt;Some algebra gives the &lt;strong&gt;time-dependent Schrodinger equation&lt;/strong&gt;:
+$$
+i \hbar \frac{\mathrm{d}|\psi\rangle }{\mathrm{d}t}= \hat{H} |\psi\rangle
+$$&lt;/p&gt;
+&lt;p&gt;The Hamiltonian $\hat{H}$ does not come from first principles but is chosen to match experimental results, and often by analogy to classical mechanics.&lt;/p&gt;
+&lt;h2&gt;Energy states&lt;/h2&gt;
+&lt;p&gt;Look for &lt;strong&gt;energy eigenstates&lt;/strong&gt; by solving the &lt;strong&gt;time-independent Schrodinger equation&lt;/strong&gt;:
+$$
+\hat H |\chi_n\rangle = E_n |\chi_n\rangle
+$$&lt;/p&gt;
+&lt;p&gt;The corresponding time-dependent solution is separable:
+$$|\psi(t)\rangle = A e^{iE_n t/\hbar} |\chi_n\rangle$$
+where $A\in\mathbb{C}$ is arbitrary (it cancels when we calculate observables).&lt;/p&gt;
+&lt;p&gt;Since eigenstates of $\hat H$ form a complete orthogonal basis, the overall solution may be written in the form
+$$
+|\psi(t)\rangle = \sum_n A_n e^{iE_n t/\hbar} |\chi_n\rangle
+$$&lt;/p&gt;
+&lt;h2&gt;Commutators&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Commutator&lt;/strong&gt; of two operators:
+$$
+[A, B] = AB - BA
+$$
+&lt;strong&gt;Commuting operators have a shared eigenbasis.&lt;/strong&gt; If $[A,B] = 0$ then it is possible to find an orthonormal basis $|n\rangle$ such that each $|n\rangle$ is an eigenvector of both $A$ and $B$. In other words the eigenspaces &amp;quot;line up&amp;quot; with each other.&lt;/p&gt;
+&lt;p&gt;Important commutator identities:&lt;/p&gt;
+&lt;p&gt;Linearity
+$$
+[A+B, C] = [A,C] + [B,C]
+$$&lt;/p&gt;
+&lt;p&gt;Anticommutativity
+$$
+[B, A] = -[A, B]
+$$&lt;/p&gt;
+&lt;p&gt;Products (Leibniz rule)
+$$
+\begin{align}
+[A, BC] &amp;amp;= ABC - BCA \
+&amp;amp;= ABC - BAC + BAC - BCA \
+&amp;amp;= [A, B] C - B [A, C]
+\end{align}
+$$
+Powers
+$$
+[A, B^n] = [A, B] B^{n-1} + B[A, B] B^{n-2} + \dots + B^{n-1}[A, B]
+$$
+If $[A, B]$ commutes with $B$ (e.g. is a constant):
+$$
+[A, B^n] = n B^{n-1}  [A, B]
+$$
+e.g. $[\hat{x}, \hat{p}^2] = 2i\hbar \hat{p}$&lt;/p&gt;
+&lt;p&gt;Jacobi identity:
+$$
+[A, [B, C]] + [B, [C, A]] + [C, [A, B]] = 0
+$$&lt;/p&gt;
+&lt;p&gt;Canonical relations:
+$$
+[\hat{x}, \hat{p}] = i\hbar
+$$
+Angular momentum components (also spin)
+$$
+[L_i, L_j] = i\hbar, \epsilon_{ijk} ,L_k
+$$&lt;/p&gt;
+&lt;p&gt;More background: [[uncertainty-principle-and-spectrograms]], [[uncertainty-principle-obvious-to-musicians]].&lt;/p&gt;
+&lt;p&gt;measurement of $A$ $\implies$ state collapse to an eigenstate of $A$&lt;/p&gt;
+&lt;p&gt;If $[A, B] \neq 0$ then the resulting eigenstate is not an eigenstate of $B$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Uncertainty&lt;/strong&gt; $\sigma_A^2 = (\Delta A)^2 = \langle A^2\rangle - \langle A\rangle^2$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Uncertainty principle (general)&lt;/strong&gt; $\sigma_A \sigma_B \geq \frac{1}{2} \left|\langle [A, B]\rangle\right|$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Position-momentum&lt;/strong&gt; $\sigma_x \sigma_p \geq \frac{1}{2}\hbar$&lt;/p&gt;
+&lt;h2&gt;Particle in a 1D potential, QHO&lt;/h2&gt;
+&lt;p&gt;For a &lt;em&gt;classical&lt;/em&gt; particle of mass $m$ in a 1D potential, the energy is
+$$
+E = \frac{p^2}{2m} + V(x, t)
+$$
+where $p$ is the momentum and $V$ is the potential. (In general $V$ may be a function of $t$, but usually is not in problems that we solve.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quantum harmonic oscillator:&lt;/strong&gt;
+$$
+\hat H = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2 \hat{x}^2
+$$&lt;/p&gt;
+&lt;p&gt;TISE:
+$$
+E\psi= \frac{-\hbar^2}{2m} \frac{d^2\psi}{dx^2} + \frac{1}{2}m\omega^2 {x}^2 \psi
+$$
+Scales:
+$$
+\begin{align}
+&amp;amp; E \sim \frac{\hbar^2}{m r^2} \sim m\omega^2 r^2 \
+\implies &amp;amp;
+E \sim \hbar\omega, \quad r \sim \left(\frac{\hbar}{m\omega}\right)^{1/2}
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;Nondimensional form:
+$$
+E\psi = \frac{-1}{2}\frac{d^2\psi}{dx^2} + \frac{1}{2}x^2\psi
+$$
+Look for solutions of the form
+$$
+\begin{align}
+\psi(x) &amp;amp;= f(x) , e^{-x^2/2} \
+\psi'(x) &amp;amp;= \left(f'(x) - x f(x)\right) ,  e^{-x^2/2} \
+\psi''(x) &amp;amp;= \left(f''(x) - 2xf(x) + (x^2 - 1) f(x)\right) ,  e^{-x^2/2}
+\end{align}
+$$
+Frobenius solution + convergence $\implies$
+$$
+E = n + \frac{1}{2} \qquad n = 1, 2, 3, \dots
+$$
+with $f$ a polynomial of degree $n$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ladder operators&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Hydrogen atom&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Spherical harmonics&lt;/strong&gt;
+$$
+Y_l^m(\theta, \varphi) = N e^{im\varphi} , P_l^m(\cos\theta)
+$$
+$$
+l = 0, 1, 2,\dots, \quad m =-l, -l+1, \dots, l
+$$
+where $N$ is a normalisation and $P_l^m$ is an associated Legendre polynomial (not actually a polynomial!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spherical harmonics are simultaneous eigenfunctions&lt;/strong&gt; of $\hat{\mathbf L}^2$ and $\hat{L}_z$ obeying
+$$
+\hat{\mathbf L}^2 Y_l^m = \hbar^2 , l (l+1) , Y_l^m \qquad \hat{L}_x Y_l^m = \hbar, m ,Y_l^m
+$$&lt;/p&gt;
+&lt;p&gt;These operators also commute with $\hat{H}$ when the potential is spherically symmetric.&lt;/p&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="teaching"/></entry><entry><title>Pseudovectors and transformations</title><link href="https://jmft.dev/pseudovectors-reflection.html" rel="alternate"/><published>2025-09-25T00:00:00+01:00</published><updated>2025-09-25T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-09-25:/pseudovectors-reflection.html</id><summary type="html">&lt;p&gt;Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections.&lt;/p&gt;
+&lt;p&gt;Let &lt;code&gt;n&lt;/code&gt; be a unit vector and consider the reflection &lt;code&gt;R&lt;/code&gt; in the plane perpendicular to &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Quantities such as the position &lt;code&gt;r&lt;/code&gt; and velocity &lt;code&gt;v&lt;/code&gt; are regular vectors and transform …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections.&lt;/p&gt;
+&lt;p&gt;Let &lt;code&gt;n&lt;/code&gt; be a unit vector and consider the reflection &lt;code&gt;R&lt;/code&gt; in the plane perpendicular to &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Quantities such as the position &lt;code&gt;r&lt;/code&gt; and velocity &lt;code&gt;v&lt;/code&gt; are regular vectors and transform in the obvious way under the reflection. Specifically, we write&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;r = rn + rp
+v = vn + vp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;rn&lt;/code&gt; is the component of &lt;code&gt;r&lt;/code&gt; parallel to &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;rp&lt;/code&gt; is the perpendicular component; and similar for &lt;code&gt;vn&lt;/code&gt; and &lt;code&gt;vp&lt;/code&gt;. Then under the transformation &lt;code&gt;R&lt;/code&gt; we have&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;r' = R r = -rn + rp
+v' = R v = -vn + vp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, now consider the angular momentum per unit mass &lt;code&gt;am = r * v&lt;/code&gt;, using &lt;code&gt;*&lt;/code&gt; to denote the cross product. Or indeed the angular velocity, which is the above divided by &lt;code&gt;|r|^2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We can expand out &lt;code&gt;am&lt;/code&gt; explicitly in terms of &lt;code&gt;rn&lt;/code&gt;, etc.:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;am = (rn + rp) * (vn + vp)
+   = rn * vn + rp * vp + rn * vp + rp * vn
+   = 0       + rp * vp + (rn * vp + rp * vn)
+   =           amn     + amp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, the term &lt;code&gt;amn = rp * vp&lt;/code&gt; is parallel to &lt;code&gt;n&lt;/code&gt; since it is the cross product of two vectors that are perpendicular to &lt;code&gt;n&lt;/code&gt;. And the term &lt;code&gt;amp = rn * vp + rp * vn&lt;/code&gt; is perpendicular to &lt;code&gt;n&lt;/code&gt; since each product involves a vector that is parallel to &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When &lt;code&gt;r&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; are transformed, then &lt;code&gt;am&lt;/code&gt; transforms as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;am' = r' * v'
+    = (R r) * (R v)
+    = (-rn + rp) * (-vn * vp)
+    = ...
+    = rp * vp - (rn * vp + rp * vn) 
+    = amn     - amp
+    = amn'    + amp'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thus the component of &lt;code&gt;am&lt;/code&gt; that is parallel to &lt;code&gt;n&lt;/code&gt; stays the same, while the component of &lt;code&gt;am&lt;/code&gt; that is perpendicular to &lt;code&gt;n&lt;/code&gt; is flipped. Thus the components of &lt;code&gt;am&lt;/code&gt; transform in the opposite direction to how those of &lt;code&gt;r&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; transform – for it is a &lt;em&gt;pseudovector&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In summary, under a reflection in a plane perpendicular to &lt;code&gt;n&lt;/code&gt;...&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;    of a vector...
+        the component parallel      to n is flipped
+                      perpendicular      stays the same
+    of a pseudovector...
+        the component parallel      to n stays the same
+                      perpendicular      is flipped
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(If you don't believe me, take a screw and a screwdriver and hold it up against a mirror.)&lt;/p&gt;
+</content><category term="Physics"/><category term="math"/><category term="teaching"/></entry><entry><title>Date, time and timezones</title><link href="https://jmft.dev/date-time-and-timezones.html" rel="alternate"/><published>2025-04-27T00:00:00+01:00</published><updated>2025-04-27T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-04-27:/date-time-and-timezones.html</id><summary type="html">&lt;p&gt;This is a collection of notes about time and related concepts. A future
+post will talk about the problems of representing time in computer
+systems, especially distributed systems. These notes will be
+occasionally updated.&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Time&lt;/em&gt; is taken to be a primitive concept that cannot be defined in
+terms of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is a collection of notes about time and related concepts. A future
+post will talk about the problems of representing time in computer
+systems, especially distributed systems. These notes will be
+occasionally updated.&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Time&lt;/em&gt; is taken to be a primitive concept that cannot be defined in
+terms of other phenomena, but can be characterised as a parameter of a
+system that allows the system to change.&lt;/p&gt;
+&lt;p&gt;In closed systems, time is measured relative to some event within that
+system, such as the time elapsed since the start of an experiment.  In
+such systems, time can be unambiguously specified as a single real
+number (or sometimes an integer, in discrete-time models).&lt;/p&gt;
+&lt;p&gt;Things are more complicated when it is necessary to describe times &amp;quot;in
+the real world&amp;quot;, where there are a number of closely related but
+confusing concepts.&lt;/p&gt;
+&lt;p&gt;Under a non-relativistic model of physics, all observers have a common
+notion of time: in particular, instantaneous events may be totally
+ordered along a timeline, and all observers can agree whether event A
+happened before, after or simultaneously with event B. However,
+observers might report different &lt;em&gt;numerical&lt;/em&gt; values of a time, depending
+on how they measure it: in particular, depending on their timezone and
+the accuracy of their clocks. The synchronisation of different clocks is
+a difficult but important problem in distributed systems.&lt;/p&gt;
+&lt;h2&gt;Absolute time, relative time, and time of day&lt;/h2&gt;
+&lt;p&gt;The English word &lt;em&gt;time&lt;/em&gt; may refer to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;an &lt;em&gt;absolute position&lt;/em&gt; on the timeline (&amp;quot;when did something happen?&amp;quot;),&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;interval&lt;/em&gt; (or &lt;em&gt;timedelta&lt;/em&gt;) between two positions on the timeline
+(&amp;quot;how much time passed?&amp;quot;), or&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;time of day&lt;/em&gt;, or the interval relative to the local midnight
+(&amp;quot;what is &lt;em&gt;the&lt;/em&gt; time?&amp;quot;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Intervals of time are measured in units such as seconds (see below).&lt;/p&gt;
+&lt;p&gt;One may convert between absolute times and timedeltas by specifying a
+position on the timeline as an &lt;em&gt;epoch&lt;/em&gt;, relative to which all other
+times are measured. The epoch may be chosen to be the time of a
+significant event, or an arbitrary point.&lt;/p&gt;
+&lt;p&gt;Since local midnight depends on the locale of the observer, a &amp;quot;time&amp;quot; in
+the third sense can be converted into an absolute time only by
+additionally specifying a &lt;em&gt;date&lt;/em&gt; as well as a &lt;em&gt;timezone&lt;/em&gt; - often
+implicitly.&lt;/p&gt;
+&lt;h2&gt;Units of timedeltas&lt;/h2&gt;
+&lt;p&gt;The basic unit of a timedelta is the second, also the millisecond,
+microsecond, &lt;em&gt;etc.&lt;/em&gt;, defined in terms of the (constant) frequency of a
+certain atomic oscillator. The &lt;em&gt;minute&lt;/em&gt;, the &lt;em&gt;hour&lt;/em&gt; and the &lt;em&gt;day&lt;/em&gt;) are
+defined as 60 seconds, 60 minutes (3,600 seconds) and 24 hours (86,400
+seconds) respectively.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;month&lt;/em&gt; and the &lt;em&gt;year&lt;/em&gt; are not precise units of timedeltas, since
+they vary in length. They are however used informally.&lt;/p&gt;
+&lt;h3&gt;Astronomical days&lt;/h3&gt;
+&lt;p&gt;Although the day is based on the rotation of the Earth and the relative
+position of the Sun, the 24-hour day is distinguished from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;em&gt;solar day&lt;/em&gt;, the time between two successive maxima of the
+Sun's position in the sky, and&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;sidereal day&lt;/em&gt;, the time taken for the earth to complete a
+rotation on its axis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The solar day is longer than 24 hours by a few seconds. The sidereal day
+is about 4 minutes shorter than 24 hours; this difference is due to the
+orbit of the Earth around the Sun.&lt;/p&gt;
+&lt;p&gt;The rotation of the earth is gradually slowing down. Over the course of
+millennia, the 24-hour day will diverge from these astronomical
+definitions.&lt;/p&gt;
+&lt;h2&gt;&lt;em&gt;The&lt;/em&gt; time of day: solar time, civil time and timezones&lt;/h2&gt;
+&lt;p&gt;Traditional measurements of time are based on the position of the Sun
+and the other stars in the sky. These are the &lt;em&gt;solar time&lt;/em&gt; and &lt;em&gt;sidereal
+time&lt;/em&gt; respectively. For example, noon is defined to be the time at which
+the Sun is at its highest position, and midnight is defined to be twelve
+hours after that.&lt;/p&gt;
+&lt;p&gt;Since the position of the Sun in the sky depends on geographical
+location as well as the time of year, solar time is an impractical
+measurement of time. Thus the development of &lt;em&gt;civil time&lt;/em&gt; and of
+&lt;em&gt;timezones&lt;/em&gt;: that in a given region (such as a country or province), all
+clocks should report the same value of time. The development of
+timezones is based on political considerations rather than reflecting
+astronomical phenomena: for example, the People's Republic of China uses
+a single timezone despite its geographical span; and most Western
+European countries use the same timezone.&lt;/p&gt;
+&lt;p&gt;All timezones are specified relative to &lt;em&gt;Coordinated Universal Time&lt;/em&gt; (or
+&lt;em&gt;UTC&lt;/em&gt;), which is based on the time at Greenwich, London.&lt;/p&gt;
+&lt;h2&gt;Computers and distributed systems&lt;/h2&gt;
+&lt;p&gt;Future post...&lt;/p&gt;
+</content><category term="Physics"/><category term="data"/><category term="math"/><category term="physics"/></entry><entry><title>The uncertainty principle and spectrograms</title><link href="https://jmft.dev/uncertainty-principle-and-spectrograms.html" rel="alternate"/><published>2024-01-09T00:00:00+00:00</published><updated>2024-01-09T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-01-09:/uncertainty-principle-and-spectrograms.html</id><summary type="html">&lt;p&gt;In the &lt;a href="uncertainty-principle-obvious-to-musicians"&gt;previous post&lt;/a&gt; I discussed how, when measuring the frequency (tempo) of a signal that itself changes in time, there is necessarily a tradeoff between the precision in the measured frequency and precision in the time at which the measurement is taken: A more precise measurement of frequency requires …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In the &lt;a href="uncertainty-principle-obvious-to-musicians"&gt;previous post&lt;/a&gt; I discussed how, when measuring the frequency (tempo) of a signal that itself changes in time, there is necessarily a tradeoff between the precision in the measured frequency and precision in the time at which the measurement is taken: A more precise measurement of frequency requires that the sample be taken over a longer period of time. This is particularly well demonstrated in signal processing and spectrograms.&lt;/p&gt;
+&lt;h2&gt;Fourier decomposition&lt;/h2&gt;
+&lt;p&gt;Recall first of all that any signal can be decomposed into its frequency components: this is the Fourier transform. Pure tones, which consist of a single frequency component, are given by sine waves. Most instruments do not produce pure tones when they play a note; instead, they play a mixture of tones, which together give the unique timbre of the instrument.&lt;/p&gt;
+&lt;p&gt;For example, this is an A5 played on an alto recorder:
+&lt;audio src="static/APlayedOnTrebleRecorder.wav" controls&gt;&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;Its spectrum, given by taking a Fourier transform of the signal, looks like this [[ref]By convention, both axes are drawn on logarithmic scales. The relative amplitudes are measured in &lt;a href="https://en.wikipedia.org/wiki/Decibel"&gt;decibels&lt;/a&gt;, a logarithmic unit; 0 dB corresponds to the maximum amplitude that can be represented by the file format.[/ref]]:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/SpectrumOfRecorderA5.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrum of the recorder. Note the log scales.&lt;/p&gt;
+&lt;p&gt;The spectrum consists of a peak around f = 880 Hz (slightly lower in this example), which is the fundamental frequency for A5, along with further, smaller peaks, at integer multiples of f = 880 Hz ('overtones' or 'harmonics'). The overall sound is periodic with frequency 880 Hz, giving a tonal sound.&lt;/p&gt;
+&lt;h2&gt;Varying pitch&lt;/h2&gt;
+&lt;p&gt;Most music consists of more than one note. [[ref]&lt;a href="https://www.youtube.com/watch?v=AWVUp12XPpU"&gt;John Cage might disagree.&lt;/a&gt;[/ref]]&lt;/p&gt;
+&lt;p&gt;&lt;audio src="static/FrereJacque.wav" controls&gt;&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;If you wanted to analyse the notes in that track, taking the Fourier transform of the entire track is not particularly interesting.&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/SpectrumOfMelody.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrum of the entire recording.&lt;/p&gt;
+&lt;p&gt;This spectrogram contains contributions from &lt;em&gt;all&lt;/em&gt; the notes in the track. This is like measuring pulse by sampling the heartbeat over a whole day: it gives no information about the pulse at any given time. This playthrough was in F major; some notes (F and C) were played more often than other notes, so there are still peaks at those notes, but all other detail has been lost.&lt;/p&gt;
+&lt;p&gt;It is much more useful to work with the &lt;a href="https://en.wikipedia.org/wiki/Short-time_Fourier_transform"&gt;short-time Fourier transform&lt;/a&gt; (STFT). At each timestep, take a Fourier transform of the part of the signal around that time. [[ref]To avoid edge effects, a window function is usually applied to smooth the signal. Audacity uses the Hann window by default, SciPy uses Tukey. The &lt;a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.get_window.html"&gt;SciPy docs&lt;/a&gt; have many other examples.[/ref]] The STFT is a function of both time and frequency, so it is usually visualised as a spectrogram:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/SpectrogramOfMelody.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrogram of the above recording (window size 2048 with Hann smoothing). Time on the horizontal axis, frequency (logarithmic) on the vertical axis, colour intensity for amplitude.&lt;/p&gt;
+&lt;p&gt;As seen, each note consists of an intense fundamental frequency alongside a stack of harmonics.&lt;/p&gt;
+&lt;p&gt;As with the pulse measurement procedure in the last post, the length of the window over which the spectrogram is taken is a free parameter. The effect of this parameter is very well illustrated by the following example.&lt;/p&gt;
+&lt;h2&gt;Two tones&lt;/h2&gt;
+&lt;p&gt;Consider a signal consisting of a 1 second tone at 400 Hz followed by a 1 second tone at 800 Hz. The signal is sampled at 16 kHz.&lt;/p&gt;
+&lt;p&gt;&lt;audio src="static/TwoTones.wav" controls&gt;&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;The waveform is a sine wave for 0 &amp;lt; t &amp;lt; 1, and a higher-frequency sine wave for 1 &amp;lt; t &amp;lt; 2. For simplicity, the phases are aligned so that the wave is continuous at t = 1.&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/TwoToneSignal.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;The spectrograms when the window size is 256, 1024 and 4096 (with Tukey smoothing). These correspond to intervals of 16 ms, 64 ms and 256 ms respectively.&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/TwoToneSpectrograms.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrograms of the two tones for window sizes 256, 1024, 4096&lt;/p&gt;
+&lt;p&gt;The tradeoff between precision in frequency and precision in time is now very visible.&lt;/p&gt;
+&lt;p&gt;Away from the transition at t = 1, the larger the window for the STFT the more precise the estimate for frequency will be: thus the first spectrogram contains wide bands, since the narrowest window spans only about 6 periods, while the last spectrogram has thinnest bands since the widest window spans over 100 periods.&lt;/p&gt;
+&lt;p&gt;However, near t = 1, the window for the STFT contains samples from both t &amp;lt; 1 (at 400 Hz) and from t &amp;gt; 1 (at 800 Hz), so the computed STFT contains components from both. The region that is affected by this is largest for the widest window. Thus, a STFT with a wider window does a poorer job of detecting the time at which a frequency transition occurs.&lt;/p&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="music"/><category term="teaching"/></entry><entry><title>The uncertainty principle is obvious to musicians</title><link href="https://jmft.dev/uncertainty-principle-obvious-to-musicians.html" rel="alternate"/><published>2024-01-09T00:00:00+00:00</published><updated>2024-01-09T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-01-09:/uncertainty-principle-obvious-to-musicians.html</id><summary type="html">&lt;p&gt;Most people are introduced to the term 'uncertainty principle' in the context of quantum mechanics. It is usually described as the idea that a particle's position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Most people are introduced to the term 'uncertainty principle' in the context of quantum mechanics. It is usually described as the idea that a particle's position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the other. As such, the idea can be confusing because it is such a stark departure from our classical notion of a particle having definite, if not directly measurable, properties. Philosophical objections aside, the proof of the uncertainty relation is mathematically fairly straightforward, but it relies on the operator definitions of position and momentum, which are not themselves obvious.&lt;/p&gt;
+&lt;p&gt;In fact, the uncertainty principle arises in all wave-like (periodic) signals, and is intrinsic to the relationship between space and wavenumber (inverse wavelength), or for time-domain signals, between time and frequency. It arises in quantum mechanics from the fact that particle states are modelled by wavefunctions – as demonstrated in the double-slit experiment – and that momentum is linearly proportional to wavenumber. But it arises in far more everyday scenarios too.&lt;/p&gt;
+&lt;p&gt;Consider the act of determining the beats per minute (bpm) of a heartbeat, or of the pulse of a piece of music. One counts the number of pulses $latex n$ within in a period of time $latex T$ seconds, and estimates the bpm as [ \widehat{BPM} = \frac{60 \times n}{T}. ]&lt;/p&gt;
+&lt;p&gt;There are several sources of uncertainty in this estimate:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;There will be some imprecision in when the measurement is stopped, &lt;em&gt;i.e.&lt;/em&gt; an uncertainty in $latex T$. For very fast pulses, there may be several beats that are either counted or missed, depending on whether one stops measuring late or early.&lt;/li&gt;
+&lt;li&gt;Similarly, for slow pulses it also matters whether one begins timing just before a beat or just after.&lt;/li&gt;
+&lt;li&gt;There are intrinsic fluctuations in the amount of time between consecutive pulses.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first two uncertainties can be reduced by taking a larger value of $latex T$. A good value of $latex T$ should be much larger than the pulse itself, and much larger than the uncertainty in $latex T$. Supposing there is an uncertainty of 100ms in when we stop the measurement, taking the measurement over $T = 15$ seconds will give a reasonable estimate for pulses between 4 bpm and 600 bpm.&lt;a href="#b9e5d6d8-6afe-4af7-b162-d2ea3a1c4dd2"&gt;1&lt;/a&gt; This is (hopefully) adequate for most cardiological and musical purposes, but we might ask whether we can do better.&lt;/p&gt;
+&lt;p&gt;We can't do much about the uncertainty in measuring $latex T$: it is limited by the quality of our stopwatch and our reaction time. But we can more freely choose how long we measure for (provided we are patient); can we get a more reliable estimate for lower frequencies by taking the measurement over a longer amount of time?&lt;/p&gt;
+&lt;p&gt;If the pulse keeps at a steady tempo, yes: eventually we will count over a long enough interval that both the edge effects (2) become insignificant and the fluctuations (3) average out, giving a good estimate for the bpm.&lt;/p&gt;
+&lt;p&gt;This is a bad assumption, though. Most healthy heart rates are higher in the afternoon and lower during sleep, and may quickly spike to very high levels during intense exercise:&lt;/p&gt;
+&lt;p&gt;&lt;img src="%7Bfilename%7D/images/CircadianHeartRate.png" alt="graph of heart rate circadian pattern, showing a faster heart rate during waking hours and a slower heart rate during sleep" /&gt;&lt;/p&gt;
+&lt;p&gt;Credit: &lt;a href="https://www.circadian.org/vital.html"&gt;circadian.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To take an extreme case, if we count the number of pulses over 24 hours, we will get an estimate of the average heart rate over an entire day&lt;a href="#45a6cb4d-5a13-4172-88eb-8bf74a9ee2c1"&gt;2&lt;/a&gt;, but it doesn't give any information at all about the heart rate at any given time. To make a graph of the circadian pattern like the one above, we need to take measurements every 30 minutes (say), and each measurement should not take more than a couple of minutes.&lt;a href="#242810b1-658e-46b5-a464-34fa456d60a6"&gt;3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, &lt;em&gt;we have a tradeoff between the time resolution ('certainty'), and the precision of estimates&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;How long each interval should be, and how frequently they are taken, depends on the desired resolution. For example, during an exercise session, heart rate can vary much more quickly over a few minutes:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/HeartRateExercise.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Credit: Høye &lt;em&gt;et al.&lt;/em&gt; (2019) &lt;a href="http://dx.doi.org/10.14198/jhse.2020.151.13"&gt;10.14198/jhse.2020.151.13&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To improve the temporal resolution, not only must we now take much more frequent measurements, but also, each measurement interval must also be shorter.&lt;a href="#06076c2b-7bc0-4f2e-a940-6366371dc01d"&gt;4&lt;/a&gt; This reduces the precision of each estimate of the bpm, but we see time-dependence that we wouldn't see if we just took measurements over several minutes, or indeed a single measurement over 60 minutes.&lt;/p&gt;
+&lt;p&gt;There was no quantum mystery in any of this: the tradeoff between temporal resolution and bpm precision comes simply from the fact that the bpm is changing over time. There is no such thing as &lt;em&gt;the&lt;/em&gt; heart rate at 8:32am – not something one can measure, anyway. What we can measure is the &lt;em&gt;average&lt;/em&gt; heart rate between 8:32am and 8:33am. This doesn't tell us anything about what is happening within that minute, but likewise won't be affected by anything happening at 10am.&lt;/p&gt;
+&lt;p&gt;Musicians will recognise the following obvious statement:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;When there is an accelerando or a rallentando, the tempo isn't fixed.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the next post on this subject, I will give another example of the uncertainty principle that arises in signal processing that illustrates the same point.&lt;/p&gt;
+&lt;hr /&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="music"/><category term="teaching"/></entry><entry><title>The Bohr model: Some history and context</title><link href="https://jmft.dev/bohr-model-background.html" rel="alternate"/><published>2023-12-19T00:00:00+00:00</published><updated>2025-11-08T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2023-12-19:/bohr-model-background.html</id><summary type="html">&lt;p&gt;This page is intended to give a little context behind the &amp;quot;Bohr model&amp;quot; that is introduced in the first part of the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Like all atomic models, the Bohr model attempts to answer the question &amp;quot;Why do atoms exhibit the properties that they do?&amp;quot;, proposing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This page is intended to give a little context behind the &amp;quot;Bohr model&amp;quot; that is introduced in the first part of the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Like all atomic models, the Bohr model attempts to answer the question &amp;quot;Why do atoms exhibit the properties that they do?&amp;quot;, proposing a mechanical or mathematical description that can produces calculable predictions that are to be compared against experiment. Presented in 1913 by Niels Bohr and Ernest Rutherford, this model sought to reconcile a few recent observations in atomic physics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Atoms were known to be able to absorb and emit light, but the spectrum of the emitted light consisted of discrete wavelengths. The values of these wavelengths are described experimentally by the Rydberg formula (1888). For hydrogen, this formula states:&lt;br /&gt;
+$$\frac{1}{\lambda} = R_H \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right) $$&lt;br /&gt;
+where $n_1$ and $n_2$ are integers and $R_H$ is a constant. Rydberg had no knowledge of electrons (discovered by J. J. Thomson in 1897) and gave no physical basis for this experimental law.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Max Planck (1900), from his work on black-body radiation, had postulated that electromatgnetic radiation was conveyed in discrete quanta of energy, called photons; the energy of a photon was related to its frequency and wavelength by&lt;br /&gt;
+$$ E = h f = h c / \lambda $$&lt;br /&gt;
+where Planck's constant $h = 2\pi\hbar$ is an experimental constant. Planck had little justification for the idea that light was quantized, but it proved to produce accurate predictions for the spectrum of black-body radiation. Albert Einstein's 1905 work (for which he won the 1921 Nobel Prize) gave experimental confirmation of the quantization of light into photons.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Geiger–Marsden gold leaf experiments (1908 onwards) established that atoms consist of a heavy central nucleus of positive charge, surrounded by a diffusion of negatively charged electrons, orbiting the central charge. Rutherford gave a mathematical description (1911), although Joseph Larmor (1897) had previously proposed such a 'solar system' model.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further back, physicists had established the laws of electromagnetism and electromagnetic radiation (Maxwell 1862), and chemists had known, at least experimentally, of the regular orbital structure elegantly illustrated in the periodic table (Mendeleev 1869).&lt;/p&gt;
+&lt;h2&gt;A new model&lt;/h2&gt;
+&lt;p&gt;A major shortcoming of the 'solar system' model proposed by Larmor and Rutherford was that it was incompatible with the laws of electromagnetic radiation, which predicted that an accelerating charge would emit radiation, causing the electrons to lose energy and to spiral in towards the nucleus.&lt;/p&gt;
+&lt;p&gt;Bohr's model supposes that, &lt;em&gt;for unspecified reason&lt;/em&gt;, the electron does not lose energy from radiation. Instead, energy is allowed to change only through instantaneous absorption and emission events that move the electron from one energy level to another.&lt;/p&gt;
+&lt;p&gt;Moreover, the energy is not allowed to take any arbitrary value. Observing that the Planck constant has dimensions of angular momentum, Bohr's model requires that the angular momentum of the electron must have angular momentum equal to an integer multiple of the reduced Planck constant:&lt;/p&gt;
+&lt;p&gt;$$ m v r = n \hbar = n h / 2\pi . $$&lt;/p&gt;
+&lt;p&gt;This condition had recently been proposed by Nicholson (1912). Combined with Coulomb's law for electric attraction, the energy of the $n$th level is predicted to be (exercise):&lt;/p&gt;
+&lt;p&gt;$$ E_n = -R_E / n^2 $$&lt;/p&gt;
+&lt;p&gt;where $R_E$ is a constant. This inverse square law is entirely consistent with the atomic emission spectra described by the Rydberg formula, which stated that the inverse-wavelengths of emitted photons were differences between inverse squares.&lt;/p&gt;
+&lt;h2&gt;Further developments&lt;/h2&gt;
+&lt;p&gt;The Bohr model successfully explains the Rydberg formula and unifies it with the Rutherford model of a nucleus; and predicts that emissions come in discrete packets of energy, although without making reference to photons. The problem, however, is how to motivate the new assumptions about the quantization of angular momentum, and to reconcile the electron acceleration with the laws of electrodynamics.&lt;/p&gt;
+&lt;p&gt;De Broglie (1924) proposed that the wave-duality duality of light might apply also to matter, proposing the formula&lt;/p&gt;
+&lt;p&gt;$$\lambda = h / p$$&lt;/p&gt;
+&lt;p&gt;for the wavelength $\lambda$ for a particle with momentum $p$. Experimental confirmation for the wavelike nature of electrons came from the diffraction and double-slit experiments conducted throughout the 1920s.&lt;/p&gt;
+&lt;p&gt;Under this framework, de Broglie reinterpreted the quantization condition in the Bohr model as requiring that an electron's waves be standing waves. The electron has momentum $mv$ and executes orbits of circumference $2 \pi r$, so the quantization condition $mvr = n\hbar$ asserts that the wavelength evenly divides the circumference of the orbit.&lt;/p&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="teaching"/></entry><entry><title>Historical and philosophical contexts of the calculus of variations</title><link href="https://jmft.dev/calculus-of-variations-history.html" rel="alternate"/><published>2023-12-19T00:00:00+00:00</published><updated>2023-12-19T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2023-12-19:/calculus-of-variations-history.html</id><summary type="html">&lt;h2&gt;What is a variational principle?&lt;/h2&gt;
+&lt;p&gt;A variational principle is a mathematical or physical law expressed in terms of maximising or minimising a certain quantity. The simplest example was known to ancient Egyptian builders and surveyers: a taut rope stretched between two points takes the shape that minimises its length. This …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;What is a variational principle?&lt;/h2&gt;
+&lt;p&gt;A variational principle is a mathematical or physical law expressed in terms of maximising or minimising a certain quantity. The simplest example was known to ancient Egyptian builders and surveyers: a taut rope stretched between two points takes the shape that minimises its length. This is in fact a straight line on the plane, although Ptolemy (2nd century AD) observed that one must correct for 'deviations from a straight course'. (Which is not to say that he had the concepts of geodesics or Riemannian metrics.) Note, however, that these two statements have different statuses: the variational statement 'a taut rope stretched between two points takes the shape that minimises its length' by itself makes no assertions about straight or curved lines.&lt;/p&gt;
+&lt;p&gt;These are other examples of variational statements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The geodesic problem:&lt;/em&gt; The shortest length between two points on a sphere can be found by stretching a taut rope around the sphere through those two points.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The catenary problem:&lt;/em&gt; A hanging chain takes a shape that minimises its potential energy.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The isoperimetric problem (Dido's problem):&lt;/em&gt; For a given perimeter, the area enclosed by that perimeter is maximised by taking as round and convex a shape as possible --- namely, a circle.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Bubble shape:&lt;/em&gt; A pressurised container, such as a soap film or balloon, takes a shape that minimises its surface energy. For bubbles, that's a sphere.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Temperature distribution:&lt;/em&gt; If the surface of a body is kept at a time-independent temperature, then the temperature distribution within the body takes minimal gradient. In particular, if the surface is at constant temperature, then the temperature is constant throughout the body In modern notation, if $T$ solves $\nabla^2T = 0$ then $T$ minimises $\iiint |\nabla T|^2 \mathrm{d}V$, which is solved by constant $T$ if the boundary conditions are homogeneous.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What is the calculus of variations?&lt;/h2&gt;
+&lt;p&gt;To convert these variational statements into mathematical statements (usually differential equations), the calculus of variations was gradually developed throughout the 17th and 18th centuries. Leibniz, Huygens and Johann Bernoulli solved the catenary problem in 1691, while Newton solved the brachistochrone problem and the minimal resistance problem &lt;em&gt;possibly&lt;/em&gt; using variational methods [[ref]As with much of Newton’s other works, the publications used geometric arguments, and did not reveal his actual heuristics.[/ref]]; but it was Euler and his student Lagrange who presented the general calculus of variations as it is usually taught today. In the late 1890s, Weierstrass placed the calculus of variations onto the theoretical foundations of analysis; further work by the likes of Hilbert and Noether in the 20th century saw the topic become part of a wider interest into boundary value problems, motivated by developments in quantum mechanics.&lt;/p&gt;
+&lt;p&gt;Using the calculus of variations, it can be shown that a variational statement such as 'a hanging chain minimises its potential energy' is &lt;em&gt;mathematically&lt;/em&gt; equivalent to reasoning 'from first principles', using force-balance arguments on infinitesimal line elements. (Likewise with the surface shape of a balloon.) But although the two formulations predict the same results, they are dissimilar in their starting points. The force-balance approach looks at individual elements of the chain and constructs a differential equation describing their shape. On the other hand, the variational approach makes a statement about the overall shape of the chain, as a whole: in particular, it makes no postulates about the existence of infinitesimal elements. Such variational descriptions ('the solution minimises a particular quantity') are attractive in their simplicity, even though they do not give the solutions themselves without the heavy machinery of the calculus of variations.&lt;/p&gt;
+&lt;h2&gt;Optics and Fermat's principle&lt;/h2&gt;
+&lt;p&gt;A particular variational principle with a long history comes from optics. In his study of geometric optics, Euclid made the assertion that light travels in straight lines, based on the observation that one needs a direct line of sight to see an object. The path of light therefore obeys the &lt;strong&gt;shortest path principle&lt;/strong&gt;, like a taut piece of string. Hero of Alexandria (c. 10--70 CE) studied the reflection of images off mirrors, making the observation that the angle of reflection is equal to the angle of incidence, and showed that this was also consistent with the shortest path principle.&lt;/p&gt;
+&lt;p&gt;Centuries later, in the 980s the Islamic mathematician Ibn Sahl described &lt;em&gt;on an empirical basis&lt;/em&gt; the law of refraction (Snell's law) governing the angles at which light moving from one material to another is refracted. The indices of refraction of various materials were known to mediaeval Muslim scientists; it was not until the 1600s that European scientists such as Snellius claimed the discovery of this law of refraction.&lt;/p&gt;
+&lt;p&gt;The fact that refracting light does not travel in a straight line contradicts the shortest path principle. In a 1662 letter, Pierre de Fermat instead proposed a &lt;em&gt;principle of minimal time&lt;/em&gt;, suggesting (on no experimental or theoretical basis) that the refractive index of a material is related to the finite speed of light in that material, with light being slower in denser materials.&lt;/p&gt;
+&lt;p&gt;There was no doubt that Fermat's principle was consistent with experiment, but it prompts two natural questions: &lt;em&gt;why?&lt;/em&gt; and &lt;em&gt;how?&lt;/em&gt;. Fermat was criticised by the prevalent Cartesian school on these two grounds. Firstly, the assumptions that the speed of light is finite and different in different materials was unjustified. (Early experimental evidence for this was not available until 1676. That said, Fermat's claim was no more unjustified than René Descartes' very popular claims that light travelled at infinite speed, and was faster in denser material.) But a more fundamental criticism of the principle of minimal time was that it is &lt;em&gt;teleological&lt;/em&gt;: why does light 'choose' to take a time-minimising path, and how does it 'know' how to find the correct path in advance? Why should it 'choose' to minimise travel time and not some other quantity such as distance? Claude Clerselier, a Cartesian critic of Fermat, wrote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The principle which you take as the basis for your proof, namely that Nature always acts by using the simplest and shortest paths, is merely a moral, and not a physical one. It is not, and cannot be, the cause of any effect in Nature.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words, despite the empirical support for Fermat's principle, it was not accepted as an &lt;em&gt;explanation&lt;/em&gt; of Snell's law, merely an elegant expression. We can now justify Fermat's principle and Snell's law from more fundamental ideas about light's wavelike properties, but that knowledge would not come for another two centuries.&lt;/p&gt;
+&lt;h2&gt;Particle mechanics and the principle of least action&lt;/h2&gt;
+&lt;p&gt;The discomfort felt from using a mathematically simple, yet apparently teleological, variational principle is most obvious from the principle of least action. The principle of least action states that a conservative system (such as a particle in a potential) evolves in such a way that a certain quantity $S$, 'the action', is minimised. The action is the integral over time of a quantity $L$ called the Lagrangian.&lt;/p&gt;
+&lt;p&gt;Newton's &lt;em&gt;Principia&lt;/em&gt; was published in in 1687. Despite some initial controversy of their own, Newton's ideas had become accepted by the time of Maupertuis and Euler. Newton's formulation of particle mechanics, including the law of motion $F = ma$ and the inverse square law for gravitation, gives a mathematical foundation for Kepler's (empirical) laws of planetary motion.&lt;/p&gt;
+&lt;p&gt;An important development came in the 1740s with the development of the principle of least action by Pierre Louis Maupertuis and Leonhard Euler. Maupertuis defined action $S$ as an 'amount of motion': for a single particle, action is momentum mv multiplied by the distance s travelled; for constant speed, $s = vt$, so the action is $S = mv^2t$. In the absence of a potential, this matches our modern definition of action, up to a factor of 2. (Maupertuis referred to the quantity $mv^2$ as the &lt;em&gt;vis viva&lt;/em&gt;, or 'living force', of the particle.) Studying the velocities of two colliding bodies before and after collision, Maupertuis showed that the law of conservation of momentum (by now well-established) is equivalent to the statement that the final velocities are such that the action of this process is minimised.&lt;/p&gt;
+&lt;p&gt;Euler is generally credited with inventing the calculus of variations in an early form, applying it to studying particle trajectories. (The modern form was later developed by Lagrange, his student, in 1755.) Euler generalised Maupertuis' definition of action into the modern action integral, and included a new term for potential energy. He showed in 1744 that a particle subject to a central force (such as planetary motion) takes a path (calculated by Newton) that extremises this action, and vice-versa. Lagrange later showed more generally that the principle of least action is mathematically equivalent to Newton's laws.&lt;/p&gt;
+&lt;p&gt;But why is this a sensible definition of action? In fact, what is action?&lt;/p&gt;
+&lt;p&gt;Maupertuis' reasoning was that 'Nature is thrifty in all its actions', positing that action is a sort of 'effort'. He was happy to attribute the principle of least action as some sort of God trying to minimise the effort of motions in the universe. But how does one know to choose this definition of action and not some other? As for refraction, why does one minimise travel time and not distance? Maupertuis argues that one cannot know to begin with, but that the correct functional needs to be identified.&lt;/p&gt;
+&lt;p&gt;Fermat and Euler took a rather weaker view, and refuse to make any metaphysical interpretations about their variational principles. Fermat stated that his principle is 'a mathematical regularity from which the empirically correct law can be derived' (Sklar 2012): this is an aesthetic statement about the theory, but says nothing about its&lt;br /&gt;
+origins.&lt;/p&gt;
+&lt;h2&gt;Why do we find the principle of least action problematic?&lt;/h2&gt;
+&lt;p&gt;Everyone agrees that the principle of least action is mathematically equivalent to Newton's laws of motion, and both have equivalent status when compared against experiments. However, Newton's laws are specified as differential equations with initial values ('start in this state, and forward-march in time, with no memory about your past and no information about your future'). In contrast, the principle of least action is formulated as a boundary value problem ('get from A to B in time T, accumulating as little action as possible'), governed by the Euler–Lagrange equations. Why are we less comfortable with the latter?&lt;/p&gt;
+&lt;p&gt;A boring argument is the cultural or educational argument: most of us are taught Newtonian mechanics before Lagrangian mechanics. This is reasonable, as the former requires far less mathematical machinery.&lt;/p&gt;
+&lt;p&gt;One reason is the question: Given that we are at the initial position A, how can we know that we will be at B after time T? This can be resolved by realising that when we solve the Euler–Lagrange equations, we have not been told what the initial velocity is, and have the freedom to choose it such that the final position will be B. Thus, one can convert between an IVP and a BVP: this is the approach taken with the shooting method for solving BVP numerically.&lt;/p&gt;
+&lt;p&gt;Another reason perhaps is cultural: most of us are taught Newtonian physics before Lagrangian physics. This is paedagogically reasonable: the Newtonian formulation requires far less mathematical machinery. There is also a technical reason for feeling more comfortable with describing physics through an IVP than a BVP: according to the Picard–Lindelöf theorem, an IVP is guaranteed to have a unique solution, at least for a finite domain; a similar guarantee cannot be made for a BVP.&lt;/p&gt;
+&lt;h2&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The above essay has been guided by Lawrence Sklar's book, &lt;em&gt;Philosophy and the Foundations of Dynamics&lt;/em&gt;.&lt;/p&gt;
+</content><category term="Physics"/><category term="math"/><category term="physics"/><category term="teaching"/><category term="calculus-of-variations"/></entry></feed>

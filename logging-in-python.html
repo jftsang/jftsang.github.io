@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="Having reliable, detailed but searchable logs is an essential part of any application, especially of long-running services that need to be debugged and monitored for uptime and stability. As one of the oldest modules in the Python standard library, the logging module provides a very powerful set of tools for …" />
+<meta name="keywords" content="python, backend">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Logging in Python"/>
+  <meta property="og:description" content="Having reliable, detailed but searchable logs is an essential part of any application, especially of long-running services that need to be debugged and monitored for uptime and stability. As one of the oldest modules in the Python standard library, the logging module provides a very powerful set of tools for …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./logging-in-python.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-07-07 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Python"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="backend"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Logging in Python</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="logging-in-python">Logging in Python</h1>
+    <p>
+
+      Posted on Sun 07 July 2024 in <a href="./category/python.html">Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Having reliable, detailed but searchable logs is an essential part of
+any application, especially of long-running services that need to be
+debugged and monitored for uptime and stability. As one of the oldest
+modules in the Python standard library, the <code>logging</code> module provides a
+very powerful set of tools for logging, but its design and behaviour
+also shows its age.</p>
+<p>While the basics are covered in the <a href="https://docs.python.org/3/howto/logging.html">official
+tutorial</a> and full details
+are given in the <a href="https://docs.python.org/3/library/logging.html">reference
+docs</a>, this article
+collects together the most commonly seen concepts from different parts
+of the docs.</p>
+<h2>Why use <code>logging</code>?</h2>
+<p>Although it takes some setup (which will be covered below), It is
+strongly preferable to use the features of <code>logging</code>, rather than
+<code>print()</code>, for diagnostics and debugging.</p>
+<h3>Diagnostic messages vs. machine-readable output</h3>
+<p>The <code>logging</code> module allows one to define different handlers for
+different types of messages. Besides (or instead of) printing the
+message to <code>stdout,</code> it may be helpful to print messages to <code>stderr</code>, or
+to do something else with them like submitting them to a database.
+Urgent, critical messages may need to be emailed or sent as push
+notifications.  Diagnostic, human-readable messages (which aren't
+necessarily <em>error</em> messages) should generally be separated from
+machine-readable output.</p>
+<h3>Thread-safety</h3>
+<p>Loggers are thread-safe. Concurrent threads logging to the same file do
+not interfere with each other; whenever a thread attempts to write to a
+log file, that thread has exclusive ownership of that file while it is
+writing.</p>
+<p>By contrast, the <code>print()</code> function or writing to a stream with
+<code>f.write()</code> are not thread safe, so that messages from two threads may
+interfere with each other. For example, it is not guaranteed that each
+message is printed on its own line.</p>
+<pre><code>message frommessage from thread 2
+ thread 1
+</code></pre>
+<h2>Loggers, handlers, filters and formatters</h2>
+<p>Logging functionality is provided by four main classes. From <a href="https://docs.python.org/3/library/logging.html#logger-objects">the
+docs</a>:</p>
+<blockquote>
+<ul>
+<li><a href="https://docs.python.org/3/library/logging.html#logger-objects">Loggers</a>
+expose the interface that application code directly uses.</li>
+<li><a href="https://docs.python.org/3/library/logging.html#handler-objects">Handlers</a>
+send the <a href="https://docs.python.org/3/library/logging.html#logrecord-objects">log records</a>
+(created by loggers) to the appropriate destination.</li>
+<li><a href="https://docs.python.org/3/library/logging.html#filter-objects">Filters</a>
+provide a finer grained facility for determining which log records to
+output.</li>
+<li><a href="https://docs.python.org/3/library/logging.html#formatter-objects">Formatters</a> specify the layout of log records in the final output.</li>
+</ul>
+</blockquote>
+<p>The logic and the relationship between these classes is summarised in
+the flowchart from the
+<a href="https://docs.python.org/3/howto/logging.html#logging-flow">tutorial</a>:
+![[content/images/python-logging-flowchart.png]]</p>
+<p>For a basic setup it is only necessary to configure a logger; but
+configuring handlers and formatters can make your logs more informative.</p>
+<h3><code>Logger</code> objects</h3>
+<p>Do not instantiate <code>Logger</code> directly.</p>
+<pre><code class="language-python"># Not like this!
+logger = logging.Logger(...)
+</code></pre>
+<p>Instead, create them using the factory function <code>logging.getLogger()</code>, providing a name for the logger:</p>
+<pre><code class="language-python"># Like this
+logger = logging.getLogger(&quot;example_app&quot;)
+</code></pre>
+<p>Doing so allows the <code>logging</code> module to keep track of all the loggers
+that are in use, as well as to return the same instance if the same name
+is used across different modules.</p>
+<h3>Configuring the logger</h3>
+<p>One the logger instance has been created, you can add handlers to it:</p>
+<pre><code class="language-python">import logging
+
+logger = logging.getLogger(&quot;example_app&quot;)
+logger.setLevel(logging.INFO)
+handler = logging.FileHandler(&quot;example_app.log&quot;)
+logger.addHandler(handler)
+
+# usage
+logger.info(&quot;hello&quot;)
+</code></pre>
+<h3>The root logger and why not to use it</h3>
+<p>If no logger is configured, or if you use one of the module-level
+functions such as  <code>logging.info()</code> as opposed to <code>logger.info()</code>, then
+the default behaviour is to use the &quot;root logger&quot;. This is a <code>Logger</code>
+that is available globally. You can also obtain it with
+<code>logging.getLogger()</code>, providing no argument.</p>
+<p><strong>Although the root logger can be used without any setup, it is usually
+a good idea to configure your own loggers.</strong> By using different loggers,
+the logging output of different components of a program can be
+configured independently of each other.</p>
+<p>For example, if you are developing a library, let's say <code>libfoo</code>, that
+is intended for use in other applications, you can create your own
+logger:</p>
+<pre><code class="language-python"># libfoo.py
+import logging
+logger = logging.getLogger(&quot;libfoo&quot;)
+# then configure your logger
+# and then
+logger.info(&quot;logfoo is doing stuff&quot;)
+</code></pre>
+<p>And then a client of your code can both set up their own logging and
+modify your code's behaviour:</p>
+<pre><code class="language-python"># client.py
+import logging
+import libfoo
+
+logger = logging.getLogger(&quot;client&quot;)
+libfoo.logger.setLevel(logging.WARNING)  # suppress INFO messages
+</code></pre>
+<h3><code>Handler</code> objects</h3>
+<p>There are many subclasses of <code>Handler</code>, providing different options for what to do with log messages. The two most common are <code>StreamHandler(stream)</code>, which writes to a stream such as <code>sys.stderr</code>, and <code>FileHandler(filename)</code>, which appends messages to a file.</p>
+<p>Other <code>Handler</code> classes are provided in the <code>logging.handlers</code> module (<a href="https://docs.python.org/3/library/logging.handlers.html">doc</a>), and some useful ones include:</p>
+<ul>
+<li><code>RotatingFileHandler</code> , which writes to successive files (<code>app.log.1</code>, <code>app.log.2</code>, <em>etc.</em>) keeping each file below a maximum size;</li>
+<li><code>SocketHandler</code>, which emits messages as TCP packets;</li>
+<li><code>HTTPHandler</code>, which emits messages as <code>GET</code> or <code>POST</code> requests to a webserver; and</li>
+<li><code>SMTPHandler</code>, which sends email.</li>
+</ul>
+<p>Choose the handlers that are suitable for your architecture. Since each handler can be configured separately, one might for example configure a <code>SMTPHandler</code> to only report important messages such as <code>ERROR</code> and <code>EXCEPTION</code>, while <code>StreamHandler</code> and <code>FileHandler</code> to contain <code>DEBUG</code> messages.</p>
+<h3>Formatters and Filters</h3>
+<p>Formatters and filters give further control over how messages are processed. Filters are associated with both loggers and handlers and can be configured differently for different handlers, so that different handlers may choose to emit different messages.</p>
+<p>A handler may have a formatter; if no formatter is defined then the default behaviour is print just the message by itself. However, formatters can be configured to show various pieces of metadata about each log message (<a href="https://docs.python.org/3/library/logging.html#logrecord-attributes">doc</a>).</p>
+<p>It is a good idea to include timestamps as well as information about what emitted the message. This is done by passing arguments to <code>Formatter</code>.</p>
+<p>Example:</p>
+<pre><code class="language-python">import logging
+
+logger = logging.getLogger(&quot;example&quot;)
+logger.setLevel(logging.INFO)
+handler = logging.StreamHandler()
+logger.addHandler(handler)
+formatter = logging.Formatter(
+  &quot;%(asctime)s %(levelname)s %(filename)s:%(lineno)s %(message)s&quot;,
+  datefmt=&quot;%Y-%m-%d %H:%M:%S&quot;
+)
+handler.setFormatter(formatter)
+
+logger.info(&quot;Hello, world&quot;)
+</code></pre>
+<p>prints:</p>
+<pre><code>2024-07-14 17:21:20,988 INFO foo.py:12 Hello, world
+</code></pre>
+<h2>Logging levels</h2>
+<p>There are five predefined logging levels: <code>DEBUG</code>, <code>INFO</code>, <code>WARNING</code>,
+<code>ERROR</code> and <code>CRITICAL</code> . These are to be used for messages of increasing
+seriousness. Each logger or filter must be set to a level, and ignores
+messages that are lower than that level. The default logging level is
+<code>WARNING</code>.</p>
+<h2>Some good practices</h2>
+<ul>
+<li>
+<p>As mentioned above: Use <code>logging</code> where possible instead of <code>print</code>,
+so that diagnostic messages are separated from output that needs to be
+machine-readable.</p>
+</li>
+<li>
+<p>Don't use the root logger, always configure a custom logger. This
+makes it possible to configure separate logging behaviour between
+different modules or libraries.</p>
+</li>
+<li>
+<p>At a minimum, log messages should contain a timestamp. Otherwise, in a
+log file it will not be possible to discern whether a log message was
+triggered by a recent event.</p>
+</li>
+<li>
+<p>It is also a good idea to include a reference to whatever caused the
+log message to be emitted. Including the filename, line number and
+name of the function in the formatter is a good first start.
+However, this may not be fully informative if the log message is
+inside a function that is called from many sites.</p>
+</li>
+<li>
+<p>Logging the arguments passed to the function can also be helpful.
+But this must be done with care, if the arguments passed are complex
+objects with many fields, or if they contain sensitive information.</p>
+</li>
+<li>
+<p>I like to invent &quot;sentinel&quot; words (my term, I can't remember if there
+is an official term for this) that are specific to the particular
+feature being logged about. By using a word that won't be used
+anywhere else, it makes it easier to search for that word in the logs
+using <code>grep</code>. For example, I used the French word &quot;telecharger&quot;
+instead of &quot;download&quot;.</p>
+</li>
+<li>
+<p>The <code>funcy</code> library provides a number of function decorators or
+context managers that help with logging calls to and returns from
+functions, which are particularly valuable when profiling code.</p>
+</li>
+</ul>
+<h3>stderr or stdout?</h3>
+<p>The default behaviour of <code>StreamHandler</code> is to write log messages to
+<code>stderr</code> rather than <code>stdout</code>.</p>
+<p>When writing shell utilities, writing diagnostic messages to <code>stderr</code>
+instead of <code>stdout</code> is useful if the program needs to produce
+machine-readable output, for example, to pipe into another process.
+Separating diagnostic messages into a separate stream will allow those
+messages to be more meaningful, detailed and human-readable, while
+keeping the output in a standard format. This also avoids accidentally
+piping such messages into the other program, which can have unexpected
+(or even dangerous) results.</p>
+<p>On the other hand, for long-running services such as web apps, <a href="https://12factor.net/logs">The
+Twelve-Factor App</a> recommends writing all
+messages to <code>stdout</code>, using a single stream. This stream can then be
+directed either to a regular file or to an external service which can
+then provide further services, such as searching, trend analysis or
+forwarding high-level messages.</p>
+<p>The appropriate choice therefore depends on what the program output is
+used for. In either case, using the <code>logging</code> module and the
+<code>StreamHandler</code> class provides an abstraction that sidesteps this
+question for the code that actually emits the log message.</p>
+<h2>Copy-and-paste example</h2>
+<pre><code class="language-python"># logger.py
+import logging
+
+def configure_logger() -&gt; logging.Logger:
+    &quot;&quot;&quot;This stuff goes into its own function in order not to pollute the
+    module-level namespace; but since this is in its own module that
+    doesn't matter too much.
+    &quot;&quot;&quot;
+    logger = logging.getLogger(&quot;my_app&quot;)
+    handler = logging.StreamHandler()
+    logger.addHandler(handler)
+    formatter = logging.Formatter(
+      &quot;%(asctime)s %(levelname)s %(filename)s:%(lineno)s %(message)s&quot;,
+      datefmt=&quot;%Y-%m-%d %H:%M:%S&quot;
+    )
+    handler.setFormatter(formatter)
+
+    return logger
+
+# This gets initialized only once, even if this module is imported
+# multiple times.
+logger: logging.Logger = configure_logger()
+
+# Allow logger to be imported from other modules
+__all__ = [&quot;logger&quot;]
+</code></pre>
+<p>And then, in another module in the same package:</p>
+<pre><code class="language-python"># code.py
+from .logger import logger
+
+logger.info(&quot;Hello&quot;)
+</code></pre>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/python.html">python</a>
+      <a href="./tag/backend.html">backend</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

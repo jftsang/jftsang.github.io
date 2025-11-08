@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>JMFT</title><link href="https://jmft.dev/" rel="alternate"/><link href="https://jmft.dev/feeds/all.atom.xml" rel="self"/><id>https://jmft.dev/</id><updated>2025-11-08T00:00:00+00:00</updated><entry><title>Part IB Quantum Mechanics resources</title><link href="https://jmft.dev/qm-resources.html" rel="alternate"/><published>2025-11-07T00:00:00+00:00</published><updated>2025-11-07T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-11-07:/qm-resources.html</id><summary type="html">&lt;p&gt;This page lists things possibly of interest to my Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; students. It will be updated from time to time.&lt;/p&gt;
+&lt;h2&gt;Books&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Alexandre Zagoskin, &lt;em&gt;Quantum Mechanics: A Complete Introduction: Teach Yourself&lt;/em&gt;. ISBN 9781473602410.&lt;/p&gt;
+&lt;p&gt;Covers a lot of physicsy material but a bit light on the maths. Starts from classical …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;This page lists things possibly of interest to my Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; students. It will be updated from time to time.&lt;/p&gt;
+&lt;h2&gt;Books&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Alexandre Zagoskin, &lt;em&gt;Quantum Mechanics: A Complete Introduction: Teach Yourself&lt;/em&gt;. ISBN 9781473602410.&lt;/p&gt;
+&lt;p&gt;Covers a lot of physicsy material but a bit light on the maths. Starts from classical physics and has important notes about the history and philosophy of quantum mechanics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Leonard Susskind, &lt;em&gt;Quantum Mechanics: The Theoretical Minimum&lt;/em&gt;. ISBN 978-0465036677.&lt;/p&gt;
+&lt;p&gt;Takes an axiomatic, mathematical approach and very useful for going from this course to Part II &lt;em&gt;Principles of Quantum Mechanics&lt;/em&gt;, although the approach is a bit different from the one taken in this courses. Also available as &lt;a href="https://theoreticalminimum.com/courses/quantum-mechanics/2012/winter"&gt;video lectures&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;David Tong's &lt;a href="https://www.damtp.cam.ac.uk/user/tong/quantum.html"&gt;lecture notes&lt;/a&gt; and &lt;a href="https://www.damtp.cam.ac.uk/user/tong/books/quantum.html"&gt;book&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eugene Lim's &lt;a href="https://nms.kcl.ac.uk/eugene.lim/teach/QM2012/QMroot.html"&gt;notes&lt;/a&gt; on an older version of this course. &lt;em&gt;Dead link – I shall try to find an archived version.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Web resources&lt;/h2&gt;
+&lt;h3&gt;Videos&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://www.youtube.com/@LookingGlassUniverse"&gt;Looking Glass Universe&lt;/a&gt; channel by Mithuna Yonagathan has excellent explanations for quantum mechanical phenomena.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=v_uBaBuarEM&amp;amp;t=6s"&gt;I did the double slit experiment at home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://youtu.be/fbzHNBT0nl0?si=Oh44kP2wUOhUJv1d"&gt;The biggest lie about the double slit experiment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://youtu.be/hIvuxx14zCk?si=SNHCSgPpcb1A6eiD"&gt;&amp;quot;Standard&amp;quot; quantum mechanics is obviously wrong&lt;/a&gt; – on problems with the Copenhagen interpretation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/@mahesh_shenoy"&gt;FloatHeadPhysics&lt;/a&gt; has some excellent videos that try to make physics concepts intuitive and logical. He has a &lt;a href="https://www.youtube.com/playlist?list=PLawLaqps30oCiv24vBDZeNM5nmJ157shS"&gt;playlist of videos about quantum mechanics&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Demos&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.falstad.com/mathphysics.html"&gt;Paul Falstad's Math, Physics and Engineering applets&lt;/a&gt; has several demos related to quantum mechanics (and many other physics-y things).&lt;/p&gt;
+&lt;p&gt;For Pythonistas, I made a bunch of interactive demos for various courses that you can find on &lt;a href="https://github.com/jftsang/ibmethods-demos"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Pages on this blog&lt;/h3&gt;
+&lt;p&gt;Everything relevant is tagged with the &lt;a href="/tag/quantum-mechanics.html"&gt;&lt;code&gt;quantum-mechanics&lt;/code&gt;&lt;/a&gt; tag.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="qm-cheat-sheet.html"&gt;Quantum mechanics revision guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="bohr-model-background.html"&gt;The Bohr model: Some history and context&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="uncertainty-principle-and-spectrograms.html"&gt;The uncertainty principle and spectrograms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="uncertainty-principle-obvious-to-musicians.html"&gt;The uncertainty principle is obvious to musicians&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="teaching"/></entry><entry><title>But what does $\delta F = 0$ mean?</title><link href="https://jmft.dev/calculus-of-variations-formalism.html" rel="alternate"/><published>2025-10-16T00:00:00+01:00</published><updated>2025-10-16T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-10-16:/calculus-of-variations-formalism.html</id><summary type="html">&lt;p&gt;The following discussion is meant to give some more formalism to students of the &lt;em&gt;Variational Principles&lt;/em&gt; course and perhaps tie it to material that they might have come across in analysis or linear algebra courses.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page is a work in progress and may not be accurate; formulae may have …&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;The following discussion is meant to give some more formalism to students of the &lt;em&gt;Variational Principles&lt;/em&gt; course and perhaps tie it to material that they might have come across in analysis or linear algebra courses.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page is a work in progress and may not be accurate; formulae may have mistakes or be improperly formatted. Use with care.&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A functional is a function of a function:
+$$
+F[y] = \int_a^b f(x, y, y'), \mathrm{d}x
+$$
+We are concerned with scalar-valued functionals where $f$ and $F$ take real values.&lt;/p&gt;
+&lt;p&gt;The idea is that the function space $y$ lives in some function space $U$, e.g. differentiable functions on $(a, b)$. This $U$ is a vector space over $\mathbb{R}$ meaning that it is legal to write down expressions like $y = \lambda y_1 + \mu y_2$ where $\lambda, \mu \in \mathbb{R}$ are scalars. The expression $f(x, y, y')$ is arbitrary, and in general nonlinear.&lt;/p&gt;
+&lt;p&gt;The functional $F: U \rightarrow \mathbb{R}$ is a function from a function space $U$ to $\mathbb{R}$. Our goal is to understand what it means to differentiate such functions in $U$, &amp;quot;with respect to $y$&amp;quot;.&lt;/p&gt;
+&lt;h2&gt;Differentiation in finite-dimensional vector spaces&lt;/h2&gt;
+&lt;p&gt;We shall begin by considering a finite-dimensional vector space $V = \mathbb{R}^n$ and a scalar-valued function $\phi: \mathbb{R}^n \rightarrow \mathbb{R}$, and trying to understand what it means to differentiate $\phi$.&lt;/p&gt;
+&lt;p&gt;When we consider the derivative of $\phi$ at a point $x$ we are really looking at what happens when the argument is changed by a small amount: the difference betwen $\phi(x + \epsilon n)$ and $\phi(x)$ in the limit $\epsilon\rightarrow0$. Here, $n$ is some vector that specifies the direction in which we are differentating.&lt;/p&gt;
+&lt;p&gt;If $\phi$ is differentiable at $x$ in the direction of $n$, then we would expect that as $\epsilon\rightarrow0$,
+$$
+\phi(x + \epsilon n) = \phi(x) + g_n \epsilon + o(\epsilon)
+$$
+or equivalently (expanding the definition of the $o(\epsilon)$ notation)
+$$
+\lim_{\epsilon \rightarrow 0} \frac{\phi(x + \epsilon n) - \phi(x)}{\epsilon} =  g_n
+$$
+for some quantity $g_n$ that depends on $n$. That is, the variation in $\phi$ should be &lt;em&gt;linearly&lt;/em&gt; proportional to $\epsilon$ at leading order. This is reminiscent of the definition of differentiability in one dimension: we are in fact looking at the function $\varphi(\epsilon) = \phi(x + \epsilon n)$ which is a function over the scalar variable $\epsilon$.&lt;/p&gt;
+&lt;p&gt;For $\phi: \mathbb{R}^n \rightarrow \mathbb{R}$ it turns out we need a stronger condition: we actually need $g_n$ to be a linear function of the direction vector $n$ as well. Thus (by some linear algebra) there needs to be a vector $g$ such that $g_n = g \cdot n$ , and $g$ doesn't depend on $n$ (but may depend on $x$).&lt;/p&gt;
+&lt;p&gt;(Note that it is not enough for the partial derivatives along the coordinate axes to merely exist for $\phi$ to be differentiable.)&lt;/p&gt;
+&lt;p&gt;Absorbing $\epsilon$ into the magnitude of $n$, the definition of $\phi: \mathbb{R}^n \rightarrow \mathbb{R}$ being differentiable is that there needs to exist a vector $g$ such that for &lt;em&gt;any&lt;/em&gt; direction $n$ we have
+$$
+\phi(x + n) = \phi(x) + g \cdot n + o\left(||n||\right)
+$$
+If such a $g$ exists, then we give it the notation $\nabla\phi$ and call it the &lt;em&gt;gradient&lt;/em&gt; of $\phi$ at $x$. Its components are given by the partial derivatives $\nabla \phi_i = \partial \phi / \partial x_i$ along the coordinate axes.&lt;/p&gt;
+&lt;p&gt;To look at stationary points of $\phi$, we look for places where the vector $\nabla\phi = 0$: that is, the change in $\phi$ along &lt;em&gt;any&lt;/em&gt; direction $n$ needs to be sublinear, $o\left(||n||\right)$.&lt;/p&gt;
+&lt;h2&gt;Function spaces&lt;/h2&gt;
+&lt;p&gt;Back to our functional $F[y] = \int_a^b f(x, y, y'), \mathrm{d}x$. Now the finite dimensional $V$ is replaced by an infinite dimensional function space $U$. But this is still a vector space, so notions such as &amp;quot;linear map&amp;quot; and &amp;quot;dot product&amp;quot; still apply, in disguised form.&lt;/p&gt;
+&lt;h3&gt;Inner products&lt;/h3&gt;
+&lt;p&gt;The key idea is that we can define an inner product on $U$, between two functions $r, s \in U$:
+$$
+r \cdot s = \int_a^b r(x) , s(x) , \mathrm{d}x
+$$
+It can be shown that this satisfies the requirements to be an inner product over a vector space. Importantly, it is linear in each of $r$ and $s$.&lt;/p&gt;
+&lt;h3&gt;Aside: Linear functionals&lt;/h3&gt;
+&lt;p&gt;The converse is trickier. In the finite-dimensional case, we used the fact that any linear function of a vector $n$ must take the form $g \cdot n$ for some vector $g$. This is &lt;em&gt;not&lt;/em&gt; the case in the space $U$: a scalar-valued linear functional $L[s]$ does not necessarily need to be $r \cdot s$ for some $r \in U$. Simple counterexample, function evaluation $L[s] = s(c)$ at some $c \in (a, b)$.&lt;/p&gt;
+&lt;p&gt;In the finite dimensional case a vector space $V$ is isomorphic to $V^*$ and so we can identify $g$ as a member of $V$ corresponding to the map $n \mapsto g\cdot n$. The problem is that this is not the case in the function space $U$, where the concept of a &amp;quot;dual space&amp;quot; requires a bit more care to define. See &lt;a href="https://en.wikipedia.org/wiki/Dual_space#Continuous_dual_space"&gt;Wikipedia&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;p&gt;It turns out that such difficulties can be overcome by introducing the concept of a &lt;a href="https://en.wikipedia.org/wiki/Distribution_(mathematical_analysis)"&gt;distribution&lt;/a&gt; – including the ever-popular Dirac delta function, which is not actually a function but a distribution. In the example above, we could take $r(x) = \delta(x-c$) to get our functional for evaluating at $c$.&lt;/p&gt;
+&lt;h3&gt;Norms and limits&lt;/h3&gt;
+&lt;p&gt;The inner product also defines a norm on $U$, by
+$$
+||r|| = \left( \int_a^b r(x)^2 ,\mathrm{d}x \right)^{1/2}
+$$
+The point of the norm is that it now makes sense to talk about the &amp;quot;size&amp;quot; of $r$, and in particular, what it means to take a limit $r \rightarrow 0$ in the function space $U$. This also lets us write down a term like $o\left( ||r|| \right)$ to denote a quantity that is sublinear in $||r||$.&lt;/p&gt;
+&lt;h2&gt;The variation $\delta F$&lt;/h2&gt;
+&lt;p&gt;Now we want to see what the &amp;quot;derivative&amp;quot; of $F[y]$ is at the &amp;quot;point&amp;quot; $y$, where a &amp;quot;point&amp;quot; $y \in U$ is a function. By analogy with the finite-dimensional case, we first consider the variation of $F$ along a certain &amp;quot;direction&amp;quot; $\eta$ – this direction is also a member of $U$. So we consider the behaviour of
+$$
+\Delta_y [\eta] = F[y + \eta] - F[y]
+$$
+in the limit $||\eta|| \rightarrow 0$ and we hope that this is, to leading order, linear in $\eta$.  We consider this to be a functional in $\eta$, although it also depends on the $y$ where we are evaluating it.&lt;/p&gt;
+&lt;p&gt;By standard derivations (expand and IBP) we get
+$$
+\begin{align}
+\Delta_y [\eta] &amp;amp;= \int_a^b \left(
+\frac{\partial f}{\partial y} - \frac{\mathrm{d}}{\mathrm{d}x} \left(
+\frac{\partial f}{\partial y'}
+\right)
+\right) , \eta , \mathrm{d}x &amp;amp;+ o\left(||\eta||\right)  \
+&amp;amp;= \int_a^b EL(x, y, y') , \eta(x) ,\mathrm{d}x
+&amp;amp;+ o\left(||\eta||\right) \
+&amp;amp;= EL \cdot \eta &amp;amp;+ o\left(||\eta||\right)
+\end{align}
+$$
+We observe that this is an inner product: the expression $EL(x, y, y')$ does not depend on $\eta$; and when we evaluate it at the &amp;quot;point&amp;quot; $y = y(x)$, this itself becomes a function of just $x$, written $EL(x)$. Thus $\Delta_y [\eta]$ is an inner product of $EL$ with $\eta$.&lt;/p&gt;
+&lt;p&gt;We write
+$$
+F[y + \eta] = F[y] + \delta F [\eta] + o\left(||\eta||\right)
+$$
+where $\delta F$ is that first-order approximation, and call it the &lt;em&gt;variation&lt;/em&gt;. Note that it does depend on the &amp;quot;direction&amp;quot; of $\eta$. It also depends on $y$ but we usually don't write this explicitly.&lt;/p&gt;
+&lt;h3&gt;Stationary points&lt;/h3&gt;
+&lt;p&gt;Again a stationary point of $F$ is defined to be a &amp;quot;point&amp;quot; $y$ where the change in $F$ is sublinear to the change in the argument.&lt;/p&gt;
+&lt;p&gt;If we require that $\Delta \eta = o\left(||\eta||\right)$ for all &amp;quot;directions&amp;quot; $\eta$ in the limit $||\eta||\rightarrow0$, this is equivalent (subject to caveats!) to requiring that $EL = 0$, which recovers us the Euler–Lagrange equation:
+$$
+\frac{\partial f}{\partial y} - \frac{\mathrm{d}}{\mathrm{d}x} \left(
+\frac{\partial f}{\partial y'} \right) = 0
+$$&lt;/p&gt;
+&lt;h2&gt;The second variation&lt;/h2&gt;
+&lt;h3&gt;In finite dimensions&lt;/h3&gt;
+&lt;p&gt;Going back to the finite-dimensional case, for our function $\phi$ over a finite dimensional domain to be twice differentiable, we need the correction to $\phi$ to be second-order in $\epsilon$, &lt;em&gt;i.e.&lt;/em&gt;
+$$
+\phi(x + \epsilon n) = \phi(x) + (g \cdot n),\epsilon + S_n \epsilon^2 + o(\epsilon^2)
+$$
+for some quantity $S_n$ that, again, in general, depends on the direction $n$. It can be shown that $S_n$ actually needs to be a quadratic form, &lt;em&gt;i.e.&lt;/em&gt;
+$$
+\phi(x + \epsilon n) = \phi(x) + (g \cdot n),\epsilon + ( n \cdot H \cdot n ) , \epsilon^2 + o(\epsilon^2)
+$$
+for some symmetric matrix $H$ which we call the &lt;em&gt;Hessian&lt;/em&gt;. Its values are given by the second partial derivatives along the coordinate axes, $H_{ij} = \partial^2f / (\partial x_i \partial x_j)$.&lt;/p&gt;
+&lt;p&gt;One sometimes writes $H = \nabla\nabla \phi$, especially in continuum mechanics. However it is incorrect to write $H = \nabla^2 \phi$ as this notation denotes the Laplacian, which is a scalar value; in fact $\nabla^2 \phi = \mathrm{trace}, H$.&lt;/p&gt;
+&lt;h3&gt;For functionals&lt;/h3&gt;
+&lt;p&gt;As for the second variation $\delta^2 F$, this means expanding to a second order approximation. That is, we suppose that
+$$
+F[y + \eta] = F[y] + \delta F [\eta] + \delta^2 F[\eta] + o\left(||\eta||^2 \right)
+$$
+for some functional $\delta^2 F[\eta]$ (again this implicitly depends on the $y$ where we are evaluating); and we insist that the size of $\delta^2 F[\eta]$ be quadratic in $\eta2$. This is a generalisation of Taylor's theorem.&lt;/p&gt;
+&lt;p&gt;Expanding $F[y+\eta]$ to second order in $\eta$, we find that the second order correction gives us
+$$
+\delta^2 F[\eta] = \int_a^b (P \eta^2 + Q \eta'^2) , \mathrm{d}x
+$$
+for some functions $P$ and $Q$. We estimate the size of this functional by:
+$$
+||\delta^2 F[\eta]|| \leq (a-b)\left[||P|| \times||\eta||^2 + ||Q|| \times ||\eta'||^2 \right]
+$$
+This almost gives us what we want, but there is the problem that differentiation is an &amp;quot;unbounded&amp;quot; operation: the size of $||\eta'||$ can be large even in the limit $||\eta|| \rightarrow 0$. (Consider a very wriggly function.) So it is not necessarily the case that $||\eta'||^2$ is proportional to $||\eta||^2$.&lt;/p&gt;
+&lt;p&gt;We ignore such pathologies, but the way to avoid this issue is to backtrack and work not in the limit of $||\eta||\rightarrow0$, but instead to let $\eta$ be a fixed &amp;quot;direction&amp;quot; and consider $F[y + \epsilon \eta]$ and take the limit $\epsilon\rightarrow0$; in that way one finds that
+$$
+F[y + \epsilon\eta] = F[y] + \delta F [\eta] \epsilon + \delta^2 F[\eta] \epsilon^2 + o\left(\epsilon^2 \right)
+$$&lt;/p&gt;
+&lt;h2&gt;Local minimum&lt;/h2&gt;
+&lt;p&gt;The second variation can now be used to show that $F$ takes a local minimum at a point $y$, if $\delta F = 0$.&lt;/p&gt;
+&lt;p&gt;It is not easy and depends on the magnitude and sign of $P$ and $Q$ over the interval $(a, b)$, but if it can be shown that $\delta ^2 F[\eta] \geq 0$ for all $\eta$ then it follows that
+$$
+F[y + \epsilon\eta] = F[y] + \delta^2 F[\eta] \epsilon^2 + o(\epsilon^2) \geq F[y]
+$$
+for sufficiently small values of $\epsilon$. So $F[y]$ is a local minimum. Note that this does not tell us anything about the global behaviour.&lt;/p&gt;
+</content><category term="Physics"/><category term="math"/><category term="physics"/><category term="teaching"/><category term="calculus-of-variations"/></entry><entry><title>Quantum mechanics revision guide</title><link href="https://jmft.dev/qm-cheat-sheet.html" rel="alternate"/><published>2025-10-13T00:00:00+01:00</published><updated>2025-10-13T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-10-13:/qm-cheat-sheet.html</id><summary type="html">&lt;p&gt;This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Vector spaces, inner products and duality&lt;/h2&gt;
+&lt;p&gt;Let $V$ be an inner product space over $\mathbb{C}$.&lt;/p&gt;
+&lt;p&gt;We use &lt;em&gt;ket&lt;/em&gt; notation for vectors: $|\psi\rangle \in V$&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;inner product&lt;/strong&gt; between …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Vector spaces, inner products and duality&lt;/h2&gt;
+&lt;p&gt;Let $V$ be an inner product space over $\mathbb{C}$.&lt;/p&gt;
+&lt;p&gt;We use &lt;em&gt;ket&lt;/em&gt; notation for vectors: $|\psi\rangle \in V$&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;inner product&lt;/strong&gt; between two vectors is notated as $\langle\phi|\psi\rangle$. This satisfies conjugate symmetry:
+$$
+\overline{\langle\phi|\psi\rangle} = \langle\psi|\phi\rangle
+$$&lt;/p&gt;
+&lt;p&gt;Elements of the &lt;strong&gt;dual space&lt;/strong&gt; $V^*$ use &lt;em&gt;bra&lt;/em&gt; notation $\langle\phi|$ and this acts on $|\psi\rangle \in V$ by
+$$\langle\phi|: V \rightarrow \mathbb{C} : |\psi\rangle \mapsto \langle\phi|\psi\rangle$$&lt;/p&gt;
+&lt;p&gt;Note $\langle \mathrm{bra}|\mathrm{ket}\rangle$  form a bra(c)ket.&lt;/p&gt;
+&lt;p&gt;It can be shown that $V$ and $V^*$ are isomorphic and that the isomorphism is &amp;quot;natural&amp;quot;, &lt;em&gt;i.e.&lt;/em&gt; does not depend on a choice of basis. Conjugate symmetry means that the &lt;em&gt;bra&lt;/em&gt; corresponding to $\alpha|\psi\rangle$ is $\overline\alpha\langle\psi|$.&lt;/p&gt;
+&lt;h2&gt;Linear operators and adjoints&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Linear operators&lt;/strong&gt; $L: V \rightarrow V$  acts on &lt;em&gt;kets&lt;/em&gt; as $|\psi\rangle \mapsto L |\psi\rangle$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;adjoint operator&lt;/strong&gt; $L^\dagger: V^* \rightarrow V^*$ acts on &lt;em&gt;bras&lt;/em&gt; by $\langle\phi| \mapsto \langle\phi| L^\dagger$.&lt;/p&gt;
+&lt;p&gt;By conjugate symmetry, $\overline{\langle\phi|L|\psi\rangle} = \langle\psi|L^\dagger|\phi\rangle$ .&lt;/p&gt;
+&lt;p&gt;An operator is &lt;strong&gt;self-adjoint&lt;/strong&gt; if
+$$
+\langle\psi|L^\dagger|\phi\rangle = \langle\psi|L|\phi\rangle
+$$
+It is technically illegal to write $L = L^\dagger$ since $L$ is an endomorphism on $V$ but $L^\dagger$ is on $V^*$, but the inner product notation allows us to gloss over this (the two spaces are isomorphic).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Properties of self-adjoint operators:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;eigenvalues are real&lt;/li&gt;
+&lt;li&gt;orthogonality of eigenvectors with different eigenvalues: if $L|m\rangle = \lambda_m|m\rangle$ and $L|n\rangle = \lambda_n|n\rangle$, and $\lambda_m \neq \lambda_n$, then $\langle m|n\rangle = 0$&lt;/li&gt;
+&lt;li&gt;eigenvectors are complete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;we can use the eigenvectors as a basis&lt;/li&gt;
+&lt;li&gt;we can pick the basis to be orthonormal, even if there is a repeated eigenvalue (Gram–Schmidt)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Properties of orthonormal bases:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Given an orthonormal basis $|n\rangle$ the dual basis on $V^*$ is $\langle n|$.&lt;/p&gt;
+&lt;p&gt;$$\langle m | n \rangle = \delta_{mn}$$&lt;/p&gt;
+&lt;p&gt;Projection (generalisation of Fourier coefficient formula):
+$$
+|\psi\rangle = \sum_n c_n|n\rangle \implies c_n = \langle n|\psi\rangle
+$$
+Sometimes easier to work with non-normalised basis, in which case:
+$$
+c_n = \frac{\langle n |\psi\rangle}{\langle n | n \rangle}
+$$&lt;/p&gt;
+&lt;p&gt;Conjugate symmetry:
+$$
+\langle\psi|= \sum_n \overline{c_n} \langle n|
+$$&lt;/p&gt;
+&lt;p&gt;Inner products:
+$$
+\begin{align}
+|\phi\rangle &amp;amp;= \sum_n b_n|n\rangle \
+|\psi\rangle &amp;amp;= \sum_n c_n|n\rangle \
+\implies \langle\phi|\psi\rangle &amp;amp;= \sum_n \overline{b_n} c_n
+\end{align}
+$$&lt;/p&gt;
+&lt;h2&gt;Principles of quantum mechanics&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;States&lt;/strong&gt; are elements of an inner product space $V$ over $\mathbb{C}$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;finite dimensional: spin states&lt;/li&gt;
+&lt;li&gt;infinite dimensional: wavefunctions, function spaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A &lt;strong&gt;normalised state&lt;/strong&gt; has $\langle\psi|\psi\rangle=1$ . Magnitudes and any overall phase $e^{i\varphi}$ always cancel out when calculating physical quantities. So states $|\psi\rangle$ and $c|\psi\rangle$ are equivalent for $c\in\mathbb{C}$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observable quantities&lt;/strong&gt; correspond to self-adjoint linear operators:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;position $\mathbf{x}$ $\rightarrow$ position operator $\hat{\mathbf{x}}$&lt;/li&gt;
+&lt;li&gt;momentum $\mathbf{p}$ $\rightarrow$ momentum operator $\hat{\mathbf{p}}$&lt;/li&gt;
+&lt;li&gt;energy $E$ $\rightarrow$ Hamiltonian $\hat{H}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;%% * angular momentum $L_z$, $\mathbf{L}^2$ $\rightarrow$ $\hat{L_z}$, $\hat{\mathbf{L}}^2$ respectively
+%%&lt;/p&gt;
+&lt;p&gt;These can be vector quantities but for 1D systems we can conflate $\mathbf{x}$ and $x$. Often drop the hats to simplify notation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Eigenbasis:&lt;/strong&gt; For $L$ self-adjoint we have a complete set of eigenvectors $|n\rangle$ with corresponding eigenvalues $\lambda_n \in\mathbb{R}$ not necessarily distinct. Write
+$$
+|\psi\rangle = \sum_n c_n |n\rangle, \qquad c_n = \langle n|\psi\rangle.
+$$
+Normalisation implies
+$$
+\langle\psi|\psi\rangle = \sum_n |c_n|^2 = 1.
+$$&lt;/p&gt;
+&lt;p&gt;Using the eigenbasis is nice because we can apply $L$ simply by multiplying each eigenstate by the corresponding eigenvalue:
+$$
+L|\psi\rangle = \sum_n c_n \lambda_n |n\rangle
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observations are probabilistic.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The possible results of an observation of $L$ are drawn from the eigenvalues $\lambda_n$ of $L$.&lt;/li&gt;
+&lt;li&gt;The probability of measuring $\lambda_n$ is given by &lt;strong&gt;Born's rule&lt;/strong&gt;: $p(n) = |c_n|^2$.&lt;/li&gt;
+&lt;li&gt;If $\lambda_n$ is a repeated eigenvalue then each of these contributes a chance to measure that value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Often easier to calculate with the non-normalised version of Born's rule:
+$$
+p(n) = \frac{|\langle n|\psi\rangle|^2}{\langle n|n\rangle \langle\psi|\psi\rangle}
+$$&lt;/p&gt;
+&lt;p&gt;Note that the probabilistic interpretation leads to serious philosophical problems! So this can't be the full story, although its predictions agree with experiment. &lt;a href="https://youtu.be/hIvuxx14zCk?si=tWbl6DESqfj-T8aQ"&gt;Looking Glass Universe has an excellent video on this.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observations collapse the state.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The state changes instantaneously during an observation. If the result of the measurement is $\lambda_n$, then the state collapses onto its projection onto the corresponding eigenspace (up to normalization).&lt;/p&gt;
+&lt;p&gt;In particular, if $\lambda_n$ is non-degenerate (i.e. eigenspace has dimension 1) then the state after the measurement is $|n\rangle$.&lt;/p&gt;
+&lt;p&gt;This means that the state $|\psi\rangle$ isn't fully observable – because observations destroy information. (Again, there are serious problems with this interpretation.)&lt;/p&gt;
+&lt;p&gt;Neither is any overall phase in $e^{i\varphi}|\psi\rangle$, since those phases cancel when you take quantities such as $\langle\psi|\psi\rangle$.&lt;/p&gt;
+&lt;h2&gt;Time-evolution&lt;/h2&gt;
+&lt;p&gt;Assume that time evolution is governed by a linear operator:
+$$
+|\psi(t)\rangle = U(t)|\psi(0)\rangle
+$$
+$U(0) = I$ must be the identity operator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conservation of information&lt;/strong&gt; implies that orthogonal states need to remain orthogonal. This implies that $U(t)$ must be unitary, $U U^\dagger = U^\dagger U = I$.&lt;/p&gt;
+&lt;p&gt;Taking the limit $t \rightarrow 0$ we can write
+$$
+U(t) = I - \frac{i}{\hbar}t \hat{H} + O(t^2)
+$$
+for some self-adjoint operator $\hat{H}$ called the &lt;em&gt;Hamiltonian&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;$\hbar$ is the &lt;strong&gt;reduced Planck constant&lt;/strong&gt;; it has units of angular momentum $\mathrm{kg, m^2, s^{-1}} = \mathrm{J \cdot s}$ and provides a conversion factor.&lt;/p&gt;
+&lt;p&gt;Some algebra gives the &lt;strong&gt;time-dependent Schrodinger equation&lt;/strong&gt;:
+$$
+i \hbar \frac{\mathrm{d}|\psi\rangle }{\mathrm{d}t}= \hat{H} |\psi\rangle
+$$&lt;/p&gt;
+&lt;p&gt;The Hamiltonian $\hat{H}$ does not come from first principles but is chosen to match experimental results, and often by analogy to classical mechanics.&lt;/p&gt;
+&lt;h2&gt;Energy states&lt;/h2&gt;
+&lt;p&gt;Look for &lt;strong&gt;energy eigenstates&lt;/strong&gt; by solving the &lt;strong&gt;time-independent Schrodinger equation&lt;/strong&gt;:
+$$
+\hat H |\chi_n\rangle = E_n |\chi_n\rangle
+$$&lt;/p&gt;
+&lt;p&gt;The corresponding time-dependent solution is separable:
+$$|\psi(t)\rangle = A e^{iE_n t/\hbar} |\chi_n\rangle$$
+where $A\in\mathbb{C}$ is arbitrary (it cancels when we calculate observables).&lt;/p&gt;
+&lt;p&gt;Since eigenstates of $\hat H$ form a complete orthogonal basis, the overall solution may be written in the form
+$$
+|\psi(t)\rangle = \sum_n A_n e^{iE_n t/\hbar} |\chi_n\rangle
+$$&lt;/p&gt;
+&lt;h2&gt;Commutators&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Commutator&lt;/strong&gt; of two operators:
+$$
+[A, B] = AB - BA
+$$
+&lt;strong&gt;Commuting operators have a shared eigenbasis.&lt;/strong&gt; If $[A,B] = 0$ then it is possible to find an orthonormal basis $|n\rangle$ such that each $|n\rangle$ is an eigenvector of both $A$ and $B$. In other words the eigenspaces &amp;quot;line up&amp;quot; with each other.&lt;/p&gt;
+&lt;p&gt;Important commutator identities:&lt;/p&gt;
+&lt;p&gt;Linearity
+$$
+[A+B, C] = [A,C] + [B,C]
+$$&lt;/p&gt;
+&lt;p&gt;Anticommutativity
+$$
+[B, A] = -[A, B]
+$$&lt;/p&gt;
+&lt;p&gt;Products (Leibniz rule)
+$$
+\begin{align}
+[A, BC] &amp;amp;= ABC - BCA \
+&amp;amp;= ABC - BAC + BAC - BCA \
+&amp;amp;= [A, B] C - B [A, C]
+\end{align}
+$$
+Powers
+$$
+[A, B^n] = [A, B] B^{n-1} + B[A, B] B^{n-2} + \dots + B^{n-1}[A, B]
+$$
+If $[A, B]$ commutes with $B$ (e.g. is a constant):
+$$
+[A, B^n] = n B^{n-1}  [A, B]
+$$
+e.g. $[\hat{x}, \hat{p}^2] = 2i\hbar \hat{p}$&lt;/p&gt;
+&lt;p&gt;Jacobi identity:
+$$
+[A, [B, C]] + [B, [C, A]] + [C, [A, B]] = 0
+$$&lt;/p&gt;
+&lt;p&gt;Canonical relations:
+$$
+[\hat{x}, \hat{p}] = i\hbar
+$$
+Angular momentum components (also spin)
+$$
+[L_i, L_j] = i\hbar, \epsilon_{ijk} ,L_k
+$$&lt;/p&gt;
+&lt;p&gt;More background: [[uncertainty-principle-and-spectrograms]], [[uncertainty-principle-obvious-to-musicians]].&lt;/p&gt;
+&lt;p&gt;measurement of $A$ $\implies$ state collapse to an eigenstate of $A$&lt;/p&gt;
+&lt;p&gt;If $[A, B] \neq 0$ then the resulting eigenstate is not an eigenstate of $B$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Uncertainty&lt;/strong&gt; $\sigma_A^2 = (\Delta A)^2 = \langle A^2\rangle - \langle A\rangle^2$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Uncertainty principle (general)&lt;/strong&gt; $\sigma_A \sigma_B \geq \frac{1}{2} \left|\langle [A, B]\rangle\right|$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Position-momentum&lt;/strong&gt; $\sigma_x \sigma_p \geq \frac{1}{2}\hbar$&lt;/p&gt;
+&lt;h2&gt;Particle in a 1D potential, QHO&lt;/h2&gt;
+&lt;p&gt;For a &lt;em&gt;classical&lt;/em&gt; particle of mass $m$ in a 1D potential, the energy is
+$$
+E = \frac{p^2}{2m} + V(x, t)
+$$
+where $p$ is the momentum and $V$ is the potential. (In general $V$ may be a function of $t$, but usually is not in problems that we solve.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quantum harmonic oscillator:&lt;/strong&gt;
+$$
+\hat H = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2 \hat{x}^2
+$$&lt;/p&gt;
+&lt;p&gt;TISE:
+$$
+E\psi= \frac{-\hbar^2}{2m} \frac{d^2\psi}{dx^2} + \frac{1}{2}m\omega^2 {x}^2 \psi
+$$
+Scales:
+$$
+\begin{align}
+&amp;amp; E \sim \frac{\hbar^2}{m r^2} \sim m\omega^2 r^2 \
+\implies &amp;amp;
+E \sim \hbar\omega, \quad r \sim \left(\frac{\hbar}{m\omega}\right)^{1/2}
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;Nondimensional form:
+$$
+E\psi = \frac{-1}{2}\frac{d^2\psi}{dx^2} + \frac{1}{2}x^2\psi
+$$
+Look for solutions of the form
+$$
+\begin{align}
+\psi(x) &amp;amp;= f(x) , e^{-x^2/2} \
+\psi'(x) &amp;amp;= \left(f'(x) - x f(x)\right) ,  e^{-x^2/2} \
+\psi''(x) &amp;amp;= \left(f''(x) - 2xf(x) + (x^2 - 1) f(x)\right) ,  e^{-x^2/2}
+\end{align}
+$$
+Frobenius solution + convergence $\implies$
+$$
+E = n + \frac{1}{2} \qquad n = 1, 2, 3, \dots
+$$
+with $f$ a polynomial of degree $n$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ladder operators&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Hydrogen atom&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Spherical harmonics&lt;/strong&gt;
+$$
+Y_l^m(\theta, \varphi) = N e^{im\varphi} , P_l^m(\cos\theta)
+$$
+$$
+l = 0, 1, 2,\dots, \quad m =-l, -l+1, \dots, l
+$$
+where $N$ is a normalisation and $P_l^m$ is an associated Legendre polynomial (not actually a polynomial!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spherical harmonics are simultaneous eigenfunctions&lt;/strong&gt; of $\hat{\mathbf L}^2$ and $\hat{L}_z$ obeying
+$$
+\hat{\mathbf L}^2 Y_l^m = \hbar^2 , l (l+1) , Y_l^m \qquad \hat{L}_x Y_l^m = \hbar, m ,Y_l^m
+$$&lt;/p&gt;
+&lt;p&gt;These operators also commute with $\hat{H}$ when the potential is spherically symmetric.&lt;/p&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="teaching"/></entry><entry><title>Storing times, and precision of float64</title><link href="https://jmft.dev/time-precision-float64.html" rel="alternate"/><published>2025-09-26T00:00:00+01:00</published><updated>2025-09-26T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-09-26:/time-precision-float64.html</id><summary type="html">&lt;p&gt;This is the second article about how working with temporal information in computer systems. &lt;a href="date-time-and-timezones"&gt;The first article&lt;/a&gt; was about contained some definitions about astronomical time and timezones.&lt;/p&gt;
+&lt;p&gt;This article describes options for storing temporal values in your programs, and their limitations. In particular, it describes two pitfalls that can happen …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the second article about how working with temporal information in computer systems. &lt;a href="date-time-and-timezones"&gt;The first article&lt;/a&gt; was about contained some definitions about astronomical time and timezones.&lt;/p&gt;
+&lt;p&gt;This article describes options for storing temporal values in your programs, and their limitations. In particular, it describes two pitfalls that can happen when working with floating-point representations for times.&lt;/p&gt;
+&lt;h2&gt;Numeric data types&lt;/h2&gt;
+&lt;p&gt;Computers have a number of ways to represent numerical values, each with their uses. Two most important formats for us are &lt;code&gt;int64&lt;/code&gt; and &lt;code&gt;float64&lt;/code&gt;. Both use 64 bits (8 bytes) to store values. They are the most commonly used in modern systems for general-purpose computations in which memory is not at a premium, and are widely supported across major programming languages.&lt;/p&gt;
+&lt;p&gt;Further notes on &lt;a href="https://en.wikipedia.org/wiki/Data_type#Numeric_types"&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Integers&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;int64&lt;/code&gt; uses a binary (base 2) representation to encode an integer value between &lt;code&gt;-2^32&lt;/code&gt; and &lt;code&gt;2^32 - 1&lt;/code&gt; inclusive – that is, between &lt;code&gt;-18446744073709551616&lt;/code&gt; and &lt;code&gt;18446744073709551615&lt;/code&gt;. Positive numbers (and zero) are stored in the obvious way, and negative numbers are usually encoded using &lt;a href="https://en.wikipedia.org/wiki/Two%27s_complement"&gt;two's complement&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Floating-point values&lt;/h3&gt;
+&lt;p&gt;Fractional values are most commonly stored using a &lt;em&gt;floating-point representation&lt;/em&gt;. Numbers are represented in the &amp;quot;scientific&amp;quot; form&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x = s * (1 + m) * 2**e
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;em&gt;sign bit&lt;/em&gt; &lt;code&gt;s in {-1, 1}&lt;/code&gt; specifies the sign of the number;&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;mantissa&lt;/em&gt; &lt;code&gt;0 &amp;lt;= m &amp;lt; 1&lt;/code&gt; specifies the fractional part of the significand in base 2; and&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;exponent&lt;/em&gt; &lt;code&gt;e in range(-1022, 1024)&lt;/code&gt; is an integer that determines the scale of the number.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The mantissa is stored using 52 bits, the exponent with 11, so alongside the sign bit, that makes 64 bits in total. Details on &lt;a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format#IEEE_754_double-precision_binary_floating-point_format:_binary64"&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The term &lt;code&gt;1 + m&lt;/code&gt; is called the &lt;em&gt;significand&lt;/em&gt;, containing the significant figures of the number: this is a number in the interval &lt;code&gt;1 &amp;lt;= 1 + m &amp;lt; 2&lt;/code&gt;. &amp;quot;Floating point&amp;quot; refers to the fact that the decimal (binary?) point may be moved to different locations by modifying the exponent.&lt;/p&gt;
+&lt;p&gt;This representation confers certain performance advantages: for example, to multiply two floats one simply multiples the two mantissae and adds the two exponents. Details about floating-point arithmetic on &lt;a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic#Floating-point_operations"&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(The numbers that are represented in the form above are the so-called &amp;quot;normal numbers&amp;quot;. There are also a number of special values such as subnormal numbers, zeros, &lt;code&gt;inf&lt;/code&gt; and &lt;code&gt;nan&lt;/code&gt;, which I won't talk here; although &lt;code&gt;nan&lt;/code&gt; plays an important role in representing missing or unknown values.)&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Precision limitations on floats&lt;/h2&gt;
+&lt;p&gt;Details can be found on Wikipedia, but for us, the most important observations are the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The exponent term &lt;code&gt;2**e&lt;/code&gt; allows both very large and very small numbers to be represented.&lt;/li&gt;
+&lt;li&gt;The mantissa is stored using 52 bits, which means that the maximum precision of a floating-point number is 53 significant figures (in base 2) – the extra significant figure coming from the &lt;code&gt;1 + &lt;/code&gt; term.&lt;/li&gt;
+&lt;li&gt;53 bits of significance corresponds to about 16 digits; so the maximum precision in decimals is about 16 digits. (Actually between 15 and 17 digits depending on the exact values of &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;e&lt;/code&gt;.)&lt;/li&gt;
+&lt;li&gt;This relative precision is independent of &lt;code&gt;e&lt;/code&gt;. However, the absolute precision does depend on &lt;code&gt;e&lt;/code&gt; – the larger the number, the worse the absolute precision.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Traps with Unix time&lt;/h2&gt;
+&lt;p&gt;%%The danger of using &lt;code&gt;float64&lt;/code&gt; for Unix time%%&lt;/p&gt;
+&lt;p&gt;The fact that the number of significant figures is limited to about 16 digits&lt;/p&gt;
+&lt;p&gt;%%Most systems offer two clocks. One is persistent, continuing to count
+when the system is powered down: this allows the computer to give an
+absolute time since some epoch. This is usually the Unix Epoch, or just
+&lt;em&gt;Epoch&lt;/em&gt; (capitalized), defined as 00:00:00 midnight at 1 January 1970
+UTC.%%&lt;/p&gt;
+</content><category term="Software"/><category term="data"/><category term="math"/><category term="physics"/></entry><entry><title>Pseudovectors and transformations</title><link href="https://jmft.dev/pseudovectors-reflection.html" rel="alternate"/><published>2025-09-25T00:00:00+01:00</published><updated>2025-09-25T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-09-25:/pseudovectors-reflection.html</id><summary type="html">&lt;p&gt;Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections.&lt;/p&gt;
+&lt;p&gt;Let &lt;code&gt;n&lt;/code&gt; be a unit vector and consider the reflection &lt;code&gt;R&lt;/code&gt; in the plane perpendicular to &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Quantities such as the position &lt;code&gt;r&lt;/code&gt; and velocity &lt;code&gt;v&lt;/code&gt; are regular vectors and transform …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Here are some notes for my Fluid Dynamics II students about vectors, pseudovectors and how they transform under reflections.&lt;/p&gt;
+&lt;p&gt;Let &lt;code&gt;n&lt;/code&gt; be a unit vector and consider the reflection &lt;code&gt;R&lt;/code&gt; in the plane perpendicular to &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Quantities such as the position &lt;code&gt;r&lt;/code&gt; and velocity &lt;code&gt;v&lt;/code&gt; are regular vectors and transform in the obvious way under the reflection. Specifically, we write&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;r = rn + rp
+v = vn + vp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;rn&lt;/code&gt; is the component of &lt;code&gt;r&lt;/code&gt; parallel to &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;rp&lt;/code&gt; is the perpendicular component; and similar for &lt;code&gt;vn&lt;/code&gt; and &lt;code&gt;vp&lt;/code&gt;. Then under the transformation &lt;code&gt;R&lt;/code&gt; we have&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;r' = R r = -rn + rp
+v' = R v = -vn + vp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, now consider the angular momentum per unit mass &lt;code&gt;am = r * v&lt;/code&gt;, using &lt;code&gt;*&lt;/code&gt; to denote the cross product. Or indeed the angular velocity, which is the above divided by &lt;code&gt;|r|^2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We can expand out &lt;code&gt;am&lt;/code&gt; explicitly in terms of &lt;code&gt;rn&lt;/code&gt;, etc.:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;am = (rn + rp) * (vn + vp)
+   = rn * vn + rp * vp + rn * vp + rp * vn
+   = 0       + rp * vp + (rn * vp + rp * vn)
+   =           amn     + amp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, the term &lt;code&gt;amn = rp * vp&lt;/code&gt; is parallel to &lt;code&gt;n&lt;/code&gt; since it is the cross product of two vectors that are perpendicular to &lt;code&gt;n&lt;/code&gt;. And the term &lt;code&gt;amp = rn * vp + rp * vn&lt;/code&gt; is perpendicular to &lt;code&gt;n&lt;/code&gt; since each product involves a vector that is parallel to &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When &lt;code&gt;r&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; are transformed, then &lt;code&gt;am&lt;/code&gt; transforms as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;am' = r' * v'
+    = (R r) * (R v)
+    = (-rn + rp) * (-vn * vp)
+    = ...
+    = rp * vp - (rn * vp + rp * vn) 
+    = amn     - amp
+    = amn'    + amp'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thus the component of &lt;code&gt;am&lt;/code&gt; that is parallel to &lt;code&gt;n&lt;/code&gt; stays the same, while the component of &lt;code&gt;am&lt;/code&gt; that is perpendicular to &lt;code&gt;n&lt;/code&gt; is flipped. Thus the components of &lt;code&gt;am&lt;/code&gt; transform in the opposite direction to how those of &lt;code&gt;r&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; transform – for it is a &lt;em&gt;pseudovector&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In summary, under a reflection in a plane perpendicular to &lt;code&gt;n&lt;/code&gt;...&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;    of a vector...
+        the component parallel      to n is flipped
+                      perpendicular      stays the same
+    of a pseudovector...
+        the component parallel      to n stays the same
+                      perpendicular      is flipped
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(If you don't believe me, take a screw and a screwdriver and hold it up against a mirror.)&lt;/p&gt;
+</content><category term="Physics"/><category term="math"/><category term="teaching"/></entry><entry><title>Naming is power</title><link href="https://jmft.dev/naming-power.html" rel="alternate"/><published>2025-09-21T00:00:00+01:00</published><updated>2025-09-21T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-09-21:/naming-power.html</id><summary type="html">&lt;p&gt;Many cultural and religious traditions place a lot of importance in
+names, and hold that names have power. There is something magical about
+them.&lt;/p&gt;
+&lt;p&gt;In Classical Greek tradition, Hades was feared and his name was not
+spoken. The Bible supposes that the name of God is to be used for …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Many cultural and religious traditions place a lot of importance in
+names, and hold that names have power. There is something magical about
+them.&lt;/p&gt;
+&lt;p&gt;In Classical Greek tradition, Hades was feared and his name was not
+spoken. The Bible supposes that the name of God is to be used for
+swearing oaths, which &lt;a href="https://en.wikipedia.org/wiki/Thou_shalt_not_take_the_name_of_the_Lord_thy_God_in_vain"&gt;should not be done
+lightly&lt;/a&gt;.
+Islam recognises &lt;a href="https://en.wikipedia.org/wiki/Names_of_God_in_Islam"&gt;99 names for
+God&lt;/a&gt;, each
+describing an aspect. Or in folklore, take the story of
+&lt;a href="https://en.wikipedia.org/wiki/Rumpelstiltskin"&gt;Rumplestiltskin&lt;/a&gt;, a
+creature that is defeated only by discovering and speaking his name.
+&lt;a href="https://en.wikipedia.org/wiki/Chinese_name"&gt;Chinese culture places plenty of importance on
+names&lt;/a&gt;, with various
+traditions and taboos around them. Individuals often have several names
+depending on the context and their relationships with the users of each
+name. &lt;a href="https://en.wikipedia.org/wiki/Names_of_Sun_Yat-sen"&gt;Sun Yat-sen was a particularly notable
+example.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I like naming things. Names make it possible to refer to something. Good
+names make it possible to refer to something unambiguously. Even better
+names allow you to not only refer to something, but also to place it
+within a bigger context.&lt;/p&gt;
+&lt;p&gt;Naming things is a creative act, in both senses of the word &lt;em&gt;creative&lt;/em&gt;
+— both that it requires creativity, and that giving something a
+name is a fundamental step in the process of bringing something into
+being.  It is often the first thing that new parents do for their
+children, perhaps even before they are born.&lt;/p&gt;
+&lt;p&gt;The Book of Genesis describes the power to name things as being
+exclusively given to human beings:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;So out of the ground the Lord God formed every animal of the field and
+every bird of the air and brought them to the man to see what he would
+call them, and whatever the man called every living creature, that was
+its name. The man gave names to all cattle and to the birds of the air
+and to every animal of the field [...]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;...alongside humanity's mastery over, and responsibility for, the world.&lt;/p&gt;
+&lt;p&gt;Anyway, I recently had the pleasure of commissioning a number of new
+computers for a new lab network, and as part of that, was tasked with
+coming up with names for these machines. I don't know where I'm going
+with this anecdote, I just enjoyed the episode and it was a fun exercise
+that felt good.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.rfc-editor.org/rfc/rfc1178.html"&gt;RFC 1178&lt;/a&gt; has some
+specific guidelines about how to choose a name your computer. Choosing
+the right level of abstraction when naming something is important.&lt;/p&gt;
+</content><category term="Software"/><category term="philosophy-and-religion"/></entry><entry><title>Why learners find classes and objects confusing</title><link href="https://jmft.dev/why-oop-is-confusing.html" rel="alternate"/><published>2025-08-05T00:00:00+01:00</published><updated>2025-08-05T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-08-05:/why-oop-is-confusing.html</id><summary type="html">&lt;p&gt;One reason why Python is such a popular and powerful language is that it
+is straightforward to learn and make good progress. Learners can quickly
+become comfortable with many aspects of the language, such as control
+flow and functions.&lt;/p&gt;
+&lt;p&gt;The first obstacle that many learners come across is when they …&lt;/p&gt;</summary><content type="html">&lt;p&gt;One reason why Python is such a popular and powerful language is that it
+is straightforward to learn and make good progress. Learners can quickly
+become comfortable with many aspects of the language, such as control
+flow and functions.&lt;/p&gt;
+&lt;p&gt;The first obstacle that many learners come across is when they come
+across classes and objects. This is usually met as an intermediate
+subject several chapters into a book, by which time they may already
+have &lt;em&gt;used&lt;/em&gt; objects, if they have been using libraries such as pandas.&lt;/p&gt;
+&lt;p&gt;Learners often find classes and objects difficult because introductory
+courses usually introduce them using toy examples that do not motivate
+their use: often the same effect can be achieved using dictionaries (for
+fields) and functions (for methods). The true utility of classes comes
+when working on a complex project where modularity and abstraction are
+useful for simplifying problems.&lt;/p&gt;
+&lt;h2&gt;Classes play several roles&lt;/h2&gt;
+&lt;h3&gt;Grouping data&lt;/h3&gt;
+&lt;p&gt;Classes and objects can be used to group related variables into a
+&amp;quot;compound&amp;quot; object:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+joanna = Person(name=&amp;quot;Joanna&amp;quot;, age=32)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;dataclass&lt;/code&gt; feature (introduced in Python 3.7 and now standard)
+provides a shortcut for constructing many such classes (&lt;em&gt;inter alia&lt;/em&gt;,
+creating the &lt;code&gt;__init__&lt;/code&gt; method automatically):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;@dataclass
+class Person:
+    name: str
+    age: int
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Grouping data:&lt;/strong&gt;
+One advantage is that a single argument can be passed around between
+functions:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# this
+def describe(p: Person):
+    print(f&amp;quot;{p.name} is {p.age} years old&amp;quot;)
+
+describe(joanna)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is neater than:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# not this
+def describe(name: str, age: int):
+    print(f&amp;quot;{name} is {age} years old&amp;quot;)
+
+describe(&amp;quot;Joanna&amp;quot;, 32)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we desire to start modelling new attributes of people and including
+them when printing descriptions, we simply need to update the &lt;code&gt;Person&lt;/code&gt;
+class and the &lt;em&gt;body&lt;/em&gt; of the &lt;code&gt;describe&lt;/code&gt; function, rather than the
+&lt;em&gt;signature&lt;/em&gt; of the &lt;code&gt;describe&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alternative: a dictionary:&lt;/strong&gt;
+A similar effect might be achieved by using a dictionary:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;joanna = {&amp;quot;name&amp;quot;: &amp;quot;Joanna&amp;quot;, &amp;quot;age&amp;quot;: 32}
+
+def describe(p: dict):
+    print(f&amp;quot;{p[&amp;quot;name&amp;quot;]} is {p[&amp;quot;age&amp;quot;]} years old&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;So what is a class?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Classes provide a means of bundling data and functionality together.
+Creating a new class creates a new type of object, allowing new
+instances of that type to be made. Each class instance can have
+attributes attached to it for maintaining its state. Class instances
+can also have methods (defined by its class) for modifying its state.
+&lt;small&gt;&lt;a href="https://docs.python.org/3/tutorial/classes.html"&gt;&lt;em&gt;From the Python Tutorial on classes.&lt;/em&gt;&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words, a class is a compound data type that contains multiple
+fields or attributes &lt;small&gt;&lt;em&gt;(which are roughly synonymous, although
+there is a slight difference in Python)&lt;/em&gt;&lt;/small&gt;, as well as associated
+methods and functions.&lt;/p&gt;
+&lt;h2&gt;An object &lt;em&gt;is&lt;/em&gt; what it &lt;em&gt;does&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;In &lt;a href="https://academic.oup.com/book/473"&gt;&lt;em&gt;Mathematics: A Very Short Introduction&lt;/em&gt;&lt;/a&gt;,
+mathematician &lt;a href="https://www.dpmms.cam.ac.uk/~wtg10/"&gt;Timothy Gowers&lt;/a&gt; writes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A mathematical object is what it &lt;em&gt;does&lt;/em&gt;. &lt;small&gt;&lt;em&gt;(p. 18)&lt;/em&gt;&lt;/small&gt; ...
+If one learns to think abstractly, then many philosophical
+difficulties disappear.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This comes in the context of discussions over the nature of mathematical
+objects. Although philosophers have debated the 'intensive' properties
+of mathematical objects (&lt;a href="https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_mathematics)"&gt;'Do real numbers exist if you aren't able to
+construct them?'&lt;/a&gt;)
+and mathematicians have attempted to formalise concepts in terms of
+logic and set theory (&lt;a href="https://en.wikipedia.org/wiki/Construction_of_the_real_numbers"&gt;'How do you define the real numbers in terms of
+sets?'&lt;/a&gt;);
+Gowers, like most other mathematicians, takes the more practical view
+that most interesting questions about mathematical operations —
+such as how to do arithmetic, solve equations and perform analytical
+operations like taking limits — are about their 'extensive'
+properties&lt;/p&gt;
+&lt;h2&gt;Recommended reading&lt;/h2&gt;
+&lt;p&gt;Baeldung's tutorial on &lt;a href="https://www.baeldung.com/java-oop"&gt;Object-Oriented-Programming Concepts in
+Java&lt;/a&gt; is a good piece that introduces the ideas of
+&lt;em&gt;abstraction&lt;/em&gt;, &lt;em&gt;encapsulation&lt;/em&gt;, &lt;em&gt;inheritance&lt;/em&gt; and &lt;em&gt;polymorphism&lt;/em&gt;. These
+design principles apply just as much to Python programming. The syntax
+in Java is a little different, but the examples there should be
+reasonably comprehensible; see their article on &lt;a href="https://www.baeldung.com/java-classes-objects"&gt;Java Classes and
+Objects&lt;/a&gt; for details.&lt;/p&gt;
+&lt;!--
+Allen Holub's article [Why getters and setters are evil][evil].
+--&gt;
+</content><category term="Software"/><category term="python"/><category term="object-oriented-programming"/><category term="teaching"/></entry><entry><title>Date, time and timezones</title><link href="https://jmft.dev/date-time-and-timezones.html" rel="alternate"/><published>2025-04-27T00:00:00+01:00</published><updated>2025-04-27T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-04-27:/date-time-and-timezones.html</id><summary type="html">&lt;p&gt;This is a collection of notes about time and related concepts. A future
+post will talk about the problems of representing time in computer
+systems, especially distributed systems. These notes will be
+occasionally updated.&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Time&lt;/em&gt; is taken to be a primitive concept that cannot be defined in
+terms of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is a collection of notes about time and related concepts. A future
+post will talk about the problems of representing time in computer
+systems, especially distributed systems. These notes will be
+occasionally updated.&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Time&lt;/em&gt; is taken to be a primitive concept that cannot be defined in
+terms of other phenomena, but can be characterised as a parameter of a
+system that allows the system to change.&lt;/p&gt;
+&lt;p&gt;In closed systems, time is measured relative to some event within that
+system, such as the time elapsed since the start of an experiment.  In
+such systems, time can be unambiguously specified as a single real
+number (or sometimes an integer, in discrete-time models).&lt;/p&gt;
+&lt;p&gt;Things are more complicated when it is necessary to describe times &amp;quot;in
+the real world&amp;quot;, where there are a number of closely related but
+confusing concepts.&lt;/p&gt;
+&lt;p&gt;Under a non-relativistic model of physics, all observers have a common
+notion of time: in particular, instantaneous events may be totally
+ordered along a timeline, and all observers can agree whether event A
+happened before, after or simultaneously with event B. However,
+observers might report different &lt;em&gt;numerical&lt;/em&gt; values of a time, depending
+on how they measure it: in particular, depending on their timezone and
+the accuracy of their clocks. The synchronisation of different clocks is
+a difficult but important problem in distributed systems.&lt;/p&gt;
+&lt;h2&gt;Absolute time, relative time, and time of day&lt;/h2&gt;
+&lt;p&gt;The English word &lt;em&gt;time&lt;/em&gt; may refer to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;an &lt;em&gt;absolute position&lt;/em&gt; on the timeline (&amp;quot;when did something happen?&amp;quot;),&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;interval&lt;/em&gt; (or &lt;em&gt;timedelta&lt;/em&gt;) between two positions on the timeline
+(&amp;quot;how much time passed?&amp;quot;), or&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;time of day&lt;/em&gt;, or the interval relative to the local midnight
+(&amp;quot;what is &lt;em&gt;the&lt;/em&gt; time?&amp;quot;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Intervals of time are measured in units such as seconds (see below).&lt;/p&gt;
+&lt;p&gt;One may convert between absolute times and timedeltas by specifying a
+position on the timeline as an &lt;em&gt;epoch&lt;/em&gt;, relative to which all other
+times are measured. The epoch may be chosen to be the time of a
+significant event, or an arbitrary point.&lt;/p&gt;
+&lt;p&gt;Since local midnight depends on the locale of the observer, a &amp;quot;time&amp;quot; in
+the third sense can be converted into an absolute time only by
+additionally specifying a &lt;em&gt;date&lt;/em&gt; as well as a &lt;em&gt;timezone&lt;/em&gt; - often
+implicitly.&lt;/p&gt;
+&lt;h2&gt;Units of timedeltas&lt;/h2&gt;
+&lt;p&gt;The basic unit of a timedelta is the second, also the millisecond,
+microsecond, &lt;em&gt;etc.&lt;/em&gt;, defined in terms of the (constant) frequency of a
+certain atomic oscillator. The &lt;em&gt;minute&lt;/em&gt;, the &lt;em&gt;hour&lt;/em&gt; and the &lt;em&gt;day&lt;/em&gt;) are
+defined as 60 seconds, 60 minutes (3,600 seconds) and 24 hours (86,400
+seconds) respectively.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;month&lt;/em&gt; and the &lt;em&gt;year&lt;/em&gt; are not precise units of timedeltas, since
+they vary in length. They are however used informally.&lt;/p&gt;
+&lt;h3&gt;Astronomical days&lt;/h3&gt;
+&lt;p&gt;Although the day is based on the rotation of the Earth and the relative
+position of the Sun, the 24-hour day is distinguished from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;em&gt;solar day&lt;/em&gt;, the time between two successive maxima of the
+Sun's position in the sky, and&lt;/li&gt;
+&lt;li&gt;the &lt;em&gt;sidereal day&lt;/em&gt;, the time taken for the earth to complete a
+rotation on its axis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The solar day is longer than 24 hours by a few seconds. The sidereal day
+is about 4 minutes shorter than 24 hours; this difference is due to the
+orbit of the Earth around the Sun.&lt;/p&gt;
+&lt;p&gt;The rotation of the earth is gradually slowing down. Over the course of
+millennia, the 24-hour day will diverge from these astronomical
+definitions.&lt;/p&gt;
+&lt;h2&gt;&lt;em&gt;The&lt;/em&gt; time of day: solar time, civil time and timezones&lt;/h2&gt;
+&lt;p&gt;Traditional measurements of time are based on the position of the Sun
+and the other stars in the sky. These are the &lt;em&gt;solar time&lt;/em&gt; and &lt;em&gt;sidereal
+time&lt;/em&gt; respectively. For example, noon is defined to be the time at which
+the Sun is at its highest position, and midnight is defined to be twelve
+hours after that.&lt;/p&gt;
+&lt;p&gt;Since the position of the Sun in the sky depends on geographical
+location as well as the time of year, solar time is an impractical
+measurement of time. Thus the development of &lt;em&gt;civil time&lt;/em&gt; and of
+&lt;em&gt;timezones&lt;/em&gt;: that in a given region (such as a country or province), all
+clocks should report the same value of time. The development of
+timezones is based on political considerations rather than reflecting
+astronomical phenomena: for example, the People's Republic of China uses
+a single timezone despite its geographical span; and most Western
+European countries use the same timezone.&lt;/p&gt;
+&lt;p&gt;All timezones are specified relative to &lt;em&gt;Coordinated Universal Time&lt;/em&gt; (or
+&lt;em&gt;UTC&lt;/em&gt;), which is based on the time at Greenwich, London.&lt;/p&gt;
+&lt;h2&gt;Computers and distributed systems&lt;/h2&gt;
+&lt;p&gt;Future post...&lt;/p&gt;
+</content><category term="Physics"/><category term="data"/><category term="math"/><category term="physics"/></entry><entry><title>Does vibecoding make coding more accessible?</title><link href="https://jmft.dev/vibecoding-accessible.html" rel="alternate"/><published>2025-04-27T00:00:00+01:00</published><updated>2025-04-27T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2025-04-27:/vibecoding-accessible.html</id><summary type="html">&lt;p&gt;I was a volunteer and organiser for &lt;a href="https://codebar.io/"&gt;codebar&lt;/a&gt; for
+several years and was heavily involved in outreach activities during my
+time at Cambridge. In the face of cuts to DEI initiatives, I believe
+that the lack of diversity at all levels of the tech sector seriously
+harms the sector.&lt;/p&gt;
+&lt;p&gt;Besides …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I was a volunteer and organiser for &lt;a href="https://codebar.io/"&gt;codebar&lt;/a&gt; for
+several years and was heavily involved in outreach activities during my
+time at Cambridge. In the face of cuts to DEI initiatives, I believe
+that the lack of diversity at all levels of the tech sector seriously
+harms the sector.&lt;/p&gt;
+&lt;p&gt;Besides the obvious lack of demographic diversity (I am the only woman
+full-time employee software engineer in my department, out of 30 or so;
+although there are a handful others of research and hardware engineers),
+there is an over-valuation of people from computing and engineering
+backgrounds, at the expense of people from other disciplines, especially
+the social sciences and humanities, who have deep domain knowledge in
+their own fields.  I am fortunate to work in a very interdisciplinary
+team, where I've had the opportunity to learn about a variety of topics
+in acoustics, audiology, music, image processing and data science;
+besides topics in computing.&lt;/p&gt;
+&lt;p&gt;At the risk of overgeneralising, software engineers lack this domain
+knowledge. Instead, we maintain our value by holding a monopoly over our
+skills, acting as middlemen between innovators and implementations.
+As with all middlemen, while this situation is very lucrative for us, it
+slows down the development process and often introduces
+misunderstandings along the way.&lt;/p&gt;
+&lt;p&gt;If &amp;quot;vibecoding&amp;quot; (&lt;a href="https://en.wikipedia.org/wiki/Vibe_coding"&gt;Wikipedia&lt;/a&gt;)
+can indeed reduce the barrier for people from other disciplines to start
+coding, that is not necessarily a bad thing.  Of course, many people are
+using these new abilities to create &amp;quot;innovations&amp;quot; that are either
+useless or actively harmful to society or the environment. But that is a
+wider problem with an economic system that rewards such creations. Maybe
+more on that in a future post.&lt;/p&gt;
+&lt;p&gt;From an educational point of view, however, I don't think vibecoding can
+be a substitute for becoming a well-rounded engineer.&lt;/p&gt;
+&lt;p&gt;My experience using LLMs is that they are excellent for generating
+prototypes and introducing one to a new technology or framework (or many
+other topics); but they remain very poor at any higher-level tasks.
+Vibecode does poorly with complex systems, and produces solutions that
+do not scale well, do not handle edge cases, and have important flaws
+such as security loopholes. And even code generation often produces
+plenty of unnecessary code, or &amp;quot;cargo-cult programming&amp;quot;.  When I point
+out these flaws in their solutions, they are usually able to adapt the
+solutions to address those issues but often create new problems.&lt;/p&gt;
+&lt;p&gt;I know about these considerations, through several years of experience
+and experimentataion, sometimes painful (&lt;em&gt;e.g.&lt;/em&gt; accidentally dropping
+entire databases or buckets). And there are many more considerations
+that I do not know about, which is when I am very happy to have the
+advice of more senior engineers.&lt;/p&gt;
+&lt;p&gt;A novice programmer who relies on vibecoding may do a decent job
+creating a prototype and may even become quite comfortable with a
+programming language, but may find it difficult to grow beyond a small
+project or generalise this knowledge. This isn't a new problem, though:
+there are many courses, tutorials or bootcamps that equip students to
+develop apps using frameworks, but do not teach the principles behind
+the frameworks, leading to aforementioned cargo-cult programming.  This
+is an all-too-common antipattern in science education: Timothy Gowers
+describes &lt;a href="https://gowers.wordpress.com/2012/11/20/what-maths-a-level-doesnt-necessarily-give-you/"&gt;shortcomings of high school mathematics
+education&lt;/a&gt;,
+which bombards students with techniques and facts but does not introduce
+any rigor or foundations, producing students who pass exams but do not
+understand why.&lt;/p&gt;
+&lt;p&gt;So perhaps there is still a place for us software engineers. But we must
+do better than being code monkeys: in particular, we must adopt an
+attitude towards engineering that focuses on systems and thinks at a
+higher level, about business requirements.&lt;/p&gt;
+</content><category term="Software"/><category term="software-engineering"/><category term="politics"/><category term="teaching"/></entry><entry><title>Category theoretic ideas in data engineering systems design</title><link href="https://jmft.dev/category-theory-and-data-engineering.html" rel="alternate"/><published>2024-09-22T00:00:00+01:00</published><updated>2024-09-22T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-09-22:/category-theory-and-data-engineering.html</id><summary type="html">&lt;p&gt;I have been reading – at a very shallow level – about category theory
+(&lt;a href="https://en.wikipedia.org/wiki/Category_theory"&gt;wiki&lt;/a&gt;), and thinking
+about its applicability to software and system design for data
+engineering. This post is a loose collection of thoughts on the subject,
+and a manifesto for employing a more rigorous language when building
+such systems …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have been reading – at a very shallow level – about category theory
+(&lt;a href="https://en.wikipedia.org/wiki/Category_theory"&gt;wiki&lt;/a&gt;), and thinking
+about its applicability to software and system design for data
+engineering. This post is a loose collection of thoughts on the subject,
+and a manifesto for employing a more rigorous language when building
+such systems.&lt;/p&gt;
+&lt;p&gt;Although category theory is regarded as a very abstract area of maths –
+it generalises concrete concepts from other fields, such as algebra and
+topology, into a common language – it has some practical applications.
+In maths, it has been used to discover &amp;quot;structure-preserving&amp;quot;
+correspondences between these different areas, and, for example, can be
+used to produce a proof of a result in analysis or topology by showing
+that that theorem is equivalent to a simpler statement in algebra.&lt;/p&gt;
+&lt;p&gt;More recently, ideas from category theory have made their way into
+programming and software engineering: higher-order functions (hofs) like
+&lt;code&gt;map&lt;/code&gt; and monadic patterns like &lt;code&gt;Maybe&lt;/code&gt; (a.k.a. &lt;code&gt;Optional&lt;/code&gt;, &lt;code&gt;Option&lt;/code&gt;)
+were once the marks of purely functional languages like Haskell, but
+have found their way into mainstream languages and are now routinely
+used by developers... even if they don't know that that's what they're
+doing.&lt;/p&gt;
+&lt;p&gt;For a systematic introduction to category theory, consult &lt;a href="https://www.julia-goedecke.de/pdf/CategoryTheoryNotes.pdf"&gt;Julia
+Goedecke's lecture
+notes&lt;/a&gt; or
+Emily Rhiel's &lt;em&gt;Category Theory in Context&lt;/em&gt;
+(&lt;a href="https://math.jhu.edu/~eriehl/"&gt;web&lt;/a&gt;)
+(&lt;a href="https://emilyriehl.github.io/files/context.pdf"&gt;pdf&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;I am neither a category theorist nor a computer scientist, so please
+excuse the inaccuracies in that which follows – or better yet, &lt;a href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"&gt;send me
+corrections&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a id="motivation"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Information flow&lt;/h2&gt;
+&lt;p&gt;The fundamental problem of data engineering is that:&lt;/p&gt;
+&lt;div style="width:100%; display: flex; justify-content: center; margin-top: 1.5rem; margin-bottom: 1.5rem;"&gt;
+&lt;div&gt;
+The way that data is ingested&lt;br&gt;
+is not the way that data is stored.&lt;br&gt;
+The way that data is stored&lt;br&gt;
+is not the way that data is exported.
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;More prosaically, the purpose of data engineering – and perhaps of all
+software engineering – is the transmission and transformation of
+information, from &amp;quot;sources&amp;quot; (e.g. lab collections) to &amp;quot;sinks&amp;quot; (e.g.
+reports, dashboards). The particulars of the transformations depend
+strongly on the nature of the data and the desired output, but they can
+be broken into individual operations that can be placed into one of
+three classes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Transforming the data into another, informationally equivalent, format.&lt;/li&gt;
+&lt;li&gt;Enriching the data with additional information.&lt;/li&gt;
+&lt;li&gt;Discarding irrelevant information from the data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;JSON serialization or deserialization of an object:
+&lt;code&gt;Employee.serialize: Employee -&amp;gt; Dict[str, Any]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Querying a database for information about a given ID:
+&lt;code&gt;Employee.find_by_id: int -&amp;gt; Employee&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Calculating the mean, or other aggregate statistic, of a collection
+of data: &lt;code&gt;Collection[float] -&amp;gt; float&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Data pipelines – compositions of transformations – are usually
+represented as directed acyclic graphs
+(&lt;a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph"&gt;wiki&lt;/a&gt;), with
+nodes representing transformations and arrows representing data flow;
+beginning with &amp;quot;source nodes&amp;quot; that represent the input data.  This DAG
+representation focuses on the operations and the order in which they are
+performed.&lt;/p&gt;
+&lt;p&gt;An alternative representation is to focus on the &lt;em&gt;format&lt;/em&gt;, or &lt;em&gt;type&lt;/em&gt; of
+data as it progresses through a pipeline. Let these types form the nodes
+of a graph; the transformations between types are now arrows. (The
+resulting graph is still directed but not necessarily acyclic.)&lt;/p&gt;
+&lt;p&gt;Under this formats-first picture, it is much easier to consider &lt;em&gt;all
+possible transformations&lt;/em&gt; that can be applied to obtain one data type
+from another, rather than only those that are actually used within a
+particular pipeline. Draw the arrows and choose the appropriate paths.&lt;/p&gt;
+&lt;p&gt;Moreover, it encourages a style in which arrows are by default &amp;quot;pure
+functions&amp;quot;, making the system's behaviour easier to understand.
+Operations such as insertions, updates, deletions, or writing to an
+external resource may be managed using monads&lt;small&gt;... which I would
+explain if only I understood them... but instead I refer you to &lt;a href="https://github.com/dbrattli/OSlash/wiki/Functors,-Applicatives,-And-Monads-In-Pictures#monads"&gt;Dag
+Brattli's tutorial about functional programming in
+Python&lt;/a&gt;&lt;/small&gt;.&lt;/p&gt;
+&lt;p&gt;But there are more practical benefits in a system design methodology
+that focuses on data formats and transformations. At a tactical level, a
+well-hinted, strongly-typed codebase is easier to analyze and refactor
+as a static type checker such as mypy or pyre can look for
+inconsistencies across the codebase. At a systems level, we can be more
+confident that data, no matter how it is transformed, possibly by many
+components or over a distributed system, is always in one of a small
+number of formats, ensuring interoperability and substitutability
+between components.&lt;/p&gt;
+&lt;p&gt;Defocusing from the implementation details of any particular arrow,
+prescribing only its inputs and outputs, also brings several advantages.
+The most practical is that it enforces a &amp;quot;behaviour-driven design&amp;quot;.  The
+developers responsible for the implementation details need only worry
+that their behaviour conforms to this specification, allowing them to
+work independently.&lt;/p&gt;
+&lt;h2&gt;An example&lt;/h2&gt;
+&lt;p&gt;Audio data can be in any of several formats, but essentially they all
+consist of a stream of numbers that prescribe the waveform of the audio
+(essentially, &lt;code&gt;List[float]&lt;/code&gt;, but the data may be stored in a compressed
+form). Individual formats (such as MP3) may additionally contain
+additional metadata, such as key-value tags (&lt;code&gt;Mapping[str, str]&lt;/code&gt;), but
+these are ignored by operations on the audio.&lt;/p&gt;
+&lt;p&gt;In this example we have &amp;quot;concrete types&amp;quot; &lt;code&gt;WAV&lt;/code&gt; and &lt;code&gt;MP3&lt;/code&gt; that contain
+the information of an abstract type &lt;code&gt;Waveform&lt;/code&gt; (which is isomorphic to
+&lt;code&gt;List[float]&lt;/code&gt;).  An &amp;quot;audio format&amp;quot; might be defined to be a type that
+has a &lt;code&gt;toWaveform&lt;/code&gt; methodm, or in other words a &amp;quot;projection map&amp;quot;. The
+projection map &lt;code&gt;WAV -&amp;gt; Waveform&lt;/code&gt; is particularly simple: &amp;quot;read the bytes
+of the WAV file&amp;quot;; whereas the projection &lt;code&gt;MP3 -&amp;gt; Waveform&lt;/code&gt; is something
+like &amp;quot;decompress the file&amp;quot;.&lt;/p&gt;
+&lt;p&gt;The type &lt;code&gt;MP3&lt;/code&gt; may be regarded as a pair &lt;code&gt;(Waveform, Mapping[str, str])&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Closing thoughts&lt;/h2&gt;
+&lt;p&gt;My (short) experience of the data engineering world has been that much
+focus is given to the details of particular frameworks and technologies.
+These are important for building scalable systems, but this
+specialisation risks losing the big picture. This &amp;quot;discipline&amp;quot; should
+develop a more abstract language in order to produce reusable,
+generalisable solutions to common problems.&lt;/p&gt;
+&lt;p&gt;Not having such a language leads to becoming tightly coupled to a
+particular framework or cloud provider, reducing interoperability. This
+has real economic implications: vendor lock-in is a serious issue for
+cloud services customers, and a reason for the growth of oligopolies,
+reducing quality for all.&lt;/p&gt;
+&lt;p&gt;Maths, and particularly category theory, might help to provide such a
+language. Thinking about data engineering as the manipulation and
+transformation of information through a pipeline, there are very natural
+meanings to terms like &lt;em&gt;homomorphism&lt;/em&gt; (&amp;quot;information-preserving&amp;quot;) and
+&lt;em&gt;quotient&lt;/em&gt; (&amp;quot;information-discarding&amp;quot;).&lt;/p&gt;
+&lt;p&gt;I don't have the theoretical background to make these definitions
+rigorous and to develop a &amp;quot;general algebra of data engineering&amp;quot;, but
+it's a good start to look out for these patterns.&lt;/p&gt;
+</content><category term="Software"/><category term="data"/><category term="math"/><category term="software-engineering"/></entry><entry><title>On regulation in software engineering</title><link href="https://jmft.dev/on-regulation-in-software-engineering.html" rel="alternate"/><published>2024-07-21T00:00:00+01:00</published><updated>2024-07-21T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-07-21:/on-regulation-in-software-engineering.html</id><summary type="html">&lt;p&gt;Emergency services, GPs, hospitals, transportation systems and the like
+are funded, at least in part, by public money. When their computer
+systems go down, the public is badly affected and people can get hurt,
+and lives can be put at risk. So what regulations and quality controls
+are there on …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Emergency services, GPs, hospitals, transportation systems and the like
+are funded, at least in part, by public money. When their computer
+systems go down, the public is badly affected and people can get hurt,
+and lives can be put at risk. So what regulations and quality controls
+are there on companies that provide these software services?&lt;/p&gt;
+&lt;p&gt;For disclosure: I do not provide, and have not ever provided, such
+services to any public sector organization. But if I were negligent and
+my software caused damage to expensive lab equipment, I might, quite
+rightly, receive disciplinary or at least remedial action from my
+employer. And if somebody got hurt, there might be criminal
+consequences. And that might be sufficient incentive to the individual
+engineer within a smallish organisation, but it doesn't affect the
+fundamental problem that the software engineering 'discipline' is,
+generally speaking, not particularly disciplined when it comes to
+quality control, testing, documentation and other best practices.&lt;/p&gt;
+&lt;p&gt;Modern computer systems are very complex, so it is natural that issues
+arise, but the same can be said for other areas of engineering which are
+better regulated. Many software engineers (myself included) are
+self-taught and have no qualification or formal training -- only the
+good fortune to have worked with, and learnt from, excellent colleagues.
+This is not a bad thing, as it makes the field accessible and allows
+talent to join the industry, but without oversight, it allows bad
+practices to proliferate.&lt;/p&gt;
+&lt;p&gt;I can't comment on the particulars of &lt;a href="https://en.wikipedia.org/wiki/2024_CrowdStrike_incident"&gt;the latest
+outage&lt;/a&gt; because
+I don't know what happened, although it is good to know that
+&lt;a href="https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/"&gt;CrowdStrike are already performing a root cause
+analysis&lt;/a&gt;
+(&lt;a href="https://web.archive.org/web/20240720170853/https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/"&gt;archive&lt;/a&gt;)
+on the incident. But with an outage of this scale that affects so many
+sectors, there does need to be some accountability to the public, and
+'we fired the individual who wrote that code' and 'our stock price
+crashed' aren't enough to change the broader culture in the discipline
+and prevent similar outages from happening again at some other company.&lt;/p&gt;
+&lt;p&gt;Regulations must not become mere box-ticking exercises, but if
+implemented effectively, they make service providers accountable to
+taxpayer. But they are good for engineers too. They force us to think
+about engineering quality. &lt;em&gt;Things that we know we should be doing&lt;/em&gt; but
+often neglect, either because (a) we have tight deadlines or (b) they
+are boring. We don't like to admit this, but this is often a reason for
+poor documentation. But they should really be factored in the cost of
+software development.  For all its flaws, GDPR was a step in the
+right(ish) direction; companies and engineers have been made to consider
+the consequences of their work pertaining to data handling.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This post is motivated by the ongoing CrowdStrike outage, but pertains
+to software engineering in general, not to the particulars of this
+incident. As with all other content on this blog, it expresses my
+opinions, not those of my employer.&lt;/em&gt;&lt;/p&gt;
+</content><category term="Software"/><category term="software-engineering"/><category term="politics"/></entry><entry><title>Logging in Python</title><link href="https://jmft.dev/logging-in-python.html" rel="alternate"/><published>2024-07-07T00:00:00+01:00</published><updated>2024-07-07T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-07-07:/logging-in-python.html</id><summary type="html">&lt;p&gt;Having reliable, detailed but searchable logs is an essential part of
+any application, especially of long-running services that need to be
+debugged and monitored for uptime and stability. As one of the oldest
+modules in the Python standard library, the &lt;code&gt;logging&lt;/code&gt; module provides a
+very powerful set of tools for …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Having reliable, detailed but searchable logs is an essential part of
+any application, especially of long-running services that need to be
+debugged and monitored for uptime and stability. As one of the oldest
+modules in the Python standard library, the &lt;code&gt;logging&lt;/code&gt; module provides a
+very powerful set of tools for logging, but its design and behaviour
+also shows its age.&lt;/p&gt;
+&lt;p&gt;While the basics are covered in the &lt;a href="https://docs.python.org/3/howto/logging.html"&gt;official
+tutorial&lt;/a&gt; and full details
+are given in the &lt;a href="https://docs.python.org/3/library/logging.html"&gt;reference
+docs&lt;/a&gt;, this article
+collects together the most commonly seen concepts from different parts
+of the docs.&lt;/p&gt;
+&lt;h2&gt;Why use &lt;code&gt;logging&lt;/code&gt;?&lt;/h2&gt;
+&lt;p&gt;Although it takes some setup (which will be covered below), It is
+strongly preferable to use the features of &lt;code&gt;logging&lt;/code&gt;, rather than
+&lt;code&gt;print()&lt;/code&gt;, for diagnostics and debugging.&lt;/p&gt;
+&lt;h3&gt;Diagnostic messages vs. machine-readable output&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;logging&lt;/code&gt; module allows one to define different handlers for
+different types of messages. Besides (or instead of) printing the
+message to &lt;code&gt;stdout,&lt;/code&gt; it may be helpful to print messages to &lt;code&gt;stderr&lt;/code&gt;, or
+to do something else with them like submitting them to a database.
+Urgent, critical messages may need to be emailed or sent as push
+notifications.  Diagnostic, human-readable messages (which aren't
+necessarily &lt;em&gt;error&lt;/em&gt; messages) should generally be separated from
+machine-readable output.&lt;/p&gt;
+&lt;h3&gt;Thread-safety&lt;/h3&gt;
+&lt;p&gt;Loggers are thread-safe. Concurrent threads logging to the same file do
+not interfere with each other; whenever a thread attempts to write to a
+log file, that thread has exclusive ownership of that file while it is
+writing.&lt;/p&gt;
+&lt;p&gt;By contrast, the &lt;code&gt;print()&lt;/code&gt; function or writing to a stream with
+&lt;code&gt;f.write()&lt;/code&gt; are not thread safe, so that messages from two threads may
+interfere with each other. For example, it is not guaranteed that each
+message is printed on its own line.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;message frommessage from thread 2
+ thread 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Loggers, handlers, filters and formatters&lt;/h2&gt;
+&lt;p&gt;Logging functionality is provided by four main classes. From &lt;a href="https://docs.python.org/3/library/logging.html#logger-objects"&gt;the
+docs&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#logger-objects"&gt;Loggers&lt;/a&gt;
+expose the interface that application code directly uses.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#handler-objects"&gt;Handlers&lt;/a&gt;
+send the &lt;a href="https://docs.python.org/3/library/logging.html#logrecord-objects"&gt;log records&lt;/a&gt;
+(created by loggers) to the appropriate destination.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#filter-objects"&gt;Filters&lt;/a&gt;
+provide a finer grained facility for determining which log records to
+output.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.python.org/3/library/logging.html#formatter-objects"&gt;Formatters&lt;/a&gt; specify the layout of log records in the final output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The logic and the relationship between these classes is summarised in
+the flowchart from the
+&lt;a href="https://docs.python.org/3/howto/logging.html#logging-flow"&gt;tutorial&lt;/a&gt;:
+![[content/images/python-logging-flowchart.png]]&lt;/p&gt;
+&lt;p&gt;For a basic setup it is only necessary to configure a logger; but
+configuring handlers and formatters can make your logs more informative.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;Logger&lt;/code&gt; objects&lt;/h3&gt;
+&lt;p&gt;Do not instantiate &lt;code&gt;Logger&lt;/code&gt; directly.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# Not like this!
+logger = logging.Logger(...)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Instead, create them using the factory function &lt;code&gt;logging.getLogger()&lt;/code&gt;, providing a name for the logger:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# Like this
+logger = logging.getLogger(&amp;quot;example_app&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Doing so allows the &lt;code&gt;logging&lt;/code&gt; module to keep track of all the loggers
+that are in use, as well as to return the same instance if the same name
+is used across different modules.&lt;/p&gt;
+&lt;h3&gt;Configuring the logger&lt;/h3&gt;
+&lt;p&gt;One the logger instance has been created, you can add handlers to it:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import logging
+
+logger = logging.getLogger(&amp;quot;example_app&amp;quot;)
+logger.setLevel(logging.INFO)
+handler = logging.FileHandler(&amp;quot;example_app.log&amp;quot;)
+logger.addHandler(handler)
+
+# usage
+logger.info(&amp;quot;hello&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;The root logger and why not to use it&lt;/h3&gt;
+&lt;p&gt;If no logger is configured, or if you use one of the module-level
+functions such as  &lt;code&gt;logging.info()&lt;/code&gt; as opposed to &lt;code&gt;logger.info()&lt;/code&gt;, then
+the default behaviour is to use the &amp;quot;root logger&amp;quot;. This is a &lt;code&gt;Logger&lt;/code&gt;
+that is available globally. You can also obtain it with
+&lt;code&gt;logging.getLogger()&lt;/code&gt;, providing no argument.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Although the root logger can be used without any setup, it is usually
+a good idea to configure your own loggers.&lt;/strong&gt; By using different loggers,
+the logging output of different components of a program can be
+configured independently of each other.&lt;/p&gt;
+&lt;p&gt;For example, if you are developing a library, let's say &lt;code&gt;libfoo&lt;/code&gt;, that
+is intended for use in other applications, you can create your own
+logger:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# libfoo.py
+import logging
+logger = logging.getLogger(&amp;quot;libfoo&amp;quot;)
+# then configure your logger
+# and then
+logger.info(&amp;quot;logfoo is doing stuff&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then a client of your code can both set up their own logging and
+modify your code's behaviour:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# client.py
+import logging
+import libfoo
+
+logger = logging.getLogger(&amp;quot;client&amp;quot;)
+libfoo.logger.setLevel(logging.WARNING)  # suppress INFO messages
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;code&gt;Handler&lt;/code&gt; objects&lt;/h3&gt;
+&lt;p&gt;There are many subclasses of &lt;code&gt;Handler&lt;/code&gt;, providing different options for what to do with log messages. The two most common are &lt;code&gt;StreamHandler(stream)&lt;/code&gt;, which writes to a stream such as &lt;code&gt;sys.stderr&lt;/code&gt;, and &lt;code&gt;FileHandler(filename)&lt;/code&gt;, which appends messages to a file.&lt;/p&gt;
+&lt;p&gt;Other &lt;code&gt;Handler&lt;/code&gt; classes are provided in the &lt;code&gt;logging.handlers&lt;/code&gt; module (&lt;a href="https://docs.python.org/3/library/logging.handlers.html"&gt;doc&lt;/a&gt;), and some useful ones include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RotatingFileHandler&lt;/code&gt; , which writes to successive files (&lt;code&gt;app.log.1&lt;/code&gt;, &lt;code&gt;app.log.2&lt;/code&gt;, &lt;em&gt;etc.&lt;/em&gt;) keeping each file below a maximum size;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SocketHandler&lt;/code&gt;, which emits messages as TCP packets;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTTPHandler&lt;/code&gt;, which emits messages as &lt;code&gt;GET&lt;/code&gt; or &lt;code&gt;POST&lt;/code&gt; requests to a webserver; and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SMTPHandler&lt;/code&gt;, which sends email.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Choose the handlers that are suitable for your architecture. Since each handler can be configured separately, one might for example configure a &lt;code&gt;SMTPHandler&lt;/code&gt; to only report important messages such as &lt;code&gt;ERROR&lt;/code&gt; and &lt;code&gt;EXCEPTION&lt;/code&gt;, while &lt;code&gt;StreamHandler&lt;/code&gt; and &lt;code&gt;FileHandler&lt;/code&gt; to contain &lt;code&gt;DEBUG&lt;/code&gt; messages.&lt;/p&gt;
+&lt;h3&gt;Formatters and Filters&lt;/h3&gt;
+&lt;p&gt;Formatters and filters give further control over how messages are processed. Filters are associated with both loggers and handlers and can be configured differently for different handlers, so that different handlers may choose to emit different messages.&lt;/p&gt;
+&lt;p&gt;A handler may have a formatter; if no formatter is defined then the default behaviour is print just the message by itself. However, formatters can be configured to show various pieces of metadata about each log message (&lt;a href="https://docs.python.org/3/library/logging.html#logrecord-attributes"&gt;doc&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;It is a good idea to include timestamps as well as information about what emitted the message. This is done by passing arguments to &lt;code&gt;Formatter&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import logging
+
+logger = logging.getLogger(&amp;quot;example&amp;quot;)
+logger.setLevel(logging.INFO)
+handler = logging.StreamHandler()
+logger.addHandler(handler)
+formatter = logging.Formatter(
+  &amp;quot;%(asctime)s %(levelname)s %(filename)s:%(lineno)s %(message)s&amp;quot;,
+  datefmt=&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;
+)
+handler.setFormatter(formatter)
+
+logger.info(&amp;quot;Hello, world&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;prints:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2024-07-14 17:21:20,988 INFO foo.py:12 Hello, world
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Logging levels&lt;/h2&gt;
+&lt;p&gt;There are five predefined logging levels: &lt;code&gt;DEBUG&lt;/code&gt;, &lt;code&gt;INFO&lt;/code&gt;, &lt;code&gt;WARNING&lt;/code&gt;,
+&lt;code&gt;ERROR&lt;/code&gt; and &lt;code&gt;CRITICAL&lt;/code&gt; . These are to be used for messages of increasing
+seriousness. Each logger or filter must be set to a level, and ignores
+messages that are lower than that level. The default logging level is
+&lt;code&gt;WARNING&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Some good practices&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;As mentioned above: Use &lt;code&gt;logging&lt;/code&gt; where possible instead of &lt;code&gt;print&lt;/code&gt;,
+so that diagnostic messages are separated from output that needs to be
+machine-readable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don't use the root logger, always configure a custom logger. This
+makes it possible to configure separate logging behaviour between
+different modules or libraries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At a minimum, log messages should contain a timestamp. Otherwise, in a
+log file it will not be possible to discern whether a log message was
+triggered by a recent event.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is also a good idea to include a reference to whatever caused the
+log message to be emitted. Including the filename, line number and
+name of the function in the formatter is a good first start.
+However, this may not be fully informative if the log message is
+inside a function that is called from many sites.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logging the arguments passed to the function can also be helpful.
+But this must be done with care, if the arguments passed are complex
+objects with many fields, or if they contain sensitive information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I like to invent &amp;quot;sentinel&amp;quot; words (my term, I can't remember if there
+is an official term for this) that are specific to the particular
+feature being logged about. By using a word that won't be used
+anywhere else, it makes it easier to search for that word in the logs
+using &lt;code&gt;grep&lt;/code&gt;. For example, I used the French word &amp;quot;telecharger&amp;quot;
+instead of &amp;quot;download&amp;quot;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;funcy&lt;/code&gt; library provides a number of function decorators or
+context managers that help with logging calls to and returns from
+functions, which are particularly valuable when profiling code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;stderr or stdout?&lt;/h3&gt;
+&lt;p&gt;The default behaviour of &lt;code&gt;StreamHandler&lt;/code&gt; is to write log messages to
+&lt;code&gt;stderr&lt;/code&gt; rather than &lt;code&gt;stdout&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When writing shell utilities, writing diagnostic messages to &lt;code&gt;stderr&lt;/code&gt;
+instead of &lt;code&gt;stdout&lt;/code&gt; is useful if the program needs to produce
+machine-readable output, for example, to pipe into another process.
+Separating diagnostic messages into a separate stream will allow those
+messages to be more meaningful, detailed and human-readable, while
+keeping the output in a standard format. This also avoids accidentally
+piping such messages into the other program, which can have unexpected
+(or even dangerous) results.&lt;/p&gt;
+&lt;p&gt;On the other hand, for long-running services such as web apps, &lt;a href="https://12factor.net/logs"&gt;The
+Twelve-Factor App&lt;/a&gt; recommends writing all
+messages to &lt;code&gt;stdout&lt;/code&gt;, using a single stream. This stream can then be
+directed either to a regular file or to an external service which can
+then provide further services, such as searching, trend analysis or
+forwarding high-level messages.&lt;/p&gt;
+&lt;p&gt;The appropriate choice therefore depends on what the program output is
+used for. In either case, using the &lt;code&gt;logging&lt;/code&gt; module and the
+&lt;code&gt;StreamHandler&lt;/code&gt; class provides an abstraction that sidesteps this
+question for the code that actually emits the log message.&lt;/p&gt;
+&lt;h2&gt;Copy-and-paste example&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# logger.py
+import logging
+
+def configure_logger() -&amp;gt; logging.Logger:
+    &amp;quot;&amp;quot;&amp;quot;This stuff goes into its own function in order not to pollute the
+    module-level namespace; but since this is in its own module that
+    doesn't matter too much.
+    &amp;quot;&amp;quot;&amp;quot;
+    logger = logging.getLogger(&amp;quot;my_app&amp;quot;)
+    handler = logging.StreamHandler()
+    logger.addHandler(handler)
+    formatter = logging.Formatter(
+      &amp;quot;%(asctime)s %(levelname)s %(filename)s:%(lineno)s %(message)s&amp;quot;,
+      datefmt=&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;
+    )
+    handler.setFormatter(formatter)
+
+    return logger
+
+# This gets initialized only once, even if this module is imported
+# multiple times.
+logger: logging.Logger = configure_logger()
+
+# Allow logger to be imported from other modules
+__all__ = [&amp;quot;logger&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then, in another module in the same package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# code.py
+from .logger import logger
+
+logger.info(&amp;quot;Hello&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+</content><category term="Python"/><category term="python"/><category term="backend"/></entry><entry><title>Object creation patterns in Python: Static factory methods</title><link href="https://jmft.dev/static-factory-methods-in-python.html" rel="alternate"/><published>2024-05-21T00:00:00+01:00</published><updated>2024-05-21T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-05-21:/static-factory-methods-in-python.html</id><summary type="html">&lt;p&gt;The basic way to create and initialize an object in Python is using the
+default constructor, defined as the &lt;code&gt;__init__()&lt;/code&gt; method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class MyClass:
+    def __init__(self, x: float) -&amp;gt; None:
+        self.x: float = x
+        print(f&amp;quot;created an object with x = {x}&amp;quot;)
+
+
+obj = MyClass(5)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Usually, initial values of instance variables …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The basic way to create and initialize an object in Python is using the
+default constructor, defined as the &lt;code&gt;__init__()&lt;/code&gt; method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class MyClass:
+    def __init__(self, x: float) -&amp;gt; None:
+        self.x: float = x
+        print(f&amp;quot;created an object with x = {x}&amp;quot;)
+
+
+obj = MyClass(5)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Usually, initial values of instance variables are specified using
+arguments to &lt;code&gt;__init__()&lt;/code&gt;, and assigned to the variables. The body of
+&lt;code&gt;__init__()&lt;/code&gt; may also contain other steps, such as precomputing other
+other variables based on these instance attributes, or, as in this
+example, logging the creation of an object. &lt;small&gt;&lt;em&gt;(Resource allocation
+such as opening files should generally &lt;em&gt;not&lt;/em&gt; be done in an initializer,
+but in a &lt;a href="https://docs.python.org/3/reference/datamodel.html#context-managers"&gt;context
+manager&lt;/a&gt;,
+so that client code doesn't have to take care of deallocation.)&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;h2&gt;Dataclasses and kwargs&lt;/h2&gt;
+&lt;p&gt;When a class has many instance variables, it is common to &lt;strong&gt;use keyword
+arguments when initializing them&lt;/strong&gt;, which makes the meaning of each
+argument more explicit and allows arguments to be reordered later.
+Furthermore, such classes are often good candidates for making into
+&lt;a href="https://docs.python.org/3/library/dataclasses.html"&gt;&lt;strong&gt;dataclasses&lt;/strong&gt;&lt;/a&gt;,
+since the &lt;code&gt;@dataclass&lt;/code&gt; decorator automatically creates an &lt;code&gt;__init__()&lt;/code&gt;
+method with the necessary arguments and that assigns them to the
+instance variables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;@dataclass
+class Person:
+    # types are not enforced at runtime, but are checked by type
+    # checkers
+    name: str
+    age: int
+
+    # More complex types, including recursive types, are allowed. Use
+    # `field`
+    occupation: Optional[str] = field(default=None)
+    best_friend: &amp;quot;Person&amp;quot; = field(default=None)
+
+    # an __init___ method is automatically generated, but you can still
+    # create a __post_init__ method for additional behaviour like
+    # logging
+
+    def __post_init__(self):
+        print(f&amp;quot;Created new Person: {self}&amp;quot;)
+
+
+# Use kwargs when creating instances
+p = Person(name=&amp;quot;Sir Robin&amp;quot;, age=32, occupation=&amp;quot;knight&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As well as automatically providing the &lt;code&gt;__init__()&lt;/code&gt; method, dataclasses
+also automatically provide methods such as &lt;code&gt;__repr__()&lt;/code&gt; and &lt;code&gt;__eq__()&lt;/code&gt;,
+further reducing the amount of boilerplate code and allowing you to use
+a more declarative style of programming that focuses on the structure of
+the class (and makes it easier to add or remove fields witout needing to
+worry about updating all these methods).&lt;/p&gt;
+&lt;p&gt;While using dataclasses makes it easy to create an initializer even for
+objects with many fields, there are nonetheless some limitations of
+creating objects using the basic syntax &lt;code&gt;Person(...)&lt;/code&gt;. To provide more
+expressive ways to create objects, various &lt;em&gt;object creation patterns&lt;/em&gt;
+have been developed over the years, and are now standard fare in large
+projects, including the standard library itself.&lt;/p&gt;
+&lt;p&gt;The rest of this post will discuss the &lt;strong&gt;static factory methods
+pattern&lt;/strong&gt;, which allows you to provide multiple, distinct ways to
+instantiate a class without having a complicated &lt;code&gt;__init__()&lt;/code&gt; method. In
+a future post I shall discuss the &lt;strong&gt;builder pattern&lt;/strong&gt;, which lets you
+gradually build up a complex object by passing around the information
+needed to create it rather than requiring all the information in one go.&lt;/p&gt;
+&lt;h2&gt;The static factory method&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Provide multiple, distinct ways of instantiating a class.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Explicit is better than implicit.&lt;/em&gt; &lt;small&gt;&lt;a href="https://en.wikipedia.org/wiki/Zen_of_Python"&gt;&lt;em&gt;The Zen of Python&lt;/em&gt;&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;In many cases you want to provide multiple ways to obtain instances of a
+class. To do that, you can provide &lt;em&gt;static factory methods&lt;/em&gt; in your
+class: these are class methods that create and return instances.
+&lt;small&gt;&lt;em&gt;(The name comes from Java, which does not distinguish between
+class methods and static methods.)&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;A classic example is a &lt;code&gt;Point2D&lt;/code&gt; class that represents a point in the
+plane. It is desired to be able to create instances of &lt;code&gt;Point2D&lt;/code&gt; by
+specifying either the point's Cartesian coordinates or its polar
+coordinates. To achieve this, we define static factory methods
+&lt;code&gt;from_cartesians()&lt;/code&gt; and &lt;code&gt;from_polars()&lt;/code&gt; that return instances of
+&lt;code&gt;Point2D&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import math
+
+
+@dataclass
+class Point2D:
+    x: float
+    y: float
+
+    # __init__(self, x, y) is automatically generated
+
+    @classmethod
+    def from_cartesians(cls, x: float, y: float) -&amp;gt; &amp;quot;Point2D&amp;quot;:
+        return cls(x=x, y=y)
+
+    @classmethod
+    def from_polars(cls, r: float, theta: float) -&amp;gt; &amp;quot;Point2D&amp;quot;:
+        if r &amp;lt; 0:
+            raise ValueError(&amp;quot;Radial coordinate must be nonnegative&amp;quot;)
+        return cls(x=r * math.cos(theta), y=r * math.sin(theta))
+
+    
+p: Point2D = Point2D.from_polars(r=4, theta=0.5 * math.pi)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Although the &lt;code&gt;__init__()&lt;/code&gt; method (automatically created by &lt;code&gt;@dataclass&lt;/code&gt;)
+already gives us a way of instantiating a &lt;code&gt;Point2D&lt;/code&gt; through its
+Cartesian coordinates, we nonetheless provide a &lt;code&gt;from_cartesians()&lt;/code&gt;
+method. There are two major benefits to using this method oer the basic
+initializer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is more explicit about what the input numbers mean.&lt;/li&gt;
+&lt;li&gt;If it is desired to store the polar coordinates, rather than the
+Cartesian coordinates, as fields, the class methods can be updated
+without affecting client code; whereas instantiations with &lt;code&gt;Point2D(...)&lt;/code&gt;
+would need to be updated. (This is referred to as &amp;quot;invariance under
+refactoring&amp;quot; and allows developers to work on different parts of a
+codebase without hugely affecting each other.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For contrast, this is what the class might look like if we wanted to
+allow the user to specify either Cartesian or polar coordinates when
+creating a &lt;code&gt;Point2D&lt;/code&gt;, all in the &lt;code&gt;__init__()&lt;/code&gt; method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;@dataclass(init=False)  # we provide our own __init__() method
+class Point2D:
+    x: float
+    y: float
+
+    def __init__(
+        self, 
+        x: Optional[float] = None, 
+        y: Optional[float] = None, 
+        r: Optional[float] = None, 
+        theta: Optional[float] = None
+    ):
+        using_cartesians = x is not None and y is not None
+        using_polars = r is not None and theta is not None
+        if using_cartesians and not using_polars:
+            self.x, self.y = x, y
+            return
+        if using_polars and not using_cartesians:
+            if r &amp;lt; 0:
+              raise ValueError(&amp;quot;Radial coordinate must be nonnegative&amp;quot;)
+            self.x = r * math.cos(theta)
+            self.y = r * math.sin(theta)
+            return
+        
+        raise ValueError(&amp;quot;Either specify x and y or specify r and theta, but not both.&amp;quot;)
+
+
+p: Point2D = Point2D(r=4, theta=0.5 * math.pi)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is clearly more complex and less expressive.&lt;/p&gt;
+&lt;p&gt;Static factory methods are a common pattern in object oriented
+languages. Python doesn't have method overloading (unlike C/++ and
+Java) and so it is not possible to define multiple &lt;code&gt;__init__()&lt;/code&gt; methods
+with different signatures. But even in languages like Java it is often
+recommended to use static factory methods instead of overloaded
+constructors, for the expressiveness. &lt;small&gt;&lt;em&gt;(Indeed, this is the
+very first item in Joshua Bloch's &lt;a href="https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/"&gt;&lt;em&gt;Effective Java&lt;/em&gt;&lt;/a&gt;.)&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;h2&gt;Abstract base classes&lt;/h2&gt;
+&lt;p&gt;The real power of static factory methods comes when working with
+abstract classes. While (by definition) you cannot directly instantiate
+an abstract class, you can emulate such an instantiation providing a
+static factory method on the abstract base class that chooses an
+appropriate subclass and produces an instance of that class.&lt;/p&gt;
+&lt;p&gt;A typical use case is to provide the user with a simplified interface
+while internally having several underlying implementations. Consider the
+following interface, which declares a single method for calculating the
+integral of a function between two points:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import abc
+
+
+class Integrator(abc.ABC):
+    @abc.abstractmethod
+    def integrate(self, f: Callable[[float], float], a: float, b: float) -&amp;gt; float:
+        &amp;quot;&amp;quot;&amp;quot;Calculate the integral of the function f between a and b.&amp;quot;&amp;quot;&amp;quot; 
+        raise NotImplementedError
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The subclasses implement different methods of integration:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class EulerIntegrator(Integrator):
+    def __init__(self, n: int = 10):
+        self.n = n
+        
+    def integrate(self, f, a, b):
+        # Even for such an inaccurate scheme, this is a terrible 
+        # implementation! It is horrendously inefficient and doesn't
+        # properly handle floating point errors. This is just for
+        # illustration purposes.
+        dx = (b - a) / self.n
+        x = a
+        s = 0
+        while x &amp;lt; b:
+            s += f(x) * dx
+            x += dx
+        return s
+    
+class AdamsBashforthIntegrator(Integrator): ...  # similarly
+class TrapeziumIntegrator(Integrator): ...  # similarly
+class RK4Integrator(Integrator): ...  # similarly
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The appropriate choice of integration method depends on the function.
+For example, the Adams–Bashorth integrator has a lower order of
+accuracy than RK4, but performs better against stiff equations.&lt;/p&gt;
+&lt;p&gt;While the client may wish to choose an integrator for themself, as the
+developer of the &lt;code&gt;Integrator&lt;/code&gt; class one may wish to provide the user a
+shortcut for common cases without requiring them to know the details of
+the particular implementation. To achieve this, the &lt;code&gt;Integrator&lt;/code&gt; class
+could provide a static factory method that returns an appropriate
+instance:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;class Integrator(abc.ABC):
+    @classmethod
+    def create(cls, stiff: bool = False) -&amp;gt; &amp;quot;Integrator&amp;quot;:
+        if stiff:
+            return AdamsBashforthIntegrator(...)  # with suitable params
+        else:
+              return RK4Integrator(...)  # ditto
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;with example usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;integrator = Integrator.create(stiff=True)
+print(integrator.integrate(lambda x: x ** 2, 1, 2))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Other numerical operations that can be calculated using different
+algorithms are similarly candidates for such a structure.&lt;/p&gt;
+&lt;h2&gt;Caveat and conclusion&lt;/h2&gt;
+&lt;p&gt;The examples above are smallish classes that nonetheless benefit from
+having multiple ways to create them. With that said, a class that has
+very different behaviours depending on how it is initialized may be too
+complicated, and be a candidate for refactoring into smaller classes
+each with fewer responsibilities.&lt;/p&gt;
+&lt;p&gt;As mentioned above, the static factory method pattern is commonly used
+not only in Python but also in other languages. The benefits are the
+same: using static factory methods (a) allows the user to more
+explicitly state how an object should be produced from input data
+(&lt;code&gt;Point2D.from_cartesians(3, 4)&lt;/code&gt; versus &lt;code&gt;Point2D(3, 4)&lt;/code&gt;), and (b) allows
+the class to rework what data it stores internally or which
+implementation of an abstract class to provide.&lt;/p&gt;
+</content><category term="Python"/><category term="python"/><category term="object-oriented-programming"/><category term="design-patterns"/></entry><entry><title>In Praise of Visualization</title><link href="https://jmft.dev/in-praise-of-visualization.html" rel="alternate"/><published>2024-05-11T00:00:00+01:00</published><updated>2024-05-11T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-05-11:/in-praise-of-visualization.html</id><summary type="html">&lt;p&gt;A little investment into building a GUI for live visualizations and
+control provides huge improvements in iteration speed.&lt;/p&gt;
+&lt;p&gt;I recently came across the excellent video &lt;a href="https://www.youtube.com/watch?v=rSKMYc1CQHE"&gt;Coding Adventure: Simulating Fluids&lt;/a&gt;
+wonderfully explained by &lt;a href="https://github.com/SebLague"&gt;Sebastian Lague&lt;/a&gt;.
+The video walks through the steps to build a simple smoothed particle
+hydrodynamics simulation from nothing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;A little investment into building a GUI for live visualizations and
+control provides huge improvements in iteration speed.&lt;/p&gt;
+&lt;p&gt;I recently came across the excellent video &lt;a href="https://www.youtube.com/watch?v=rSKMYc1CQHE"&gt;Coding Adventure: Simulating Fluids&lt;/a&gt;
+wonderfully explained by &lt;a href="https://github.com/SebLague"&gt;Sebastian Lague&lt;/a&gt;.
+The video walks through the steps to build a simple smoothed particle
+hydrodynamics simulation from nothing, in C#.&lt;/p&gt;
+&lt;p&gt;It brings back some sweet memories to my days as a research student
+doing discrete particle model simulations using &lt;a href="https://www.mercurydpm.org/"&gt;MercuryDPM&lt;/a&gt;
+and there are many practical lessons that I wish I had known when I
+first started. The one that stuck out the most was actually one that
+Lague glossed over: the power of visualisation and the massive returns
+that even a simple user interface gives.&lt;/p&gt;
+&lt;p&gt;The most dull and most frustrating aspect of my computational work was
+undoubtedly the parameter studies to tune parameters such as time step
+or particle stiffness. Poorly-chosen values do not &lt;em&gt;immediately&lt;/em&gt;
+cause problems; your simulation will crank along seemingly fine for
+several minutes before blowing up, or having &lt;code&gt;nan&lt;/code&gt;s everywhere).&lt;/p&gt;
+&lt;p&gt;I didn't have a good visualization system at the time (MercuryDPM does
+provide options for loading results into visualization software, but it
+isn't live) and this hugely slowed down my iteration cycles. Neither did
+I have a GUI for modifying parameters. So, my iterations were
+rate-limited by my ability to load files into gnuplot or investigate
+them manually.&lt;/p&gt;
+&lt;p&gt;I'm now mostly not working on simulations, instead working almost
+full-time in data engineering. The lesson around visualization is the
+same, though: even a simple GUI can give a lot of insight and control
+over what is otherwise a black box system, allowing faster iterations.&lt;/p&gt;
+&lt;p&gt;Visualization systems, like other pieces of &amp;quot;infrastructure&amp;quot; such as
+testing frameworks, do not &lt;em&gt;per se&lt;/em&gt; produce results, and so are often
+overlooked or disincentivised in environments that prioritize rolling
+out a product or result (proverbially, &amp;quot;moving fast and breaking
+things&amp;quot;), especially research environments. I have been guilty of this
+myself, but Sebastian's video clearly demonstrates that introducing even
+a small amount of interactivity can be very powerful when guiding one
+towards building reliable software and choosing sensible parameters. I
+wish I had been a stronger advocate of this as a junior researcher or
+engineer.&lt;/p&gt;
+&lt;p&gt;Perhaps building a GUI is easiest in a language like C# or JavaScript.
+&lt;small&gt;(I have no experience with the former.)&lt;/small&gt; I have yet to
+find a GUI framework in Python that isn't either overly restrictive or
+horribly low-level. Jupyter notebooks offer some hope in this area, but
+I might look into PyGame.&lt;/p&gt;
+</content><category term="Software"/><category term="simulation"/><category term="physics"/><category term="project-management"/></entry><entry><title>Communicating with the past and the future</title><link href="https://jmft.dev/communicating-with-the-past-and-the-future.html" rel="alternate"/><published>2024-05-10T00:00:00+01:00</published><updated>2024-05-10T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-05-10:/communicating-with-the-past-and-the-future.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Originally written May 2022.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In his dialogue &lt;em&gt;Phaedrus&lt;/em&gt;, Plato has unflattering things to say about
+the development of writing, arguing among other things that it weakens
+the memory:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And so it is that you by reason of your tender regard for the writing
+that is your offspring have declared …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Originally written May 2022.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In his dialogue &lt;em&gt;Phaedrus&lt;/em&gt;, Plato has unflattering things to say about
+the development of writing, arguing among other things that it weakens
+the memory:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And so it is that you by reason of your tender regard for the writing
+that is your offspring have declared the very opposite of its true
+effect. If men learn this, it will implant forgetfulness in their
+souls. They will cease to exercise memory because they rely on that
+which is written, calling things to remembrance no longer from within
+themselves, but by means of external marks.&lt;/p&gt;
+&lt;p&gt;What you have discovered is a recipe not for memory, but for reminder.
+And it is no true wisdom that you offer your disciples, but only the
+semblance of wisdom, for by telling them of many things without
+teaching them you will make them seem to know much while for the most
+part they know nothing. And as men filled not with wisdom but with the
+conceit of wisdom they will be a burden to their fellows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What might have been applicable to the classical philosophers, however,
+is not applicable to a modern society. (What does that say about us?) In
+our world there is a tendency to regard the oral tradition as a remnant
+of an ancient time, preserved only in 'primitive' cultures (&lt;em&gt;yikes&lt;/em&gt;) or
+among the illiterate – but it is much more prevalent than we care to
+admit. In many organizations, knowledge and know-how are often held by a
+single 'elder' or 'wise person', spread informally by the coffee machine
+or over the shoulder in a pair programming session. For good reason:
+this is usually the fastest and most direct way to communicate with
+someone, as well as the warmest and the most interactive; whereas
+writing complete documentation takes time and is usually not as fun.&lt;/p&gt;
+&lt;p&gt;However, this word-of-mouth approach soon becomes unsustainable as an
+organization gets larger and older, and its collective memory fades:
+individuals leave, or develop other interests or priorities, and those
+who remain simply cannot be expected to remember the details of projects
+long past. They may have taken care to document at the time, but this
+information might be on a lost hard drive, or buried deep inside a
+filing cabinet.&lt;/p&gt;
+&lt;p&gt;This amnesia costs the organization time and money, and severely
+undermines its operations. For scientific computing, data engineering
+and machine learning, this means results become irreproducible,
+experience is lost, and the providence of data becomes forgotten -
+possibly leading to the use of flawed data, or of data that has legal or
+ethical restrictions.&lt;/p&gt;
+&lt;p&gt;As software engineers, one of the first things we learn is the value of
+comments, especially well-written API documentation (docstrings); we are
+also quickly introduced to version control systems such as Git, and
+issue trackers (GitHub Issues, Bugzilla, Jira, &lt;em&gt;etc.&lt;/em&gt;).  Writing useful
+comments and docs, commit messages, user stories and bug reports is an
+art that takes time to learn, but one that software engineers spend
+plenty of time practising. Writing docstrings is a largely mechanical
+process that IDEs can automate, and user stories usually follow a
+prescribed format ('As..., so that..., I want...').&lt;/p&gt;
+&lt;p&gt;However, knowledge and documentation of project-level information,
+as well as operational practices, are much more unstructured and require
+more creativity. I include such things as data collection or generation,
+data processing steps, results and status reports; as well as 'savvy
+know-how', such as shell commands (magic spells) that do not necessarily
+fit into a version control system (for example, if they are too
+specialized for a particular application). This sort of writing is a key
+skill for the natural or social scientist, but overlooked by software
+engineers.&lt;/p&gt;
+&lt;p&gt;For this sort of information, many organizations have therefore adopted
+the use of a 'knowledge base' system, and wiki-style systems such as
+Confluence or MediaWiki have become extremely popular (each with its
+downsides and limitations). But a poorly-maintained knowledge base soon
+becomes a swamp, impossible to search or read. Readers give up and go
+back to the oral tradition.&lt;/p&gt;
+&lt;p&gt;In what follows, I propose some techniques and best practices for using
+these tools effectively.&lt;/p&gt;
+&lt;p&gt;Some context about myself: I'm a software engineer of about three years;
+my day job title is 'Senior Data Engineer', meaning I spend a lot of
+time thinking about data pipelines and processes.  We use the Atlassian
+products (Jira, Confluence) at work, and Slack as the primary means of
+live communication.  I moved into the world of software engineering from
+a stint in academia; my research background was in mathematical and
+computational physics.  I'm a longtime Wikipedia reader and sometime
+Wikipedia contributor, and spent too much time reading the Wikipedia
+policies and &lt;a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style"&gt;manual of style&lt;/a&gt;.
+Some of the following is a condensation of the Wikipedia MoS.&lt;/p&gt;
+&lt;h2&gt;General principles&lt;/h2&gt;
+&lt;h3&gt;The Golden Rule&lt;/h3&gt;
+&lt;p&gt;Ignore all rules.&lt;/p&gt;
+&lt;p&gt;This is an &lt;a href="https://en.wikipedia.org/wiki/Wikipedia:Ignore_all_rules"&gt;official policy of Wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If a rule prevents you from improving or maintaining Wikipedia, ignore
+it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;These are &lt;em&gt;proposals&lt;/em&gt;, not rules. They reflect &lt;em&gt;my&lt;/em&gt; opinions, shaped by
+my background and experience. Your mileage may vary.&lt;/p&gt;
+&lt;h3&gt;Prefer open channels&lt;/h3&gt;
+&lt;p&gt;Communications in the open (Slack, Discord, IRC, mailing lists, Usenet,
+forums, &lt;em&gt;etc.&lt;/em&gt;) allow passers-by to chip in with their knowledge and
+advice. Hopefully, yours is a culture where this is welcome.  They also
+maintain an org-wide (or even globally) accessible archive of the
+communications, in case the participants eventually leave.&lt;/p&gt;
+&lt;p&gt;This is especially important in the age of online working, when
+coworkers are no longer to simply join a conversation that they
+overhear.&lt;/p&gt;
+&lt;p&gt;On the other hand, emails are more difficult to search, and depending on
+the email provider may be ephemeral. They are closed to the participants
+of an email thread.&lt;/p&gt;
+&lt;p&gt;This must &lt;em&gt;never&lt;/em&gt; trump respect for the privacy of others.&lt;/p&gt;
+&lt;h2&gt;Using knowledge bases&lt;/h2&gt;
+&lt;h3&gt;Is it the right tool?&lt;/h3&gt;
+&lt;p&gt;A knowledge base should aspire to be the 'single point of truth' that
+future readers can refer to. Its contents and style should therefore be
+timeless, and impersonally or objectively written. While an article
+might describe the current state of play for an ongoing project, it
+should identify this as a snapshot taken at a certain time. Likewise, it
+may express the opinions of individuals (usually the author), but these
+should be identified as opinions.&lt;/p&gt;
+&lt;p&gt;(Whether the author of a page has the authority to establish her writing
+as 'the truth' is a separate question, but in any case the author should
+be clear to mark her opinions as such.)&lt;/p&gt;
+&lt;p&gt;For dynamic information following the progress of a project, an issue
+tracker such as Jira is usually more appropriate.&lt;/p&gt;
+&lt;h3&gt;Crosslinking&lt;/h3&gt;
+&lt;p&gt;A primary feature of wiki systems such as Confluence and MediaWiki –
+indeed, the draw of the WWW in the first place – is the ability to link
+between pages. This should be taken advantage of as much as possible.&lt;/p&gt;
+&lt;p&gt;Where links fit well into the main text, they should be used. Where
+possible, the link text should not significantly differ from the title
+of the page being linked to. Nobody googles for 'click here'.&lt;/p&gt;
+&lt;p&gt;On Wikipedia, the 'See also' section at the bottom of articles is a
+place for linking to related articles that do not fit into the main
+text. The &lt;a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Layout#%22See_also%22_section"&gt;Manual of Style&lt;/a&gt;
+has guidelines of what should be included in such a section.&lt;/p&gt;
+&lt;p&gt;Crosslinking is not restricted to pages within a wiki.  Confluence has
+good support for linking to Jira tickets, and &lt;em&gt;vice versa&lt;/em&gt;. Jira has the
+concept of linking tickets to one another.  Maintaining these links
+makes it much easier for a user to find related information from one
+page.&lt;/p&gt;
+&lt;p&gt;Backlinking can be useful. MediaWiki offers a search for pages that link
+to a specific article (example:
+&lt;a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Coffee"&gt;https://en.wikipedia.org/wiki/Special:WhatLinksHere/Coffee&lt;/a&gt;),
+but backlinking needs to be done manually in Confluence.&lt;/p&gt;
+&lt;h3&gt;Permalinking&lt;/h3&gt;
+&lt;p&gt;Web resources are fickle. External websites may change their layouts
+without properly redirecting; or change the contents of pages without
+notice.&lt;/p&gt;
+&lt;p&gt;To avoid &lt;a href="https://en.wikipedia.org/wiki/Link_rot"&gt;link rot&lt;/a&gt;, consider
+linking to an archived version of a webpage using the &lt;a href="https://web.archive.org/"&gt;Wayback
+Machine&lt;/a&gt;, rather than directly linking to the
+URL.&lt;/p&gt;
+&lt;p&gt;Most academic publications have a DOI
+(&lt;a href="https://en.wikipedia.org/wiki/Digital_object_identifier"&gt;Wikipedia&lt;/a&gt;)
+which uniquely identifies the publication. The DOI link (example:
+&lt;a href="https://doi.org/10.1017/jfm.2018.2"&gt;https://doi.org/10.1017/jfm.2018.2&lt;/a&gt;)
+is succinct and will redirect to the page for the journal article, even
+if the journal website changes its layout and breaks a URL. Many
+bibliography management software are able to automatically extract
+information about an article, such as title, author, journal and year,
+from a DOI.&lt;/p&gt;
+&lt;p&gt;Websites such as Wikipedia and Stack Overflow, where information is
+mutable by design, have 'permalinks' that allow a link to a specific
+version of the content (example:
+&lt;a href="https://stackoverflow.com/a/7969052/"&gt;https://stackoverflow.com/a/7969052/&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;Dating&lt;/h3&gt;
+&lt;p&gt;Statements written in the present tense or using relative time
+references soon become obsolete. They should be tagged with the date
+on which the statement was made or last checked:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Our progress is hindered by the availability of the lab, which is
+currently being repaired after recent explosions &lt;em&gt;(2022-05-16)&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;or with an issue tracker reference:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We are blocked until we fix the tests in MagicSoftware (MT-1337).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;provided that the ticket MT-1337 contains relevant information.&lt;/p&gt;
+&lt;p&gt;This can be sidestepped by referring to version numbers:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As of v1.5, TheBestIDE is incapable of detecting unmatched brackets.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Page notices&lt;/h3&gt;
+&lt;p&gt;Page notices go at the top of the page and should indicate the
+maintenance state of the page. They should usually include a date.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This page is work in progress. &lt;em&gt;(2022-05-16)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This page was last updated for DeepMagic v3.6.3. &lt;em&gt;(2022-05-16)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The information on this page is obsolete. Please refer instead to
+&lt;strong&gt;This Other Page&lt;/strong&gt;. &lt;em&gt;(2022-05-16)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Page notices should usually be concerned with the page itself, not with
+the thing being described in the page. A page on MagicSoftware should
+not have a notice like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;~~MagicSoftware is obsolete. &lt;em&gt;(2022-05-16)&lt;/em&gt;~~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That should instead be given in the main text – preferably with links to
+relevant issue trackers. However, the following may be appropriate:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This page describes a project in active development, and may change
+rapidly asthe project progresses. &lt;em&gt;(2022-05-16)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Depending on the wiki software, it may be possible to standardize these
+notices as templates, as well as to search for pages with a particular
+tag.&lt;/p&gt;
+&lt;h3&gt;Categorization and hierarchy&lt;/h3&gt;
+&lt;p&gt;MediaWiki supports filing articles into categories (&lt;em&gt;e.g.&lt;/em&gt;
+https://en.wikipedia.org/wiki/Category:Coffee). Using this filing system
+helps readers find articles related to the topic that they seek, even
+though the pages may not directly link to each other.&lt;/p&gt;
+&lt;p&gt;Categories are a many-to-many relationship (each page may be in multiple
+categories), and categories can be nested.&lt;/p&gt;
+&lt;p&gt;'Meta' categories that describe the state of a page can also be useful.&lt;/p&gt;
+&lt;p&gt;Confluence offers poor support for page organization. Each page belongs
+to a workspace and is either a root page in that workspace or belongs to
+exactly one parent page. Parent pages should give an overview of the
+topic but leave details to the child pages. Child pages can be used to
+contain supplementary information that does not fit into the main text
+of the parent.&lt;/p&gt;
+</content><category term="Software"/><category term="documentation"/><category term="project-management"/></entry><entry><title>Are vegans vegetarians? and related questions</title><link href="https://jmft.dev/are-vegans-vegetarians.html" rel="alternate"/><published>2024-04-28T00:00:00+01:00</published><updated>2024-04-28T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-04-28:/are-vegans-vegetarians.html</id><summary type="html">&lt;p&gt;I recently asked the following questions:&lt;/p&gt;
+&lt;p&gt;Assuming all other requirements are the same:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Is a vegan a vegetarian?&lt;/li&gt;
+&lt;li&gt;Is a vegetarian a vegan?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To my (somewhat) surprise, this drew quite a lot of interest from
+colleagues, friends, and even people on Facebook I hadn't talked to for
+years, with lots …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently asked the following questions:&lt;/p&gt;
+&lt;p&gt;Assuming all other requirements are the same:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Is a vegan a vegetarian?&lt;/li&gt;
+&lt;li&gt;Is a vegetarian a vegan?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To my (somewhat) surprise, this drew quite a lot of interest from
+colleagues, friends, and even people on Facebook I hadn't talked to for
+years, with lots of different ways on how to interpret the questions.&lt;/p&gt;
+&lt;h2&gt;Restaurants&lt;/h2&gt;
+&lt;p&gt;The next two questions were:&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Is a vegan restaurant a vegetarian restaurant?&lt;/li&gt;
+&lt;li&gt;Is a vegetarian restaurant a vegan restaurant?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Apples and labels&lt;/h2&gt;
+&lt;p&gt;I asked two more questions:&lt;/p&gt;
+&lt;ol start="5"&gt;
+&lt;li&gt;Is a bag of apples a bag of fruit?&lt;/li&gt;
+&lt;li&gt;Is a bag of apples that is labelled &amp;quot;Apples&amp;quot; a bag of fruit?&lt;/li&gt;
+&lt;/ol&gt;
+</content><category term="Software"/><category term="logic"/><category term="type-theory"/></entry><entry><title>Self-hosting a minimal website with nginx and HTTPS</title><link href="https://jmft.dev/setting-up-nginx-and-https.html" rel="alternate"/><published>2024-04-27T00:00:00+01:00</published><updated>2024-04-27T00:00:00+01:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-04-27:/setting-up-nginx-and-https.html</id><summary type="html">&lt;p&gt;This website is now self-hosted on a Raspberry Pi server at home. I had
+struggled with nginx and HTTPS in the past, so was rather pleasantly
+surprised to see how straightforward it was.&lt;/p&gt;
+&lt;p&gt;I couldn't find anything on the web that walked one through the whole
+process, so here are …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This website is now self-hosted on a Raspberry Pi server at home. I had
+struggled with nginx and HTTPS in the past, so was rather pleasantly
+surprised to see how straightforward it was.&lt;/p&gt;
+&lt;p&gt;I couldn't find anything on the web that walked one through the whole
+process, so here are the steps that I took, in some order. (This isn't
+meant to be a full tutorial, sorry.)&lt;/p&gt;
+&lt;p&gt;The site now serves static content using
+&lt;a href="https://getpelican.com"&gt;Pelican&lt;/a&gt;. Much nicer than WordPress. More on
+Pelican in a future post, but for now let us take it for granted that we
+just want to serve static files in &lt;code&gt;/home/jmft2/jmft.dev/public_html&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;DNS and firewall&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a suitable DNS record to your home network. I use
+&lt;a href="https://noip.com"&gt;No-IP&lt;/a&gt; and then use an ALIAS record.&lt;/li&gt;
+&lt;li&gt;Set up port forwarding on ports 80 and 443 on your firewall (in your
+router settings).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Setting up nginx&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install nginx:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;sudo apt install nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a minimal config file at &lt;code&gt;~/jmft.dev/nginx_config&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;server {
+    server_name jmft.dev;
+
+    access_log /home/jmft2/jmft.dev/logs/nginx-access.log;
+    error_log /home/jmft2/jmft.dev/logs/nginx-error.log;
+
+    location / {
+        alias /home/jmft2/jmft.dev/public_html/;
+        index index.html;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Make the directory for logs:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;mkdir ~/jmft.dev/logs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Make symlinks to the &lt;code&gt;sites-available&lt;/code&gt; and &lt;code&gt;sites-enabled&lt;/code&gt; directories
+in &lt;code&gt;/etc/nginx&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;sudo ln -s ~/jmft.dev/nginx_config /etc/nginx/sites-available/jmft.dev
+sudo ln -s /etc/nginx/sites-available/jmft.dev /etc/nginx/sites-enabled/jmft.dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure the &lt;code&gt;public_html&lt;/code&gt; directory &lt;em&gt;and all its parents&lt;/em&gt; are
+readable by the &lt;code&gt;www-data&lt;/code&gt; user. One way is this:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;chmod a+rX ~ ~/jmft.dev ~/jmft.dev/public_html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the configuration, and if it is successful, load it:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;sudo nginx -t &amp;amp;&amp;amp; sudo systemctl reload nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At this point, going to &lt;code&gt;http://jmft.dev&lt;/code&gt; (no https) should show you the
+&lt;code&gt;index.html&lt;/code&gt; page for the site.&lt;/p&gt;
+&lt;h2&gt;Setting up HTTPS&lt;/h2&gt;
+&lt;p&gt;LetsEncrypt recommend using &lt;a href="https://certbot.eff.org/"&gt;Certbot&lt;/a&gt;, which
+made the HTTPS installation process very straightforward.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Certbot is managed by the Snap package manager, so it is first
+necessary to install that:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;sudo apt install snapd
+sudo systemctl restart snapd  # might be needed
+sudo snap install core
+sudo snap install --classic certbot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Certbot and follow the instructions:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;sudo certbox --nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Reload the new nginx configurations:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;sudo systemctl reload nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With this set up, going to &lt;code&gt;https://jmft.dev&lt;/code&gt; should bring the site up.&lt;/p&gt;
+</content><category term="Software"/><category term="backend"/><category term="nginx"/><category term="https"/></entry><entry><title>for loops in Python are a bit weird</title><link href="https://jmft.dev/for-loops-in-python-are-a-bit-weird.html" rel="alternate"/><published>2024-02-11T00:00:00+00:00</published><updated>2024-02-11T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-02-11:/for-loops-in-python-are-a-bit-weird.html</id><content type="html">&lt;p&gt;A quiz:&lt;/p&gt;
+&lt;p&gt;What does the following JavaScript code print and why?&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;for (let i = 0; i &amp;lt; 3; i++) {
+  console.log(i);
+  i -= 3
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What does the following Python code print and why?&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;for i in range(3):
+    print(i)
+    i -= 3
+
+&lt;/code&gt;&lt;/pre&gt;
+</content><category term="Python"/><category term="python"/><category term="javascript"/></entry><entry><title>The uncertainty principle and spectrograms</title><link href="https://jmft.dev/uncertainty-principle-and-spectrograms.html" rel="alternate"/><published>2024-01-09T00:00:00+00:00</published><updated>2024-01-09T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-01-09:/uncertainty-principle-and-spectrograms.html</id><summary type="html">&lt;p&gt;In the &lt;a href="uncertainty-principle-obvious-to-musicians"&gt;previous post&lt;/a&gt; I discussed how, when measuring the frequency (tempo) of a signal that itself changes in time, there is necessarily a tradeoff between the precision in the measured frequency and precision in the time at which the measurement is taken: A more precise measurement of frequency requires …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In the &lt;a href="uncertainty-principle-obvious-to-musicians"&gt;previous post&lt;/a&gt; I discussed how, when measuring the frequency (tempo) of a signal that itself changes in time, there is necessarily a tradeoff between the precision in the measured frequency and precision in the time at which the measurement is taken: A more precise measurement of frequency requires that the sample be taken over a longer period of time. This is particularly well demonstrated in signal processing and spectrograms.&lt;/p&gt;
+&lt;h2&gt;Fourier decomposition&lt;/h2&gt;
+&lt;p&gt;Recall first of all that any signal can be decomposed into its frequency components: this is the Fourier transform. Pure tones, which consist of a single frequency component, are given by sine waves. Most instruments do not produce pure tones when they play a note; instead, they play a mixture of tones, which together give the unique timbre of the instrument.&lt;/p&gt;
+&lt;p&gt;For example, this is an A5 played on an alto recorder:
+&lt;audio src="static/APlayedOnTrebleRecorder.wav" controls&gt;&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;Its spectrum, given by taking a Fourier transform of the signal, looks like this [[ref]By convention, both axes are drawn on logarithmic scales. The relative amplitudes are measured in &lt;a href="https://en.wikipedia.org/wiki/Decibel"&gt;decibels&lt;/a&gt;, a logarithmic unit; 0 dB corresponds to the maximum amplitude that can be represented by the file format.[/ref]]:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/SpectrumOfRecorderA5.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrum of the recorder. Note the log scales.&lt;/p&gt;
+&lt;p&gt;The spectrum consists of a peak around f = 880 Hz (slightly lower in this example), which is the fundamental frequency for A5, along with further, smaller peaks, at integer multiples of f = 880 Hz ('overtones' or 'harmonics'). The overall sound is periodic with frequency 880 Hz, giving a tonal sound.&lt;/p&gt;
+&lt;h2&gt;Varying pitch&lt;/h2&gt;
+&lt;p&gt;Most music consists of more than one note. [[ref]&lt;a href="https://www.youtube.com/watch?v=AWVUp12XPpU"&gt;John Cage might disagree.&lt;/a&gt;[/ref]]&lt;/p&gt;
+&lt;p&gt;&lt;audio src="static/FrereJacque.wav" controls&gt;&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;If you wanted to analyse the notes in that track, taking the Fourier transform of the entire track is not particularly interesting.&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/SpectrumOfMelody.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrum of the entire recording.&lt;/p&gt;
+&lt;p&gt;This spectrogram contains contributions from &lt;em&gt;all&lt;/em&gt; the notes in the track. This is like measuring pulse by sampling the heartbeat over a whole day: it gives no information about the pulse at any given time. This playthrough was in F major; some notes (F and C) were played more often than other notes, so there are still peaks at those notes, but all other detail has been lost.&lt;/p&gt;
+&lt;p&gt;It is much more useful to work with the &lt;a href="https://en.wikipedia.org/wiki/Short-time_Fourier_transform"&gt;short-time Fourier transform&lt;/a&gt; (STFT). At each timestep, take a Fourier transform of the part of the signal around that time. [[ref]To avoid edge effects, a window function is usually applied to smooth the signal. Audacity uses the Hann window by default, SciPy uses Tukey. The &lt;a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.get_window.html"&gt;SciPy docs&lt;/a&gt; have many other examples.[/ref]] The STFT is a function of both time and frequency, so it is usually visualised as a spectrogram:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/SpectrogramOfMelody.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrogram of the above recording (window size 2048 with Hann smoothing). Time on the horizontal axis, frequency (logarithmic) on the vertical axis, colour intensity for amplitude.&lt;/p&gt;
+&lt;p&gt;As seen, each note consists of an intense fundamental frequency alongside a stack of harmonics.&lt;/p&gt;
+&lt;p&gt;As with the pulse measurement procedure in the last post, the length of the window over which the spectrogram is taken is a free parameter. The effect of this parameter is very well illustrated by the following example.&lt;/p&gt;
+&lt;h2&gt;Two tones&lt;/h2&gt;
+&lt;p&gt;Consider a signal consisting of a 1 second tone at 400 Hz followed by a 1 second tone at 800 Hz. The signal is sampled at 16 kHz.&lt;/p&gt;
+&lt;p&gt;&lt;audio src="static/TwoTones.wav" controls&gt;&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;The waveform is a sine wave for 0 &amp;lt; t &amp;lt; 1, and a higher-frequency sine wave for 1 &amp;lt; t &amp;lt; 2. For simplicity, the phases are aligned so that the wave is continuous at t = 1.&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/TwoToneSignal.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;The spectrograms when the window size is 256, 1024 and 4096 (with Tukey smoothing). These correspond to intervals of 16 ms, 64 ms and 256 ms respectively.&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/TwoToneSpectrograms.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Spectrograms of the two tones for window sizes 256, 1024, 4096&lt;/p&gt;
+&lt;p&gt;The tradeoff between precision in frequency and precision in time is now very visible.&lt;/p&gt;
+&lt;p&gt;Away from the transition at t = 1, the larger the window for the STFT the more precise the estimate for frequency will be: thus the first spectrogram contains wide bands, since the narrowest window spans only about 6 periods, while the last spectrogram has thinnest bands since the widest window spans over 100 periods.&lt;/p&gt;
+&lt;p&gt;However, near t = 1, the window for the STFT contains samples from both t &amp;lt; 1 (at 400 Hz) and from t &amp;gt; 1 (at 800 Hz), so the computed STFT contains components from both. The region that is affected by this is largest for the widest window. Thus, a STFT with a wider window does a poorer job of detecting the time at which a frequency transition occurs.&lt;/p&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="music"/><category term="teaching"/></entry><entry><title>The uncertainty principle is obvious to musicians</title><link href="https://jmft.dev/uncertainty-principle-obvious-to-musicians.html" rel="alternate"/><published>2024-01-09T00:00:00+00:00</published><updated>2024-01-09T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2024-01-09:/uncertainty-principle-obvious-to-musicians.html</id><summary type="html">&lt;p&gt;Most people are introduced to the term 'uncertainty principle' in the context of quantum mechanics. It is usually described as the idea that a particle's position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Most people are introduced to the term 'uncertainty principle' in the context of quantum mechanics. It is usually described as the idea that a particle's position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the other. As such, the idea can be confusing because it is such a stark departure from our classical notion of a particle having definite, if not directly measurable, properties. Philosophical objections aside, the proof of the uncertainty relation is mathematically fairly straightforward, but it relies on the operator definitions of position and momentum, which are not themselves obvious.&lt;/p&gt;
+&lt;p&gt;In fact, the uncertainty principle arises in all wave-like (periodic) signals, and is intrinsic to the relationship between space and wavenumber (inverse wavelength), or for time-domain signals, between time and frequency. It arises in quantum mechanics from the fact that particle states are modelled by wavefunctions – as demonstrated in the double-slit experiment – and that momentum is linearly proportional to wavenumber. But it arises in far more everyday scenarios too.&lt;/p&gt;
+&lt;p&gt;Consider the act of determining the beats per minute (bpm) of a heartbeat, or of the pulse of a piece of music. One counts the number of pulses $latex n$ within in a period of time $latex T$ seconds, and estimates the bpm as [ \widehat{BPM} = \frac{60 \times n}{T}. ]&lt;/p&gt;
+&lt;p&gt;There are several sources of uncertainty in this estimate:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;There will be some imprecision in when the measurement is stopped, &lt;em&gt;i.e.&lt;/em&gt; an uncertainty in $latex T$. For very fast pulses, there may be several beats that are either counted or missed, depending on whether one stops measuring late or early.&lt;/li&gt;
+&lt;li&gt;Similarly, for slow pulses it also matters whether one begins timing just before a beat or just after.&lt;/li&gt;
+&lt;li&gt;There are intrinsic fluctuations in the amount of time between consecutive pulses.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first two uncertainties can be reduced by taking a larger value of $latex T$. A good value of $latex T$ should be much larger than the pulse itself, and much larger than the uncertainty in $latex T$. Supposing there is an uncertainty of 100ms in when we stop the measurement, taking the measurement over $T = 15$ seconds will give a reasonable estimate for pulses between 4 bpm and 600 bpm.&lt;a href="#b9e5d6d8-6afe-4af7-b162-d2ea3a1c4dd2"&gt;1&lt;/a&gt; This is (hopefully) adequate for most cardiological and musical purposes, but we might ask whether we can do better.&lt;/p&gt;
+&lt;p&gt;We can't do much about the uncertainty in measuring $latex T$: it is limited by the quality of our stopwatch and our reaction time. But we can more freely choose how long we measure for (provided we are patient); can we get a more reliable estimate for lower frequencies by taking the measurement over a longer amount of time?&lt;/p&gt;
+&lt;p&gt;If the pulse keeps at a steady tempo, yes: eventually we will count over a long enough interval that both the edge effects (2) become insignificant and the fluctuations (3) average out, giving a good estimate for the bpm.&lt;/p&gt;
+&lt;p&gt;This is a bad assumption, though. Most healthy heart rates are higher in the afternoon and lower during sleep, and may quickly spike to very high levels during intense exercise:&lt;/p&gt;
+&lt;p&gt;&lt;img src="%7Bfilename%7D/images/CircadianHeartRate.png" alt="graph of heart rate circadian pattern, showing a faster heart rate during waking hours and a slower heart rate during sleep" /&gt;&lt;/p&gt;
+&lt;p&gt;Credit: &lt;a href="https://www.circadian.org/vital.html"&gt;circadian.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To take an extreme case, if we count the number of pulses over 24 hours, we will get an estimate of the average heart rate over an entire day&lt;a href="#45a6cb4d-5a13-4172-88eb-8bf74a9ee2c1"&gt;2&lt;/a&gt;, but it doesn't give any information at all about the heart rate at any given time. To make a graph of the circadian pattern like the one above, we need to take measurements every 30 minutes (say), and each measurement should not take more than a couple of minutes.&lt;a href="#242810b1-658e-46b5-a464-34fa456d60a6"&gt;3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, &lt;em&gt;we have a tradeoff between the time resolution ('certainty'), and the precision of estimates&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;How long each interval should be, and how frequently they are taken, depends on the desired resolution. For example, during an exercise session, heart rate can vary much more quickly over a few minutes:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/HeartRateExercise.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;Credit: Høye &lt;em&gt;et al.&lt;/em&gt; (2019) &lt;a href="http://dx.doi.org/10.14198/jhse.2020.151.13"&gt;10.14198/jhse.2020.151.13&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To improve the temporal resolution, not only must we now take much more frequent measurements, but also, each measurement interval must also be shorter.&lt;a href="#06076c2b-7bc0-4f2e-a940-6366371dc01d"&gt;4&lt;/a&gt; This reduces the precision of each estimate of the bpm, but we see time-dependence that we wouldn't see if we just took measurements over several minutes, or indeed a single measurement over 60 minutes.&lt;/p&gt;
+&lt;p&gt;There was no quantum mystery in any of this: the tradeoff between temporal resolution and bpm precision comes simply from the fact that the bpm is changing over time. There is no such thing as &lt;em&gt;the&lt;/em&gt; heart rate at 8:32am – not something one can measure, anyway. What we can measure is the &lt;em&gt;average&lt;/em&gt; heart rate between 8:32am and 8:33am. This doesn't tell us anything about what is happening within that minute, but likewise won't be affected by anything happening at 10am.&lt;/p&gt;
+&lt;p&gt;Musicians will recognise the following obvious statement:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;When there is an accelerando or a rallentando, the tempo isn't fixed.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the next post on this subject, I will give another example of the uncertainty principle that arises in signal processing that illustrates the same point.&lt;/p&gt;
+&lt;hr /&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="music"/><category term="teaching"/></entry><entry><title>The Bohr model: Some history and context</title><link href="https://jmft.dev/bohr-model-background.html" rel="alternate"/><published>2023-12-19T00:00:00+00:00</published><updated>2025-11-08T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2023-12-19:/bohr-model-background.html</id><summary type="html">&lt;p&gt;This page is intended to give a little context behind the &amp;quot;Bohr model&amp;quot; that is introduced in the first part of the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Like all atomic models, the Bohr model attempts to answer the question &amp;quot;Why do atoms exhibit the properties that they do?&amp;quot;, proposing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This page is intended to give a little context behind the &amp;quot;Bohr model&amp;quot; that is introduced in the first part of the Part IB &lt;em&gt;Quantum Mechanics&lt;/em&gt; course.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Like all atomic models, the Bohr model attempts to answer the question &amp;quot;Why do atoms exhibit the properties that they do?&amp;quot;, proposing a mechanical or mathematical description that can produces calculable predictions that are to be compared against experiment. Presented in 1913 by Niels Bohr and Ernest Rutherford, this model sought to reconcile a few recent observations in atomic physics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Atoms were known to be able to absorb and emit light, but the spectrum of the emitted light consisted of discrete wavelengths. The values of these wavelengths are described experimentally by the Rydberg formula (1888). For hydrogen, this formula states:&lt;br /&gt;
+$$\frac{1}{\lambda} = R_H \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right) $$&lt;br /&gt;
+where $n_1$ and $n_2$ are integers and $R_H$ is a constant. Rydberg had no knowledge of electrons (discovered by J. J. Thomson in 1897) and gave no physical basis for this experimental law.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Max Planck (1900), from his work on black-body radiation, had postulated that electromatgnetic radiation was conveyed in discrete quanta of energy, called photons; the energy of a photon was related to its frequency and wavelength by&lt;br /&gt;
+$$ E = h f = h c / \lambda $$&lt;br /&gt;
+where Planck's constant $h = 2\pi\hbar$ is an experimental constant. Planck had little justification for the idea that light was quantized, but it proved to produce accurate predictions for the spectrum of black-body radiation. Albert Einstein's 1905 work (for which he won the 1921 Nobel Prize) gave experimental confirmation of the quantization of light into photons.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Geiger–Marsden gold leaf experiments (1908 onwards) established that atoms consist of a heavy central nucleus of positive charge, surrounded by a diffusion of negatively charged electrons, orbiting the central charge. Rutherford gave a mathematical description (1911), although Joseph Larmor (1897) had previously proposed such a 'solar system' model.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further back, physicists had established the laws of electromagnetism and electromagnetic radiation (Maxwell 1862), and chemists had known, at least experimentally, of the regular orbital structure elegantly illustrated in the periodic table (Mendeleev 1869).&lt;/p&gt;
+&lt;h2&gt;A new model&lt;/h2&gt;
+&lt;p&gt;A major shortcoming of the 'solar system' model proposed by Larmor and Rutherford was that it was incompatible with the laws of electromagnetic radiation, which predicted that an accelerating charge would emit radiation, causing the electrons to lose energy and to spiral in towards the nucleus.&lt;/p&gt;
+&lt;p&gt;Bohr's model supposes that, &lt;em&gt;for unspecified reason&lt;/em&gt;, the electron does not lose energy from radiation. Instead, energy is allowed to change only through instantaneous absorption and emission events that move the electron from one energy level to another.&lt;/p&gt;
+&lt;p&gt;Moreover, the energy is not allowed to take any arbitrary value. Observing that the Planck constant has dimensions of angular momentum, Bohr's model requires that the angular momentum of the electron must have angular momentum equal to an integer multiple of the reduced Planck constant:&lt;/p&gt;
+&lt;p&gt;$$ m v r = n \hbar = n h / 2\pi . $$&lt;/p&gt;
+&lt;p&gt;This condition had recently been proposed by Nicholson (1912). Combined with Coulomb's law for electric attraction, the energy of the $n$th level is predicted to be (exercise):&lt;/p&gt;
+&lt;p&gt;$$ E_n = -R_E / n^2 $$&lt;/p&gt;
+&lt;p&gt;where $R_E$ is a constant. This inverse square law is entirely consistent with the atomic emission spectra described by the Rydberg formula, which stated that the inverse-wavelengths of emitted photons were differences between inverse squares.&lt;/p&gt;
+&lt;h2&gt;Further developments&lt;/h2&gt;
+&lt;p&gt;The Bohr model successfully explains the Rydberg formula and unifies it with the Rutherford model of a nucleus; and predicts that emissions come in discrete packets of energy, although without making reference to photons. The problem, however, is how to motivate the new assumptions about the quantization of angular momentum, and to reconcile the electron acceleration with the laws of electrodynamics.&lt;/p&gt;
+&lt;p&gt;De Broglie (1924) proposed that the wave-duality duality of light might apply also to matter, proposing the formula&lt;/p&gt;
+&lt;p&gt;$$\lambda = h / p$$&lt;/p&gt;
+&lt;p&gt;for the wavelength $\lambda$ for a particle with momentum $p$. Experimental confirmation for the wavelike nature of electrons came from the diffraction and double-slit experiments conducted throughout the 1920s.&lt;/p&gt;
+&lt;p&gt;Under this framework, de Broglie reinterpreted the quantization condition in the Bohr model as requiring that an electron's waves be standing waves. The electron has momentum $mv$ and executes orbits of circumference $2 \pi r$, so the quantization condition $mvr = n\hbar$ asserts that the wavelength evenly divides the circumference of the orbit.&lt;/p&gt;
+</content><category term="Physics"/><category term="physics"/><category term="quantum-mechanics"/><category term="teaching"/></entry><entry><title>Historical and philosophical contexts of the calculus of variations</title><link href="https://jmft.dev/calculus-of-variations-history.html" rel="alternate"/><published>2023-12-19T00:00:00+00:00</published><updated>2023-12-19T00:00:00+00:00</updated><author><name>J. M. F. Tsang</name></author><id>tag:jmft.dev,2023-12-19:/calculus-of-variations-history.html</id><summary type="html">&lt;h2&gt;What is a variational principle?&lt;/h2&gt;
+&lt;p&gt;A variational principle is a mathematical or physical law expressed in terms of maximising or minimising a certain quantity. The simplest example was known to ancient Egyptian builders and surveyers: a taut rope stretched between two points takes the shape that minimises its length. This …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;What is a variational principle?&lt;/h2&gt;
+&lt;p&gt;A variational principle is a mathematical or physical law expressed in terms of maximising or minimising a certain quantity. The simplest example was known to ancient Egyptian builders and surveyers: a taut rope stretched between two points takes the shape that minimises its length. This is in fact a straight line on the plane, although Ptolemy (2nd century AD) observed that one must correct for 'deviations from a straight course'. (Which is not to say that he had the concepts of geodesics or Riemannian metrics.) Note, however, that these two statements have different statuses: the variational statement 'a taut rope stretched between two points takes the shape that minimises its length' by itself makes no assertions about straight or curved lines.&lt;/p&gt;
+&lt;p&gt;These are other examples of variational statements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The geodesic problem:&lt;/em&gt; The shortest length between two points on a sphere can be found by stretching a taut rope around the sphere through those two points.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The catenary problem:&lt;/em&gt; A hanging chain takes a shape that minimises its potential energy.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The isoperimetric problem (Dido's problem):&lt;/em&gt; For a given perimeter, the area enclosed by that perimeter is maximised by taking as round and convex a shape as possible --- namely, a circle.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Bubble shape:&lt;/em&gt; A pressurised container, such as a soap film or balloon, takes a shape that minimises its surface energy. For bubbles, that's a sphere.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Temperature distribution:&lt;/em&gt; If the surface of a body is kept at a time-independent temperature, then the temperature distribution within the body takes minimal gradient. In particular, if the surface is at constant temperature, then the temperature is constant throughout the body In modern notation, if $T$ solves $\nabla^2T = 0$ then $T$ minimises $\iiint |\nabla T|^2 \mathrm{d}V$, which is solved by constant $T$ if the boundary conditions are homogeneous.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What is the calculus of variations?&lt;/h2&gt;
+&lt;p&gt;To convert these variational statements into mathematical statements (usually differential equations), the calculus of variations was gradually developed throughout the 17th and 18th centuries. Leibniz, Huygens and Johann Bernoulli solved the catenary problem in 1691, while Newton solved the brachistochrone problem and the minimal resistance problem &lt;em&gt;possibly&lt;/em&gt; using variational methods [[ref]As with much of Newton’s other works, the publications used geometric arguments, and did not reveal his actual heuristics.[/ref]]; but it was Euler and his student Lagrange who presented the general calculus of variations as it is usually taught today. In the late 1890s, Weierstrass placed the calculus of variations onto the theoretical foundations of analysis; further work by the likes of Hilbert and Noether in the 20th century saw the topic become part of a wider interest into boundary value problems, motivated by developments in quantum mechanics.&lt;/p&gt;
+&lt;p&gt;Using the calculus of variations, it can be shown that a variational statement such as 'a hanging chain minimises its potential energy' is &lt;em&gt;mathematically&lt;/em&gt; equivalent to reasoning 'from first principles', using force-balance arguments on infinitesimal line elements. (Likewise with the surface shape of a balloon.) But although the two formulations predict the same results, they are dissimilar in their starting points. The force-balance approach looks at individual elements of the chain and constructs a differential equation describing their shape. On the other hand, the variational approach makes a statement about the overall shape of the chain, as a whole: in particular, it makes no postulates about the existence of infinitesimal elements. Such variational descriptions ('the solution minimises a particular quantity') are attractive in their simplicity, even though they do not give the solutions themselves without the heavy machinery of the calculus of variations.&lt;/p&gt;
+&lt;h2&gt;Optics and Fermat's principle&lt;/h2&gt;
+&lt;p&gt;A particular variational principle with a long history comes from optics. In his study of geometric optics, Euclid made the assertion that light travels in straight lines, based on the observation that one needs a direct line of sight to see an object. The path of light therefore obeys the &lt;strong&gt;shortest path principle&lt;/strong&gt;, like a taut piece of string. Hero of Alexandria (c. 10--70 CE) studied the reflection of images off mirrors, making the observation that the angle of reflection is equal to the angle of incidence, and showed that this was also consistent with the shortest path principle.&lt;/p&gt;
+&lt;p&gt;Centuries later, in the 980s the Islamic mathematician Ibn Sahl described &lt;em&gt;on an empirical basis&lt;/em&gt; the law of refraction (Snell's law) governing the angles at which light moving from one material to another is refracted. The indices of refraction of various materials were known to mediaeval Muslim scientists; it was not until the 1600s that European scientists such as Snellius claimed the discovery of this law of refraction.&lt;/p&gt;
+&lt;p&gt;The fact that refracting light does not travel in a straight line contradicts the shortest path principle. In a 1662 letter, Pierre de Fermat instead proposed a &lt;em&gt;principle of minimal time&lt;/em&gt;, suggesting (on no experimental or theoretical basis) that the refractive index of a material is related to the finite speed of light in that material, with light being slower in denser materials.&lt;/p&gt;
+&lt;p&gt;There was no doubt that Fermat's principle was consistent with experiment, but it prompts two natural questions: &lt;em&gt;why?&lt;/em&gt; and &lt;em&gt;how?&lt;/em&gt;. Fermat was criticised by the prevalent Cartesian school on these two grounds. Firstly, the assumptions that the speed of light is finite and different in different materials was unjustified. (Early experimental evidence for this was not available until 1676. That said, Fermat's claim was no more unjustified than René Descartes' very popular claims that light travelled at infinite speed, and was faster in denser material.) But a more fundamental criticism of the principle of minimal time was that it is &lt;em&gt;teleological&lt;/em&gt;: why does light 'choose' to take a time-minimising path, and how does it 'know' how to find the correct path in advance? Why should it 'choose' to minimise travel time and not some other quantity such as distance? Claude Clerselier, a Cartesian critic of Fermat, wrote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The principle which you take as the basis for your proof, namely that Nature always acts by using the simplest and shortest paths, is merely a moral, and not a physical one. It is not, and cannot be, the cause of any effect in Nature.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words, despite the empirical support for Fermat's principle, it was not accepted as an &lt;em&gt;explanation&lt;/em&gt; of Snell's law, merely an elegant expression. We can now justify Fermat's principle and Snell's law from more fundamental ideas about light's wavelike properties, but that knowledge would not come for another two centuries.&lt;/p&gt;
+&lt;h2&gt;Particle mechanics and the principle of least action&lt;/h2&gt;
+&lt;p&gt;The discomfort felt from using a mathematically simple, yet apparently teleological, variational principle is most obvious from the principle of least action. The principle of least action states that a conservative system (such as a particle in a potential) evolves in such a way that a certain quantity $S$, 'the action', is minimised. The action is the integral over time of a quantity $L$ called the Lagrangian.&lt;/p&gt;
+&lt;p&gt;Newton's &lt;em&gt;Principia&lt;/em&gt; was published in in 1687. Despite some initial controversy of their own, Newton's ideas had become accepted by the time of Maupertuis and Euler. Newton's formulation of particle mechanics, including the law of motion $F = ma$ and the inverse square law for gravitation, gives a mathematical foundation for Kepler's (empirical) laws of planetary motion.&lt;/p&gt;
+&lt;p&gt;An important development came in the 1740s with the development of the principle of least action by Pierre Louis Maupertuis and Leonhard Euler. Maupertuis defined action $S$ as an 'amount of motion': for a single particle, action is momentum mv multiplied by the distance s travelled; for constant speed, $s = vt$, so the action is $S = mv^2t$. In the absence of a potential, this matches our modern definition of action, up to a factor of 2. (Maupertuis referred to the quantity $mv^2$ as the &lt;em&gt;vis viva&lt;/em&gt;, or 'living force', of the particle.) Studying the velocities of two colliding bodies before and after collision, Maupertuis showed that the law of conservation of momentum (by now well-established) is equivalent to the statement that the final velocities are such that the action of this process is minimised.&lt;/p&gt;
+&lt;p&gt;Euler is generally credited with inventing the calculus of variations in an early form, applying it to studying particle trajectories. (The modern form was later developed by Lagrange, his student, in 1755.) Euler generalised Maupertuis' definition of action into the modern action integral, and included a new term for potential energy. He showed in 1744 that a particle subject to a central force (such as planetary motion) takes a path (calculated by Newton) that extremises this action, and vice-versa. Lagrange later showed more generally that the principle of least action is mathematically equivalent to Newton's laws.&lt;/p&gt;
+&lt;p&gt;But why is this a sensible definition of action? In fact, what is action?&lt;/p&gt;
+&lt;p&gt;Maupertuis' reasoning was that 'Nature is thrifty in all its actions', positing that action is a sort of 'effort'. He was happy to attribute the principle of least action as some sort of God trying to minimise the effort of motions in the universe. But how does one know to choose this definition of action and not some other? As for refraction, why does one minimise travel time and not distance? Maupertuis argues that one cannot know to begin with, but that the correct functional needs to be identified.&lt;/p&gt;
+&lt;p&gt;Fermat and Euler took a rather weaker view, and refuse to make any metaphysical interpretations about their variational principles. Fermat stated that his principle is 'a mathematical regularity from which the empirically correct law can be derived' (Sklar 2012): this is an aesthetic statement about the theory, but says nothing about its&lt;br /&gt;
+origins.&lt;/p&gt;
+&lt;h2&gt;Why do we find the principle of least action problematic?&lt;/h2&gt;
+&lt;p&gt;Everyone agrees that the principle of least action is mathematically equivalent to Newton's laws of motion, and both have equivalent status when compared against experiments. However, Newton's laws are specified as differential equations with initial values ('start in this state, and forward-march in time, with no memory about your past and no information about your future'). In contrast, the principle of least action is formulated as a boundary value problem ('get from A to B in time T, accumulating as little action as possible'), governed by the Euler–Lagrange equations. Why are we less comfortable with the latter?&lt;/p&gt;
+&lt;p&gt;A boring argument is the cultural or educational argument: most of us are taught Newtonian mechanics before Lagrangian mechanics. This is reasonable, as the former requires far less mathematical machinery.&lt;/p&gt;
+&lt;p&gt;One reason is the question: Given that we are at the initial position A, how can we know that we will be at B after time T? This can be resolved by realising that when we solve the Euler–Lagrange equations, we have not been told what the initial velocity is, and have the freedom to choose it such that the final position will be B. Thus, one can convert between an IVP and a BVP: this is the approach taken with the shooting method for solving BVP numerically.&lt;/p&gt;
+&lt;p&gt;Another reason perhaps is cultural: most of us are taught Newtonian physics before Lagrangian physics. This is paedagogically reasonable: the Newtonian formulation requires far less mathematical machinery. There is also a technical reason for feeling more comfortable with describing physics through an IVP than a BVP: according to the Picard–Lindelöf theorem, an IVP is guaranteed to have a unique solution, at least for a finite domain; a similar guarantee cannot be made for a BVP.&lt;/p&gt;
+&lt;h2&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The above essay has been guided by Lawrence Sklar's book, &lt;em&gt;Philosophy and the Foundations of Dynamics&lt;/em&gt;.&lt;/p&gt;
+</content><category term="Physics"/><category term="math"/><category term="physics"/><category term="teaching"/><category term="calculus-of-variations"/></entry></feed>

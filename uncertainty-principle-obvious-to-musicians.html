@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="Most people are introduced to the term &#39;uncertainty principle&#39; in the context of quantum mechanics. It is usually described as the idea that a particle&#39;s position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the …" />
+<meta name="keywords" content="physics, quantum-mechanics, music, teaching">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="The uncertainty principle is obvious to musicians"/>
+  <meta property="og:description" content="Most people are introduced to the term &#39;uncertainty principle&#39; in the context of quantum mechanics. It is usually described as the idea that a particle&#39;s position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./uncertainty-principle-obvious-to-musicians.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-01-09 00:00:00+00:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Physics"/>
+  <meta property="article:tag" content="physics"/>
+  <meta property="article:tag" content="quantum-mechanics"/>
+  <meta property="article:tag" content="music"/>
+  <meta property="article:tag" content="teaching"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; The uncertainty principle is obvious to musicians</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="uncertainty-principle-obvious-to-musicians">The uncertainty principle is obvious to musicians</h1>
+    <p>
+
+      Posted on Tue 09 January 2024 in <a href="./category/physics.html">Physics</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Most people are introduced to the term 'uncertainty principle' in the context of quantum mechanics. It is usually described as the idea that a particle's position and momentum cannot be simultaneously measured to arbitrary precision, but that improved precision in one must be traded off against increased uncertainty in the other. As such, the idea can be confusing because it is such a stark departure from our classical notion of a particle having definite, if not directly measurable, properties. Philosophical objections aside, the proof of the uncertainty relation is mathematically fairly straightforward, but it relies on the operator definitions of position and momentum, which are not themselves obvious.</p>
+<p>In fact, the uncertainty principle arises in all wave-like (periodic) signals, and is intrinsic to the relationship between space and wavenumber (inverse wavelength), or for time-domain signals, between time and frequency. It arises in quantum mechanics from the fact that particle states are modelled by wavefunctions – as demonstrated in the double-slit experiment – and that momentum is linearly proportional to wavenumber. But it arises in far more everyday scenarios too.</p>
+<p>Consider the act of determining the beats per minute (bpm) of a heartbeat, or of the pulse of a piece of music. One counts the number of pulses $latex n$ within in a period of time $latex T$ seconds, and estimates the bpm as [ \widehat{BPM} = \frac{60 \times n}{T}. ]</p>
+<p>There are several sources of uncertainty in this estimate:</p>
+<ol>
+<li>There will be some imprecision in when the measurement is stopped, <em>i.e.</em> an uncertainty in $latex T$. For very fast pulses, there may be several beats that are either counted or missed, depending on whether one stops measuring late or early.</li>
+<li>Similarly, for slow pulses it also matters whether one begins timing just before a beat or just after.</li>
+<li>There are intrinsic fluctuations in the amount of time between consecutive pulses.</li>
+</ol>
+<p>The first two uncertainties can be reduced by taking a larger value of $latex T$. A good value of $latex T$ should be much larger than the pulse itself, and much larger than the uncertainty in $latex T$. Supposing there is an uncertainty of 100ms in when we stop the measurement, taking the measurement over $T = 15$ seconds will give a reasonable estimate for pulses between 4 bpm and 600 bpm.<a href="#b9e5d6d8-6afe-4af7-b162-d2ea3a1c4dd2">1</a> This is (hopefully) adequate for most cardiological and musical purposes, but we might ask whether we can do better.</p>
+<p>We can't do much about the uncertainty in measuring $latex T$: it is limited by the quality of our stopwatch and our reaction time. But we can more freely choose how long we measure for (provided we are patient); can we get a more reliable estimate for lower frequencies by taking the measurement over a longer amount of time?</p>
+<p>If the pulse keeps at a steady tempo, yes: eventually we will count over a long enough interval that both the edge effects (2) become insignificant and the fluctuations (3) average out, giving a good estimate for the bpm.</p>
+<p>This is a bad assumption, though. Most healthy heart rates are higher in the afternoon and lower during sleep, and may quickly spike to very high levels during intense exercise:</p>
+<p><img src="%7Bfilename%7D/images/CircadianHeartRate.png" alt="graph of heart rate circadian pattern, showing a faster heart rate during waking hours and a slower heart rate during sleep" /></p>
+<p>Credit: <a href="https://www.circadian.org/vital.html">circadian.org</a></p>
+<p>To take an extreme case, if we count the number of pulses over 24 hours, we will get an estimate of the average heart rate over an entire day<a href="#45a6cb4d-5a13-4172-88eb-8bf74a9ee2c1">2</a>, but it doesn't give any information at all about the heart rate at any given time. To make a graph of the circadian pattern like the one above, we need to take measurements every 30 minutes (say), and each measurement should not take more than a couple of minutes.<a href="#242810b1-658e-46b5-a464-34fa456d60a6">3</a></p>
+<p>So, <em>we have a tradeoff between the time resolution ('certainty'), and the precision of estimates</em>.</p>
+<p>How long each interval should be, and how frequently they are taken, depends on the desired resolution. For example, during an exercise session, heart rate can vary much more quickly over a few minutes:</p>
+<p><img src="images/HeartRateExercise.png" alt="" /></p>
+<p>Credit: Høye <em>et al.</em> (2019) <a href="http://dx.doi.org/10.14198/jhse.2020.151.13">10.14198/jhse.2020.151.13</a></p>
+<p>To improve the temporal resolution, not only must we now take much more frequent measurements, but also, each measurement interval must also be shorter.<a href="#06076c2b-7bc0-4f2e-a940-6366371dc01d">4</a> This reduces the precision of each estimate of the bpm, but we see time-dependence that we wouldn't see if we just took measurements over several minutes, or indeed a single measurement over 60 minutes.</p>
+<p>There was no quantum mystery in any of this: the tradeoff between temporal resolution and bpm precision comes simply from the fact that the bpm is changing over time. There is no such thing as <em>the</em> heart rate at 8:32am – not something one can measure, anyway. What we can measure is the <em>average</em> heart rate between 8:32am and 8:33am. This doesn't tell us anything about what is happening within that minute, but likewise won't be affected by anything happening at 10am.</p>
+<p>Musicians will recognise the following obvious statement:</p>
+<p><em>When there is an accelerando or a rallentando, the tempo isn't fixed.</em></p>
+<p>In the next post on this subject, I will give another example of the uncertainty principle that arises in signal processing that illustrates the same point.</p>
+<hr />
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/physics.html">physics</a>
+      <a href="./tag/quantum-mechanics.html">quantum-mechanics</a>
+      <a href="./tag/music.html">music</a>
+      <a href="./tag/teaching.html">teaching</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

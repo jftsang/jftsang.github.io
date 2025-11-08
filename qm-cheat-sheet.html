@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB Quantum Mechanics course. Vector spaces, inner products and duality Let $V$ be an inner product space over $\mathbb{C}$. We use ket notation for vectors: $|\psi\rangle \in V$ The inner product between …" />
+<meta name="keywords" content="physics, quantum-mechanics, teaching">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="Quantum mechanics revision guide"/>
+  <meta property="og:description" content="This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB Quantum Mechanics course. Vector spaces, inner products and duality Let $V$ be an inner product space over $\mathbb{C}$. We use ket notation for vectors: $|\psi\rangle \in V$ The inner product between …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./qm-cheat-sheet.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2025-10-13 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Physics"/>
+  <meta property="article:tag" content="physics"/>
+  <meta property="article:tag" content="quantum-mechanics"/>
+  <meta property="article:tag" content="teaching"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; Quantum mechanics revision guide</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="qm-cheat-sheet">Quantum mechanics revision guide</h1>
+    <p>
+
+      Posted on Mon 13 October 2025 in <a href="./category/physics.html">Physics</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>This page, which will be updated occasionally, summarises important results and useful formulae for the Part IB <em>Quantum Mechanics</em> course.</p>
+<hr />
+<h2>Vector spaces, inner products and duality</h2>
+<p>Let $V$ be an inner product space over $\mathbb{C}$.</p>
+<p>We use <em>ket</em> notation for vectors: $|\psi\rangle \in V$</p>
+<p>The <strong>inner product</strong> between two vectors is notated as $\langle\phi|\psi\rangle$. This satisfies conjugate symmetry:
+$$
+\overline{\langle\phi|\psi\rangle} = \langle\psi|\phi\rangle
+$$</p>
+<p>Elements of the <strong>dual space</strong> $V^*$ use <em>bra</em> notation $\langle\phi|$ and this acts on $|\psi\rangle \in V$ by
+$$\langle\phi|: V \rightarrow \mathbb{C} : |\psi\rangle \mapsto \langle\phi|\psi\rangle$$</p>
+<p>Note $\langle \mathrm{bra}|\mathrm{ket}\rangle$  form a bra(c)ket.</p>
+<p>It can be shown that $V$ and $V^*$ are isomorphic and that the isomorphism is &quot;natural&quot;, <em>i.e.</em> does not depend on a choice of basis. Conjugate symmetry means that the <em>bra</em> corresponding to $\alpha|\psi\rangle$ is $\overline\alpha\langle\psi|$.</p>
+<h2>Linear operators and adjoints</h2>
+<p><strong>Linear operators</strong> $L: V \rightarrow V$  acts on <em>kets</em> as $|\psi\rangle \mapsto L |\psi\rangle$.</p>
+<p>The <strong>adjoint operator</strong> $L^\dagger: V^* \rightarrow V^*$ acts on <em>bras</em> by $\langle\phi| \mapsto \langle\phi| L^\dagger$.</p>
+<p>By conjugate symmetry, $\overline{\langle\phi|L|\psi\rangle} = \langle\psi|L^\dagger|\phi\rangle$ .</p>
+<p>An operator is <strong>self-adjoint</strong> if
+$$
+\langle\psi|L^\dagger|\phi\rangle = \langle\psi|L|\phi\rangle
+$$
+It is technically illegal to write $L = L^\dagger$ since $L$ is an endomorphism on $V$ but $L^\dagger$ is on $V^*$, but the inner product notation allows us to gloss over this (the two spaces are isomorphic).</p>
+<p><strong>Properties of self-adjoint operators:</strong></p>
+<ul>
+<li>eigenvalues are real</li>
+<li>orthogonality of eigenvectors with different eigenvalues: if $L|m\rangle = \lambda_m|m\rangle$ and $L|n\rangle = \lambda_n|n\rangle$, and $\lambda_m \neq \lambda_n$, then $\langle m|n\rangle = 0$</li>
+<li>eigenvectors are complete</li>
+</ul>
+<p>This means:</p>
+<ul>
+<li>we can use the eigenvectors as a basis</li>
+<li>we can pick the basis to be orthonormal, even if there is a repeated eigenvalue (Gram–Schmidt)</li>
+</ul>
+<p><strong>Properties of orthonormal bases:</strong></p>
+<p>Given an orthonormal basis $|n\rangle$ the dual basis on $V^*$ is $\langle n|$.</p>
+<p>$$\langle m | n \rangle = \delta_{mn}$$</p>
+<p>Projection (generalisation of Fourier coefficient formula):
+$$
+|\psi\rangle = \sum_n c_n|n\rangle \implies c_n = \langle n|\psi\rangle
+$$
+Sometimes easier to work with non-normalised basis, in which case:
+$$
+c_n = \frac{\langle n |\psi\rangle}{\langle n | n \rangle}
+$$</p>
+<p>Conjugate symmetry:
+$$
+\langle\psi|= \sum_n \overline{c_n} \langle n|
+$$</p>
+<p>Inner products:
+$$
+\begin{align}
+|\phi\rangle &amp;= \sum_n b_n|n\rangle \
+|\psi\rangle &amp;= \sum_n c_n|n\rangle \
+\implies \langle\phi|\psi\rangle &amp;= \sum_n \overline{b_n} c_n
+\end{align}
+$$</p>
+<h2>Principles of quantum mechanics</h2>
+<p><strong>States</strong> are elements of an inner product space $V$ over $\mathbb{C}$.</p>
+<ul>
+<li>finite dimensional: spin states</li>
+<li>infinite dimensional: wavefunctions, function spaces</li>
+</ul>
+<p>A <strong>normalised state</strong> has $\langle\psi|\psi\rangle=1$ . Magnitudes and any overall phase $e^{i\varphi}$ always cancel out when calculating physical quantities. So states $|\psi\rangle$ and $c|\psi\rangle$ are equivalent for $c\in\mathbb{C}$.</p>
+<p><strong>Observable quantities</strong> correspond to self-adjoint linear operators:</p>
+<ul>
+<li>position $\mathbf{x}$ $\rightarrow$ position operator $\hat{\mathbf{x}}$</li>
+<li>momentum $\mathbf{p}$ $\rightarrow$ momentum operator $\hat{\mathbf{p}}$</li>
+<li>energy $E$ $\rightarrow$ Hamiltonian $\hat{H}$</li>
+</ul>
+<p>%% * angular momentum $L_z$, $\mathbf{L}^2$ $\rightarrow$ $\hat{L_z}$, $\hat{\mathbf{L}}^2$ respectively
+%%</p>
+<p>These can be vector quantities but for 1D systems we can conflate $\mathbf{x}$ and $x$. Often drop the hats to simplify notation.</p>
+<p><strong>Eigenbasis:</strong> For $L$ self-adjoint we have a complete set of eigenvectors $|n\rangle$ with corresponding eigenvalues $\lambda_n \in\mathbb{R}$ not necessarily distinct. Write
+$$
+|\psi\rangle = \sum_n c_n |n\rangle, \qquad c_n = \langle n|\psi\rangle.
+$$
+Normalisation implies
+$$
+\langle\psi|\psi\rangle = \sum_n |c_n|^2 = 1.
+$$</p>
+<p>Using the eigenbasis is nice because we can apply $L$ simply by multiplying each eigenstate by the corresponding eigenvalue:
+$$
+L|\psi\rangle = \sum_n c_n \lambda_n |n\rangle
+$$</p>
+<p><strong>Observations are probabilistic.</strong></p>
+<ul>
+<li>The possible results of an observation of $L$ are drawn from the eigenvalues $\lambda_n$ of $L$.</li>
+<li>The probability of measuring $\lambda_n$ is given by <strong>Born's rule</strong>: $p(n) = |c_n|^2$.</li>
+<li>If $\lambda_n$ is a repeated eigenvalue then each of these contributes a chance to measure that value.</li>
+</ul>
+<p>Often easier to calculate with the non-normalised version of Born's rule:
+$$
+p(n) = \frac{|\langle n|\psi\rangle|^2}{\langle n|n\rangle \langle\psi|\psi\rangle}
+$$</p>
+<p>Note that the probabilistic interpretation leads to serious philosophical problems! So this can't be the full story, although its predictions agree with experiment. <a href="https://youtu.be/hIvuxx14zCk?si=tWbl6DESqfj-T8aQ">Looking Glass Universe has an excellent video on this.</a></p>
+<p><strong>Observations collapse the state.</strong></p>
+<p>The state changes instantaneously during an observation. If the result of the measurement is $\lambda_n$, then the state collapses onto its projection onto the corresponding eigenspace (up to normalization).</p>
+<p>In particular, if $\lambda_n$ is non-degenerate (i.e. eigenspace has dimension 1) then the state after the measurement is $|n\rangle$.</p>
+<p>This means that the state $|\psi\rangle$ isn't fully observable – because observations destroy information. (Again, there are serious problems with this interpretation.)</p>
+<p>Neither is any overall phase in $e^{i\varphi}|\psi\rangle$, since those phases cancel when you take quantities such as $\langle\psi|\psi\rangle$.</p>
+<h2>Time-evolution</h2>
+<p>Assume that time evolution is governed by a linear operator:
+$$
+|\psi(t)\rangle = U(t)|\psi(0)\rangle
+$$
+$U(0) = I$ must be the identity operator.</p>
+<p><strong>Conservation of information</strong> implies that orthogonal states need to remain orthogonal. This implies that $U(t)$ must be unitary, $U U^\dagger = U^\dagger U = I$.</p>
+<p>Taking the limit $t \rightarrow 0$ we can write
+$$
+U(t) = I - \frac{i}{\hbar}t \hat{H} + O(t^2)
+$$
+for some self-adjoint operator $\hat{H}$ called the <em>Hamiltonian</em>.</p>
+<p>$\hbar$ is the <strong>reduced Planck constant</strong>; it has units of angular momentum $\mathrm{kg, m^2, s^{-1}} = \mathrm{J \cdot s}$ and provides a conversion factor.</p>
+<p>Some algebra gives the <strong>time-dependent Schrodinger equation</strong>:
+$$
+i \hbar \frac{\mathrm{d}|\psi\rangle }{\mathrm{d}t}= \hat{H} |\psi\rangle
+$$</p>
+<p>The Hamiltonian $\hat{H}$ does not come from first principles but is chosen to match experimental results, and often by analogy to classical mechanics.</p>
+<h2>Energy states</h2>
+<p>Look for <strong>energy eigenstates</strong> by solving the <strong>time-independent Schrodinger equation</strong>:
+$$
+\hat H |\chi_n\rangle = E_n |\chi_n\rangle
+$$</p>
+<p>The corresponding time-dependent solution is separable:
+$$|\psi(t)\rangle = A e^{iE_n t/\hbar} |\chi_n\rangle$$
+where $A\in\mathbb{C}$ is arbitrary (it cancels when we calculate observables).</p>
+<p>Since eigenstates of $\hat H$ form a complete orthogonal basis, the overall solution may be written in the form
+$$
+|\psi(t)\rangle = \sum_n A_n e^{iE_n t/\hbar} |\chi_n\rangle
+$$</p>
+<h2>Commutators</h2>
+<p><strong>Commutator</strong> of two operators:
+$$
+[A, B] = AB - BA
+$$
+<strong>Commuting operators have a shared eigenbasis.</strong> If $[A,B] = 0$ then it is possible to find an orthonormal basis $|n\rangle$ such that each $|n\rangle$ is an eigenvector of both $A$ and $B$. In other words the eigenspaces &quot;line up&quot; with each other.</p>
+<p>Important commutator identities:</p>
+<p>Linearity
+$$
+[A+B, C] = [A,C] + [B,C]
+$$</p>
+<p>Anticommutativity
+$$
+[B, A] = -[A, B]
+$$</p>
+<p>Products (Leibniz rule)
+$$
+\begin{align}
+[A, BC] &amp;= ABC - BCA \
+&amp;= ABC - BAC + BAC - BCA \
+&amp;= [A, B] C - B [A, C]
+\end{align}
+$$
+Powers
+$$
+[A, B^n] = [A, B] B^{n-1} + B[A, B] B^{n-2} + \dots + B^{n-1}[A, B]
+$$
+If $[A, B]$ commutes with $B$ (e.g. is a constant):
+$$
+[A, B^n] = n B^{n-1}  [A, B]
+$$
+e.g. $[\hat{x}, \hat{p}^2] = 2i\hbar \hat{p}$</p>
+<p>Jacobi identity:
+$$
+[A, [B, C]] + [B, [C, A]] + [C, [A, B]] = 0
+$$</p>
+<p>Canonical relations:
+$$
+[\hat{x}, \hat{p}] = i\hbar
+$$
+Angular momentum components (also spin)
+$$
+[L_i, L_j] = i\hbar, \epsilon_{ijk} ,L_k
+$$</p>
+<p>More background: [[uncertainty-principle-and-spectrograms]], [[uncertainty-principle-obvious-to-musicians]].</p>
+<p>measurement of $A$ $\implies$ state collapse to an eigenstate of $A$</p>
+<p>If $[A, B] \neq 0$ then the resulting eigenstate is not an eigenstate of $B$</p>
+<p><strong>Uncertainty</strong> $\sigma_A^2 = (\Delta A)^2 = \langle A^2\rangle - \langle A\rangle^2$</p>
+<p><strong>Uncertainty principle (general)</strong> $\sigma_A \sigma_B \geq \frac{1}{2} \left|\langle [A, B]\rangle\right|$</p>
+<p><strong>Position-momentum</strong> $\sigma_x \sigma_p \geq \frac{1}{2}\hbar$</p>
+<h2>Particle in a 1D potential, QHO</h2>
+<p>For a <em>classical</em> particle of mass $m$ in a 1D potential, the energy is
+$$
+E = \frac{p^2}{2m} + V(x, t)
+$$
+where $p$ is the momentum and $V$ is the potential. (In general $V$ may be a function of $t$, but usually is not in problems that we solve.)</p>
+<p><strong>Quantum harmonic oscillator:</strong>
+$$
+\hat H = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2 \hat{x}^2
+$$</p>
+<p>TISE:
+$$
+E\psi= \frac{-\hbar^2}{2m} \frac{d^2\psi}{dx^2} + \frac{1}{2}m\omega^2 {x}^2 \psi
+$$
+Scales:
+$$
+\begin{align}
+&amp; E \sim \frac{\hbar^2}{m r^2} \sim m\omega^2 r^2 \
+\implies &amp;
+E \sim \hbar\omega, \quad r \sim \left(\frac{\hbar}{m\omega}\right)^{1/2}
+\end{align}
+$$</p>
+<p>Nondimensional form:
+$$
+E\psi = \frac{-1}{2}\frac{d^2\psi}{dx^2} + \frac{1}{2}x^2\psi
+$$
+Look for solutions of the form
+$$
+\begin{align}
+\psi(x) &amp;= f(x) , e^{-x^2/2} \
+\psi'(x) &amp;= \left(f'(x) - x f(x)\right) ,  e^{-x^2/2} \
+\psi''(x) &amp;= \left(f''(x) - 2xf(x) + (x^2 - 1) f(x)\right) ,  e^{-x^2/2}
+\end{align}
+$$
+Frobenius solution + convergence $\implies$
+$$
+E = n + \frac{1}{2} \qquad n = 1, 2, 3, \dots
+$$
+with $f$ a polynomial of degree $n$.</p>
+<p><strong>Ladder operators</strong></p>
+<h2>Hydrogen atom</h2>
+<p><strong>Spherical harmonics</strong>
+$$
+Y_l^m(\theta, \varphi) = N e^{im\varphi} , P_l^m(\cos\theta)
+$$
+$$
+l = 0, 1, 2,\dots, \quad m =-l, -l+1, \dots, l
+$$
+where $N$ is a normalisation and $P_l^m$ is an associated Legendre polynomial (not actually a polynomial!)</p>
+<p><strong>Spherical harmonics are simultaneous eigenfunctions</strong> of $\hat{\mathbf L}^2$ and $\hat{L}_z$ obeying
+$$
+\hat{\mathbf L}^2 Y_l^m = \hbar^2 , l (l+1) , Y_l^m \qquad \hat{L}_x Y_l^m = \hbar, m ,Y_l^m
+$$</p>
+<p>These operators also commute with $\hat{H}$ when the potential is spherically symmetric.</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/physics.html">physics</a>
+      <a href="./tag/quantum-mechanics.html">quantum-mechanics</a>
+      <a href="./tag/teaching.html">teaching</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>

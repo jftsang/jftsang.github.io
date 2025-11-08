@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="./theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="https://jmft.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JMFT Atom">
+
+
+
+
+<meta name="author" content="J. M. F. Tsang" />
+<meta name="description" content="A little investment into building a GUI for live visualizations and control provides huge improvements in iteration speed. I recently came across the excellent video Coding Adventure: Simulating Fluids wonderfully explained by Sebastian Lague. The video walks through the steps to build a simple smoothed particle hydrodynamics simulation from nothing …" />
+<meta name="keywords" content="simulation, physics, project-management">
+
+
+  <meta property="og:site_name" content="JMFT"/>
+  <meta property="og:title" content="In Praise of Visualization"/>
+  <meta property="og:description" content="A little investment into building a GUI for live visualizations and control provides huge improvements in iteration speed. I recently came across the excellent video Coding Adventure: Simulating Fluids wonderfully explained by Sebastian Lague. The video walks through the steps to build a simple smoothed particle hydrodynamics simulation from nothing …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="./in-praise-of-visualization.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-05-11 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="./author/j-m-f-tsang.html">
+  <meta property="article:section" content="Software"/>
+  <meta property="article:tag" content="simulation"/>
+  <meta property="article:tag" content="physics"/>
+  <meta property="article:tag" content="project-management"/>
+  <meta property="og:image" content="">
+
+  <title>JMFT &ndash; In Praise of Visualization</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
+</head>
+<body class="dark-theme">
+
+<aside>
+  <div>
+    <a href="./">
+      <img src="./theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="./"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="./pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/cv.html#cv">
+                CV
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/music.html#music">
+                Music
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/software.html#software">
+                Software
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="./pages/teaching.html#teaching">
+                Teaching
+              </a>
+            </li>
+      </ul>
+    <div class="flex"></div>
+    <div>
+      <ul class="list">
+          <li>
+            <a target="_self" href="/categories.html" >Categories</a>
+          </li>
+          <li>
+            <a target="_self" href="/tags.html" >Tags</a>
+          </li>
+          <li>
+            <a target="_self" href="https://elderberri.es/" >Hamster</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-at"
+rel="me"           href="mailto:j_dot_m_dot_f_dot_tsang_at_cantab_dot_net"
+           target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://bsky.app/profile/jmft.dev"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/joanna-tsang-bb2059171/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/jftsang"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="in-praise-of-visualization">In Praise of Visualization</h1>
+    <p>
+
+      Posted on Sat 11 May 2024 in <a href="./category/software.html">Software</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>A little investment into building a GUI for live visualizations and
+control provides huge improvements in iteration speed.</p>
+<p>I recently came across the excellent video <a href="https://www.youtube.com/watch?v=rSKMYc1CQHE">Coding Adventure: Simulating Fluids</a>
+wonderfully explained by <a href="https://github.com/SebLague">Sebastian Lague</a>.
+The video walks through the steps to build a simple smoothed particle
+hydrodynamics simulation from nothing, in C#.</p>
+<p>It brings back some sweet memories to my days as a research student
+doing discrete particle model simulations using <a href="https://www.mercurydpm.org/">MercuryDPM</a>
+and there are many practical lessons that I wish I had known when I
+first started. The one that stuck out the most was actually one that
+Lague glossed over: the power of visualisation and the massive returns
+that even a simple user interface gives.</p>
+<p>The most dull and most frustrating aspect of my computational work was
+undoubtedly the parameter studies to tune parameters such as time step
+or particle stiffness. Poorly-chosen values do not <em>immediately</em>
+cause problems; your simulation will crank along seemingly fine for
+several minutes before blowing up, or having <code>nan</code>s everywhere).</p>
+<p>I didn't have a good visualization system at the time (MercuryDPM does
+provide options for loading results into visualization software, but it
+isn't live) and this hugely slowed down my iteration cycles. Neither did
+I have a GUI for modifying parameters. So, my iterations were
+rate-limited by my ability to load files into gnuplot or investigate
+them manually.</p>
+<p>I'm now mostly not working on simulations, instead working almost
+full-time in data engineering. The lesson around visualization is the
+same, though: even a simple GUI can give a lot of insight and control
+over what is otherwise a black box system, allowing faster iterations.</p>
+<p>Visualization systems, like other pieces of &quot;infrastructure&quot; such as
+testing frameworks, do not <em>per se</em> produce results, and so are often
+overlooked or disincentivised in environments that prioritize rolling
+out a product or result (proverbially, &quot;moving fast and breaking
+things&quot;), especially research environments. I have been guilty of this
+myself, but Sebastian's video clearly demonstrates that introducing even
+a small amount of interactivity can be very powerful when guiding one
+towards building reliable software and choosing sensible parameters. I
+wish I had been a stronger advocate of this as a junior researcher or
+engineer.</p>
+<p>Perhaps building a GUI is easiest in a language like C# or JavaScript.
+<small>(I have no experience with the former.)</small> I have yet to
+find a GUI framework in Python that isn't either overly restrictive or
+horribly low-level. Jupyter notebooks offer some hope in this area, but
+I might look into PyGame.</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/simulation.html">simulation</a>
+      <a href="./tag/physics.html">physics</a>
+      <a href="./tag/project-management.html">project-management</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " JMFT ",
+  "url" : ".",
+  "image": "",
+  "description": "Thoughts on software engineering, physics, teaching and music."
+}
+</script>
+</body>
+</html>
